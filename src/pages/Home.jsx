@@ -1,330 +1,337 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, Star, ShieldCheck, Sparkles, Award, Users, Clock } from 'lucide-react'
+import { ArrowRight, CheckCircle } from 'lucide-react'
 import SectionHeader from '../components/SectionHeader'
 
-const services = [
+const treatments = [
   {
-    icon: '⚖️',
-    title: 'Weight Loss',
-    desc: 'Medical weight management programs with proven results using advanced treatments and professional guidance.',
-    href: '/services#weight-loss',
+    title: 'Non-Invasive Weight Loss',
+    subtitle: 'Detox · Hormones · Fat Freezing',
+    path: '/weight-health/non-invasive-weight-loss',
   },
   {
-    icon: '✨',
     title: 'Body Contouring',
-    desc: 'Non-surgical body sculpting to target stubborn fat and reshape your silhouette without downtime.',
-    href: '/services#body-contouring',
+    subtitle: 'Cellulite · Lipoedema · Toning',
+    path: '/weight-health/body-contouring',
   },
   {
-    icon: '🌸',
-    title: 'Skin Tightening',
-    desc: 'Restore firmness and elasticity with cutting-edge radiofrequency and ultrasound technologies.',
-    href: '/services#skin-tightening',
+    title: 'Massages',
+    subtitle: 'Lymphatic · Deep Tissue · Prenatal',
+    path: '/weight-health/massages',
   },
   {
-    icon: '💉',
-    title: 'Botox',
-    desc: 'Expertly administered Botox treatments to smooth fine lines and prevent new wrinkles from forming.',
-    href: '/services#botox',
+    title: 'Peptides + GLPs',
+    subtitle: 'Medical Weight Management',
+    path: '/weight-health/peptides-glps',
   },
   {
-    icon: '🌿',
-    title: 'Korean Facials',
-    desc: 'Multi-step K-beauty inspired facials for deep hydration, brightening, and a glass-skin glow.',
-    href: '/services#korean-facials',
+    title: 'IVs + IM Shots',
+    subtitle: 'Energy · Immunity · Beauty',
+    path: '/weight-health/ivs-shots',
   },
   {
-    icon: '🍋',
-    title: 'Chemical Peels',
-    desc: 'Customized chemical peels that exfoliate, resurface, and reveal smoother, more radiant skin.',
-    href: '/services#chemical-peels',
+    title: 'Hair Restoration',
+    subtitle: 'PRP · Exosomes · Scalp Health',
+    path: '/weight-health/hair-restoration',
+  },
+  {
+    title: 'Blood Tests & Longevity',
+    subtitle: 'Biomarkers · Wellness Protocols',
+    path: '/weight-health/blood-tests-longevity',
+  },
+  {
+    title: 'Skin Concerns',
+    subtitle: 'Acne · Aging · Hyperpigmentation',
+    path: '/skin-concerns/acne',
   },
 ]
 
-const stats = [
-  { icon: <Users size={28} />, value: '5,000+', label: 'Happy Clients' },
-  { icon: <Award size={28} />, value: '10+', label: 'Years Experience' },
-  { icon: <ShieldCheck size={28} />, value: '100%', label: 'Board Certified' },
-  { icon: <Clock size={28} />, value: '15+', label: 'Treatments Offered' },
+const skinConcerns = [
+  { title: 'Acne & Breakouts',               path: '/skin-concerns/acne' },
+  { title: 'Aging & Wrinkles',               path: '/skin-concerns/aging' },
+  { title: 'Hyperpigmentation & Dark Spots', path: '/skin-concerns/hyperpigmentation' },
+  { title: 'Stretch Marks & Scars',          path: '/skin-concerns/stretch-marks-scars' },
 ]
 
 const testimonials = [
   {
+    quote: 'The lymphatic drainage massages have completely transformed how my body feels. I notice less bloating and so much more energy after every session.',
     name: 'Maria L.',
-    rating: 5,
-    text: 'Absolutely love this place! My Korean facial left my skin glowing for weeks. The staff is so professional and caring.',
+    treatment: 'Brazilian Lymphatic Massage',
   },
   {
+    quote: 'I lost 22 pounds on their medically supervised weight loss program. The team is genuinely invested in your success — it shows.',
     name: 'Jessica R.',
-    rating: 5,
-    text: 'I lost 20 pounds with their weight loss program. The team keeps you motivated and the results are incredible.',
+    treatment: 'Medical Weight Loss',
   },
   {
+    quote: 'The skin tightening results exceeded my expectations. My skin looks firmer and I feel years younger. Truly professional care.',
     name: 'Sofia M.',
-    rating: 5,
-    text: 'Best Botox I have ever had — so natural looking. Dr. Rivera has a true gift for aesthetics. Highly recommend!',
+    treatment: 'Skin Tightening',
   },
 ]
 
 export default function Home() {
   return (
     <>
-      {/* Hero */}
-      <section className="relative min-h-[90vh] flex items-center bg-gradient-to-br from-rose-50 via-white to-amber-50 overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-20 right-20 w-72 h-72 bg-gold-100 rounded-full blur-3xl opacity-50" />
-          <div className="absolute bottom-20 left-10 w-96 h-96 bg-rose-100 rounded-full blur-3xl opacity-40" />
-        </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="max-w-2xl">
-            <p className="text-gold-500 text-xs font-bold tracking-[0.3em] uppercase mb-5">
-              Luxury Medical Aesthetics
+      {/* ── HERO ─────────────────────────────────────── */}
+      <section className="relative bg-cream-200 min-h-[92vh] flex flex-col justify-center overflow-hidden">
+        {/* Decorative side line */}
+        <div className="absolute left-0 top-0 bottom-0 w-px bg-cream-400 opacity-60" />
+        <div className="absolute right-0 top-0 bottom-0 w-px bg-cream-400 opacity-60" />
+
+        <div className="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 py-24 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          {/* Left — Text */}
+          <div>
+            <p className="text-[10px] font-medium tracking-widest uppercase text-spa mb-8" style={{ letterSpacing: '0.28em' }}>
+              Advanced Med MedSpa Lounge
             </p>
-            <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-[1.1] mb-6">
-              Reveal Your
-              <span className="text-gold-500 block">Most Radiant</span>
-              Self
+            <h1 className="font-serif text-6xl md:text-7xl lg:text-8xl font-light text-espresso leading-[1.0] mb-8 text-balance">
+              Where Science<br />
+              <span className="italic text-spa">Meets</span> Beauty
             </h1>
-            <p className="text-lg text-gray-500 leading-relaxed mb-10 max-w-xl">
-              Advanced Med MedSpa Lounge blends medical expertise with luxury
-              care — offering transformative treatments in a serene, welcoming
-              environment.
+            <p className="text-[14px] text-espresso-500 leading-relaxed font-light max-w-md mb-10">
+              Medical aesthetic treatments and wellness therapies delivered with precision, compassion, and the luxury you deserve.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/book"
-                className="inline-flex items-center justify-center gap-2 bg-gold-500 hover:bg-gold-600 text-white font-semibold px-8 py-4 rounded-full transition-colors shadow-lg shadow-gold-200 text-base"
+                className="inline-flex items-center justify-center gap-3 bg-espresso text-cream-100 text-[10px] font-medium tracking-widest uppercase px-9 py-4 hover:bg-espresso-600 transition-colors"
               >
-                Book Your Consultation
-                <ArrowRight size={18} />
+                Book a Consultation
+                <ArrowRight size={13} />
               </Link>
               <Link
-                to="/services"
-                className="inline-flex items-center justify-center gap-2 border-2 border-gray-300 hover:border-gold-400 text-gray-700 hover:text-gold-600 font-semibold px-8 py-4 rounded-full transition-colors text-base"
+                to="/weight-health/non-invasive-weight-loss"
+                className="inline-flex items-center justify-center gap-3 border border-espresso-300 text-espresso text-[10px] font-medium tracking-widest uppercase px-9 py-4 hover:border-espresso hover:bg-cream-300 transition-colors"
               >
-                Explore Services
+                Explore Treatments
               </Link>
             </div>
-            <div className="flex items-center gap-2 mt-8">
-              <div className="flex">
-                {[1, 2, 3, 4, 5].map((i) => (
-                  <Star key={i} size={16} className="text-gold-400 fill-gold-400" />
-                ))}
+
+            {/* Trust indicators */}
+            <div className="flex items-center gap-8 mt-12 pt-10 border-t border-cream-400">
+              {[
+                { value: '5,000+', label: 'Clients Served' },
+                { value: '10+',    label: 'Years of Excellence' },
+                { value: '100%',   label: 'Board Certified' },
+              ].map((s) => (
+                <div key={s.label}>
+                  <div className="font-serif text-3xl font-light text-espresso">{s.value}</div>
+                  <div className="text-[10px] tracking-widest uppercase text-espresso-400 mt-0.5">{s.label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Right — image placeholder with layered design */}
+          <div className="relative hidden lg:block">
+            <div className="aspect-[3/4] bg-espresso-100 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-cream-300 via-cream-400 to-spa-100 opacity-60" />
+              {/* Decorative frame */}
+              <div className="absolute inset-6 border border-cream-400 opacity-60" />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="text-center">
+                  <p className="font-serif text-2xl font-light text-espresso-400 italic">Your Photo Here</p>
+                  <p className="text-[10px] tracking-widest uppercase text-espresso-400 mt-2">Hero Image</p>
+                </div>
               </div>
-              <span className="text-sm text-gray-500">
-                5.0 · Over 500 five-star reviews
-              </span>
+            </div>
+            {/* Floating accent card */}
+            <div className="absolute -bottom-6 -left-8 bg-white px-7 py-5 border border-cream-300 shadow-sm">
+              <p className="font-serif text-3xl font-light text-espresso">4.9</p>
+              <p className="text-[10px] tracking-widest uppercase text-spa mt-0.5">Avg Rating</p>
+              <p className="text-[10px] text-espresso-400 mt-0.5">500+ reviews</p>
             </div>
           </div>
         </div>
+
+        {/* Scroll hint */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40">
+          <span className="text-[9px] tracking-widest uppercase text-espresso">Scroll</span>
+          <div className="w-px h-8 bg-espresso animate-pulse" />
+        </div>
       </section>
 
-      {/* Stats */}
-      <section className="bg-gray-900 py-14">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((s) => (
-              <div key={s.label} className="text-center text-white">
-                <div className="flex justify-center mb-3 text-gold-400">{s.icon}</div>
-                <div className="text-3xl font-bold font-serif">{s.value}</div>
-                <div className="text-sm text-gray-400 mt-1">{s.label}</div>
-              </div>
+      {/* ── TREATMENTS GRID ───────────────────────────── */}
+      <section className="bg-white py-24 px-5 sm:px-8 lg:px-12">
+        <div className="max-w-7xl mx-auto">
+          <SectionHeader
+            eyebrow="Our Specialties"
+            title="Treatments Designed for Your Goals"
+            subtitle="Each service at Advanced Med is medically designed, expertly administered, and tailored to your unique needs."
+          />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-cream-300">
+            {treatments.map((t) => (
+              <Link
+                key={t.path}
+                to={t.path}
+                className="group bg-white p-8 flex flex-col justify-between min-h-[200px] hover:bg-cream-100 transition-colors"
+              >
+                <div>
+                  <h3 className="font-serif text-xl font-light text-espresso mb-2 group-hover:text-spa transition-colors leading-snug">
+                    {t.title}
+                  </h3>
+                  <p className="text-[11px] tracking-wide text-espresso-400 font-light">{t.subtitle}</p>
+                </div>
+                <ArrowRight size={14} className="text-spa mt-6 group-hover:translate-x-1 transition-transform" />
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Services Preview */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      {/* ── ABOUT STRIP ─────────────────────────────── */}
+      <section className="bg-espresso py-24 px-5 sm:px-8 lg:px-12">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+          <div>
+            <p className="text-[10px] font-medium tracking-widest uppercase text-spa mb-6" style={{ letterSpacing: '0.28em' }}>
+              Our Philosophy
+            </p>
+            <h2 className="font-serif text-5xl font-light text-cream-200 leading-tight mb-7">
+              Precision Care.<br />
+              <span className="italic text-spa-300">Lasting Results.</span>
+            </h2>
+            <p className="text-[14px] text-cream-400 font-light leading-relaxed mb-10 max-w-lg">
+              At Advanced Med MedSpa Lounge, every treatment begins with a thorough consultation and ends with a personalized plan. We combine medical expertise with a genuine commitment to your wellbeing.
+            </p>
+            <div className="space-y-4">
+              {[
+                'Board-certified medical professionals on every treatment',
+                'FDA-approved technologies and medical-grade products',
+                'Personalized protocols based on your unique biology',
+                'A serene, private environment built for your comfort',
+              ].map((item) => (
+                <div key={item} className="flex items-start gap-3">
+                  <CheckCircle size={15} className="text-spa mt-0.5 flex-shrink-0" />
+                  <span className="text-[13px] text-cream-400 font-light">{item}</span>
+                </div>
+              ))}
+            </div>
+            <Link
+              to="/about"
+              className="inline-flex items-center gap-3 mt-10 text-cream-200 text-[10px] font-medium tracking-widest uppercase border-b border-spa pb-0.5 hover:text-spa transition-colors"
+            >
+              Learn Our Story <ArrowRight size={12} />
+            </Link>
+          </div>
+
+          {/* Image grid placeholder */}
+          <div className="grid grid-cols-2 gap-4">
+            <div className="aspect-[3/4] bg-espresso-600 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-espresso-500 to-spa-700 opacity-50" />
+            </div>
+            <div className="aspect-[3/4] bg-espresso-600 relative overflow-hidden mt-8">
+              <div className="absolute inset-0 bg-gradient-to-br from-spa-700 to-espresso-600 opacity-50" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── SKIN CONCERNS ───────────────────────────── */}
+      <section className="bg-cream-100 py-24 px-5 sm:px-8 lg:px-12">
         <div className="max-w-7xl mx-auto">
           <SectionHeader
-            eyebrow="What We Offer"
-            title="Treatments Designed for You"
-            subtitle="From medical weight loss to luxury skincare, every treatment at Advanced Med is personalized for your unique goals."
+            eyebrow="Skin Health"
+            title="Address Your Skin Concerns"
+            subtitle="Clinically targeted treatments for every concern — delivered with the precision of medical expertise and the care of a luxury experience."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((svc) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {skinConcerns.map((c) => (
               <Link
-                key={svc.title}
-                to={svc.href}
-                className="group p-7 rounded-2xl border border-gray-100 hover:border-gold-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-white"
+                key={c.path}
+                to={c.path}
+                className="group bg-white border border-cream-300 p-8 hover:border-spa hover:shadow-[0_4px_24px_rgba(115,137,133,0.12)] transition-all"
               >
-                <div className="text-4xl mb-4">{svc.icon}</div>
-                <h3 className="font-serif text-lg font-bold text-gray-900 mb-2 group-hover:text-gold-600 transition-colors">
-                  {svc.title}
+                <div className="w-8 h-px bg-spa mb-6 group-hover:w-14 transition-all duration-300" />
+                <h3 className="font-serif text-xl font-light text-espresso mb-3 leading-snug group-hover:text-spa transition-colors">
+                  {c.title}
                 </h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{svc.desc}</p>
-                <div className="mt-4 flex items-center gap-1 text-gold-500 text-sm font-semibold">
-                  Learn more <ArrowRight size={14} />
-                </div>
+                <ArrowRight size={13} className="text-spa mt-4 group-hover:translate-x-1 transition-transform" />
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── TESTIMONIALS ────────────────────────────── */}
+      <section className="bg-white py-24 px-5 sm:px-8 lg:px-12">
+        <div className="max-w-7xl mx-auto">
+          <SectionHeader
+            eyebrow="Client Stories"
+            title="Real Results. Real People."
+            subtitle="Our clients' transformations speak louder than any treatment list."
+          />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {testimonials.map((t) => (
+              <div key={t.name} className="border border-cream-300 p-9">
+                <div className="flex gap-0.5 mb-6">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} width="12" height="12" viewBox="0 0 24 24" fill="#738985" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                  ))}
+                </div>
+                <p className="font-serif text-[16px] font-light text-espresso leading-relaxed italic mb-7">
+                  "{t.quote}"
+                </p>
+                <div className="border-t border-cream-300 pt-5">
+                  <p className="text-[12px] font-medium tracking-wide text-espresso">{t.name}</p>
+                  <p className="text-[11px] text-spa tracking-wide mt-0.5">{t.treatment}</p>
+                </div>
+              </div>
             ))}
           </div>
           <div className="text-center mt-12">
             <Link
-              to="/services"
-              className="inline-flex items-center gap-2 border-2 border-gold-400 text-gold-600 hover:bg-gold-500 hover:text-white font-semibold px-8 py-3 rounded-full transition-colors"
+              to="/testimonials"
+              className="inline-flex items-center gap-3 text-espresso text-[10px] font-medium tracking-widest uppercase border-b border-spa pb-0.5 hover:text-spa transition-colors"
             >
-              View All Services <ArrowRight size={16} />
+              Read All Reviews <ArrowRight size={12} />
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Why Choose Us */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-rose-50 to-amber-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <SectionHeader
-                eyebrow="Why Advanced Med"
-                title="The Gold Standard in Medical Aesthetics"
-                center={false}
-              />
-              <div className="space-y-6">
-                {[
-                  {
-                    icon: <ShieldCheck className="text-gold-500" size={22} />,
-                    title: 'Board-Certified Professionals',
-                    desc: 'Every treatment is administered or supervised by licensed medical professionals with years of specialized training.',
-                  },
-                  {
-                    icon: <Sparkles className="text-gold-500" size={22} />,
-                    title: 'Personalized Treatment Plans',
-                    desc: 'We create customized protocols based on your unique skin type, health goals, and aesthetic vision.',
-                  },
-                  {
-                    icon: <Award className="text-gold-500" size={22} />,
-                    title: 'FDA-Approved Technologies',
-                    desc: 'We invest in the latest, FDA-cleared equipment and products to deliver safe, effective results.',
-                  },
-                  {
-                    icon: <Star className="text-gold-500" size={22} />,
-                    title: 'Luxury Spa Experience',
-                    desc: 'Our serene, upscale environment ensures you feel pampered and relaxed from the moment you arrive.',
-                  },
-                ].map((item) => (
-                  <div key={item.title} className="flex gap-4">
-                    <div className="mt-0.5 flex-shrink-0">{item.icon}</div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900 mb-1">{item.title}</h4>
-                      <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="relative">
-              <div className="bg-gradient-to-br from-gold-100 to-rose-100 rounded-3xl p-10 text-center">
-                <div className="text-6xl mb-6">🌸</div>
-                <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3">
-                  Your Journey Starts Here
-                </h3>
-                <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                  Schedule a complimentary consultation with one of our aesthetic
-                  specialists and discover the perfect treatment plan for you.
-                </p>
-                <Link
-                  to="/book"
-                  className="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-600 text-white font-semibold px-7 py-3 rounded-full transition-colors"
-                >
-                  Free Consultation <ArrowRight size={16} />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Skin Concerns Teaser */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <SectionHeader
-            eyebrow="Skin Concerns"
-            title="We Treat What Bothers You Most"
-            subtitle="Whether it's acne, signs of aging, or uneven skin tone — we have clinically proven solutions."
-          />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              {
-                emoji: '🔴',
-                title: 'Acne & Breakouts',
-                desc: 'From hormonal acne to cystic breakouts, our targeted treatments clear skin and prevent future flare-ups.',
-                color: 'bg-red-50 border-red-100',
-              },
-              {
-                emoji: '⏳',
-                title: 'Aging & Wrinkles',
-                desc: 'Reverse the clock with advanced anti-aging treatments that restore volume, lift, and smooth fine lines.',
-                color: 'bg-amber-50 border-amber-100',
-              },
-              {
-                emoji: '🌟',
-                title: 'Discoloration & Dark Spots',
-                desc: 'Fade hyperpigmentation, sun spots, and melasma with our brightening and resurfacing protocols.',
-                color: 'bg-yellow-50 border-yellow-100',
-              },
-            ].map((c) => (
-              <div key={c.title} className={`rounded-2xl border p-8 ${c.color}`}>
-                <div className="text-4xl mb-4">{c.emoji}</div>
-                <h3 className="font-serif text-xl font-bold text-gray-900 mb-3">{c.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed mb-5">{c.desc}</p>
-                <Link
-                  to="/skin-concerns"
-                  className="text-gold-600 text-sm font-semibold hover:underline flex items-center gap-1"
-                >
-                  Explore Solutions <ArrowRight size={13} />
-                </Link>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <SectionHeader
-            eyebrow="Client Love"
-            title="Real Results, Real Stories"
-            subtitle="Hear from the clients who trust us with their most important asset — their confidence."
-          />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {testimonials.map((t) => (
-              <div key={t.name} className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
-                <div className="flex mb-4">
-                  {[...Array(t.rating)].map((_, i) => (
-                    <Star key={i} size={15} className="text-gold-400 fill-gold-400" />
-                  ))}
-                </div>
-                <p className="text-gray-600 text-sm leading-relaxed mb-5 italic">
-                  "{t.text}"
-                </p>
-                <p className="font-semibold text-gray-900 text-sm">— {t.name}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Banner */}
-      <section className="py-20 px-4 bg-gradient-to-r from-gray-900 to-gray-800 text-white text-center">
-        <div className="max-w-3xl mx-auto">
-          <p className="text-gold-400 text-xs font-bold tracking-[0.3em] uppercase mb-4">
-            Limited Availability
+      {/* ── MEMBERSHIPS TEASER ─────────────────────── */}
+      <section className="bg-cream-200 py-24 px-5 sm:px-8 lg:px-12">
+        <div className="max-w-5xl mx-auto text-center">
+          <p className="text-[10px] font-medium tracking-widest uppercase text-spa mb-5" style={{ letterSpacing: '0.28em' }}>
+            Exclusive Access
           </p>
-          <h2 className="font-serif text-4xl font-bold mb-5">
-            Ready to Start Your Transformation?
+          <h2 className="font-serif text-5xl font-light text-espresso leading-tight mb-6">
+            Join Our Membership Program
           </h2>
-          <p className="text-gray-300 text-base mb-8 leading-relaxed">
-            Book your complimentary consultation today and take the first step toward
-            the confident, radiant you.
+          <p className="text-[14px] text-espresso-500 font-light leading-relaxed max-w-xl mx-auto mb-10">
+            Unlock priority booking, discounts on all services, complimentary treatments, and a dedicated care experience — every single month.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              to="/memberships"
+              className="inline-flex items-center justify-center gap-3 bg-espresso text-cream-100 text-[10px] font-medium tracking-widest uppercase px-9 py-4 hover:bg-espresso-600 transition-colors"
+            >
+              View Membership Plans <ArrowRight size={13} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ── FINAL CTA ────────────────────────────────── */}
+      <section className="bg-spa py-20 px-5 sm:px-8 lg:px-12 text-center">
+        <div className="max-w-3xl mx-auto">
+          <p className="text-[10px] font-medium tracking-widest uppercase text-spa-100 mb-5" style={{ letterSpacing: '0.28em' }}>
+            Begin Your Journey
+          </p>
+          <h2 className="font-serif text-5xl font-light text-white leading-tight mb-6">
+            Your Transformation Starts Here
+          </h2>
+          <p className="text-[14px] text-spa-200 font-light leading-relaxed mb-10">
+            Book a complimentary consultation with our specialists and discover the personalized plan that will help you look and feel your absolute best.
           </p>
           <Link
             to="/book"
-            className="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-600 text-white font-semibold px-10 py-4 rounded-full transition-colors shadow-lg text-base"
+            className="inline-flex items-center justify-center gap-3 bg-white text-espresso text-[10px] font-medium tracking-widest uppercase px-10 py-4 hover:bg-cream-100 transition-colors"
           >
-            Schedule Now <ArrowRight size={18} />
+            Schedule Your Consultation <ArrowRight size={13} />
           </Link>
         </div>
       </section>

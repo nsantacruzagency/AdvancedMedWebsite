@@ -1,16 +1,17 @@
-export default function SectionHeader({ eyebrow, title, subtitle, center = true }) {
+export default function SectionHeader({ eyebrow, title, subtitle, center = true, light = false }) {
   return (
-    <div className={center ? 'text-center mb-12' : 'mb-10'}>
+    <div className={`${center ? 'text-center' : ''} mb-14`}>
       {eyebrow && (
-        <p className="text-gold-500 text-xs font-bold tracking-[0.25em] uppercase mb-3">
+        <p className={`text-[10px] font-medium tracking-widest uppercase mb-4 ${light ? 'text-spa-300' : 'text-spa'}`}
+           style={{ letterSpacing: '0.22em' }}>
           {eyebrow}
         </p>
       )}
-      <h2 className="font-serif text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+      <h2 className={`font-serif text-4xl md:text-5xl font-light leading-tight ${light ? 'text-cream-200' : 'text-espresso'}`}>
         {title}
       </h2>
       {subtitle && (
-        <p className="mt-4 text-gray-500 max-w-2xl mx-auto text-base leading-relaxed">
+        <p className={`mt-5 text-[14px] leading-relaxed font-light max-w-2xl ${center ? 'mx-auto' : ''} ${light ? 'text-cream-400' : 'text-espresso-500'}`}>
           {subtitle}
         </p>
       )}

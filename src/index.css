@@ -4,13 +4,23 @@
 
 @layer base {
   body {
-    @apply font-sans text-gray-800 bg-white;
+    @apply font-sans text-espresso bg-white;
     margin: 0;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   #root {
     width: 100%;
     max-width: 100%;
     text-align: left;
   }
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .track-widest2 { letter-spacing: 0.25em; }
+  .track-widest3 { letter-spacing: 0.35em; }
+  .text-balance { text-wrap: balance; }
 }
