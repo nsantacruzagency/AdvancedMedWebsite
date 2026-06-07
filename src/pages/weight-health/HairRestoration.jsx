@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom'
 import { CheckCircle, ArrowRight, Clock } from 'lucide-react'
 import SectionHeader from '../../components/SectionHeader'
+import HeroPhoto from '../../components/HeroPhoto'
+import FAQ from '../../components/FAQ'
+import BeforeAfter from '../../components/BeforeAfter'
 
 const candidates = [
   'Men or women experiencing hair thinning or early-stage hair loss',
@@ -18,27 +21,42 @@ const timeline = [
   { month: 'Month 9–12', desc: 'Full treatment results are realized. Hair is visibly fuller, healthier, and stronger. Maintenance treatments recommended every 3–6 months.' },
 ]
 
+const faqItems = [
+  {
+    q: 'Am I a candidate for PRP hair restoration?',
+    a: 'PRP works best when some viable hair follicles are still present — the treatment reactivates dormant or weakening follicles rather than creating new ones from scratch. Ideal candidates include men and women experiencing early to moderate hair thinning, androgenetic alopecia (pattern baldness), diffuse thinning, or hair loss related to stress, hormonal changes, or post-chemotherapy regrowth. A scalp consultation with trichoscopy will confirm whether PRP is appropriate for your specific pattern of loss.',
+  },
+  {
+    q: 'How many sessions are needed to see results?',
+    a: 'The standard initial protocol is a series of 3 PRP sessions spaced 4–6 weeks apart. Most clients begin noticing reduced shedding after the first 1–2 sessions, with visible new growth emerging around month 3–4. Full results are typically realized at 9–12 months. After the initial series, maintenance treatments are recommended every 3–6 months to sustain and build upon results.',
+  },
+  {
+    q: 'What is the difference between PRP and exosome therapy?',
+    a: 'PRP (Platelet-Rich Plasma) is derived from your own blood — it concentrates your platelets and growth factors to stimulate follicular regeneration. Exosome therapy uses nano-sized vesicles derived from stem cells, containing over 1,000 growth factors and signaling molecules at concentrations far exceeding what PRP can deliver. Exosomes produce faster, more pronounced results and are ideal for moderate to advanced hair loss, or as a supercharged complement to PRP. No blood draw is required for exosomes.',
+  },
+  {
+    q: 'Is PRP hair treatment painful?',
+    a: 'Discomfort is minimal for most clients. Numbing cream is applied to the scalp 20–30 minutes before injection to significantly reduce sensation. During the treatment, you may feel mild pressure or brief stinging as injections are placed. Most clients tolerate the procedure comfortably and describe it as much less uncomfortable than they anticipated. Any post-treatment sensitivity is typically mild and resolves within 24–48 hours.',
+  },
+  {
+    q: 'When will I see results from hair restoration treatments?',
+    a: 'Results develop gradually in alignment with the natural hair growth cycle. The first sign is usually reduced shedding within weeks 4–8 of starting treatment. Fine new hairs typically emerge around months 3–4. Significant density improvement becomes visible by months 5–6, and the full scope of results is realized at 9–12 months. Patience is essential — hair restoration is a biological process that unfolds over time, not overnight.',
+  },
+  {
+    q: 'Can women receive hair restoration treatments?',
+    a: 'Yes. Female hair loss is extremely common — affecting an estimated 40% of women by age 50 — and our hair restoration treatments are equally effective for women. Female pattern hair loss, postpartum shedding, hormonal hair loss, and diffuse thinning all respond well to PRP and exosome therapy. We also evaluate underlying hormonal factors (thyroid, iron, hormones) that may be contributing, and address those alongside the scalp treatments for a comprehensive approach.',
+  },
+]
+
 export default function HairRestoration() {
   return (
     <div className="bg-white">
-      {/* Hero */}
-      <section className="relative bg-espresso text-cream-200 py-32 overflow-hidden">
-        <div className="relative max-w-4xl mx-auto px-6 text-center">
-          <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-4">Non-Surgical Hair Treatments</p>
-          <h1 className="font-serif text-5xl md:text-6xl font-bold leading-tight mb-6">
-            Hair Restoration
-          </h1>
-          <p className="text-cream-300 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-10">
-            Clinically proven, non-surgical treatments to restore hair density, reawaken dormant follicles, and reclaim your confidence — using your body's own regenerative biology.
-          </p>
-          <Link
-            to="/book"
-            className="inline-flex items-center gap-2 bg-cream-100 hover:bg-white text-espresso text-[10px] tracking-widest uppercase font-medium px-8 py-4 transition-all duration-300"
-          >
-            Book a Hair Consultation <ArrowRight className="w-4 h-4" />
-          </Link>
-        </div>
-      </section>
+      <HeroPhoto
+        eyebrow="Weight & Metabolic Health"
+        title={<>Hair<br />Restoration</>}
+        subtitle="Clinically proven, non-surgical treatments to restore hair density, reawaken dormant follicles, and reclaim your confidence — using your body's own regenerative biology."
+        gradient="from-espresso-800 via-spa-700 to-espresso-700"
+      />
 
       {/* PRP Section */}
       <section className="py-24 px-6 bg-white">
@@ -253,6 +271,17 @@ export default function HairRestoration() {
           </div>
         </div>
       </section>
+
+      <BeforeAfter
+        heading="Real Client Results"
+        items={[
+          { label: 'PRP Hair Regrowth — 6 Sessions', result: 'Visible density improvement across the crown and hairline. Significant reduction in shedding beginning after session 2, with new hair growth visible at month 4.', beforeAlt: 'Before PRP hair restoration', afterAlt: 'After PRP hair restoration' },
+          { label: 'Exosome Therapy — 3 Sessions', result: 'Faster-than-expected regrowth in areas of moderate thinning. Noticeable thickening of existing hair shaft diameter and improved overall scalp health.', beforeAlt: 'Before exosome hair therapy', afterAlt: 'After exosome hair therapy' },
+          { label: 'Scalp Health Program — 12 Weeks', result: 'Resolution of seborrheic dermatitis and scalp inflammation. Improved follicle environment led to measurable increase in hair density and reduced breakage.', beforeAlt: 'Before scalp health treatment', afterAlt: 'After scalp health treatment' },
+        ]}
+      />
+
+      <FAQ items={faqItems} />
 
       {/* CTA */}
       <section className="py-24 px-6 bg-cream-200 text-center">

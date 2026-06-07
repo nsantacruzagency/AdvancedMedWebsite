@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, CheckCircle } from 'lucide-react'
 import SectionHeader from '../../components/SectionHeader'
+import HeroPhoto from '../../components/HeroPhoto'
+import FAQ from '../../components/FAQ'
 
 const ivDrips = [
   { name: "Myers' Cocktail", desc: 'The gold standard IV — magnesium, B vitamins, vitamin C, and calcium to boost energy, immunity, and overall wellness.', time: '30–45 min' },
@@ -22,18 +24,42 @@ const shots = [
   { name: 'Biotin', desc: 'Supports hair growth, nail strength, and skin health from within.' },
 ]
 
+const faqItems = [
+  {
+    q: 'How long does an IV therapy session take?',
+    a: 'Session length varies by drip. Most of our IV drips take between 30 and 60 minutes. Our NAD+ infusion is the exception — it is administered slowly over 2–4 hours to maximize absorption and minimize side effects. You can relax, work on a laptop, or watch content during your session in our comfortable treatment suite.',
+  },
+  {
+    q: 'What is the difference between IV therapy and intramuscular (IM) shots?',
+    a: 'IV therapy delivers nutrients directly into a vein, allowing for higher doses and immediate systemic distribution. It is ideal for rehydration, complex nutrient blends, and treatments like NAD+ that require gradual infusion. Intramuscular shots are injected into muscle tissue, where nutrients are absorbed over 1–2 hours. IM shots are faster to administer (under 5 minutes), require no IV line, and are well-suited for targeted nutrients like B12, glutathione, and Lipo-C.',
+  },
+  {
+    q: 'How often can I receive IV therapy?',
+    a: 'For general wellness and energy support, most clients receive IV therapy once or twice per month. Clients using IV therapy for intensive recovery, immune support during illness, or as part of a weight loss program may benefit from weekly sessions during an initial period. NAD+ infusions are typically scheduled as a series of 4–10 sessions over 2–4 weeks, then maintained monthly. Your provider will recommend a frequency based on your goals.',
+  },
+  {
+    q: 'What is NAD+ and why is it given by IV?',
+    a: 'NAD+ (nicotinamide adenine dinucleotide) is a critical coenzyme found in every cell of the body. It plays a central role in cellular energy production (ATP), DNA repair, sirtuin activation (longevity pathways), and mitochondrial function. NAD+ levels decline significantly with age. IV administration bypasses oral absorption limitations and delivers NAD+ directly to cells at concentrations that oral supplements cannot achieve, producing meaningful improvements in energy, mental clarity, metabolism, and cellular health.',
+  },
+  {
+    q: 'Does the IV needle hurt?',
+    a: 'Most clients experience only a brief pinch during IV catheter insertion — similar to a standard blood draw. Once the IV is in place, the infusion itself is completely painless. Our registered nurses are highly skilled at placement and use the smallest appropriate gauge catheter to maximize your comfort. If you are anxious about needles, let us know and we will take extra time to ensure you feel relaxed and prepared.',
+  },
+  {
+    q: 'Can I combine IV therapy with other treatments at Advanced Med?',
+    a: 'Yes — IV therapy pairs very well with many of our other services. Combining a weight loss IV drip with cryolipolysis or lymphatic drainage can accelerate results. NAD+ infusions complement peptide therapy and hormone optimization protocols. A Beauty Drip pairs beautifully with facial treatments. Our team will help you sequence treatments effectively during your consultation.',
+  },
+]
+
 export default function IVsShots() {
   return (
     <>
-      <section className="bg-espresso text-cream-200 py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-4">Weight & Metabolic Health</p>
-          <h1 className="font-serif text-5xl md:text-6xl font-bold mb-5">IVs + Intramuscular Shots</h1>
-          <p className="text-cream-300 text-lg max-w-2xl mx-auto leading-relaxed">
-            Deliver essential nutrients directly into your bloodstream for 100% absorption — maximum results, minimum wait. Our IV drips and IM shots support weight loss, energy, immunity, beauty, and recovery.
-          </p>
-        </div>
-      </section>
+      <HeroPhoto
+        eyebrow="Weight & Metabolic Health"
+        title={<>IVs + Intramuscular<br />Shots</>}
+        subtitle="Deliver essential nutrients directly into your bloodstream for 100% absorption — maximum results, minimum wait. Our IV drips and IM shots support weight loss, energy, immunity, beauty, and recovery."
+        gradient="from-spa-800 via-espresso-700 to-espresso-800"
+      />
 
       {/* Why IV */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
@@ -94,6 +120,8 @@ export default function IVsShots() {
           </div>
         </div>
       </section>
+
+      <FAQ items={faqItems} />
 
       <section className="py-20 px-4 bg-espresso text-cream-200 text-center">
         <div className="max-w-3xl mx-auto">

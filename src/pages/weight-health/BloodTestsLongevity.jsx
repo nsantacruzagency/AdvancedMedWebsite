@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import { CheckCircle, ArrowRight, FlaskConical } from 'lucide-react'
 import SectionHeader from '../../components/SectionHeader'
+import HeroPhoto from '../../components/HeroPhoto'
+import FAQ from '../../components/FAQ'
 
 const bloodPanelMarkers = [
   { category: 'Hormones', markers: ['Total Testosterone', 'Free Testosterone', 'Estradiol (E2)', 'DHEA-S', 'Progesterone', 'Cortisol', 'SHBG'] },
@@ -30,27 +32,42 @@ const longevityServices = [
   },
 ]
 
+const faqItems = [
+  {
+    q: 'What is included in the Advanced Med blood panel?',
+    a: 'Our comprehensive panel tests 50+ biomarkers across six critical body systems: hormones (including testosterone, estradiol, DHEA, cortisol, and SHBG), thyroid function (TSH, Free T3, Free T4, Reverse T3, and thyroid antibodies), a full metabolic panel (glucose, insulin, HbA1c, lipids), complete blood count, inflammation markers (hs-CRP, homocysteine, fibrinogen), and key vitamins and nutrients (Vitamin D, B12, iron panel, magnesium, zinc). This goes far beyond what standard annual physicals include.',
+  },
+  {
+    q: 'How long does it take to receive my results?',
+    a: 'Results are typically returned within 72 hours of your blood draw from our CLIA-certified laboratory partner. Once your results are received, our clinical team reviews every value in context before your provider review session. We do not simply send you a raw lab report — we analyze your results and prepare a clear, plain-English explanation of every finding before discussing them with you.',
+  },
+  {
+    q: 'Do I need to fast before my blood draw?',
+    a: 'Yes — fasting for 10–12 hours before your blood draw is required for accurate results on several key markers, including fasting glucose, insulin, lipid panel, and triglycerides. Water is permitted and encouraged during the fasting period. Please avoid alcohol for 24 hours before your draw. We offer early morning appointment slots to make fasting as convenient as possible.',
+  },
+  {
+    q: 'What happens after I receive my results?',
+    a: 'After your results are ready, you will meet with your provider for a 45-minute review session. Your provider will walk through every significant finding, explain what each marker means in practical terms, and answer all of your questions. Following the review, you will receive a written wellness protocol — a specific, prioritized, actionable plan tailored to your biomarker profile. This may include targeted supplements, hormone therapy, IV nutritional therapy, dietary adjustments, and a follow-up testing schedule.',
+  },
+  {
+    q: 'How often should I get blood testing done?',
+    a: 'For clients starting a new wellness or hormone protocol, we recommend repeat testing at 60–90 days to assess your response and make any necessary adjustments. For maintenance, most clients test every 6 months to monitor progress and catch any emerging changes early. Annual comprehensive panels are appropriate for clients who are optimized and stable. Your provider will recommend a testing cadence based on your specific situation and goals.',
+  },
+  {
+    q: 'Is comprehensive blood testing covered by insurance?',
+    a: 'Some components of our blood panel may be covered by insurance, particularly if ordered in response to a documented medical condition or symptom. However, our comprehensive wellness panel — which includes many markers not typically ordered in standard care — is often not fully covered. We provide detailed receipts and lab documentation to support any applicable insurance claims. Our team can discuss out-of-pocket costs and any available payment options during your consultation.',
+  },
+]
+
 export default function BloodTestsLongevity() {
   return (
     <div className="bg-white">
-      {/* Hero */}
-      <section className="relative bg-espresso text-cream-200 py-32 overflow-hidden">
-        <div className="relative max-w-4xl mx-auto px-6 text-center">
-          <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-4">Precision Wellness &amp; Longevity</p>
-          <h1 className="font-serif text-5xl md:text-6xl font-bold leading-tight mb-6">
-            Blood Tests &amp; Longevity
-          </h1>
-          <p className="text-cream-300 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-10">
-            You can't optimize what you don't measure. Our comprehensive blood panels reveal the full picture of your health — then we build a precision wellness protocol around exactly what your body needs.
-          </p>
-          <Link
-            to="/book"
-            className="inline-flex items-center gap-2 bg-cream-100 hover:bg-white text-espresso text-[10px] tracking-widest uppercase font-medium px-8 py-4 transition-all duration-300"
-          >
-            Book a Longevity Consultation <ArrowRight className="w-4 h-4" />
-          </Link>
-        </div>
-      </section>
+      <HeroPhoto
+        eyebrow="Weight & Metabolic Health"
+        title={<>Blood Tests<br />& Longevity</>}
+        subtitle="You can't optimize what you don't measure. Our comprehensive blood panels reveal the full picture of your health — then we build a precision wellness protocol around exactly what your body needs."
+        gradient="from-espresso-800 via-espresso-700 to-spa-800"
+      />
 
       {/* Blood Panel Section */}
       <section className="py-24 px-6 bg-white">
@@ -224,6 +241,8 @@ export default function BloodTestsLongevity() {
           </div>
         </div>
       </section>
+
+      <FAQ items={faqItems} />
 
       {/* CTA */}
       <section className="py-24 px-6 bg-cream-200 text-center">
