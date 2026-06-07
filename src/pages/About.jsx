@@ -33,24 +33,43 @@ const team = [
 
 const values = [
   {
-    icon: <Heart className="text-spa" size={28} />,
+    icon: <Heart className="text-spa" size={24} />,
     title: 'Client-First Care',
     desc: 'Every decision we make starts with your wellbeing, comfort, and goals. You are more than a treatment — you are our partner.',
   },
   {
-    icon: <ShieldCheck className="text-spa" size={28} />,
+    icon: <ShieldCheck className="text-spa" size={24} />,
     title: 'Medical Excellence',
     desc: 'We adhere to the highest standards of medical practice, ensuring every treatment is safe, evidence-based, and expertly delivered.',
   },
   {
-    icon: <Sparkles className="text-spa" size={28} />,
+    icon: <Sparkles className="text-spa" size={24} />,
     title: 'Natural Aesthetics',
     desc: 'Our philosophy is to enhance your natural beauty — not alter it. We aim for results that feel like a better version of you.',
   },
   {
-    icon: <Award className="text-spa" size={28} />,
+    icon: <Award className="text-spa" size={24} />,
     title: 'Continuous Learning',
     desc: 'Our team trains with the world\'s leading aesthetic experts and stays current on the latest advances in aesthetic medicine.',
+  },
+]
+
+const loungeAmenities = [
+  {
+    title: 'Complimentary Snacks & Beverages',
+    desc: 'Sip on herbal teas, infused water, and light refreshments before and after your session. We want every visit to feel like a full retreat.',
+  },
+  {
+    title: 'Plush Robes & Slippers',
+    desc: 'Slip into a soft robe and slippers the moment you arrive. Comfort is not a perk here — it is the standard.',
+  },
+  {
+    title: 'Lush Greenery & Candlelight',
+    desc: 'Our lounge is filled with living plants, warm ambient lighting, and softly scented candles — designed to slow your pace and quiet your mind.',
+  },
+  {
+    title: 'Peaceful Seating & Couches',
+    desc: 'Sink into deep, cushioned couches surrounded by natural textures. Stay as long as you like — before your treatment, after it, or simply because you need a moment.',
   },
 ]
 
@@ -82,126 +101,251 @@ export default function About() {
     <>
       <HeroPhoto
         eyebrow="Our Story"
-        title={"About\nAdvanced Med"}
+        title={<>About<br />Advanced Med</>}
         subtitle="Where medical precision meets genuine, heartfelt care for every client who walks through our doors."
         gradient="from-espresso-800 via-espresso-700 to-spa-800"
       />
 
-      {/* Story */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      {/* ── OUR STORY ── */}
+      <section className="py-20 px-5 sm:px-8 lg:px-12 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-4">
+              <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-5" style={{ letterSpacing: '0.28em' }}>
                 How We Started
               </p>
-              <h2 className="font-serif text-4xl font-bold text-espresso mb-6 leading-tight">
+              <h2 className="font-serif text-4xl md:text-5xl font-light text-espresso mb-7 leading-tight">
                 Born from a Passion for<br />Transformative Care
               </h2>
-              <div className="space-y-5 text-espresso-500 leading-relaxed">
+              <div className="space-y-5 text-espresso-500 text-[13px] font-light leading-relaxed">
                 <p>
-                  Advanced Med MedSpa Lounge was founded by Dr. Elena Rivera in 2014
-                  with a singular vision: to create a medical aesthetic practice where
-                  clinical expertise and genuine human connection are equally valued.
+                  Advanced Med MedSpa Lounge was founded with a singular vision: to create a
+                  medical aesthetic practice where clinical expertise and genuine human
+                  connection are equally valued.
                 </p>
                 <p>
-                  After years of witnessing how aesthetic treatments could restore not
-                  just appearance but confidence and quality of life, Dr. Rivera built
-                  a team of like-minded professionals dedicated to delivering
-                  life-changing results in a warm, luxurious environment.
+                  After years of witnessing how aesthetic treatments could restore not just
+                  appearance but confidence and quality of life, our founders built a team of
+                  like-minded professionals dedicated to delivering life-changing results in a
+                  warm, luxurious environment.
                 </p>
                 <p>
                   Today, Advanced Med serves thousands of clients across South Florida,
                   offering a comprehensive menu of medical weight loss, body contouring,
-                  injectables, and advanced skincare treatments — all under one roof.
+                  injectables, and advanced skincare treatments — all under one roof,
+                  in a space designed to feel like home.
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              {[
-                { value: '5,000+', label: 'Clients Served' },
-                { value: '10+', label: 'Years in Practice' },
-                { value: '15+', label: 'Treatments Offered' },
-                { value: '4.9', label: 'Average Rating' },
-              ].map((s) => (
-                <div key={s.label} className="bg-cream-100 rounded-2xl p-6 text-center border border-cream-300">
-                  <div className="font-serif text-3xl font-bold text-espresso">{s.value}</div>
-                  <div className="text-sm text-espresso-500 mt-1">{s.label}</div>
+            {/* Decorative image placeholder */}
+            <div className="relative">
+              <div className="aspect-[4/5] bg-cream-200 relative overflow-hidden border border-cream-300">
+                <div className="absolute inset-0 bg-gradient-to-br from-cream-300 via-cream-200 to-spa-100" />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-center">
+                    <p className="font-serif text-xl font-light text-espresso-400 italic">About Us Photo</p>
+                    <p className="text-[10px] tracking-widest uppercase text-espresso-300 mt-2 font-light">Placeholder</p>
+                  </div>
                 </div>
-              ))}
+              </div>
+              {/* Floating accent */}
+              <div className="absolute -bottom-5 -left-5 bg-espresso px-7 py-5">
+                <p className="font-serif text-3xl font-light text-cream-200">6+</p>
+                <p className="text-[10px] tracking-widest uppercase text-spa-300 mt-0.5 font-light">Years of Excellence</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Values */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-cream-100">
+      {/* ── VALUES ── */}
+      <section className="py-20 px-5 sm:px-8 lg:px-12 bg-cream-100">
         <div className="max-w-7xl mx-auto">
           <SectionHeader
             eyebrow="What Drives Us"
             title="Our Core Values"
             subtitle="These values guide every interaction, every treatment, and every decision we make."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-cream-300">
             {values.map((v) => (
-              <div key={v.title} className="bg-white rounded-2xl p-8 border border-cream-300 shadow-sm text-center">
-                <div className="flex justify-center mb-4">{v.icon}</div>
-                <h3 className="font-semibold text-espresso text-base mb-3">{v.title}</h3>
-                <p className="text-espresso-500 text-sm leading-relaxed">{v.desc}</p>
+              <div key={v.title} className="bg-white p-9 text-center">
+                <div className="flex justify-center mb-5">{v.icon}</div>
+                <h3 className="font-serif text-lg font-light text-espresso mb-3">{v.title}</h3>
+                <p className="text-espresso-500 text-[12px] font-light leading-relaxed">{v.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Team */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      {/* ── WELCOME TO THE LOUNGE ── */}
+      <section className="py-20 px-5 sm:px-8 lg:px-12 bg-white">
         <div className="max-w-7xl mx-auto">
-          <SectionHeader
-            eyebrow="The Experts Behind Your Results"
-            title="Meet Our Team"
-            subtitle="Board-certified, compassionate, and relentlessly dedicated to your transformation."
-          />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {team.map((member) => (
-              <div key={member.name} className="flex gap-6 p-8 rounded-2xl border border-cream-300 bg-cream-100 hover:shadow-md transition-shadow">
-                <div className="w-14 h-14 rounded-full bg-espresso flex-shrink-0 flex items-center justify-center">
-                  <span className="font-serif text-cream-100 text-xl font-bold">{member.name.charAt(0)}</span>
+
+          {/* Heading */}
+          <div className="mb-16 max-w-2xl">
+            <p className="text-spa text-[10px] font-medium uppercase mb-5" style={{ letterSpacing: '0.28em' }}>
+              The Lounge Experience
+            </p>
+            <h2 className="font-serif text-5xl md:text-6xl font-light text-espresso leading-tight mb-6">
+              Welcome to<br />
+              <span className="italic text-spa">the Lounge.</span>
+            </h2>
+            <p className="text-espresso-500 text-[14px] font-light leading-relaxed">
+              Your time here does not begin and end with your treatment. At Advanced Med, the
+              experience starts the moment you walk through our doors — and we have designed
+              every detail of our lounge to make sure that moment feels like an exhale.
+            </p>
+          </div>
+
+          {/* Two-column: photo + description */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-16">
+
+            {/* Lounge photo placeholder — replace with real photography */}
+            <div className="relative">
+              <div
+                className="w-full bg-cream-200 relative overflow-hidden"
+                style={{ aspectRatio: '4/5' }}
+              >
+                {/*
+                  Replace this block with:
+                  <img src="/images/lounge.jpg" alt="Advanced Med MedSpa Lounge" className="w-full h-full object-cover" />
+                */}
+                <div className="absolute inset-0 bg-gradient-to-br from-cream-300 via-cream-200 to-cream-400" />
+                {/* Warm amber glow — mimics candlelight in image */}
+                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(180,140,100,0.25),transparent_65%)]" />
+                <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
+                  <p className="font-serif text-2xl font-light text-espresso-400 italic">The Lounge</p>
+                  <p className="text-[10px] tracking-widest uppercase text-espresso-300 font-light">1080 × 1350 — Photo Placeholder</p>
                 </div>
-                <div>
-                  <h3 className="font-serif text-xl font-bold text-espresso">{member.name}</h3>
-                  <p className="text-spa text-sm font-semibold mb-3">{member.role}</p>
-                  <p className="text-espresso-500 text-sm leading-relaxed mb-4">{member.bio}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {member.credentials.map((c) => (
-                      <span key={c} className="bg-cream-200 text-espresso-600 text-xs px-3 py-1 font-medium border border-cream-300">
-                        {c}
-                      </span>
-                    ))}
+                {/* Decorative corner detail */}
+                <div className="absolute top-6 right-6 w-20 h-20 border border-cream-400 opacity-50" />
+                <div className="absolute bottom-6 left-6 w-20 h-20 border border-cream-400 opacity-50" />
+              </div>
+            </div>
+
+            {/* Lounge copy */}
+            <div className="pt-4">
+              <div className="space-y-5 text-espresso-500 text-[13px] font-light leading-relaxed mb-10">
+                <p>
+                  Think warm candlelight, the soft rustle of living plants, a plush couch that
+                  invites you to stay longer than you planned. Our lounge is an oasis — a space
+                  curated with the same intentionality we bring to every treatment we perform.
+                </p>
+                <p>
+                  Natural textures and greenery soften the air. Ambient light glows gently at
+                  every hour. The scent of calming candles drifts through the space. Whether you
+                  arrive early to settle in or linger after your session to let the results land —
+                  the lounge is yours.
+                </p>
+                <p>
+                  This is not a waiting room. This is part of the experience.
+                </p>
+              </div>
+
+              {/* Amenities list */}
+              <div className="space-y-5">
+                {loungeAmenities.map((a) => (
+                  <div key={a.title} className="flex items-start gap-4 border-b border-cream-300 pb-5 last:border-0 last:pb-0">
+                    <div className="w-1 h-full flex-shrink-0 pt-1">
+                      <div className="w-1 h-8 bg-spa" />
+                    </div>
+                    <div>
+                      <h4 className="font-serif text-[16px] font-light text-espresso mb-1">{a.title}</h4>
+                      <p className="text-espresso-500 text-[12px] font-light leading-relaxed">{a.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Second lounge photo — wide panoramic placeholder */}
+          <div
+            className="w-full bg-cream-200 relative overflow-hidden"
+            style={{ aspectRatio: '21/9' }}
+          >
+            <div className="absolute inset-0 bg-gradient-to-r from-cream-300 via-cream-200 to-cream-300" />
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(180,145,105,0.2),transparent_70%)]" />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="text-center">
+                <p className="font-serif text-2xl font-light text-espresso-400 italic">Lounge — Wide View</p>
+                <p className="text-[10px] tracking-widest uppercase text-espresso-300 mt-2 font-light">Panoramic Photo Placeholder</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* ── MEET THE TEAM ── */}
+      <section className="py-20 px-5 sm:px-8 lg:px-12 bg-espresso">
+        <div className="max-w-7xl mx-auto">
+
+          {/* Stats bar */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-espresso-500 mb-16">
+            {[
+              { value: '5,000+', label: 'Clients Served' },
+              { value: '6+',     label: 'Years in Practice' },
+              { value: '25+',    label: 'Treatments Offered' },
+              { value: '4.9',    label: 'Average Rating' },
+            ].map((s) => (
+              <div key={s.label} className="bg-espresso py-10 px-8 text-center">
+                <div className="font-serif text-4xl font-light text-cream-200">{s.value}</div>
+                <div className="text-[10px] tracking-widest uppercase text-spa-300 mt-2 font-light">{s.label}</div>
+              </div>
+            ))}
+          </div>
+
+          {/* Team header */}
+          <div className="mb-12">
+            <p className="text-spa-300 text-[10px] font-medium uppercase mb-4" style={{ letterSpacing: '0.28em' }}>
+              The Experts Behind Your Results
+            </p>
+            <h2 className="font-serif text-4xl md:text-5xl font-light text-cream-200 leading-tight">
+              Meet Our Team
+            </h2>
+            <p className="text-cream-400 text-[13px] font-light mt-4 max-w-xl leading-relaxed">
+              Board-certified, compassionate, and relentlessly dedicated to your transformation.
+            </p>
+          </div>
+
+          {/* Team grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {team.map((member) => (
+              <div
+                key={member.name}
+                className="border border-espresso-500 p-8 hover:border-spa transition-colors group"
+              >
+                <div className="flex gap-5 items-start">
+                  {/* Monogram avatar */}
+                  <div className="w-14 h-14 bg-spa flex-shrink-0 flex items-center justify-center">
+                    <span className="font-serif text-white text-xl font-light">
+                      {member.name.charAt(0)}
+                    </span>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-serif text-xl font-light text-cream-200 group-hover:text-spa transition-colors">
+                      {member.name}
+                    </h3>
+                    <p className="text-spa-300 text-[11px] tracking-wide uppercase font-medium mb-4 mt-1">
+                      {member.role}
+                    </p>
+                    <p className="text-cream-400 text-[12px] font-light leading-relaxed mb-5">
+                      {member.bio}
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {member.credentials.map((c) => (
+                        <span
+                          key={c}
+                          className="border border-espresso-500 text-cream-500 text-[10px] px-3 py-1 font-light tracking-wide"
+                        >
+                          {c}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Clinic Environment */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-cream-200">
-        <div className="max-w-4xl mx-auto text-center">
-          <SectionHeader
-            eyebrow="The Experience"
-            title="A Sanctuary for Your Transformation"
-            subtitle="From the moment you step inside, you'll feel the difference. Our spa is designed to be your escape — serene, immaculate, and entirely focused on you."
-          />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            {[
-              { label: 'Private Treatment Suites' },
-              { label: 'Spa-Grade Ambiance' },
-              { label: 'Complimentary Refreshments' },
-            ].map((item) => (
-              <div key={item.label} className="bg-white rounded-2xl p-8 border border-cream-300 text-center shadow-sm">
-                <p className="font-medium text-espresso text-sm">{item.label}</p>
               </div>
             ))}
           </div>
@@ -211,13 +355,23 @@ export default function About() {
       <FAQ items={faqItems} />
 
       {/* CTA */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-cream-200 text-center border-t border-cream-300">
+      <section className="py-20 px-5 sm:px-8 lg:px-12 bg-cream-200 text-center">
         <div className="max-w-2xl mx-auto">
+          <p className="text-spa text-[10px] font-medium uppercase mb-5" style={{ letterSpacing: '0.28em' }}>
+            Come See Us
+          </p>
+          <h2 className="font-serif text-4xl font-light text-espresso mb-6">
+            Experience the Lounge for Yourself
+          </h2>
+          <p className="text-espresso-500 text-[13px] font-light leading-relaxed mb-8">
+            Book your first appointment and discover what it feels like when medical
+            expertise meets genuine luxury care.
+          </p>
           <Link
             to="/book"
-            className="inline-flex items-center gap-2 bg-espresso hover:bg-espresso-600 text-cream-100 text-[10px] tracking-widest uppercase px-10 py-4 transition-colors"
+            className="inline-flex items-center gap-3 bg-espresso hover:bg-espresso-600 text-cream-100 text-[10px] tracking-widest uppercase px-10 py-4 transition-colors"
           >
-            Experience It for Yourself <ArrowRight size={16} />
+            Book Your Visit <ArrowRight size={14} />
           </Link>
         </div>
       </section>
