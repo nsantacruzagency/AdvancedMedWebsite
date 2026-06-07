@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, Heart, Sparkles, ShieldCheck, Award } from 'lucide-react'
 import SectionHeader from '../components/SectionHeader'
+import HeroPhoto from '../components/HeroPhoto'
+import FAQ from '../components/FAQ'
 
 const team = [
   {
@@ -52,22 +54,38 @@ const values = [
   },
 ]
 
+const faqItems = [
+  {
+    q: 'Is Advanced Med a medical spa or a regular spa?',
+    a: 'Advanced Med is a full-service medical spa (medspa), meaning our treatments are supervised by licensed medical professionals including board-certified physicians and registered nurses. We offer both clinical medical services — such as injectables, medical weight loss, and IV therapy — and luxury wellness experiences like facials, massages, and body treatments, all under one roof.',
+  },
+  {
+    q: 'Do I need a referral to book an appointment?',
+    a: 'No referral is needed. You are welcome to book directly through our website, by phone, or by walking in. For certain medical services such as peptide therapy, GLP-1 consultations, or comprehensive blood panels, an initial consultation with one of our providers is required before treatment begins.',
+  },
+  {
+    q: 'Are your providers licensed and certified?',
+    a: 'Absolutely. Every provider at Advanced Med holds active, current licensure in their respective field. Our medical staff includes board-certified physicians and registered nurses, and our estheticians are licensed and hold advanced certifications in their specialty areas. All credentials are available upon request.',
+  },
+  {
+    q: 'Do you offer payment plans or financing?',
+    a: 'Yes — we offer flexible financing options through third-party partners, allowing you to spread the cost of treatments over time. We also offer our membership plans as an affordable way to receive consistent care at a reduced monthly rate. Ask our team about current financing availability at your consultation.',
+  },
+  {
+    q: 'What should I expect at my first visit?',
+    a: 'Your first visit begins with a detailed consultation — we take time to understand your goals, review your health history, and assess your skin or body concern before recommending any treatment. There is never pressure to book on the spot. We want you to feel informed, comfortable, and genuinely excited about your plan before moving forward.',
+  },
+]
+
 export default function About() {
   return (
     <>
-      {/* Hero */}
-      <section className="bg-espresso text-cream-200 py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-4">
-            Our Story
-          </p>
-          <h1 className="font-serif text-5xl md:text-6xl font-bold mb-5">About Us</h1>
-          <p className="text-cream-300 text-lg max-w-2xl mx-auto leading-relaxed">
-            More than a medspa — a place where medical precision meets genuine,
-            heartfelt care for every client who walks through our doors.
-          </p>
-        </div>
-      </section>
+      <HeroPhoto
+        eyebrow="Our Story"
+        title={"About\nAdvanced Med"}
+        subtitle="Where medical precision meets genuine, heartfelt care for every client who walks through our doors."
+        gradient="from-espresso-800 via-espresso-700 to-spa-800"
+      />
 
       {/* Story */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
@@ -187,6 +205,14 @@ export default function About() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <FAQ items={faqItems} />
+
+      {/* CTA */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-cream-200 text-center border-t border-cream-300">
+        <div className="max-w-2xl mx-auto">
           <Link
             to="/book"
             className="inline-flex items-center gap-2 bg-espresso hover:bg-espresso-600 text-cream-100 text-[10px] tracking-widest uppercase px-10 py-4 transition-colors"

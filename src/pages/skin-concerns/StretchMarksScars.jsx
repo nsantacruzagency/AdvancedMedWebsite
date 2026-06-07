@@ -96,27 +96,63 @@ const expectations = [
   },
 ]
 
+const beforeAfterItems = [
+  {
+    label: 'Pregnancy Stretch Marks — 12 Weeks',
+    result: 'Color normalization and texture improvement following collagen induction therapy series.',
+    beforeAlt: 'Pregnancy stretch marks before treatment',
+    afterAlt: 'Pregnancy stretch marks after 12 weeks of collagen induction therapy',
+  },
+  {
+    label: 'Surgical Scar — 16 Weeks',
+    result: 'Flattened, lightened scar following RF resurfacing and medical-grade silicone protocol.',
+    beforeAlt: 'Surgical scar before treatment',
+    afterAlt: 'Surgical scar after 16 weeks of RF resurfacing',
+  },
+  {
+    label: 'Acne Scars — 20 Weeks',
+    result: 'Rolling and boxcar acne scars significantly smoother after microneedling and chemical peel combination.',
+    beforeAlt: 'Acne scars before treatment',
+    afterAlt: 'Acne scars after 20 weeks of microneedling and chemical peel',
+  },
+]
+
+const faqItems = [
+  {
+    q: 'Can stretch marks be completely removed?',
+    a: 'Complete removal of stretch marks is not currently possible with any non-surgical treatment. However, significant improvement in color, texture, and overall appearance is achievable. Newer stretch marks (red or purple) respond much better than mature white or silver ones. Most clients see 40–70% improvement with a consistent treatment series.',
+  },
+  {
+    q: 'What types of scars respond best to treatment?',
+    a: 'Atrophic scars — including rolling, boxcar, and icepick acne scars — and post-surgical scars respond very well to our protocols. Hypertrophic scars also improve with treatment. Keloid scars require a careful individual assessment before any treatment is recommended, as not all modalities are appropriate.',
+  },
+  {
+    q: 'Is microneedling painful?',
+    a: 'We apply a topical numbing cream before every microneedling session to ensure your comfort. Most clients describe the sensation as mild pressure or a slight buzzing feeling. Treated areas may appear red for 24–48 hours afterward, similar to a mild sunburn, which resolves quickly.',
+  },
+  {
+    q: 'How many sessions are needed for scars?',
+    a: 'The number of sessions varies by scar type, depth, age, and your individual healing response. Most scar treatment protocols consist of 4–6 sessions spaced 4 weeks apart for microneedling, and 3–4 sessions for chemical peels. We often combine modalities for the most comprehensive outcome.',
+  },
+  {
+    q: 'Can keloid scars be treated?',
+    a: 'Keloids require careful assessment before any treatment, as certain modalities can stimulate further growth. We evaluate each keloid individually and only recommend treatments with a favorable risk profile for your specific case. Some keloids do respond well to carefully managed protocols — we will be fully transparent about what is realistic for your situation.',
+  },
+  {
+    q: 'Are results permanent?',
+    a: 'The collagen remodeling triggered by treatment is long-lasting, but it does not stop the natural aging process. Results can last several years with proper home care including SPF, retinoids, and hydration. Maintenance sessions every 6–12 months help preserve and build upon initial improvements.',
+  },
+]
+
 export default function StretchMarksScars() {
   return (
     <div className="bg-white">
-      {/* Hero */}
-      <section className="relative bg-espresso text-cream-200 py-28 px-6 overflow-hidden">
-        <div className="relative max-w-4xl mx-auto text-center">
-          <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-4">Skin Concern</p>
-          <h1 className="font-serif text-5xl md:text-6xl font-bold leading-tight mb-6">
-            Stretch Marks<br />&amp; Scars
-          </h1>
-          <p className="text-cream-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-            Your skin tells your story — but you get to decide how that story is written. Our advanced resurfacing and collagen-stimulating treatments help fade stretch marks and scars so you feel confident in every inch of your skin.
-          </p>
-          <Link
-            to="/book"
-            className="inline-flex items-center gap-2 bg-cream-100 hover:bg-white text-espresso text-[10px] tracking-widest uppercase font-medium px-8 py-4 transition-all duration-300"
-          >
-            Book a Skin Consultation <ArrowRight className="w-4 h-4" />
-          </Link>
-        </div>
-      </section>
+      <HeroPhoto
+        eyebrow="Skin Concerns"
+        title={"Stretch Marks\n& Scars"}
+        subtitle="Visible reminders of your story — treated with clinical precision and compassionate care."
+        gradient="from-espresso-800 via-spa-800 to-espresso-700"
+      />
 
       {/* Types We Treat */}
       <section className="py-20 px-6 bg-cream-100">
@@ -223,6 +259,13 @@ export default function StretchMarksScars() {
           </div>
         </div>
       </section>
+
+      <BeforeAfter
+        heading="Client Results"
+        items={beforeAfterItems}
+      />
+
+      <FAQ items={faqItems} />
 
       {/* CTA */}
       <section className="py-20 px-6 bg-espresso text-cream-200 text-center">

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Star, ArrowRight } from 'lucide-react'
+import HeroPhoto from '../components/HeroPhoto'
 
 const all = [
   { name: 'Maria L.', treatment: 'Korean Facial', category: 'Skin Care', rating: 5, date: 'March 2025', text: 'Absolutely love this place! My Korean facial left my skin glowing for weeks. The staff is so professional and caring — I felt like royalty from start to finish. I am already booked for my next session!' },
@@ -43,18 +44,12 @@ export default function Testimonials() {
 
   return (
     <>
-      <section className="bg-espresso text-cream-200 py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-4">Client Love</p>
-          <h1 className="font-serif text-5xl md:text-6xl font-bold mb-5">What Our Clients Say</h1>
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="flex">{[...Array(5)].map((_, i) => <Star key={i} size={22} className="text-spa fill-spa" />)}</div>
-            <span className="text-2xl font-bold">4.9</span>
-            <span className="text-cream-400 text-sm">· 500+ Reviews</span>
-          </div>
-          <p className="text-cream-300 text-base">Real clients. Real results. Real transformations.</p>
-        </div>
-      </section>
+      <HeroPhoto
+        eyebrow="Client Stories"
+        title={"What Our\nClients Say"}
+        subtitle="Real results from real people who trusted us with their transformation."
+        gradient="from-spa-800 via-espresso-800 to-espresso-700"
+      />
 
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">

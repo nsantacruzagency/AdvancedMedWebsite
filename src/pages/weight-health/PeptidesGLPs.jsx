@@ -1,29 +1,8 @@
 import { Link } from 'react-router-dom'
 import { CheckCircle, ArrowRight, AlertCircle } from 'lucide-react'
 import SectionHeader from '../../components/SectionHeader'
-
-const faqs = [
-  {
-    q: 'How quickly will I see results on GLP-1 medications?',
-    a: 'Most patients begin noticing reduced appetite within the first 1–2 weeks. Significant weight loss is typically visible at 4–8 weeks, with optimal results occurring over 3–6 months of consistent treatment combined with lifestyle guidance.',
-  },
-  {
-    q: 'Are peptides the same as steroids?',
-    a: 'No. Peptides are short chains of amino acids — naturally occurring signaling molecules. They are not anabolic steroids and do not cause the side effects associated with steroids. They work by supporting and optimizing your body\'s own systems.',
-  },
-  {
-    q: 'Do I need to stay on GLP-1s forever?',
-    a: 'Not necessarily. Many patients use GLP-1s as a tool to establish new eating patterns and reach their goal weight, then transition off with lifestyle support. Our team creates individualized tapering plans when appropriate.',
-  },
-  {
-    q: 'What are the most common side effects of GLP-1 medications?',
-    a: 'The most common side effects are nausea and digestive discomfort, particularly when starting or increasing dose. These are typically mild and resolve as your body adjusts. We titrate doses slowly to minimize side effects.',
-  },
-  {
-    q: 'Who is NOT a candidate for GLP-1 medications?',
-    a: 'GLP-1s are not appropriate for individuals with a personal or family history of medullary thyroid carcinoma, MEN2, or pancreatitis. Pregnant or breastfeeding women should also avoid these medications. A full medical evaluation is always completed before prescribing.',
-  },
-]
+import HeroPhoto from '../../components/HeroPhoto'
+import FAQ from '../../components/FAQ'
 
 const benefits = [
   { title: 'Targeted Action', desc: 'Peptides and GLP-1s work on specific receptors and pathways — delivering results with precision and minimal systemic side effects.' },
@@ -32,27 +11,42 @@ const benefits = [
   { title: 'Metabolic Reset', desc: 'These therapies address the underlying biology of obesity — not just willpower — creating sustainable change at the hormonal level.' },
 ]
 
+const faqItems = [
+  {
+    q: 'What are peptides?',
+    a: 'Peptides are short chains of amino acids — the building blocks of proteins — that act as highly specific biological messengers in the body. Unlike broad-spectrum hormones, peptides communicate with targeted receptors to trigger precise physiological responses such as stimulating growth hormone release, enhancing fat metabolism, reducing inflammation, and supporting cellular repair. Our clinicians prescribe pharmaceutical-grade peptides from licensed compounding pharmacies, customized to your labs and goals.',
+  },
+  {
+    q: 'How are GLPs different from peptides?',
+    a: 'While both are technically peptide-based molecules, GLP-1 receptor agonists (like semaglutide and tirzepatide) are a specific class of pharmaceutical medications that mimic the gut hormone GLP-1. They primarily work by slowing gastric emptying, signaling the brain\'s satiety centers to reduce hunger, and improving pancreatic insulin response. Therapeutic peptides such as sermorelin or BPC-157 serve different roles — supporting growth hormone production, tissue healing, or metabolic optimization. The two categories are often used together as part of a comprehensive weight loss protocol.',
+  },
+  {
+    q: 'Who is a candidate for semaglutide?',
+    a: 'Semaglutide is generally appropriate for adults with a BMI of 30 or higher, or a BMI of 27 or higher with at least one weight-related health condition such as type 2 diabetes, hypertension, high cholesterol, or sleep apnea. A full medical consultation and lab work are required before prescribing. Individuals with a personal or family history of medullary thyroid carcinoma, MEN2, or pancreatitis are not candidates. Pregnant or breastfeeding women should also avoid GLP-1 medications.',
+  },
+  {
+    q: 'Are there side effects from GLP-1 medications or peptides?',
+    a: 'The most common side effects of GLP-1 medications are nausea, mild digestive discomfort, and reduced appetite — particularly when starting or increasing the dose. These are typically temporary and resolve as your body adjusts. We titrate doses slowly to minimize side effects. Therapeutic peptides are generally very well tolerated. Side effects vary by peptide but are typically mild and transient. Our clinical team monitors your response throughout treatment.',
+  },
+  {
+    q: 'How quickly do GLP-1 medications work?',
+    a: 'Most patients notice a significant reduction in appetite within the first 1–2 weeks of starting a GLP-1 medication. Meaningful weight loss is typically visible by 4–8 weeks, with optimal results occurring over 3–6 months of consistent treatment. Clinical trials show average weight loss of 15–22% of body weight over 68 weeks depending on the medication used. Results are further enhanced when combined with lifestyle modifications and supportive treatments.',
+  },
+  {
+    q: 'Is a prescription required for peptides and GLP-1 medications?',
+    a: 'Yes. Both therapeutic peptides and GLP-1 medications are prescription treatments available only through a licensed medical provider following a comprehensive evaluation. At Advanced Med, all prescriptions are issued by our licensed practitioners after a full health review, lab work, and individualized assessment. This ensures your safety and maximizes the effectiveness of your protocol.',
+  },
+]
+
 export default function PeptidesGLPs() {
   return (
     <div className="bg-white">
-      {/* Hero */}
-      <section className="relative bg-espresso text-cream-200 py-32 overflow-hidden">
-        <div className="relative max-w-4xl mx-auto px-6 text-center">
-          <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-4">Advanced Medical Weight Loss</p>
-          <h1 className="font-serif text-5xl md:text-6xl font-bold leading-tight mb-6">
-            Peptides &amp; GLP-1s
-          </h1>
-          <p className="text-cream-300 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-10">
-            Next-generation pharmaceutical-grade therapies that work with your biology to dramatically reduce appetite, accelerate fat loss, and optimize metabolic health — under full medical supervision.
-          </p>
-          <Link
-            to="/book"
-            className="inline-flex items-center gap-2 bg-cream-100 hover:bg-white text-espresso text-[10px] tracking-widest uppercase font-medium px-8 py-4 transition-all duration-300"
-          >
-            Book a Medical Consultation <ArrowRight className="w-4 h-4" />
-          </Link>
-        </div>
-      </section>
+      <HeroPhoto
+        eyebrow="Weight & Metabolic Health"
+        title={<>Peptides<br />+ GLPs</>}
+        subtitle="Next-generation pharmaceutical-grade therapies that work with your biology to dramatically reduce appetite, accelerate fat loss, and optimize metabolic health — under full medical supervision."
+        gradient="from-espresso-800 via-espresso-600 to-spa-800"
+      />
 
       {/* Peptides Section */}
       <section className="py-24 px-6 bg-white">
@@ -166,20 +160,7 @@ export default function PeptidesGLPs() {
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="py-24 px-6 bg-cream-100">
-        <div className="max-w-4xl mx-auto">
-          <SectionHeader eyebrow="Common Questions" title="Frequently Asked Questions" />
-          <div className="space-y-6">
-            {faqs.map((faq, i) => (
-              <div key={i} className="bg-white p-8 shadow-sm border border-cream-300">
-                <h4 className="font-serif font-bold text-espresso text-lg mb-3">Q: {faq.q}</h4>
-                <p className="text-espresso-500 leading-relaxed">A: {faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <FAQ items={faqItems} />
 
       {/* Disclaimer */}
       <section className="py-12 px-6 bg-white">

@@ -1,7 +1,8 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowRight, CheckCircle, ChevronDown, ChevronUp, Star, Sparkles, Crown, Shield } from 'lucide-react'
+import { ArrowRight, CheckCircle, Star, Sparkles, Crown, Shield } from 'lucide-react'
 import SectionHeader from '../components/SectionHeader'
+import HeroPhoto from '../components/HeroPhoto'
+import FAQ from '../components/FAQ'
 
 const tiers = [
   {
@@ -69,7 +70,7 @@ const tiers = [
   },
 ]
 
-const faqs = [
+const faqItems = [
   {
     q: 'Can I pause my membership?',
     a: 'Yes. Members may pause their membership once per calendar year for up to 60 days with 7 days\' advance notice. Paused months do not count toward treatment credits. Simply contact your care coordinator or call us to initiate a pause.',
@@ -79,16 +80,20 @@ const faqs = [
     a: 'Memberships are individual and non-transferable. However, referred family members receive 20% off their first month when they sign up under your name. Ask us about our Refer a Friend perks.',
   },
   {
-    q: 'What counts as a "treatment" each month?',
+    q: 'What counts as a treatment each month?',
     a: 'Any service from our treatment menu qualifies — facials, chemical peels, massages, body treatments, IV drips, LED therapy, skin tightening, and more. Injectables (Botox, fillers) and medical procedures require a separate consultation and are not included in the monthly treatment credit, but do receive the membership discount.',
+  },
+  {
+    q: 'How do I cancel my membership?',
+    a: 'You may cancel with 30 days\' written notice before your next billing date. There are no cancellation fees after the initial 3-month commitment period. We simply ask that you give us the chance to address any concerns before you go — your satisfaction truly matters to us.',
   },
   {
     q: 'Do unused treatments roll over to the next month?',
     a: 'Monthly treatment credits do not roll over — they are a use-it-or-love-it benefit. We send a reminder notification 5 days before your billing cycle ends so you never miss a session. We encourage you to schedule in advance to always get your full value.',
   },
   {
-    q: 'How do I cancel my membership?',
-    a: 'You may cancel with 30 days\' written notice before your next billing date. There are no cancellation fees after the initial 3-month commitment period. We simply ask that you give us the chance to address any concerns before you go — your satisfaction truly matters to us.',
+    q: 'Is there a contract?',
+    a: 'There is a 3-month minimum commitment when you first sign up — after that, your membership continues month-to-month with no long-term obligation. You may cancel at any time after the initial period with 30 days\' written notice and no cancellation fees.',
   },
 ]
 
@@ -113,48 +118,15 @@ const steps = [
   },
 ]
 
-function FAQItem({ q, a }) {
-  const [open, setOpen] = useState(false)
-  return (
-    <div className="border border-cream-300 overflow-hidden">
-      <button
-        onClick={() => setOpen(!open)}
-        className="w-full flex items-center justify-between px-6 py-5 text-left bg-white hover:bg-cream-100 transition"
-      >
-        <span className="font-semibold text-espresso text-sm md:text-base pr-4">{q}</span>
-        {open ? (
-          <ChevronUp className="w-5 h-5 text-spa flex-shrink-0" />
-        ) : (
-          <ChevronDown className="w-5 h-5 text-espresso-400 flex-shrink-0" />
-        )}
-      </button>
-      {open && (
-        <div className="px-6 pb-5 bg-white border-t border-cream-300">
-          <p className="text-espresso-500 text-sm leading-relaxed pt-3">{a}</p>
-        </div>
-      )}
-    </div>
-  )
-}
-
 export default function Memberships() {
   return (
     <div className="bg-white">
-      {/* Hero */}
-      <section className="relative bg-espresso text-cream-200 py-28 px-6 overflow-hidden">
-        <div className="relative max-w-4xl mx-auto text-center">
-          <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-4">Exclusive Plans</p>
-          <h1 className="font-serif text-5xl md:text-6xl font-bold leading-tight mb-6">
-            Exclusive Membership Plans
-          </h1>
-          <p className="text-cream-300 text-lg md:text-xl max-w-2xl mx-auto mb-4 leading-relaxed">
-            Investing in yourself is the most powerful decision you'll ever make. Our membership plans make luxury wellness a consistent, affordable part of your life — not a rare occasion.
-          </p>
-          <p className="text-spa-300 text-sm font-semibold">
-            No contracts after the first 3 months · Cancel anytime with 30 days notice
-          </p>
-        </div>
-      </section>
+      <HeroPhoto
+        eyebrow="Exclusive Access"
+        title={"Membership\nPlans"}
+        subtitle="Priority care, monthly treatments, and meaningful savings — delivered with the consistency your skin deserves."
+        gradient="from-espresso-800 via-espresso-700 to-spa-700"
+      />
 
       {/* Membership Tiers */}
       <section className="py-20 px-6 bg-cream-100">
@@ -241,21 +213,7 @@ export default function Memberships() {
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="py-20 px-6 bg-white">
-        <div className="max-w-3xl mx-auto">
-          <SectionHeader
-            eyebrow="FAQ"
-            title="Membership Questions Answered"
-            subtitle="Everything you need to know before you join — and we're always happy to answer more in person."
-          />
-          <div className="mt-4 space-y-3">
-            {faqs.map((faq) => (
-              <FAQItem key={faq.q} q={faq.q} a={faq.a} />
-            ))}
-          </div>
-        </div>
-      </section>
+      <FAQ items={faqItems} />
 
       {/* Terms Note */}
       <section className="py-8 px-6 bg-cream-100 border-t border-cream-300">

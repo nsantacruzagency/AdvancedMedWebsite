@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom'
 import { CheckCircle, ArrowRight } from 'lucide-react'
 import SectionHeader from '../../components/SectionHeader'
+import HeroPhoto from '../../components/HeroPhoto'
+import FAQ from '../../components/FAQ'
+import BeforeAfter from '../../components/BeforeAfter'
 
 const massageTypes = [
   {
@@ -29,27 +32,42 @@ const massageTypes = [
   },
 ]
 
+const faqItems = [
+  {
+    q: 'What is the Brazilian 3-in-1 lymphatic drainage massage?',
+    a: 'The Brazilian 3-in-1 is a signature technique that combines three disciplines in a single session: manual lymphatic drainage to decongest the lymphatic system and eliminate excess fluid, deep petrissage to address muscle tension and improve tissue quality, and sculpting massage movements to contour the body and smooth the skin. It is widely used both as a standalone treatment and as a complement to cosmetic procedures.',
+  },
+  {
+    q: 'What does lymphatic drainage actually do for the body?',
+    a: 'Lymphatic drainage stimulates the flow of lymph — a fluid that carries immune cells, metabolic waste, and excess proteins through a network of vessels throughout the body. When this system becomes sluggish due to inactivity, surgery, illness, or stress, fluid accumulates in tissues causing swelling, puffiness, and reduced immunity. Lymphatic drainage massage gently accelerates lymph flow, reducing fluid retention, removing toxins, and supporting immune function.',
+  },
+  {
+    q: 'Is post-operative massage safe, and when can I start?',
+    a: 'Yes — post-operative massage is not only safe but is often recommended by surgeons as an essential part of recovery. Most clients begin as early as 72 hours after surgery, depending on the procedure and their surgeon\'s guidance. Early intervention prevents fibrosis, reduces bruising and swelling, and significantly improves the smoothness and quality of final surgical results. We coordinate with your surgeon when appropriate.',
+  },
+  {
+    q: 'When during pregnancy can I receive a prenatal massage?',
+    a: 'Prenatal massage is safe in all three trimesters when performed by a certified prenatal therapist. We use specially designed pregnancy positioning pillows to ensure your comfort and safety, avoid contraindicated pressure points, and use only pregnancy-safe techniques and oils. Many clients find the most benefit beginning in the second trimester when discomfort from back pain, hip tightness, and swelling often peaks.',
+  },
+  {
+    q: 'How often do I need massage sessions to see lasting results?',
+    a: 'For general wellness and relaxation, monthly sessions are effective for most clients. For specific goals such as post-surgical recovery, lymphedema management, or cellulite reduction, we typically recommend weekly sessions during an initial series of 4–8 treatments, followed by bi-weekly or monthly maintenance. Your therapist will recommend a frequency tailored to your goals and response to treatment.',
+  },
+  {
+    q: 'Does insurance cover therapeutic massage at Advanced Med?',
+    a: 'Coverage varies by insurance plan. Some plans cover massage therapy when prescribed by a physician for a documented medical condition such as chronic pain, post-surgical recovery, or lymphedema. We recommend contacting your insurance provider directly. We provide detailed receipts and documentation to support any applicable claims. Our team can also assist with letters of medical necessity when appropriate.',
+  },
+]
+
 export default function Massages() {
   return (
     <div className="bg-white">
-      {/* Hero */}
-      <section className="relative bg-espresso text-cream-200 py-32 overflow-hidden">
-        <div className="relative max-w-4xl mx-auto px-6 text-center">
-          <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-4">Therapeutic Body Services</p>
-          <h1 className="font-serif text-5xl md:text-6xl font-bold leading-tight mb-6">
-            Massage Therapy
-          </h1>
-          <p className="text-cream-300 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-10">
-            From detoxifying lymphatic drainage to healing post-operative care — our expert massage therapists deliver therapeutic touch that transforms how you look and feel.
-          </p>
-          <Link
-            to="/book"
-            className="inline-flex items-center gap-2 bg-cream-100 hover:bg-white text-espresso text-[10px] tracking-widest uppercase font-medium px-8 py-4 transition-all duration-300"
-          >
-            Book a Session <ArrowRight className="w-4 h-4" />
-          </Link>
-        </div>
-      </section>
+      <HeroPhoto
+        eyebrow="Weight & Metabolic Health"
+        title={<>Therapeutic<br />Massages</>}
+        subtitle="From detoxifying lymphatic drainage to healing post-operative care — our expert massage therapists deliver therapeutic touch that transforms how you look and feel."
+        gradient="from-spa-800 via-espresso-800 to-espresso-700"
+      />
 
       {/* Service Cards Grid */}
       <section className="py-24 px-6 bg-cream-100">
@@ -206,6 +224,17 @@ export default function Massages() {
           </div>
         </div>
       </section>
+
+      <BeforeAfter
+        heading="Real Client Results"
+        items={[
+          { label: 'Lymphatic Drainage — 6 Sessions', result: 'Significant reduction in lower leg swelling and heaviness. Improved lymphatic circulation and reduced fluid retention visible within the first 3 sessions.', beforeAlt: 'Before lymphatic drainage treatment', afterAlt: 'After lymphatic drainage treatment' },
+          { label: 'Post-Op Recovery — 8 Sessions', result: 'Accelerated healing following liposuction procedure. Reduced bruising, prevention of fibrosis, and noticeably smoother contour result achieved through targeted post-op massage.', beforeAlt: 'Before post-operative massage', afterAlt: 'After post-operative massage' },
+          { label: 'Prenatal Massage — Third Trimester', result: 'Relief from sciatic nerve pain, significant reduction in ankle and foot swelling, and improved sleep quality reported throughout 6-week prenatal massage series.', beforeAlt: 'Before prenatal massage series', afterAlt: 'After prenatal massage series' },
+        ]}
+      />
+
+      <FAQ items={faqItems} />
 
       {/* CTA */}
       <section className="py-24 px-6 bg-espresso text-cream-200 text-center">

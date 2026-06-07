@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom'
 import { CheckCircle, ArrowRight, Zap, Shield, Star, TrendingUp } from 'lucide-react'
 import SectionHeader from '../../components/SectionHeader'
+import HeroPhoto from '../../components/HeroPhoto'
+import FAQ from '../../components/FAQ'
+import BeforeAfter from '../../components/BeforeAfter'
 
 const treatmentBenefits = [
   { icon: Zap, title: 'Visible in Weeks', desc: 'See measurable improvements in skin texture, firmness, and contour within the first few sessions.' },
@@ -16,27 +19,42 @@ const celluliteTreatments = [
   { name: 'Ultrasound Cavitation', desc: 'Low-frequency ultrasound creates micro-bubbles that rupture fat cell membranes, releasing their contents for natural elimination.' },
 ]
 
+const faqItems = [
+  {
+    q: 'What is body contouring?',
+    a: 'Body contouring refers to a range of non-surgical treatments designed to reshape and refine the body\'s silhouette by reducing localized fat, tightening skin, reducing cellulite, building muscle tone, and managing conditions like lipoedema. At Advanced Med, we use a combination of radiofrequency, ultrasound cavitation, electromagnetic muscle stimulation, and lymphatic techniques to achieve comprehensive, natural-looking results.',
+  },
+  {
+    q: 'Is body contouring painful?',
+    a: 'Most body contouring treatments are well tolerated. Radiofrequency and ultrasound cavitation feel warm and slightly intense but are not painful. EMS treatments create strong muscle contractions that can feel unfamiliar at first but are not typically described as painful. Acoustic wave therapy may cause mild discomfort over very fibrous areas. We always adjust intensity to your comfort level.',
+  },
+  {
+    q: 'What is lipoedema, and how is it different from regular fat?',
+    a: 'Lipoedema is a chronic medical condition — primarily affecting women — characterized by disproportionate, painful fat accumulation in the legs, hips, and sometimes arms. Unlike regular fat, lipoedema fat does not respond to diet or exercise, is often painful or tender to the touch, and is driven by hormonal and structural factors rather than caloric intake. It affects an estimated 11% of women and is frequently misdiagnosed.',
+  },
+  {
+    q: 'How many sessions are needed to see results for cellulite?',
+    a: 'Most clients notice initial improvements in skin texture and firmness after 3–4 sessions. For optimal cellulite reduction, we typically recommend a series of 6–10 treatments spaced 1–2 weeks apart, followed by periodic maintenance. The number of sessions varies based on cellulite grade, skin laxity, and individual response to treatment.',
+  },
+  {
+    q: 'Can I target specific areas of my body?',
+    a: 'Yes. Body contouring treatments are highly targeted — applicators and devices are placed precisely over areas of concern such as the abdomen, flanks, thighs, buttocks, arms, or back. Your treatment plan is fully customized to your specific body goals, and multiple areas can often be addressed in a single session.',
+  },
+  {
+    q: 'What kind of results can I expect from EMS treatments?',
+    a: 'Clinical studies on electromagnetic muscle stimulation show an average increase in muscle mass of approximately 16% and a reduction in local fat of approximately 19% after a series of 4 sessions. Results are visible as increased muscle definition, improved tone, and reduced circumference measurements. EMS is ideal for the abdomen, glutes, thighs, and arms, and results continue to develop for several weeks after treatment.',
+  },
+]
+
 export default function BodyContouring() {
   return (
     <div className="bg-white">
-      {/* Hero */}
-      <section className="relative bg-espresso text-cream-200 py-32 overflow-hidden">
-        <div className="relative max-w-4xl mx-auto px-6 text-center">
-          <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-4">Weight Health &amp; Body Wellness</p>
-          <h1 className="font-serif text-5xl md:text-6xl font-bold leading-tight mb-6">
-            Body Contouring
-          </h1>
-          <p className="text-cream-300 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-10">
-            Advanced, non-surgical treatments for cellulite, lipoedema, and muscle definition — sculpting the silhouette you've worked toward with precision technology and compassionate care.
-          </p>
-          <Link
-            to="/book"
-            className="inline-flex items-center gap-2 bg-cream-100 hover:bg-white text-espresso text-[10px] tracking-widest uppercase font-medium px-8 py-4 transition-all duration-300"
-          >
-            Book a Consultation <ArrowRight className="w-4 h-4" />
-          </Link>
-        </div>
-      </section>
+      <HeroPhoto
+        eyebrow="Weight & Metabolic Health"
+        title={<>Body<br />Contouring</>}
+        subtitle="Advanced, non-surgical treatments for cellulite, lipoedema, and muscle definition — sculpting the silhouette you've worked toward with precision technology and compassionate care."
+        gradient="from-espresso-800 via-spa-800 to-espresso-700"
+      />
 
       {/* Cellulite Treatment */}
       <section className="py-24 px-6 bg-white">
@@ -200,6 +218,17 @@ export default function BodyContouring() {
           </div>
         </div>
       </section>
+
+      <BeforeAfter
+        heading="Real Client Results"
+        items={[
+          { label: 'Cellulite Reduction — 8 Sessions', result: 'Significant smoothing of thigh and hip cellulite. Visible improvement in skin texture and firmness after a combined RF and acoustic wave protocol.', beforeAlt: 'Before cellulite treatment', afterAlt: 'After cellulite treatment' },
+          { label: 'Lipoedema Management — 12 Weeks', result: 'Reduced heaviness and pain in lower legs. Decreased circumference measurements and improved mobility following lymphatic drainage and RF series.', beforeAlt: 'Before lipoedema treatment', afterAlt: 'After lipoedema treatment' },
+          { label: 'Muscle Definition — 4 EMS Sessions', result: 'Visible abdominal definition and glute lifting achieved with electromagnetic muscle stimulation. No downtime throughout the series.', beforeAlt: 'Before EMS muscle toning', afterAlt: 'After EMS muscle toning' },
+        ]}
+      />
+
+      <FAQ items={faqItems} />
 
       {/* CTA */}
       <section className="py-24 px-6 bg-cream-200 text-center">

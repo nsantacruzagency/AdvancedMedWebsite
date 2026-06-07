@@ -89,27 +89,63 @@ const tips = [
   'Stay consistent with your prescribed regimen for at least 8–12 weeks.',
 ]
 
+const beforeAfterItems = [
+  {
+    label: 'Hormonal Acne — 8 Weeks',
+    result: 'Active breakouts reduced by 80%. Skin texture visibly smoother and fewer post-inflammatory marks.',
+    beforeAlt: 'Hormonal acne before treatment',
+    afterAlt: 'Hormonal acne after 8 weeks of treatment',
+  },
+  {
+    label: 'Cystic Acne — 12 Weeks',
+    result: 'Cystic lesions resolved with combination chemical peel and LED therapy protocol.',
+    beforeAlt: 'Cystic acne before treatment',
+    afterAlt: 'Cystic acne after 12 weeks of treatment',
+  },
+  {
+    label: 'Post-Acne Scarring — 16 Weeks',
+    result: 'Significant fading of post-inflammatory hyperpigmentation following resurfacing series.',
+    beforeAlt: 'Post-acne scarring before treatment',
+    afterAlt: 'Post-acne scarring after 16 weeks of treatment',
+  },
+]
+
+const faqItems = [
+  {
+    q: 'Can adults get acne?',
+    a: 'Yes — adult acne is extremely common, particularly in women. Hormonal fluctuations related to menstrual cycles, pregnancy, perimenopause, and stress can all trigger breakouts well into your 30s, 40s, and beyond. Our protocols are designed to address adult acne at the root cause.',
+  },
+  {
+    q: 'What causes hormonal acne?',
+    a: 'Hormonal acne is driven by androgens — hormones like testosterone that stimulate sebaceous glands to produce excess oil. This excess sebum clogs pores and creates the ideal environment for acne-causing bacteria to thrive. It typically appears along the jawline, chin, and lower cheeks and tends to be cyclical.',
+  },
+  {
+    q: 'Is a chemical peel safe for acne-prone skin?',
+    a: 'Yes, when performed by a trained professional using the appropriate formula and concentration. Salicylic acid peels are especially well-suited for acne as they are oil-soluble and penetrate deep into pores. We assess your skin before every peel to ensure the right protocol for your sensitivity level.',
+  },
+  {
+    q: 'How many sessions will it take to see results?',
+    a: 'Most clients notice improvement within 2–4 sessions, with significant clearing typically achieved after a series of 4–6 treatments. Results depend on your acne type, severity, and consistency with your home-care regimen. We will set realistic expectations at your consultation.',
+  },
+  {
+    q: 'What should I avoid doing at home?',
+    a: 'Avoid picking or popping breakouts — this drives bacteria deeper and causes scarring. Steer clear of harsh scrubs, alcohol-based toners, and over-cleansing, which strip the skin and trigger a rebound oil surge. We will provide a personalized home-care plan tailored to your skin.',
+  },
+  {
+    q: 'Will treatments dry out my skin?',
+    a: 'Not when properly managed. While some acne treatments do have a drying effect, we always balance active ingredients with appropriate hydration and barrier-supporting products. Healthy, hydrated skin actually responds better to acne treatments than dehydrated skin does.',
+  },
+]
+
 export default function Acne() {
   return (
     <div className="bg-white">
-      {/* Hero */}
-      <section className="relative bg-espresso text-cream-200 py-28 px-6 overflow-hidden">
-        <div className="relative max-w-4xl mx-auto text-center">
-          <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-4">Skin Concern</p>
-          <h1 className="font-serif text-5xl md:text-6xl font-bold leading-tight mb-6">
-            Acne &amp; Breakouts
-          </h1>
-          <p className="text-cream-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-            Clear, confident skin is possible at any age. Our science-backed acne protocols target breakouts at the root — not just on the surface.
-          </p>
-          <Link
-            to="/book"
-            className="inline-flex items-center gap-2 bg-cream-100 hover:bg-white text-espresso text-[10px] tracking-widest uppercase font-medium px-8 py-4 transition-all duration-300"
-          >
-            Book a Skin Consultation <ArrowRight className="w-4 h-4" />
-          </Link>
-        </div>
-      </section>
+      <HeroPhoto
+        eyebrow="Skin Concerns"
+        title={"Acne &\nBreakouts"}
+        subtitle="Clear, healthy skin is not a dream. It is a clinical outcome — and we know how to get you there."
+        gradient="from-espresso-800 via-espresso-600 to-spa-800"
+      />
 
       {/* What Causes Acne */}
       <section className="py-20 px-6 bg-cream-100">
@@ -218,6 +254,13 @@ export default function Acne() {
           </ul>
         </div>
       </section>
+
+      <BeforeAfter
+        heading="Client Results"
+        items={beforeAfterItems}
+      />
+
+      <FAQ items={faqItems} />
 
       {/* CTA */}
       <section className="py-20 px-6 bg-espresso text-cream-200 text-center">

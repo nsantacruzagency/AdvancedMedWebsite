@@ -74,27 +74,63 @@ const ingredients = [
   { name: 'Licorice Root Extract', desc: 'Natural melanin inhibitor; gentle and soothing on sensitive skin' },
 ]
 
+const beforeAfterItems = [
+  {
+    label: 'Melasma — 10 Weeks',
+    result: 'Significant lightening of melasma patches following combination brightening peel and home care protocol.',
+    beforeAlt: 'Melasma patches before treatment',
+    afterAlt: 'Melasma after 10 weeks of brightening treatment',
+  },
+  {
+    label: 'Sun Damage & Spots — 8 Weeks',
+    result: 'Multiple solar lentigines faded after targeted chemical peel series and vitamin C serum regimen.',
+    beforeAlt: 'Sun spots before chemical peel treatment',
+    afterAlt: 'Sun spots after 8 weeks of chemical peel series',
+  },
+  {
+    label: 'Post-Inflammatory Hyperpigmentation — 12 Weeks',
+    result: 'Post-acne marks substantially lightened with brightening Korean facial and tranexamic acid serum protocol.',
+    beforeAlt: 'Post-inflammatory hyperpigmentation before treatment',
+    afterAlt: 'Post-inflammatory hyperpigmentation after 12 weeks',
+  },
+]
+
+const faqItems = [
+  {
+    q: 'What is melasma?',
+    a: 'Melasma is a chronic pigmentation condition characterized by symmetrical brown or grayish patches, most commonly appearing on the cheeks, forehead, upper lip, and chin. It is strongly linked to hormonal changes — including pregnancy, oral contraceptives, and hormone therapy — combined with UV exposure. Melasma requires a multi-modal treatment approach and strict, ongoing sun protection.',
+  },
+  {
+    q: 'Can hyperpigmentation be completely removed?',
+    a: 'Many forms of hyperpigmentation can be significantly faded or, in some cases, fully resolved with the right protocol. Sunspots and post-inflammatory hyperpigmentation tend to respond very well to treatment. Melasma is more complex and prone to recurrence, especially with sun exposure. We will set honest, personalized expectations at your consultation.',
+  },
+  {
+    q: 'What ingredients fade dark spots?',
+    a: 'The most clinically effective brightening ingredients include vitamin C (L-ascorbic acid), kojic acid, niacinamide, azelaic acid, alpha arbutin, tranexamic acid, and retinoids. We prescribe combinations of these based on your pigmentation type and skin tone, ensuring both efficacy and safety.',
+  },
+  {
+    q: 'Is SPF really that necessary?',
+    a: 'Absolutely — it is non-negotiable for any pigmentation concern. UV exposure is the primary driver of melanin overproduction and will counteract even the most advanced professional treatments. We require all pigmentation clients to use a broad-spectrum SPF 50 daily, regardless of weather or indoor/outdoor exposure.',
+  },
+  {
+    q: 'How long does brightening treatment take?',
+    a: 'Most clients begin to see measurable improvement within 4–6 weeks of starting a brightening protocol. Optimal results from a professional treatment series typically emerge at 8–12 weeks, with continued improvement as home-care actives accumulate. Maintenance sessions help preserve results long term.',
+  },
+  {
+    q: 'Can darker skin tones be treated safely?',
+    a: 'Yes — with the right approach. Darker skin tones require more careful selection of peel depth, ingredients, and energy-based treatments to avoid post-inflammatory hyperpigmentation as a side effect of treatment. Our team is experienced in treating all Fitzpatrick skin types and will customize your protocol accordingly.',
+  },
+]
+
 export default function Hyperpigmentation() {
   return (
     <div className="bg-white">
-      {/* Hero */}
-      <section className="relative bg-espresso text-cream-200 py-28 px-6 overflow-hidden">
-        <div className="relative max-w-4xl mx-auto text-center">
-          <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-4">Skin Concern</p>
-          <h1 className="font-serif text-5xl md:text-6xl font-bold leading-tight mb-6">
-            Hyperpigmentation<br />&amp; Dark Spots
-          </h1>
-          <p className="text-cream-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-            Uneven skin tone doesn't have to be permanent. Our brightening protocols are designed to fade dark spots, correct discoloration, and restore a luminous, even complexion.
-          </p>
-          <Link
-            to="/book"
-            className="inline-flex items-center gap-2 bg-cream-100 hover:bg-white text-espresso text-[10px] tracking-widest uppercase font-medium px-8 py-4 transition-all duration-300"
-          >
-            Book a Brightening Consultation <ArrowRight className="w-4 h-4" />
-          </Link>
-        </div>
-      </section>
+      <HeroPhoto
+        eyebrow="Skin Concerns"
+        title={"Hyperpigmentation\n& Dark Spots"}
+        subtitle="Uneven skin tone is one of the most treatable concerns in modern aesthetics."
+        gradient="from-spa-800 via-espresso-700 to-espresso-800"
+      />
 
       {/* Types of Hyperpigmentation */}
       <section className="py-20 px-6 bg-cream-100">
@@ -194,6 +230,13 @@ export default function Hyperpigmentation() {
           </p>
         </div>
       </section>
+
+      <BeforeAfter
+        heading="Client Results"
+        items={beforeAfterItems}
+      />
+
+      <FAQ items={faqItems} />
 
       {/* CTA */}
       <section className="py-20 px-6 bg-espresso text-cream-200 text-center">

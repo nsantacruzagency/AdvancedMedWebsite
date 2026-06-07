@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { CheckCircle, Calendar, Clock, Sparkles, Phone, Mail, MapPin } from 'lucide-react'
+import HeroPhoto from '../components/HeroPhoto'
 
 const services = [
   'Non-Invasive Weight Loss',
@@ -52,16 +53,12 @@ export default function BookNow() {
 
   return (
     <>
-      {/* Hero */}
-      <section className="bg-cream-200 py-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-4">Contact & Reservations</p>
-          <h1 className="font-serif text-5xl md:text-6xl font-bold text-espresso mb-4">Contact & Book Now</h1>
-          <p className="text-espresso-500 text-lg max-w-xl mx-auto leading-relaxed">
-            Ready to start your transformation? Book your appointment online or reach out to our team — we're here for you.
-          </p>
-        </div>
-      </section>
+      <HeroPhoto
+        eyebrow="Contact & Reservations"
+        title={"Book Your\nAppointment"}
+        subtitle="Secure your appointment in minutes. We look forward to welcoming you."
+        gradient="from-espresso-800 via-spa-800 to-espresso-700"
+      />
 
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12">

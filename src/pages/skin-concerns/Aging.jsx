@@ -69,27 +69,63 @@ const philosophy = [
   'Education is part of every visit. You\'ll always understand what we\'re doing and why.',
 ]
 
+const beforeAfterItems = [
+  {
+    label: 'Forehead Lines — 2 Weeks Post Treatment',
+    result: 'Smooth forehead and elevated brow position following precise neurotoxin placement.',
+    beforeAlt: 'Forehead lines before neurotoxin treatment',
+    afterAlt: 'Forehead lines 2 weeks after neurotoxin treatment',
+  },
+  {
+    label: 'Skin Tightening — 3 Months',
+    result: 'Noticeable lift and firmness along the jawline and neck following RF treatment series.',
+    beforeAlt: 'Jawline laxity before RF skin tightening',
+    afterAlt: 'Jawline after 3 months of RF skin tightening',
+  },
+  {
+    label: 'Full Anti-Aging Protocol — 6 Months',
+    result: 'Combined skin tightening, chemical peel, and anti-aging facial series — dramatic improvement in overall skin quality.',
+    beforeAlt: 'Skin before full anti-aging protocol',
+    afterAlt: 'Skin after 6-month full anti-aging protocol',
+  },
+]
+
+const faqItems = [
+  {
+    q: 'What age should I start anti-aging treatments?',
+    a: 'Prevention is always easier than correction. Many clients begin with light treatments — such as regular facials, SPF habits, and topical retinoids — in their late 20s to early 30s. Neurotoxins and skin tightening are commonly introduced in the mid-30s. There is truly no "too early" or "too late" — the best time to start is when you are ready.',
+  },
+  {
+    q: 'Will Botox make me look frozen?',
+    a: 'Not when administered by a skilled injector. Frozen results are caused by over-injection or incorrect placement — both of which we actively avoid. Our philosophy is conservative dosing with precise placement, preserving your natural expression while softening the lines that concern you.',
+  },
+  {
+    q: 'How long does skin tightening last?',
+    a: 'Results from RF and HIFU skin tightening typically last 12–18 months, as the collagen remodeling process continues for several months post-treatment. Maintenance sessions once or twice a year help sustain and build upon initial results.',
+  },
+  {
+    q: 'Can I combine Botox with facials?',
+    a: 'Yes — in fact, combining neurotoxins with regular facials is one of the most effective anti-aging strategies. We typically recommend waiting 48–72 hours after Botox before receiving a facial, and we will coordinate your treatment schedule to maximize results and minimize any interference.',
+  },
+  {
+    q: 'What is the best anti-aging ingredient?',
+    a: 'Retinoids (tretinoin) have the most robust clinical evidence for anti-aging — they increase collagen, accelerate cell turnover, and fade pigmentation. Beyond that, vitamin C for antioxidant protection, niacinamide for barrier support, and SPF for prevention are the foundations of every effective anti-aging regimen.',
+  },
+  {
+    q: 'How does RF skin tightening work?',
+    a: 'Radiofrequency energy delivers controlled heat into the deep dermis, causing immediate contraction of existing collagen fibers and stimulating the production of new collagen over the following weeks and months. The result is progressive skin tightening and lifting with no downtime.',
+  },
+]
+
 export default function Aging() {
   return (
     <div className="bg-white">
-      {/* Hero */}
-      <section className="relative bg-espresso text-cream-200 py-28 px-6 overflow-hidden">
-        <div className="relative max-w-4xl mx-auto text-center">
-          <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-4">Skin Concern</p>
-          <h1 className="font-serif text-5xl md:text-6xl font-bold leading-tight mb-6">
-            Aging &amp; Wrinkles
-          </h1>
-          <p className="text-cream-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-            Age gracefully on your own terms. Our advanced anti-aging protocols help you look as vibrant as you feel — naturally, not frozen.
-          </p>
-          <Link
-            to="/book"
-            className="inline-flex items-center gap-2 bg-cream-100 hover:bg-white text-espresso text-[10px] tracking-widest uppercase font-medium px-8 py-4 transition-all duration-300"
-          >
-            Book Anti-Aging Consultation <ArrowRight className="w-4 h-4" />
-          </Link>
-        </div>
-      </section>
+      <HeroPhoto
+        eyebrow="Skin Concerns"
+        title={"Aging &\nWrinkles"}
+        subtitle="Natural aging is inevitable. Visible aging is increasingly optional."
+        gradient="from-espresso-700 via-espresso-800 to-spa-700"
+      />
 
       {/* How Skin Ages */}
       <section className="py-20 px-6 bg-cream-100">
@@ -165,6 +201,13 @@ export default function Aging() {
           </div>
         </div>
       </section>
+
+      <BeforeAfter
+        heading="Client Results"
+        items={beforeAfterItems}
+      />
+
+      <FAQ items={faqItems} />
 
       {/* CTA */}
       <section className="py-20 px-6 bg-cream-200 text-center">

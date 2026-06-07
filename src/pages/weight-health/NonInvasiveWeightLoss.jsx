@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom'
 import { CheckCircle, ArrowRight, Snowflake, Activity, Heart, Zap } from 'lucide-react'
 import SectionHeader from '../../components/SectionHeader'
+import HeroPhoto from '../../components/HeroPhoto'
+import FAQ from '../../components/FAQ'
+import BeforeAfter from '../../components/BeforeAfter'
 
 const benefits = [
   { icon: Snowflake, title: 'Zero Downtime', desc: 'Non-surgical procedures mean no recovery time — return to your day immediately.' },
@@ -33,27 +36,42 @@ const cryoBenefits = [
   'Smooth, natural-looking contour improvement',
 ]
 
+const faqItems = [
+  {
+    q: 'What is non-invasive weight loss?',
+    a: 'Non-invasive weight loss refers to medical and aesthetic treatments that target fat, metabolism, and body composition without surgery or significant downtime. At Advanced Med, this includes cryolipolysis (fat freezing), lymphatic drainage, infrared therapy, hormonal balancing, and gut health optimization — all working together to help your body shed excess weight from the inside out.',
+  },
+  {
+    q: 'How does fat freezing (cryolipolysis) work?',
+    a: 'Cryolipolysis uses a specialized applicator to deliver precisely controlled cooling to targeted fat deposits. Fat cells are uniquely vulnerable to cold — they crystallize and undergo natural cell death (apoptosis) while surrounding skin, nerves, and muscle remain completely unaffected. Your body then gradually flushes out the destroyed fat cells over 1–3 months through the lymphatic system.',
+  },
+  {
+    q: 'How many sessions will I need?',
+    a: 'The number of sessions depends on your starting point, goals, and which treatments are included in your protocol. Many clients see meaningful results from a single cryolipolysis session per area, though 2–3 sessions are common for optimal outcomes. Metabolic and hormonal support treatments are typically scheduled as a series. Your clinician will create a personalized timeline at your consultation.',
+  },
+  {
+    q: 'Is there any downtime after non-invasive weight loss treatments?',
+    a: 'Most non-invasive treatments require little to no downtime. After cryolipolysis, you may experience temporary redness, tenderness, or mild swelling in the treated area for a few days. Lymphatic drainage and infrared therapy have no recovery period at all. You can typically return to normal activities immediately following your appointments.',
+  },
+  {
+    q: 'How does cortisol affect weight loss?',
+    a: 'Chronically elevated cortisol — the primary stress hormone — signals your body to store fat preferentially in the abdominal region, promotes insulin resistance, suppresses thyroid output, and triggers cravings for high-calorie foods. This is why stress alone can derail even the most disciplined diet and exercise program. Our hormone balancing protocols address cortisol directly to shift your body from fat-storage to fat-burning mode.',
+  },
+  {
+    q: 'Can I combine multiple treatments for better results?',
+    a: 'Yes — and combination therapy is often where the most dramatic results occur. Cryolipolysis works exceptionally well alongside lymphatic drainage (which accelerates removal of destroyed fat cells), metabolic support, and hormone optimization. Our clinical team is skilled at designing multi-modal protocols that are safe, synergistic, and tailored to your unique biology and schedule.',
+  },
+]
+
 export default function NonInvasiveWeightLoss() {
   return (
     <div className="bg-white">
-      {/* Hero */}
-      <section className="relative bg-espresso text-cream-200 py-32 overflow-hidden">
-        <div className="relative max-w-4xl mx-auto px-6 text-center">
-          <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-4">Weight Health &amp; Body Wellness</p>
-          <h1 className="font-serif text-5xl md:text-6xl font-bold leading-tight mb-6">
-            Non-Invasive Weight Loss
-          </h1>
-          <p className="text-cream-300 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-10">
-            Science-backed, surgery-free solutions targeting the root causes of stubborn weight — detox, hormones, and precision fat reduction through cryolipolysis.
-          </p>
-          <Link
-            to="/book"
-            className="inline-flex items-center gap-2 bg-cream-100 hover:bg-white text-espresso text-[10px] tracking-widest uppercase font-medium px-8 py-4 transition-all duration-300"
-          >
-            Book Your Consultation <ArrowRight className="w-4 h-4" />
-          </Link>
-        </div>
-      </section>
+      <HeroPhoto
+        eyebrow="Weight & Metabolic Health"
+        title={<>Non-Invasive<br />Weight Loss</>}
+        subtitle="Science-backed, surgery-free solutions targeting the root causes of stubborn weight — detox, hormones, and precision fat reduction through cryolipolysis."
+        gradient="from-espresso-800 via-espresso-700 to-spa-700"
+      />
 
       {/* Detox & Metabolic Reset */}
       <section className="py-24 px-6 bg-white">
@@ -189,6 +207,17 @@ export default function NonInvasiveWeightLoss() {
           </div>
         </div>
       </section>
+
+      <BeforeAfter
+        heading="Real Client Results"
+        items={[
+          { label: 'Weight Loss — 12 Weeks', result: '18 lbs lost. Significant reduction in abdominal circumference and improved energy levels.', beforeAlt: 'Before weight loss treatment', afterAlt: 'After weight loss treatment' },
+          { label: 'Fat Freezing — 8 Weeks', result: 'Visible reduction in flanks and lower abdomen following 2 cryolipolysis sessions.', beforeAlt: 'Before fat freezing', afterAlt: 'After fat freezing' },
+          { label: 'Metabolic Detox — 10 Weeks', result: 'Combination infrared therapy and lymphatic drainage — reduced bloating, improved digestion, and 11 lbs lost.', beforeAlt: 'Before metabolic detox program', afterAlt: 'After metabolic detox program' },
+        ]}
+      />
+
+      <FAQ items={faqItems} />
 
       {/* CTA */}
       <section className="py-24 px-6 bg-cream-200 text-center">
