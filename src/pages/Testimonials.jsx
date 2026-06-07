@@ -31,7 +31,7 @@ function Stars({ count }) {
   return (
     <div className="flex">
       {[...Array(5)].map((_, i) => (
-        <Star key={i} size={14} className={i < count ? 'text-gold-400 fill-gold-400' : 'text-gray-200 fill-gray-200'} />
+        <Star key={i} size={14} className={i < count ? 'text-spa fill-spa' : 'text-cream-300 fill-cream-300'} />
       ))}
     </div>
   )
@@ -43,16 +43,16 @@ export default function Testimonials() {
 
   return (
     <>
-      <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20 px-4">
+      <section className="bg-espresso text-cream-200 py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-gold-400 text-xs font-bold tracking-[0.3em] uppercase mb-4">Client Love</p>
+          <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-4">Client Love</p>
           <h1 className="font-serif text-5xl md:text-6xl font-bold mb-5">What Our Clients Say</h1>
           <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="flex">{[...Array(5)].map((_, i) => <Star key={i} size={22} className="text-gold-400 fill-gold-400" />)}</div>
+            <div className="flex">{[...Array(5)].map((_, i) => <Star key={i} size={22} className="text-spa fill-spa" />)}</div>
             <span className="text-2xl font-bold">4.9</span>
-            <span className="text-gray-400 text-sm">· 500+ Reviews</span>
+            <span className="text-cream-400 text-sm">· 500+ Reviews</span>
           </div>
-          <p className="text-gray-300 text-base">Real clients. Real results. Real transformations.</p>
+          <p className="text-cream-300 text-base">Real clients. Real results. Real transformations.</p>
         </div>
       </section>
 
@@ -62,7 +62,7 @@ export default function Testimonials() {
           <div className="flex flex-wrap gap-2 justify-center mb-12">
             {categories.map((cat) => (
               <button key={cat} onClick={() => setActive(cat)}
-                className={`px-5 py-2 rounded-full text-sm font-semibold transition-colors border ${active === cat ? 'bg-gold-500 text-white border-gold-500' : 'border-gray-200 text-gray-600 hover:border-gold-400 hover:text-gold-600'}`}>
+                className={`px-5 py-2 text-sm font-medium transition-colors border ${active === cat ? 'bg-espresso text-cream-100 border-espresso' : 'border-cream-300 bg-white text-espresso-500 hover:border-spa hover:text-espresso'}`}>
                 {cat}
               </button>
             ))}
@@ -71,57 +71,56 @@ export default function Testimonials() {
           {/* Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {filtered.map((t) => (
-              <div key={t.name + t.treatment} className="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex flex-col">
+              <div key={t.name + t.treatment} className="bg-white p-7 border border-cream-300 shadow-sm hover:shadow-md transition-shadow flex flex-col hover:border-spa">
                 <Stars count={t.rating} />
-                <p className="text-gray-600 text-sm leading-relaxed my-4 italic flex-1">"{t.text}"</p>
-                <div className="border-t border-gray-100 pt-4">
-                  <p className="font-semibold text-gray-900 text-sm">{t.name}</p>
-                  <p className="text-gold-500 text-xs font-medium mt-0.5">{t.treatment}</p>
-                  <p className="text-gray-400 text-xs mt-0.5">{t.date}</p>
+                <p className="text-espresso-500 text-sm leading-relaxed my-4 italic flex-1">"{t.text}"</p>
+                <div className="border-t border-cream-300 pt-4">
+                  <p className="font-semibold text-espresso text-sm">{t.name}</p>
+                  <p className="text-spa text-xs font-medium mt-0.5">{t.treatment}</p>
+                  <p className="text-espresso-400 text-xs mt-0.5">{t.date}</p>
                 </div>
               </div>
             ))}
           </div>
 
           {/* Featured Story */}
-          <div className="bg-gradient-to-br from-rose-50 to-amber-50 rounded-3xl p-10 md:p-14 border border-gold-100">
-            <p className="text-gold-500 text-xs font-bold tracking-[0.3em] uppercase mb-4">Featured Story</p>
+          <div className="bg-cream-200 p-10 md:p-14 border border-cream-300">
+            <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-4">Featured Story</p>
             <Stars count={featured.rating} />
-            <blockquote className="font-serif text-xl md:text-2xl text-gray-800 leading-relaxed mt-6 mb-8 italic">
+            <blockquote className="font-serif text-xl md:text-2xl text-espresso leading-relaxed mt-6 mb-8 italic">
               "{featured.text}"
             </blockquote>
             <div>
-              <p className="font-bold text-gray-900">{featured.name}</p>
-              <p className="text-gold-500 text-sm font-medium">{featured.treatment}</p>
-              <p className="text-gray-400 text-sm">{featured.date}</p>
+              <p className="font-bold text-espresso">{featured.name}</p>
+              <p className="text-spa text-sm font-medium">{featured.treatment}</p>
+              <p className="text-espresso-400 text-sm">{featured.date}</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Social proof */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-cream-100">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="text-gold-500 text-xs font-bold tracking-[0.3em] uppercase mb-3">@AdvancedMedMiami</p>
-          <h2 className="font-serif text-3xl font-bold text-gray-900 mb-8">See More on Instagram</h2>
+          <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-3">@AdvancedMedMiami</p>
+          <h2 className="font-serif text-3xl font-bold text-espresso mb-8">See More on Instagram</h2>
           <div className="grid grid-cols-3 md:grid-cols-6 gap-3 mb-8">
-            {['from-rose-200 to-pink-300', 'from-amber-200 to-yellow-300', 'from-purple-200 to-indigo-300', 'from-emerald-200 to-teal-300', 'from-blue-200 to-sky-300', 'from-orange-200 to-red-300'].map((grad, i) => (
-              <div key={i} className={`bg-gradient-to-br ${grad} rounded-2xl aspect-square flex items-center justify-center text-2xl cursor-pointer hover:scale-105 transition-transform`}>✨</div>
+            {['bg-spa-100', 'bg-cream-300', 'bg-spa-200', 'bg-cream-200', 'bg-spa-100', 'bg-cream-300'].map((bg, i) => (
+              <div key={i} className={`${bg} aspect-square flex items-center justify-center cursor-pointer hover:scale-105 transition-transform border border-cream-300`} />
             ))}
           </div>
-          <a href="#" className="inline-flex items-center gap-2 border-2 border-gray-300 hover:border-gold-400 text-gray-700 hover:text-gold-600 font-semibold px-6 py-2.5 rounded-full transition-colors text-sm">
+          <a href="#" className="inline-flex items-center gap-2 border border-cream-300 hover:border-spa text-espresso-500 hover:text-espresso font-medium px-6 py-2.5 transition-colors text-sm text-[10px] tracking-widest uppercase">
             Follow Us on Instagram <ArrowRight size={15} />
           </a>
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-gradient-to-r from-gray-900 to-gray-800 text-white text-center">
+      <section className="py-20 px-4 bg-espresso text-cream-200 text-center">
         <div className="max-w-3xl mx-auto">
-          <div className="text-5xl mb-5">⭐</div>
           <h2 className="font-serif text-4xl font-bold mb-4">Ready to Write Your Own Story?</h2>
-          <p className="text-gray-300 mb-8">Join thousands of clients who have transformed their health and confidence at Advanced Med MedSpa Lounge.</p>
-          <Link to="/book" className="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-600 text-white font-semibold px-10 py-4 rounded-full transition-colors shadow-lg">
-            Book Your First Appointment <ArrowRight size={18} />
+          <p className="text-cream-300 mb-8">Join thousands of clients who have transformed their health and confidence at Advanced Med MedSpa Lounge.</p>
+          <Link to="/book" className="inline-flex items-center gap-2 bg-cream-100 hover:bg-white text-espresso text-[10px] tracking-widest uppercase font-medium px-10 py-4 transition-colors">
+            Book Your First Appointment <ArrowRight size={16} />
           </Link>
         </div>
       </section>

@@ -53,11 +53,11 @@ export default function BookNow() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-rose-50 via-white to-amber-50 py-16 px-4">
+      <section className="bg-cream-200 py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-gold-500 text-xs font-bold tracking-[0.3em] uppercase mb-4">Contact & Reservations</p>
-          <h1 className="font-serif text-5xl md:text-6xl font-bold text-gray-900 mb-4">Contact & Book Now</h1>
-          <p className="text-gray-500 text-lg max-w-xl mx-auto leading-relaxed">
+          <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-4">Contact & Reservations</p>
+          <h1 className="font-serif text-5xl md:text-6xl font-bold text-espresso mb-4">Contact & Book Now</h1>
+          <p className="text-espresso-500 text-lg max-w-xl mx-auto leading-relaxed">
             Ready to start your transformation? Book your appointment online or reach out to our team — we're here for you.
           </p>
         </div>
@@ -69,37 +69,37 @@ export default function BookNow() {
           {/* Contact Info sidebar */}
           <div className="space-y-8">
             <div>
-              <h2 className="font-serif text-2xl font-bold text-gray-900 mb-6">Get in Touch</h2>
+              <h2 className="font-serif text-2xl font-bold text-espresso mb-6">Get in Touch</h2>
               <div className="space-y-5">
                 {[
-                  { icon: <MapPin size={20} className="text-gold-600" />, label: 'Location', content: '123 Luxury Blvd, Suite 200\nMiami, FL 33101' },
-                  { icon: <Phone size={20} className="text-gold-600" />, label: 'Phone', content: '(305) 555-0100', href: 'tel:+13055550100' },
-                  { icon: <Mail size={20} className="text-gold-600" />, label: 'Email', content: 'hello@advancedmed.com', href: 'mailto:hello@advancedmed.com' },
+                  { icon: <MapPin size={20} className="text-spa" />, label: 'Location', content: '123 Luxury Blvd, Suite 200\nMiami, FL 33101' },
+                  { icon: <Phone size={20} className="text-spa" />, label: 'Phone', content: '(305) 555-0100', href: 'tel:+13055550100' },
+                  { icon: <Mail size={20} className="text-spa" />, label: 'Email', content: 'hello@advancedmed.com', href: 'mailto:hello@advancedmed.com' },
                 ].map((item) => (
                   <div key={item.label} className="flex items-start gap-4">
-                    <div className="p-3 bg-gold-50 rounded-xl flex-shrink-0">{item.icon}</div>
+                    <div className="p-3 bg-cream-100 flex-shrink-0">{item.icon}</div>
                     <div>
-                      <p className="font-semibold text-gray-900 text-sm mb-1">{item.label}</p>
+                      <p className="font-semibold text-espresso text-sm mb-1">{item.label}</p>
                       {item.href ? (
-                        <a href={item.href} className="text-gray-500 text-sm hover:text-gold-600 transition-colors">{item.content}</a>
+                        <a href={item.href} className="text-espresso-500 text-sm hover:text-spa transition-colors">{item.content}</a>
                       ) : (
-                        <p className="text-gray-500 text-sm whitespace-pre-line">{item.content}</p>
+                        <p className="text-espresso-500 text-sm whitespace-pre-line">{item.content}</p>
                       )}
                     </div>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="bg-gradient-to-br from-rose-50 to-amber-50 rounded-2xl p-6 border border-gold-100">
-              <h4 className="font-semibold text-gray-900 text-sm mb-3">Hours</h4>
-              <div className="text-gray-600 text-sm space-y-1.5">
+            <div className="bg-cream-100 p-6 border border-cream-300">
+              <h4 className="font-semibold text-espresso text-sm mb-3">Hours</h4>
+              <div className="text-espresso-500 text-sm space-y-1.5">
                 <div className="flex justify-between"><span>Mon – Fri</span><span className="font-medium">9:00 AM – 7:00 PM</span></div>
                 <div className="flex justify-between"><span>Saturday</span><span className="font-medium">9:00 AM – 5:00 PM</span></div>
                 <div className="flex justify-between"><span>Sunday</span><span className="font-medium">By Appointment</span></div>
               </div>
             </div>
-            <div className="rounded-2xl overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 h-48 flex items-center justify-center border border-gray-200">
-              <div className="text-center text-gray-400">
+            <div className="overflow-hidden bg-cream-200 h-48 flex items-center justify-center border border-cream-300">
+              <div className="text-center text-espresso-400">
                 <MapPin size={30} className="mx-auto mb-2" />
                 <p className="text-sm">123 Luxury Blvd, Miami FL</p>
               </div>
@@ -108,22 +108,22 @@ export default function BookNow() {
 
           {/* Booking Form */}
           <div className="lg:col-span-2">
-            <div className="bg-gradient-to-br from-rose-50 to-amber-50 rounded-3xl p-8 md:p-10 border border-gold-100">
+            <div className="bg-cream-100 p-8 md:p-10 border border-cream-300">
               {submitted ? (
                 <div className="text-center py-12">
-                  <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <CheckCircle size={40} className="text-green-500" />
+                  <div className="w-20 h-20 bg-spa-100 flex items-center justify-center mx-auto mb-6">
+                    <CheckCircle size={40} className="text-spa" />
                   </div>
-                  <h2 className="font-serif text-3xl font-bold text-gray-900 mb-3">You're All Set!</h2>
-                  <p className="text-gray-500 mb-2">Thank you, <strong>{form.name}</strong>! Your appointment request has been received.</p>
-                  <p className="text-gray-500 text-sm mb-8">
+                  <h2 className="font-serif text-3xl font-bold text-espresso mb-3">You're All Set!</h2>
+                  <p className="text-espresso-500 mb-2">Thank you, <strong>{form.name}</strong>! Your appointment request has been received.</p>
+                  <p className="text-espresso-500 text-sm mb-8">
                     We'll confirm your <strong>{form.service}</strong> on <strong>{form.date}</strong> at <strong>{form.time}</strong> via email at <strong>{form.email}</strong>.
                   </p>
-                  <div className="bg-white rounded-2xl p-8 border border-gold-100 max-w-sm mx-auto">
-                    <Sparkles size={24} className="text-gold-500 mx-auto mb-3" />
-                    <p className="text-gray-700 text-sm leading-relaxed">
+                  <div className="bg-white p-8 border border-cream-300 max-w-sm mx-auto">
+                    <Sparkles size={24} className="text-spa mx-auto mb-3" />
+                    <p className="text-espresso-500 text-sm leading-relaxed">
                       A confirmation is on its way. Questions? Call us at{' '}
-                      <a href="tel:+13055550100" className="text-gold-600 font-semibold">(305) 555-0100</a>
+                      <a href="tel:+13055550100" className="text-spa font-semibold">(305) 555-0100</a>
                     </p>
                   </div>
                 </div>
@@ -134,15 +134,15 @@ export default function BookNow() {
                     {steps.map((label, i) => (
                       <div key={label} className="flex items-center flex-1">
                         <div className="flex flex-col items-center">
-                          <div className={`w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold transition-colors ${
-                            i < step ? 'bg-gold-500 text-white' : i === step ? 'bg-gold-500 text-white ring-4 ring-gold-100' : 'bg-gray-100 text-gray-400'
+                          <div className={`w-9 h-9 flex items-center justify-center text-sm font-bold transition-colors ${
+                            i < step ? 'bg-espresso text-cream-100' : i === step ? 'bg-espresso text-cream-100 ring-4 ring-cream-300' : 'bg-cream-200 text-espresso-400'
                           }`}>
                             {i < step ? <CheckCircle size={16} /> : i + 1}
                           </div>
-                          <span className={`text-xs mt-1.5 font-medium ${i <= step ? 'text-gold-600' : 'text-gray-400'}`}>{label}</span>
+                          <span className={`text-xs mt-1.5 font-medium ${i <= step ? 'text-espresso' : 'text-espresso-400'}`}>{label}</span>
                         </div>
                         {i < steps.length - 1 && (
-                          <div className={`flex-1 h-0.5 mx-2 mb-5 ${i < step ? 'bg-gold-400' : 'bg-gray-200'}`} />
+                          <div className={`flex-1 h-0.5 mx-2 mb-5 ${i < step ? 'bg-espresso' : 'bg-cream-300'}`} />
                         )}
                       </div>
                     ))}
@@ -151,7 +151,7 @@ export default function BookNow() {
                   {/* Step 0 */}
                   {step === 0 && (
                     <div>
-                      <h2 className="font-serif text-2xl font-bold text-gray-900 mb-6">Tell Us About Yourself</h2>
+                      <h2 className="font-serif text-2xl font-bold text-espresso mb-6">Tell Us About Yourself</h2>
                       <div className="space-y-5">
                         {[
                           { label: 'Full Name *', name: 'name', type: 'text', placeholder: 'Jane Smith' },
@@ -159,16 +159,16 @@ export default function BookNow() {
                           { label: 'Phone Number *', name: 'phone', type: 'tel', placeholder: '(305) 000-0000' },
                         ].map((f) => (
                           <div key={f.name}>
-                            <label className="block text-xs font-semibold text-gray-700 mb-2 uppercase tracking-wide">{f.label}</label>
+                            <label className="block text-[10px] font-medium text-espresso-600 mb-2 uppercase tracking-widest">{f.label}</label>
                             <input type={f.type} name={f.name} required value={form[f.name]} onChange={handleChange} placeholder={f.placeholder}
-                              className="w-full px-4 py-3.5 rounded-xl border border-gray-200 bg-white text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-transparent" />
+                              className="w-full px-4 py-3.5 border border-cream-300 bg-white text-espresso text-sm focus:outline-none focus:ring-2 focus:ring-spa-300 focus:border-transparent" />
                           </div>
                         ))}
                         <div>
-                          <label className="block text-xs font-semibold text-gray-700 mb-2 uppercase tracking-wide">Additional Notes</label>
+                          <label className="block text-[10px] font-medium text-espresso-600 mb-2 uppercase tracking-widest">Additional Notes</label>
                           <textarea name="notes" rows={3} value={form.notes} onChange={handleChange}
                             placeholder="Any health conditions, allergies, or questions..."
-                            className="w-full px-4 py-3.5 rounded-xl border border-gray-200 bg-white text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-transparent resize-none" />
+                            className="w-full px-4 py-3.5 border border-cream-300 bg-white text-espresso text-sm focus:outline-none focus:ring-2 focus:ring-spa-300 focus:border-transparent resize-none" />
                         </div>
                       </div>
                     </div>
@@ -177,14 +177,14 @@ export default function BookNow() {
                   {/* Step 1 */}
                   {step === 1 && (
                     <div>
-                      <h2 className="font-serif text-2xl font-bold text-gray-900 mb-6">Which Service Interests You?</h2>
+                      <h2 className="font-serif text-2xl font-bold text-espresso mb-6">Which Service Interests You?</h2>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                         {services.map((svc) => (
                           <button key={svc} type="button" onClick={() => handleSelect('service', svc)}
-                            className={`text-left px-4 py-3 rounded-xl border-2 text-sm font-medium transition-all ${
-                              form.service === svc ? 'border-gold-500 bg-gold-50 text-gold-700' : 'border-gray-200 hover:border-gold-300 text-gray-700 hover:bg-white'
+                            className={`text-left px-4 py-3 border-2 text-sm font-medium transition-all ${
+                              form.service === svc ? 'border-espresso bg-espresso text-cream-100' : 'border-cream-300 hover:border-spa text-espresso hover:bg-white'
                             }`}>
-                            {form.service === svc && <CheckCircle size={13} className="inline mr-1.5 text-gold-500" />}
+                            {form.service === svc && <CheckCircle size={13} className="inline mr-1.5 text-cream-100" />}
                             {svc}
                           </button>
                         ))}
@@ -195,23 +195,23 @@ export default function BookNow() {
                   {/* Step 2 */}
                   {step === 2 && (
                     <div>
-                      <h2 className="font-serif text-2xl font-bold text-gray-900 mb-6">When Would You Like to Come In?</h2>
+                      <h2 className="font-serif text-2xl font-bold text-espresso mb-6">When Would You Like to Come In?</h2>
                       <div className="mb-6">
-                        <label className="block text-xs font-semibold text-gray-700 mb-2 uppercase tracking-wide">
+                        <label className="block text-[10px] font-medium text-espresso-600 mb-2 uppercase tracking-widest">
                           <Calendar size={13} className="inline mr-1" />Select a Date *
                         </label>
                         <input type="date" name="date" min={today} value={form.date} onChange={handleChange}
-                          className="w-full px-4 py-3.5 rounded-xl border border-gray-200 bg-white text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-transparent" />
+                          className="w-full px-4 py-3.5 border border-cream-300 bg-white text-espresso text-sm focus:outline-none focus:ring-2 focus:ring-spa-300 focus:border-transparent" />
                       </div>
                       <div>
-                        <label className="block text-xs font-semibold text-gray-700 mb-3 uppercase tracking-wide">
+                        <label className="block text-[10px] font-medium text-espresso-600 mb-3 uppercase tracking-widest">
                           <Clock size={13} className="inline mr-1" />Select a Time *
                         </label>
                         <div className="grid grid-cols-4 gap-2">
                           {timeSlots.map((slot) => (
                             <button key={slot} type="button" onClick={() => handleSelect('time', slot)}
-                              className={`py-2.5 px-1 rounded-lg border text-xs font-medium transition-all ${
-                                form.time === slot ? 'border-gold-500 bg-gold-500 text-white' : 'border-gray-200 hover:border-gold-300 text-gray-700 hover:bg-white'
+                              className={`py-2.5 px-1 border text-xs font-medium transition-all ${
+                                form.time === slot ? 'border-espresso bg-espresso text-cream-100' : 'border-cream-300 hover:border-spa text-espresso hover:bg-white'
                               }`}>
                               {slot}
                             </button>
@@ -224,8 +224,8 @@ export default function BookNow() {
                   {/* Step 3 */}
                   {step === 3 && (
                     <div>
-                      <h2 className="font-serif text-2xl font-bold text-gray-900 mb-6">Confirm Your Appointment</h2>
-                      <div className="bg-white rounded-2xl p-8 border border-gold-100 space-y-4">
+                      <h2 className="font-serif text-2xl font-bold text-espresso mb-6">Confirm Your Appointment</h2>
+                      <div className="bg-white p-8 border border-cream-300 space-y-4">
                         {[
                           { label: 'Name', value: form.name },
                           { label: 'Email', value: form.email },
@@ -235,32 +235,32 @@ export default function BookNow() {
                           { label: 'Time', value: form.time },
                           ...(form.notes ? [{ label: 'Notes', value: form.notes }] : []),
                         ].map((row) => (
-                          <div key={row.label} className="flex justify-between items-start border-b border-gray-100 pb-3 last:border-0 last:pb-0">
-                            <span className="text-xs font-bold text-gray-400 uppercase tracking-wide">{row.label}</span>
-                            <span className="text-sm font-medium text-gray-900 text-right max-w-[60%]">{row.value}</span>
+                          <div key={row.label} className="flex justify-between items-start border-b border-cream-300 pb-3 last:border-0 last:pb-0">
+                            <span className="text-[10px] font-bold text-espresso-400 uppercase tracking-widest">{row.label}</span>
+                            <span className="text-sm font-medium text-espresso text-right max-w-[60%]">{row.value}</span>
                           </div>
                         ))}
                       </div>
-                      <p className="text-gray-400 text-xs mt-4 text-center">Cancellations must be made 24 hours in advance.</p>
+                      <p className="text-espresso-400 text-xs mt-4 text-center">Cancellations must be made 24 hours in advance.</p>
                     </div>
                   )}
 
                   {/* Navigation */}
                   <div className="flex justify-between mt-8">
                     {step > 0 ? (
-                      <button onClick={back} className="px-6 py-3 rounded-full border-2 border-gray-300 text-gray-700 hover:border-gray-400 font-semibold text-sm transition-colors">
+                      <button onClick={back} className="px-6 py-3 border border-cream-300 text-espresso hover:border-espresso font-medium text-sm transition-colors">
                         Back
                       </button>
                     ) : <div />}
                     {step < 3 ? (
                       <button onClick={next} disabled={!canProceed()}
-                        className="px-8 py-3 rounded-full bg-gold-500 hover:bg-gold-600 disabled:bg-gray-200 disabled:text-gray-400 text-white font-semibold text-sm transition-colors">
+                        className="px-8 py-3 bg-espresso hover:bg-espresso-600 disabled:bg-cream-300 disabled:text-espresso-400 text-cream-100 text-[10px] tracking-widest uppercase font-medium transition-colors">
                         Continue
                       </button>
                     ) : (
                       <button onClick={() => setSubmitted(true)}
-                        className="px-8 py-3 rounded-full bg-gold-500 hover:bg-gold-600 text-white font-semibold text-sm transition-colors shadow-lg">
-                        Confirm Booking ✓
+                        className="px-8 py-3 bg-espresso hover:bg-espresso-600 text-cream-100 text-[10px] tracking-widest uppercase font-medium transition-colors">
+                        Confirm Booking
                       </button>
                     )}
                   </div>
@@ -272,17 +272,16 @@ export default function BookNow() {
       </section>
 
       {!submitted && (
-        <section className="py-10 px-4 bg-gray-50 border-t border-gray-100">
+        <section className="py-10 px-4 bg-cream-100 border-t border-cream-300">
           <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
             {[
-              { emoji: '🔒', title: 'Secure & Private', desc: 'Your information is never shared.' },
-              { emoji: '📱', title: 'Instant Confirmation', desc: "You'll receive a confirmation email right away." },
-              { emoji: '📞', title: "We'll Call to Confirm", desc: 'Our team follows up within 1 business day.' },
+              { title: 'Secure & Private', desc: 'Your information is never shared.' },
+              { title: 'Instant Confirmation', desc: "You'll receive a confirmation email right away." },
+              { title: "We'll Call to Confirm", desc: 'Our team follows up within 1 business day.' },
             ].map((item) => (
               <div key={item.title} className="flex flex-col items-center">
-                <div className="text-3xl mb-2">{item.emoji}</div>
-                <h4 className="font-semibold text-gray-900 text-sm">{item.title}</h4>
-                <p className="text-gray-400 text-xs mt-1">{item.desc}</p>
+                <h4 className="font-semibold text-espresso text-sm">{item.title}</h4>
+                <p className="text-espresso-400 text-xs mt-1">{item.desc}</p>
               </div>
             ))}
           </div>
