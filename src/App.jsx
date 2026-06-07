@@ -7,6 +7,7 @@ import About from './pages/About'
 import BookNow from './pages/BookNow'
 import Testimonials from './pages/Testimonials'
 import Memberships from './pages/Memberships'
+import Products from './pages/Products'
 
 // Weight & Metabolic Health
 import NonInvasiveWeightLoss from './pages/weight-health/NonInvasiveWeightLoss'
@@ -22,6 +23,7 @@ import Acne from './pages/skin-concerns/Acne'
 import Aging from './pages/skin-concerns/Aging'
 import Hyperpigmentation from './pages/skin-concerns/Hyperpigmentation'
 import StretchMarksScars from './pages/skin-concerns/StretchMarksScars'
+import MaintainResults from './pages/skin-concerns/MaintainResults'
 
 function App() {
   return (
@@ -51,6 +53,8 @@ function App() {
             <Route path="/skin-concerns/aging" element={<Aging />} />
             <Route path="/skin-concerns/hyperpigmentation" element={<Hyperpigmentation />} />
             <Route path="/skin-concerns/stretch-marks-scars" element={<StretchMarksScars />} />
+            <Route path="/skin-concerns/maintain-results" element={<MaintainResults />} />
+            <Route path="/products" element={<Products />} />
 
             {/* Legacy redirects */}
             <Route path="/services" element={<NonInvasiveWeightLoss />} />

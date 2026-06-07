@@ -18,6 +18,7 @@ const skinLinks = [
   { label: 'Aging & Wrinkles',               path: '/skin-concerns/aging' },
   { label: 'Hyperpigmentation & Dark Spots', path: '/skin-concerns/hyperpigmentation' },
   { label: 'Stretch Marks & Scars',          path: '/skin-concerns/stretch-marks-scars' },
+  { label: 'How to Maintain Results',        path: '/skin-concerns/maintain-results' },
 ]
 
 function Dropdown({ links, isOpen }) {

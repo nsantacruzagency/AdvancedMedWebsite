@@ -68,6 +68,7 @@ export default function Footer() {
                 ['About Us',     '/about'],
                 ['Testimonials', '/testimonials'],
                 ['Memberships',  '/memberships'],
+                ['Shop Products', '/products'],
                 ['Book Now',     '/book'],
               ].map(([label, path]) => (
                 <li key={path}>

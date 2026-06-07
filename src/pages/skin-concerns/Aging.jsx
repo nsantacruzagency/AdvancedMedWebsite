@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, CheckCircle, Sun, Layers, Droplets, Heart } from 'lucide-react'
 import SectionHeader from '../../components/SectionHeader'
+import HeroPhoto from '../../components/HeroPhoto'
+import FAQ from '../../components/FAQ'
+import BeforeAfter from '../../components/BeforeAfter'
 
 const agingFactors = [
   {
