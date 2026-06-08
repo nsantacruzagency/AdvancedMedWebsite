@@ -14,16 +14,6 @@ export default function Footer() {
             <p className="mt-6 text-[13px] text-cream-400 leading-relaxed max-w-xs font-light">
               Where medical science meets luxury care. Advanced treatments designed to restore confidence, vitality, and radiance.
             </p>
-            <div className="flex gap-3 mt-7">
-              <a href="https://www.instagram.com/advancedmedspaofficial/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"
-                className="w-8 h-8 border border-espresso-500 flex items-center justify-center hover:border-spa hover:text-spa transition-colors">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                  <rect x="2" y="2" width="20" height="20" rx="5"/>
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-                </svg>
-              </a>
-            </div>
           </div>
 
           {/* Services */}
@@ -96,6 +86,16 @@ export default function Footer() {
                 <Mail size={13} className="text-spa flex-shrink-0" />
                 <a href="mailto:hello@advancedmedspaofficial.com" className="text-[12px] text-cream-400 hover:text-spa transition-colors font-light">
                   hello@advancedmedspaofficial.com
+                </a>
+              </li>
+              <li className="flex items-center gap-3">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-spa flex-shrink-0">
+                  <rect x="2" y="2" width="20" height="20" rx="5"/>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+                <a href="https://www.instagram.com/advancedmedspaofficial/" target="_blank" rel="noopener noreferrer" className="text-[12px] text-cream-400 hover:text-spa transition-colors font-light">
+                  @advancedmedspaofficial
                 </a>
               </li>
             </ul>
