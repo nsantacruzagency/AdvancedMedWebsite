@@ -192,18 +192,14 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Right — image placeholder with layered design */}
+          {/* Right — hero image */}
           <div className="relative hidden lg:block">
             <div className="aspect-[3/4] bg-espresso-100 relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-cream-300 via-cream-400 to-spa-100 opacity-60" />
-              {/* Decorative frame */}
-              <div className="absolute inset-6 border border-cream-400 opacity-60" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <p className="font-serif text-2xl font-light text-espresso-400 italic">Your Photo Here</p>
-                  <p className="text-[10px] tracking-widest uppercase text-espresso-400 mt-2">Hero Image</p>
-                </div>
-              </div>
+              <img
+                src="/images/homepage-hero.jpeg"
+                alt="Advanced Med MedSpa Lounge"
+                className="w-full h-full object-cover object-center"
+              />
             </div>
             {/* Floating accent card */}
             <div className="absolute -bottom-6 -left-8 bg-white px-7 py-5 border border-cream-300 shadow-sm">
