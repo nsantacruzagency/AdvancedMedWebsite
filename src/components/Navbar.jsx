@@ -77,6 +77,18 @@ export default function Navbar() {
 
           {/* Desktop nav */}
           <div className="hidden lg:flex items-center gap-7">
+            {/* Personalized Evaluation */}
+            <Link
+              to="/personalized-evaluation"
+              className={`text-[11px] font-medium tracking-widest uppercase transition-colors ${
+                location.pathname === '/personalized-evaluation'
+                  ? 'text-spa'
+                  : 'text-espresso-600 hover:text-espresso'
+              }`}
+            >
+              Personalized Evaluation
+            </Link>
+
             {/* Weight & Metabolic Health */}
             <div
               className="relative"
@@ -134,18 +146,6 @@ export default function Navbar() {
               <Dropdown links={aboutLinks} isOpen={openDropdown === 'about'} />
             </div>
 
-            {/* Personalized Evaluation */}
-            <Link
-              to="/personalized-evaluation"
-              className={`text-[11px] font-medium tracking-widest uppercase transition-colors ${
-                location.pathname === '/personalized-evaluation'
-                  ? 'text-spa'
-                  : 'text-espresso-600 hover:text-espresso'
-              }`}
-            >
-              Personalized Evaluation
-            </Link>
-
             <Link
               to="/book"
               className="ml-2 inline-block bg-espresso text-cream-100 text-[10px] font-medium tracking-widest uppercase px-6 py-3 hover:bg-espresso-600 transition-colors"
@@ -169,6 +169,14 @@ export default function Navbar() {
       {mobileOpen && (
         <div className="lg:hidden bg-white border-t border-cream-300 px-5 pb-8 pt-4 max-h-[80vh] overflow-y-auto">
           <div className="space-y-1">
+            <Link
+              to="/personalized-evaluation"
+              className="block py-2 text-xs tracking-widest uppercase font-medium text-espresso-600 hover:text-espresso pb-3 border-b border-cream-300 mb-2"
+              onClick={() => setMobileOpen(false)}
+            >
+              Personalized Evaluation
+            </Link>
+
             <p className="text-[9px] font-medium tracking-widest uppercase text-spa pt-3 pb-1">
               Weight &amp; Metabolic Health
             </p>
@@ -200,13 +208,6 @@ export default function Navbar() {
                   {l.label}
                 </Link>
               ))}
-              <Link
-                to="/personalized-evaluation"
-                className="block py-2 text-xs tracking-widest uppercase font-medium text-espresso-600 hover:text-espresso border-t border-cream-300 mt-2 pt-4"
-                onClick={() => setMobileOpen(false)}
-              >
-                Personalized Evaluation
-              </Link>
             </div>
 
             <Link
