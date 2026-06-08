@@ -14,6 +14,7 @@ import PersonalizedEvaluation from './pages/PersonalizedEvaluation'
 import NonInvasiveWeightLoss from './pages/weight-health/NonInvasiveWeightLoss'
 import BodyContouring from './pages/weight-health/BodyContouring'
 import Massages from './pages/weight-health/Massages'
+import BrazilianButt from './pages/weight-health/BrazilianButt'
 import PeptidesGLPs from './pages/weight-health/PeptidesGLPs'
 import IVsShots from './pages/weight-health/IVsShots'
 import HairRestoration from './pages/weight-health/HairRestoration'
@@ -45,6 +46,7 @@ function App() {
             <Route path="/weight-health/non-invasive-weight-loss" element={<NonInvasiveWeightLoss />} />
             <Route path="/weight-health/body-contouring" element={<BodyContouring />} />
             <Route path="/weight-health/massages" element={<Massages />} />
+            <Route path="/weight-health/brazilian-butt" element={<BrazilianButt />} />
             <Route path="/weight-health/peptides-glps" element={<PeptidesGLPs />} />
             <Route path="/weight-health/ivs-shots" element={<IVsShots />} />
             <Route path="/weight-health/hair-restoration" element={<HairRestoration />} />

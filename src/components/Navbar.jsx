@@ -13,6 +13,7 @@ const weightHealthLinks = [
   { label: 'Non-Invasive Weight Loss',   path: '/weight-health/non-invasive-weight-loss' },
   { label: 'Body Contouring',             path: '/weight-health/body-contouring' },
   { label: 'Massages',                    path: '/weight-health/massages' },
+  { label: 'Brazilian Butt',              path: '/weight-health/brazilian-butt' },
   { label: 'Peptides + GLPs',             path: '/weight-health/peptides-glps' },
   { label: 'IVs + Intramuscular Shots',   path: '/weight-health/ivs-shots' },
   { label: 'Hair Restoration',            path: '/weight-health/hair-restoration' },
