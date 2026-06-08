@@ -73,6 +73,15 @@ export default function NonInvasiveWeightLoss() {
         gradient="from-espresso-800 via-espresso-700 to-spa-700"
       />
 
+      <BeforeAfter
+        heading="Real Client Results"
+        items={[
+          { label: 'Weight Loss — 12 Weeks', result: '18 lbs lost. Significant reduction in abdominal circumference and improved energy levels.', beforeAlt: 'Before weight loss treatment', afterAlt: 'After weight loss treatment' },
+          { label: 'Fat Freezing — 8 Weeks', result: 'Visible reduction in flanks and lower abdomen following 2 cryolipolysis sessions.', beforeAlt: 'Before fat freezing', afterAlt: 'After fat freezing' },
+          { label: 'Metabolic Detox — 10 Weeks', result: 'Combination infrared therapy and lymphatic drainage — reduced bloating, improved digestion, and 11 lbs lost.', beforeAlt: 'Before metabolic detox program', afterAlt: 'After metabolic detox program' },
+        ]}
+      />
+
       {/* Detox & Metabolic Reset */}
       <section className="py-24 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
@@ -207,15 +216,6 @@ export default function NonInvasiveWeightLoss() {
           </div>
         </div>
       </section>
-
-      <BeforeAfter
-        heading="Real Client Results"
-        items={[
-          { label: 'Weight Loss — 12 Weeks', result: '18 lbs lost. Significant reduction in abdominal circumference and improved energy levels.', beforeAlt: 'Before weight loss treatment', afterAlt: 'After weight loss treatment' },
-          { label: 'Fat Freezing — 8 Weeks', result: 'Visible reduction in flanks and lower abdomen following 2 cryolipolysis sessions.', beforeAlt: 'Before fat freezing', afterAlt: 'After fat freezing' },
-          { label: 'Metabolic Detox — 10 Weeks', result: 'Combination infrared therapy and lymphatic drainage — reduced bloating, improved digestion, and 11 lbs lost.', beforeAlt: 'Before metabolic detox program', afterAlt: 'After metabolic detox program' },
-        ]}
-      />
 
       <FAQ items={faqItems} />
 

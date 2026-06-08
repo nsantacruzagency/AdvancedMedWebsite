@@ -58,6 +58,15 @@ export default function HairRestoration() {
         gradient="from-espresso-800 via-spa-700 to-espresso-700"
       />
 
+      <BeforeAfter
+        heading="Real Client Results"
+        items={[
+          { label: 'PRP Hair Regrowth — 6 Sessions', result: 'Visible density improvement across the crown and hairline. Significant reduction in shedding beginning after session 2, with new hair growth visible at month 4.', beforeAlt: 'Before PRP hair restoration', afterAlt: 'After PRP hair restoration' },
+          { label: 'Exosome Therapy — 3 Sessions', result: 'Faster-than-expected regrowth in areas of moderate thinning. Noticeable thickening of existing hair shaft diameter and improved overall scalp health.', beforeAlt: 'Before exosome hair therapy', afterAlt: 'After exosome hair therapy' },
+          { label: 'Scalp Health Program — 12 Weeks', result: 'Resolution of seborrheic dermatitis and scalp inflammation. Improved follicle environment led to measurable increase in hair density and reduced breakage.', beforeAlt: 'Before scalp health treatment', afterAlt: 'After scalp health treatment' },
+        ]}
+      />
+
       {/* PRP Section */}
       <section className="py-24 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
@@ -271,15 +280,6 @@ export default function HairRestoration() {
           </div>
         </div>
       </section>
-
-      <BeforeAfter
-        heading="Real Client Results"
-        items={[
-          { label: 'PRP Hair Regrowth — 6 Sessions', result: 'Visible density improvement across the crown and hairline. Significant reduction in shedding beginning after session 2, with new hair growth visible at month 4.', beforeAlt: 'Before PRP hair restoration', afterAlt: 'After PRP hair restoration' },
-          { label: 'Exosome Therapy — 3 Sessions', result: 'Faster-than-expected regrowth in areas of moderate thinning. Noticeable thickening of existing hair shaft diameter and improved overall scalp health.', beforeAlt: 'Before exosome hair therapy', afterAlt: 'After exosome hair therapy' },
-          { label: 'Scalp Health Program — 12 Weeks', result: 'Resolution of seborrheic dermatitis and scalp inflammation. Improved follicle environment led to measurable increase in hair density and reduced breakage.', beforeAlt: 'Before scalp health treatment', afterAlt: 'After scalp health treatment' },
-        ]}
-      />
 
       <FAQ items={faqItems} />
 

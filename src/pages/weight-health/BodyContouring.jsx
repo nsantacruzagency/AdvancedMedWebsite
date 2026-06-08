@@ -97,6 +97,15 @@ export default function BodyContouring() {
         </div>
       </section>
 
+      <BeforeAfter
+        heading="Real Client Results"
+        items={[
+          { label: 'Cellulite Reduction — 8 Sessions', result: 'Significant smoothing of thigh and hip cellulite. Visible improvement in skin texture and firmness after a combined RF and acoustic wave protocol.', beforeAlt: 'Before cellulite treatment', afterAlt: 'After cellulite treatment' },
+          { label: 'Lipedema Management — 12 Weeks', result: 'Reduced heaviness and pain in lower legs. Decreased circumference measurements and improved mobility following lymphatic drainage and RF series.', beforeAlt: 'Before lipedema treatment', afterAlt: 'After lipedema treatment' },
+          { label: 'Muscle Definition — 4 EMS Sessions', result: 'Visible abdominal definition and glute lifting achieved with electromagnetic muscle stimulation. No downtime throughout the series.', beforeAlt: 'Before EMS muscle toning', afterAlt: 'After EMS muscle toning' },
+        ]}
+      />
+
       {/* Lipedema */}
       <section className="py-24 px-6 bg-cream-100">
         <div className="max-w-6xl mx-auto">
@@ -152,6 +161,14 @@ export default function BodyContouring() {
         </div>
       </section>
 
+      <BeforeAfter
+        heading="Lipedema — Client Results"
+        items={[
+          { label: 'Lipedema Stage II — 16 Weeks', result: 'Marked reduction in leg circumference and tenderness following a combined manual lymphatic drainage and RF series. Client reported significant pain relief and improved daily mobility.', beforeAlt: 'Before lipedema stage II treatment', afterAlt: 'After lipedema stage II treatment' },
+          { label: 'Lipedema Post-Protocol — 12 Weeks', result: 'Visible softening of fibrotic tissue and reduction of the characteristic "column leg" appearance. Compression support and anti-inflammatory protocols contributed to sustained improvement.', beforeAlt: 'Before lipedema post-protocol', afterAlt: 'After lipedema post-protocol' },
+        ]}
+      />
+
       {/* Muscle Definition & Toning */}
       <section className="py-24 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
@@ -194,39 +211,6 @@ export default function BodyContouring() {
           </div>
         </div>
       </section>
-
-      {/* Treatment Benefits Grid */}
-      <section className="py-20 px-6 bg-espresso">
-        <div className="max-w-6xl mx-auto">
-          <SectionHeader
-            eyebrow="Our Promise"
-            title="Why Choose Our Body Contouring"
-            subtitle="Expert technology, personalized protocols, and a team that truly cares about your results."
-            light={true}
-          />
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {treatmentBenefits.map((b) => {
-              const Icon = b.icon
-              return (
-                <div key={b.title} className="bg-white/5 p-8 text-center border border-white/10 hover:border-spa/40 transition-all duration-300">
-                  <div className="flex justify-center mb-4"><Icon className="w-8 h-8 text-spa-300" /></div>
-                  <h4 className="font-serif font-bold text-cream-100 text-lg mb-3">{b.title}</h4>
-                  <p className="text-cream-300 text-sm leading-relaxed">{b.desc}</p>
-                </div>
-              )
-            })}
-          </div>
-        </div>
-      </section>
-
-      <BeforeAfter
-        heading="Real Client Results"
-        items={[
-          { label: 'Cellulite Reduction — 8 Sessions', result: 'Significant smoothing of thigh and hip cellulite. Visible improvement in skin texture and firmness after a combined RF and acoustic wave protocol.', beforeAlt: 'Before cellulite treatment', afterAlt: 'After cellulite treatment' },
-          { label: 'Lipedema Management — 12 Weeks', result: 'Reduced heaviness and pain in lower legs. Decreased circumference measurements and improved mobility following lymphatic drainage and RF series.', beforeAlt: 'Before lipedema treatment', afterAlt: 'After lipedema treatment' },
-          { label: 'Muscle Definition — 4 EMS Sessions', result: 'Visible abdominal definition and glute lifting achieved with electromagnetic muscle stimulation. No downtime throughout the series.', beforeAlt: 'Before EMS muscle toning', afterAlt: 'After EMS muscle toning' },
-        ]}
-      />
 
       <FAQ items={faqItems} />
 

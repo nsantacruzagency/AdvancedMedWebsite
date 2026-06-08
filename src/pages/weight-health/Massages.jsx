@@ -97,6 +97,15 @@ export default function Massages() {
         </div>
       </section>
 
+      <BeforeAfter
+        heading="Real Client Results"
+        items={[
+          { label: 'Lymphatic Drainage — 6 Sessions', result: 'Significant reduction in lower leg swelling and heaviness. Improved lymphatic circulation and reduced fluid retention visible within the first 3 sessions.', beforeAlt: 'Before lymphatic drainage treatment', afterAlt: 'After lymphatic drainage treatment' },
+          { label: 'Post-Op Recovery — 8 Sessions', result: 'Accelerated healing following liposuction procedure. Reduced bruising, prevention of fibrosis, and noticeably smoother contour result achieved through targeted post-op massage.', beforeAlt: 'Before post-operative massage', afterAlt: 'After post-operative massage' },
+          { label: 'Prenatal Massage — Third Trimester', result: 'Relief from sciatic nerve pain, significant reduction in ankle and foot swelling, and improved sleep quality reported throughout 6-week prenatal massage series.', beforeAlt: 'Before prenatal massage series', afterAlt: 'After prenatal massage series' },
+        ]}
+      />
+
       {/* Brazilian 3-in-1 Deep Dive */}
       <section className="py-24 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
@@ -224,15 +233,6 @@ export default function Massages() {
           </div>
         </div>
       </section>
-
-      <BeforeAfter
-        heading="Real Client Results"
-        items={[
-          { label: 'Lymphatic Drainage — 6 Sessions', result: 'Significant reduction in lower leg swelling and heaviness. Improved lymphatic circulation and reduced fluid retention visible within the first 3 sessions.', beforeAlt: 'Before lymphatic drainage treatment', afterAlt: 'After lymphatic drainage treatment' },
-          { label: 'Post-Op Recovery — 8 Sessions', result: 'Accelerated healing following liposuction procedure. Reduced bruising, prevention of fibrosis, and noticeably smoother contour result achieved through targeted post-op massage.', beforeAlt: 'Before post-operative massage', afterAlt: 'After post-operative massage' },
-          { label: 'Prenatal Massage — Third Trimester', result: 'Relief from sciatic nerve pain, significant reduction in ankle and foot swelling, and improved sleep quality reported throughout 6-week prenatal massage series.', beforeAlt: 'Before prenatal massage series', afterAlt: 'After prenatal massage series' },
-        ]}
-      />
 
       <FAQ items={faqItems} />
 
