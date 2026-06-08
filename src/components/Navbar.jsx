@@ -4,7 +4,7 @@ import { Menu, X, ChevronDown } from 'lucide-react'
 import Logo from './Logo'
 
 const aboutLinks = [
-  { label: 'The Lounge',   path: '/about' },
+  { label: 'The Lounge + Team',   path: '/about' },
   { label: 'Testimonials', path: '/testimonials' },
   { label: 'Memberships',  path: '/memberships' },
 ]
