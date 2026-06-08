@@ -39,19 +39,19 @@ const cryoBenefits = [
 const faqItems = [
   {
     q: 'What is non-invasive weight loss?',
-    a: 'Non-invasive weight loss refers to medical and aesthetic treatments that target fat, metabolism, and body composition without surgery or significant downtime. At Advanced Med, this includes cryolipolysis (fat freezing), lymphatic drainage, infrared therapy, hormonal balancing, and gut health optimization — all working together to help your body shed excess weight from the inside out.',
+    a: 'Non-invasive weight loss refers to medical and aesthetic treatments that target fat, metabolism, and body composition without surgery or significant downtime. At Advanced Med, this includes Cryo Contour (fat freezing), lymphatic drainage, infrared therapy, hormonal balancing, and gut health optimization — all working together to help your body shed excess weight from the inside out.',
   },
   {
-    q: 'How does fat freezing (cryolipolysis) work?',
-    a: 'Cryolipolysis uses a specialized applicator to deliver precisely controlled cooling to targeted fat deposits. Fat cells are uniquely vulnerable to cold — they crystallize and undergo natural cell death (apoptosis) while surrounding skin, nerves, and muscle remain completely unaffected. Your body then gradually flushes out the destroyed fat cells over 1–3 months through the lymphatic system.',
+    q: 'How does fat freezing (Cryo Contour) work?',
+    a: 'Cryo Contour uses a specialized applicator to deliver precisely controlled cooling to targeted fat deposits. Fat cells are uniquely vulnerable to cold — they crystallize and undergo natural cell death (apoptosis) while surrounding skin, nerves, and muscle remain completely unaffected. Your body then gradually flushes out the destroyed fat cells over 1–3 months through the lymphatic system.',
   },
   {
     q: 'How many sessions will I need?',
-    a: 'The number of sessions depends on your starting point, goals, and which treatments are included in your protocol. Many clients see meaningful results from a single cryolipolysis session per area, though 2–3 sessions are common for optimal outcomes. Metabolic and hormonal support treatments are typically scheduled as a series. Your clinician will create a personalized timeline at your consultation.',
+    a: 'The number of sessions depends on your starting point, goals, and which treatments are included in your protocol. Many clients see meaningful results from a single Cryo Contour session per area, though 2–3 sessions are common for optimal outcomes. Metabolic and hormonal support treatments are typically scheduled as a series. Your clinician will create a personalized timeline at your consultation.',
   },
   {
     q: 'Is there any downtime after non-invasive weight loss treatments?',
-    a: 'Most non-invasive treatments require little to no downtime. After cryolipolysis, you may experience temporary redness, tenderness, or mild swelling in the treated area for a few days. Lymphatic drainage and infrared therapy have no recovery period at all. You can typically return to normal activities immediately following your appointments.',
+    a: 'Most non-invasive treatments require little to no downtime. After Cryo Contour, you may experience temporary redness, tenderness, or mild swelling in the treated area for a few days. Lymphatic drainage and infrared therapy have no recovery period at all. You can typically return to normal activities immediately following your appointments.',
   },
   {
     q: 'How does cortisol affect weight loss?',
@@ -59,7 +59,7 @@ const faqItems = [
   },
   {
     q: 'Can I combine multiple treatments for better results?',
-    a: 'Yes — and combination therapy is often where the most dramatic results occur. Cryolipolysis works exceptionally well alongside lymphatic drainage (which accelerates removal of destroyed fat cells), metabolic support, and hormone optimization. Our clinical team is skilled at designing multi-modal protocols that are safe, synergistic, and tailored to your unique biology and schedule.',
+    a: 'Yes — and combination therapy is often where the most dramatic results occur. Cryo Contour works exceptionally well alongside lymphatic drainage (which accelerates removal of destroyed fat cells), metabolic support, and hormone optimization. Our clinical team is skilled at designing multi-modal protocols that are safe, synergistic, and tailored to your unique biology and schedule.',
   },
 ]
 
@@ -69,7 +69,7 @@ export default function NonInvasiveWeightLoss() {
       <HeroPhoto
         eyebrow="Weight & Metabolic Health"
         title={<>Non-Invasive<br />Weight Loss</>}
-        subtitle="Science-backed, surgery-free solutions targeting the root causes of stubborn weight — detox, hormones, and precision fat reduction through cryolipolysis."
+        subtitle="Science-backed, surgery-free solutions targeting the root causes of stubborn weight — detox, hormones, and precision fat reduction through Cryo Contour."
         gradient="from-espresso-800 via-espresso-700 to-spa-700"
         imageSrc="/images/hero-non-invasive-weight-loss.jpg"
       />
@@ -78,7 +78,7 @@ export default function NonInvasiveWeightLoss() {
         heading="Real Client Results"
         items={[
           { label: 'Weight Loss — 12 Weeks', result: '18 lbs lost. Significant reduction in abdominal circumference and improved energy levels.', beforeAlt: 'Before weight loss treatment', afterAlt: 'After weight loss treatment' },
-          { label: 'Fat Freezing — 8 Weeks', result: 'Visible reduction in flanks and lower abdomen following 2 cryolipolysis sessions.', beforeAlt: 'Before fat freezing', afterAlt: 'After fat freezing' },
+          { label: 'Fat Freezing — 8 Weeks', result: 'Visible reduction in flanks and lower abdomen following 2 Cryo Contour sessions.', beforeAlt: 'Before fat freezing', afterAlt: 'After fat freezing' },
           { label: 'Metabolic Detox — 10 Weeks', result: 'Combination infrared therapy and lymphatic drainage — reduced bloating, improved digestion, and 11 lbs lost.', beforeAlt: 'Before metabolic detox program', afterAlt: 'After metabolic detox program' },
         ]}
       />
@@ -159,12 +159,12 @@ export default function NonInvasiveWeightLoss() {
         </div>
       </section>
 
-      {/* Cryolipolysis */}
+      {/* Cryo Contour */}
       <section className="py-24 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <SectionHeader
             eyebrow="Precision Fat Reduction"
-            title="Fat Freezing / Cryolipolysis"
+            title="Fat Freezing / Cryo Contour"
             subtitle="FDA-cleared technology that permanently destroys stubborn fat cells through controlled cooling — no needles, no surgery, no downtime."
           />
           <div className="grid md:grid-cols-3 gap-8 mb-16">
@@ -181,7 +181,7 @@ export default function NonInvasiveWeightLoss() {
             ))}
           </div>
           <div className="bg-cream-200 p-10 border border-cream-300">
-            <h3 className="font-serif text-2xl font-bold text-espresso mb-6 text-center">Why Clients Choose Cryolipolysis</h3>
+            <h3 className="font-serif text-2xl font-bold text-espresso mb-6 text-center">Why Clients Choose Cryo Contour</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {cryoBenefits.map((b, i) => (
                 <div key={i} className="flex items-start gap-3 bg-white p-4 shadow-sm border border-cream-300">
