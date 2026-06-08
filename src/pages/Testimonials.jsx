@@ -6,11 +6,9 @@ import HeroPhoto from '../components/HeroPhoto'
 const all = [
   { name: 'Maria L.', treatment: 'Korean Facial', category: 'Skin Care', rating: 5, date: 'March 2025', text: 'Absolutely love this place! My Korean facial left my skin glowing for weeks. The staff is so professional and caring — I felt like royalty from start to finish. I am already booked for my next session!' },
   { name: 'Jessica R.', treatment: 'Medical Weight Loss', category: 'Weight Loss', rating: 5, date: 'January 2025', text: 'I lost 28 pounds with their medical weight loss program. Dr. Okonkwo was incredibly supportive and the team kept me motivated every step of the way. This is not just a spa — it is a life-changing experience.' },
-  { name: 'Sofia M.', treatment: 'Botox', category: 'Injectables', rating: 5, date: 'February 2025', text: 'Best Botox I have ever had — so natural looking. Marcus has a true gift for aesthetics. My forehead is smooth but I still look like myself, just refreshed. I will never go anywhere else.' },
   { name: 'Carmen T.', treatment: 'Chemical Peel', category: 'Skin Care', rating: 5, date: 'April 2025', text: 'My skin has never looked better. After just one medium-depth peel, my dark spots faded dramatically and my texture is so smooth. Sofia explained everything and made me feel completely comfortable.' },
   { name: 'Diana W.', treatment: 'Body Contouring', category: 'Weight Loss', rating: 5, date: 'December 2024', text: 'I had been struggling with stubborn fat on my flanks for years. After a series of body contouring treatments, those inches are gone! The team is knowledgeable and the results speak for themselves.' },
   { name: 'Rachel H.', treatment: 'Brazilian Lymphatic Drainage', category: 'Massages', rating: 5, date: 'May 2025', text: 'This massage is incredible. I went in feeling bloated and sluggish, and walked out feeling lighter, energized, and completely relaxed. My therapist was so skilled. I go monthly now — it is non-negotiable self-care.' },
-  { name: 'Ashley B.', treatment: 'Myers Cocktail IV Drip', category: 'Injectables', rating: 5, date: 'March 2025', text: 'I started getting IV drips monthly and the difference in my energy levels is unreal. No more afternoon crashes, my skin looks amazing, and I feel like I am in my 20s again. Worth every penny.' },
   { name: 'Monica G.', treatment: 'PRP Hair Restoration', category: 'Weight Loss', rating: 4, date: 'February 2025', text: 'I was skeptical at first, but after 4 PRP sessions my hair is noticeably thicker and I have seen new growth along my hairline. The team was patient and answered all my questions. Wish I had started sooner!' },
   { name: 'Tiffany L.', treatment: 'Blood Tests & Longevity', category: 'Weight Loss', rating: 5, date: 'January 2025', text: 'Getting a full blood panel here was eye-opening. I found out my vitamin D, iron, and thyroid were all off. With their personalized protocol I have more energy, better sleep, and I finally feel like myself again.' },
   { name: 'Priya S.', treatment: 'Prenatal Massage', category: 'Massages', rating: 5, date: 'April 2025', text: 'As a pregnant mama in my third trimester, this prenatal massage was pure heaven. The therapist was so gentle and knew exactly how to position me for comfort. I cried happy tears — it was that good.' },
@@ -18,7 +16,7 @@ const all = [
   { name: 'Keisha M.', treatment: 'Acne Treatment Facial', category: 'Skin Care', rating: 5, date: 'May 2025', text: 'I have had cystic acne for 10 years and nothing worked. After a customized acne protocol here, my skin is clearer than it has ever been. The team is patient, knowledgeable, and genuinely invested in my results.' },
 ]
 
-const categories = ['All', 'Weight Loss', 'Skin Care', 'Massages', 'Injectables']
+const categories = ['All', 'Weight Loss', 'Skin Care', 'Massages']
 
 const featured = {
   name: 'Jessica R.',

@@ -115,16 +115,10 @@ export default function About() {
                   Replace this block with:
                   <img src="/images/lounge.jpg" alt="Advanced Med MedSpa Lounge" className="w-full h-full object-cover" />
                 */}
-                <div className="absolute inset-0 bg-gradient-to-br from-cream-300 via-cream-200 to-cream-400" />
-                {/* Warm amber glow — mimics candlelight in image */}
-                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(180,140,100,0.25),transparent_65%)]" />
-                <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
-                  <p className="font-serif text-2xl font-light text-espresso-400 italic">The Lounge</p>
-                  <p className="text-[10px] tracking-widest uppercase text-espresso-300 font-light">1080 × 1350 — Photo Placeholder</p>
+                <div className="absolute inset-0 bg-cream-200" />
+                <div className="absolute inset-0 flex flex-col items-center justify-center gap-2">
+                  <p className="font-serif text-2xl font-light text-espresso-400 italic">Coming Soon</p>
                 </div>
-                {/* Decorative corner detail */}
-                <div className="absolute top-6 right-6 w-20 h-20 border border-cream-400 opacity-50" />
-                <div className="absolute bottom-6 left-6 w-20 h-20 border border-cream-400 opacity-50" />
               </div>
             </div>
 
@@ -166,17 +160,10 @@ export default function About() {
 
           {/* Second lounge photo — wide panoramic placeholder */}
           <div
-            className="w-full bg-cream-200 relative overflow-hidden"
+            className="w-full bg-cream-200 relative overflow-hidden flex items-center justify-center"
             style={{ aspectRatio: '21/9' }}
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-cream-300 via-cream-200 to-cream-300" />
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(180,145,105,0.2),transparent_70%)]" />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center">
-                <p className="font-serif text-2xl font-light text-espresso-400 italic">Lounge — Wide View</p>
-                <p className="text-[10px] tracking-widest uppercase text-espresso-300 mt-2 font-light">Panoramic Photo Placeholder</p>
-              </div>
-            </div>
+            <p className="font-serif text-2xl font-light text-espresso-400 italic">Coming Soon</p>
           </div>
 
         </div>
