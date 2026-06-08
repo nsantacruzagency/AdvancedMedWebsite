@@ -70,7 +70,7 @@ export default function BookNow() {
               <div className="space-y-5">
                 {[
                   { icon: <MapPin size={20} className="text-spa" />, label: 'Location', content: '44 Northeast 2nd Avenue\nDeerfield Beach, FL 33441' },
-                  { icon: <Phone size={20} className="text-spa" />, label: 'Phone', content: '(305) 555-0100', href: 'tel:+13055550100' },
+                  { icon: <Phone size={20} className="text-spa" />, label: 'Phone', content: '561-332-0225', href: 'tel:+15613320225' },
                   { icon: <Mail size={20} className="text-spa" />, label: 'Email', content: 'hello@advancedmedspaofficial.com', href: 'mailto:hello@advancedmedspaofficial.com' },
                 ].map((item) => (
                   <div key={item.label} className="flex items-start gap-4">
@@ -120,7 +120,7 @@ export default function BookNow() {
                     <Sparkles size={24} className="text-spa mx-auto mb-3" />
                     <p className="text-espresso-500 text-sm leading-relaxed">
                       A confirmation is on its way. Questions? Call us at{' '}
-                      <a href="tel:+13055550100" className="text-spa font-semibold">(305) 555-0100</a>
+                      <a href="tel:+15613320225" className="text-spa font-semibold">561-332-0225</a>
                     </p>
                   </div>
                 </div>

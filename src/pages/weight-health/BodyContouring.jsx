@@ -22,15 +22,15 @@ const celluliteTreatments = [
 const faqItems = [
   {
     q: 'What is body contouring?',
-    a: 'Body contouring refers to a range of non-surgical treatments designed to reshape and refine the body\'s silhouette by reducing localized fat, tightening skin, reducing cellulite, building muscle tone, and managing conditions like lipoedema. At Advanced Med, we use a combination of radiofrequency, ultrasound cavitation, electromagnetic muscle stimulation, and lymphatic techniques to achieve comprehensive, natural-looking results.',
+    a: 'Body contouring refers to a range of non-surgical treatments designed to reshape and refine the body\'s silhouette by reducing localized fat, tightening skin, reducing cellulite, building muscle tone, and managing conditions like lipedema. At Advanced Med, we use a combination of radiofrequency, ultrasound cavitation, electromagnetic muscle stimulation, and lymphatic techniques to achieve comprehensive, natural-looking results.',
   },
   {
     q: 'Is body contouring painful?',
     a: 'Most body contouring treatments are well tolerated. Radiofrequency and ultrasound cavitation feel warm and slightly intense but are not painful. EMS treatments create strong muscle contractions that can feel unfamiliar at first but are not typically described as painful. Acoustic wave therapy may cause mild discomfort over very fibrous areas. We always adjust intensity to your comfort level.',
   },
   {
-    q: 'What is lipoedema, and how is it different from regular fat?',
-    a: 'Lipoedema is a chronic medical condition — primarily affecting women — characterized by disproportionate, painful fat accumulation in the legs, hips, and sometimes arms. Unlike regular fat, lipoedema fat does not respond to diet or exercise, is often painful or tender to the touch, and is driven by hormonal and structural factors rather than caloric intake. It affects an estimated 11% of women and is frequently misdiagnosed.',
+    q: 'What is lipedema, and how is it different from regular fat?',
+    a: 'Lipedema is a chronic medical condition — primarily affecting women — characterized by disproportionate, painful fat accumulation in the legs, hips, and sometimes arms. Unlike regular fat, lipedema fat does not respond to diet or exercise, is often painful or tender to the touch, and is driven by hormonal and structural factors rather than caloric intake. It affects an estimated 11% of women and is frequently misdiagnosed.',
   },
   {
     q: 'How many sessions are needed to see results for cellulite?',
@@ -52,7 +52,7 @@ export default function BodyContouring() {
       <HeroPhoto
         eyebrow="Weight & Metabolic Health"
         title={<>Body<br />Contouring</>}
-        subtitle="Advanced, non-surgical treatments for cellulite, lipoedema, and muscle definition — sculpting the silhouette you've worked toward with precision technology and compassionate care."
+        subtitle="Advanced, non-surgical treatments for cellulite, lipedema, and muscle definition — sculpting the silhouette you've worked toward with precision technology and compassionate care."
         gradient="from-espresso-800 via-spa-800 to-espresso-700"
       />
 
@@ -97,17 +97,17 @@ export default function BodyContouring() {
         </div>
       </section>
 
-      {/* Lipoedema */}
+      {/* Lipedema */}
       <section className="py-24 px-6 bg-cream-100">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
-              <SectionHeader eyebrow="Compassionate Care" title="Lipoedema" center={false} />
+              <SectionHeader eyebrow="Compassionate Care" title="Lipedema" center={false} />
               <p className="text-espresso-500 leading-relaxed mb-4">
-                Lipoedema is a chronic, often misunderstood condition affecting primarily women — characterized by disproportionate, painful fat accumulation in the legs, hips, buttocks, and sometimes arms. It is <em>not</em> caused by lifestyle choices, and it does not respond to diet or exercise alone.
+                Lipedema is a chronic, often misunderstood condition affecting primarily women — characterized by disproportionate, painful fat accumulation in the legs, hips, buttocks, and sometimes arms. It is <em>not</em> caused by lifestyle choices, and it does not respond to diet or exercise alone.
               </p>
               <p className="text-espresso-500 leading-relaxed mb-4">
-                If you've been dismissed by healthcare providers, told to "just lose weight," or felt frustrated that your efforts aren't working — you may be living with lipoedema. We see you, and we understand.
+                If you've been dismissed by healthcare providers, told to "just lose weight," or felt frustrated that your efforts aren't working — you may be living with lipedema. We see you, and we understand.
               </p>
               <p className="text-espresso-500 leading-relaxed mb-8">
                 Our approach combines manual lymphatic drainage, compression therapy, RF treatments, and anti-inflammatory nutritional support to reduce pain, improve mobility, and manage progression compassionately and effectively.
@@ -130,7 +130,7 @@ export default function BodyContouring() {
             <div className="bg-espresso p-10 text-cream-200">
               <h3 className="font-serif text-2xl font-bold text-spa-300 mb-6">You Deserve Answers</h3>
               <p className="text-cream-300 leading-relaxed mb-6">
-                Lipoedema affects an estimated 11% of women worldwide — yet it remains chronically underdiagnosed. Many women spend years or decades without a proper diagnosis, blaming themselves for a medical condition that has a physiological basis.
+                Lipedema affects an estimated 11% of women worldwide — yet it remains chronically underdiagnosed. Many women spend years or decades without a proper diagnosis, blaming themselves for a medical condition that has a physiological basis.
               </p>
               <div className="space-y-4">
                 {[
@@ -223,7 +223,7 @@ export default function BodyContouring() {
         heading="Real Client Results"
         items={[
           { label: 'Cellulite Reduction — 8 Sessions', result: 'Significant smoothing of thigh and hip cellulite. Visible improvement in skin texture and firmness after a combined RF and acoustic wave protocol.', beforeAlt: 'Before cellulite treatment', afterAlt: 'After cellulite treatment' },
-          { label: 'Lipoedema Management — 12 Weeks', result: 'Reduced heaviness and pain in lower legs. Decreased circumference measurements and improved mobility following lymphatic drainage and RF series.', beforeAlt: 'Before lipoedema treatment', afterAlt: 'After lipoedema treatment' },
+          { label: 'Lipedema Management — 12 Weeks', result: 'Reduced heaviness and pain in lower legs. Decreased circumference measurements and improved mobility following lymphatic drainage and RF series.', beforeAlt: 'Before lipedema treatment', afterAlt: 'After lipedema treatment' },
           { label: 'Muscle Definition — 4 EMS Sessions', result: 'Visible abdominal definition and glute lifting achieved with electromagnetic muscle stimulation. No downtime throughout the series.', beforeAlt: 'Before EMS muscle toning', afterAlt: 'After EMS muscle toning' },
         ]}
       />

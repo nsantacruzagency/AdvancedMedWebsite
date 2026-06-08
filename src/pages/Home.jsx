@@ -10,7 +10,7 @@ const treatments = [
   },
   {
     title: 'Body Contouring',
-    subtitle: 'Cellulite · Lipoedema · Toning',
+    subtitle: 'Cellulite · Lipedema · Toning',
     path: '/weight-health/body-contouring',
   },
   {
