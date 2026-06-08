@@ -27,16 +27,16 @@ export default function Logo({ variant = 'horizontal', dark = false, linkTo = '/
   const brownColor = dark ? '#E8DFD8' : '#453730'
   const tealColor  = dark ? '#9dbdb8' : '#738985'
 
+  const imgSrc   = dark ? '/images/LogoFooter.png' : '/images/logo.png'
   const imgHeight = variant === 'horizontal' ? 50 : 60
 
   return (
     <Link to={linkTo} className="inline-flex items-center no-underline select-none">
       <img
-        src="/images/logo.png"
+        src={imgSrc}
         alt="Advanced Med MedSpa Lounge"
         style={{ height: imgHeight, width: 'auto', display: 'block' }}
         onError={(e) => {
-          // Fallback to text wordmark if image fails to load
           e.currentTarget.style.display = 'none'
           e.currentTarget.nextSibling.style.display = 'flex'
         }}
