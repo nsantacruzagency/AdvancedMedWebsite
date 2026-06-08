@@ -29,6 +29,11 @@ const treatments = [
     path: '/weight-health/ivs-shots',
   },
   {
+    title: 'Skin Concerns',
+    subtitle: 'Acne · Aging · Hyperpigmentation',
+    path: '/skin-concerns/acne',
+  },
+  {
     title: 'Hair Restoration',
     subtitle: 'PRP · Exosomes · Scalp Health',
     path: '/weight-health/hair-restoration',
@@ -37,11 +42,6 @@ const treatments = [
     title: 'Blood Tests & Longevity',
     subtitle: 'Biomarkers · Wellness Protocols',
     path: '/weight-health/blood-tests-longevity',
-  },
-  {
-    title: 'Skin Concerns',
-    subtitle: 'Acne · Aging · Hyperpigmentation',
-    path: '/skin-concerns/acne',
   },
 ]
 
