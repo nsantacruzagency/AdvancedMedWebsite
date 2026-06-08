@@ -17,16 +17,22 @@ export default function HeroPhoto({
   height = 'min-h-[72vh]',
   align = 'left',
   gradient = 'from-espresso-800 via-espresso-700 to-spa-700',
+  imageSrc = null,
 }) {
   const isCenter = align === 'center'
 
   return (
     <section className={`relative ${height} flex items-end overflow-hidden`}>
-      {/* ── Photo placeholder — swap this div for <img> ── */}
+      {/* ── Background: real photo if provided, gradient placeholder otherwise ── */}
       <div className="absolute inset-0">
-        <div className={`w-full h-full bg-gradient-to-br ${gradient}`} />
-        {/* Subtle texture overlay */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(115,137,133,0.25),transparent_60%)]" />
+        {imageSrc ? (
+          <img src={imageSrc} alt="" className="w-full h-full object-cover object-center" />
+        ) : (
+          <>
+            <div className={`w-full h-full bg-gradient-to-br ${gradient}`} />
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(115,137,133,0.25),transparent_60%)]" />
+          </>
+        )}
       </div>
 
       {/* Dark scrim for text legibility */}
