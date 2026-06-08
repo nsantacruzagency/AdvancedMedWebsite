@@ -100,6 +100,7 @@ export default function Footer() {
               </li>
             </ul>
             <div className="mt-6 text-[11px] text-espresso-400 space-y-1">
+              <p>Mon &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; By Appointment</p>
               <p>Tue – Fri &nbsp;&nbsp; 10:00 AM – 8:00 PM</p>
               <p>Saturday &nbsp; 8:00 AM – 4:00 PM</p>
               <p>Sunday &nbsp;&nbsp;&nbsp; By Appointment</p>
