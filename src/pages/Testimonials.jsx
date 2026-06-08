@@ -94,22 +94,6 @@ export default function Testimonials() {
         </div>
       </section>
 
-      {/* Social proof */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-cream-100">
-        <div className="max-w-7xl mx-auto text-center">
-          <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-3">@AdvancedMedMiami</p>
-          <h2 className="font-serif text-3xl font-bold text-espresso mb-8">See More on Instagram</h2>
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-3 mb-8">
-            {['bg-spa-100', 'bg-cream-300', 'bg-spa-200', 'bg-cream-200', 'bg-spa-100', 'bg-cream-300'].map((bg, i) => (
-              <div key={i} className={`${bg} aspect-square flex items-center justify-center cursor-pointer hover:scale-105 transition-transform border border-cream-300`} />
-            ))}
-          </div>
-          <a href="#" className="inline-flex items-center gap-2 border border-cream-300 hover:border-spa text-espresso-500 hover:text-espresso font-medium px-6 py-2.5 transition-colors text-sm text-[10px] tracking-widest uppercase">
-            Follow Us on Instagram <ArrowRight size={15} />
-          </a>
-        </div>
-      </section>
-
       <section className="py-20 px-4 bg-espresso text-cream-200 text-center">
         <div className="max-w-3xl mx-auto">
           <h2 className="font-serif text-4xl font-bold mb-4">Ready to Write Your Own Story?</h2>

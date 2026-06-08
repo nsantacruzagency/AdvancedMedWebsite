@@ -15,18 +15,12 @@ export default function Footer() {
               Where medical science meets luxury care. Advanced treatments designed to restore confidence, vitality, and radiance.
             </p>
             <div className="flex gap-3 mt-7">
-              <a href="#" aria-label="Instagram"
+              <a href="https://www.instagram.com/advancedmedspaofficial/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"
                 className="w-8 h-8 border border-espresso-500 flex items-center justify-center hover:border-spa hover:text-spa transition-colors">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                   <rect x="2" y="2" width="20" height="20" rx="5"/>
                   <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
                   <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-                </svg>
-              </a>
-              <a href="#" aria-label="Facebook"
-                className="w-8 h-8 border border-espresso-500 flex items-center justify-center hover:border-spa hover:text-spa transition-colors">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
                 </svg>
               </a>
             </div>
@@ -89,7 +83,7 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin size={13} className="mt-0.5 text-spa flex-shrink-0" />
                 <span className="text-[12px] text-cream-400 font-light leading-relaxed">
-                  123 Luxury Blvd, Suite 200<br />Miami, FL 33101
+                  44 Northeast 2nd Avenue<br />Deerfield Beach, FL 33441
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -100,14 +94,14 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={13} className="text-spa flex-shrink-0" />
-                <a href="mailto:hello@advancedmed.com" className="text-[12px] text-cream-400 hover:text-spa transition-colors font-light">
-                  hello@advancedmed.com
+                <a href="mailto:hello@advancedmedspaofficial.com" className="text-[12px] text-cream-400 hover:text-spa transition-colors font-light">
+                  hello@advancedmedspaofficial.com
                 </a>
               </li>
             </ul>
             <div className="mt-6 text-[11px] text-espresso-400 space-y-1">
-              <p>Mon – Fri &nbsp; 9:00 AM – 7:00 PM</p>
-              <p>Saturday &nbsp; 9:00 AM – 5:00 PM</p>
+              <p>Tue – Fri &nbsp;&nbsp; 10:00 AM – 8:00 PM</p>
+              <p>Saturday &nbsp; 8:00 AM – 4:00 PM</p>
               <p>Sunday &nbsp;&nbsp;&nbsp; By Appointment</p>
             </div>
           </div>

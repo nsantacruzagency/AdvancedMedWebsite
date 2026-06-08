@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, Heart, Sparkles, ShieldCheck, Award } from 'lucide-react'
-import SectionHeader from '../components/SectionHeader'
+import { ArrowRight } from 'lucide-react'
 import HeroPhoto from '../components/HeroPhoto'
 import FAQ from '../components/FAQ'
 
@@ -28,29 +27,6 @@ const team = [
     role: 'Medical Weight Loss Specialist',
     bio: 'Board-certified in Obesity Medicine, Dr. Okonkwo leads our medical weight loss and metabolic health programs. He combines evidence-based medicine with compassionate, personalized care.',
     credentials: ['MD, FACP', 'Board Certified — Obesity Medicine', 'Diplomate, American Board of Internal Medicine'],
-  },
-]
-
-const values = [
-  {
-    icon: <Heart className="text-spa" size={24} />,
-    title: 'Client-First Care',
-    desc: 'Every decision we make starts with your wellbeing, comfort, and goals. You are more than a treatment — you are our partner.',
-  },
-  {
-    icon: <ShieldCheck className="text-spa" size={24} />,
-    title: 'Medical Excellence',
-    desc: 'We adhere to the highest standards of medical practice, ensuring every treatment is safe, evidence-based, and expertly delivered.',
-  },
-  {
-    icon: <Sparkles className="text-spa" size={24} />,
-    title: 'Natural Aesthetics',
-    desc: 'Our philosophy is to enhance your natural beauty — not alter it. We aim for results that feel like a better version of you.',
-  },
-  {
-    icon: <Award className="text-spa" size={24} />,
-    title: 'Continuous Learning',
-    desc: 'Our team trains with the world\'s leading aesthetic experts and stays current on the latest advances in aesthetic medicine.',
   },
 ]
 
@@ -100,83 +76,11 @@ export default function About() {
   return (
     <>
       <HeroPhoto
-        eyebrow="Our Story"
-        title={<>About<br />Advanced Med</>}
+        eyebrow="Advanced Med MedSpa Lounge"
+        title={<>Welcome<br />to the Lounge.</>}
         subtitle="Where medical precision meets genuine, heartfelt care for every client who walks through our doors."
         gradient="from-espresso-800 via-espresso-700 to-spa-800"
       />
-
-      {/* ── OUR STORY ── */}
-      <section className="py-20 px-5 sm:px-8 lg:px-12 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-5" style={{ letterSpacing: '0.28em' }}>
-                How We Started
-              </p>
-              <h2 className="font-serif text-4xl md:text-5xl font-light text-espresso mb-7 leading-tight">
-                Born from a Passion for<br />Transformative Care
-              </h2>
-              <div className="space-y-5 text-espresso-500 text-[13px] font-light leading-relaxed">
-                <p>
-                  Advanced Med MedSpa Lounge was founded with a singular vision: to create a
-                  medical aesthetic practice where clinical expertise and genuine human
-                  connection are equally valued.
-                </p>
-                <p>
-                  After years of witnessing how aesthetic treatments could restore not just
-                  appearance but confidence and quality of life, our founders built a team of
-                  like-minded professionals dedicated to delivering life-changing results in a
-                  warm, luxurious environment.
-                </p>
-                <p>
-                  Today, Advanced Med serves thousands of clients across South Florida,
-                  offering a comprehensive menu of medical weight loss, body contouring,
-                  injectables, and advanced skincare treatments — all under one roof,
-                  in a space designed to feel like home.
-                </p>
-              </div>
-            </div>
-            {/* Decorative image placeholder */}
-            <div className="relative">
-              <div className="aspect-[4/5] bg-cream-200 relative overflow-hidden border border-cream-300">
-                <div className="absolute inset-0 bg-gradient-to-br from-cream-300 via-cream-200 to-spa-100" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <p className="font-serif text-xl font-light text-espresso-400 italic">About Us Photo</p>
-                    <p className="text-[10px] tracking-widest uppercase text-espresso-300 mt-2 font-light">Placeholder</p>
-                  </div>
-                </div>
-              </div>
-              {/* Floating accent */}
-              <div className="absolute -bottom-5 -left-5 bg-espresso px-7 py-5">
-                <p className="font-serif text-3xl font-light text-cream-200">6+</p>
-                <p className="text-[10px] tracking-widest uppercase text-spa-300 mt-0.5 font-light">Years of Excellence</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── VALUES ── */}
-      <section className="py-20 px-5 sm:px-8 lg:px-12 bg-cream-100">
-        <div className="max-w-7xl mx-auto">
-          <SectionHeader
-            eyebrow="What Drives Us"
-            title="Our Core Values"
-            subtitle="These values guide every interaction, every treatment, and every decision we make."
-          />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-cream-300">
-            {values.map((v) => (
-              <div key={v.title} className="bg-white p-9 text-center">
-                <div className="flex justify-center mb-5">{v.icon}</div>
-                <h3 className="font-serif text-lg font-light text-espresso mb-3">{v.title}</h3>
-                <p className="text-espresso-500 text-[12px] font-light leading-relaxed">{v.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ── WELCOME TO THE LOUNGE ── */}
       <section className="py-20 px-5 sm:px-8 lg:px-12 bg-white">

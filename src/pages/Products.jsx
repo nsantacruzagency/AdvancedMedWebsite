@@ -117,11 +117,11 @@ export default function Products() {
             </p>
           </div>
           <a
-            href="mailto:hello@advancedmed.com?subject=Product Order Inquiry"
+            href="mailto:hello@advancedmedspaofficial.com?subject=Product Order Inquiry"
             className="flex-shrink-0 inline-flex items-center gap-3 bg-spa text-white text-[10px] font-medium tracking-widest uppercase px-8 py-4 hover:bg-spa-500 transition-colors"
           >
             <Mail size={14} />
-            hello@advancedmed.com
+            hello@advancedmedspaofficial.com
           </a>
         </div>
       </section>
@@ -164,7 +164,7 @@ export default function Products() {
                       <p className="text-espresso-400 text-[11px] font-light">{item.size}</p>
                       <p className="text-spa text-[10px] uppercase tracking-wide font-medium mt-2">{item.type}</p>
                       <a
-                        href="mailto:hello@advancedmed.com?subject=Product Order Inquiry"
+                        href="mailto:hello@advancedmedspaofficial.com?subject=Product Order Inquiry"
                         className="mt-5 inline-flex items-center gap-2 text-[10px] font-medium uppercase tracking-widest text-espresso border-b border-cream-400 pb-0.5 hover:border-spa hover:text-spa transition-colors"
                       >
                         Inquire to Order <ArrowRight size={11} />
@@ -192,7 +192,7 @@ export default function Products() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="mailto:hello@advancedmed.com?subject=Product Recommendation Request"
+              href="mailto:hello@advancedmedspaofficial.com?subject=Product Recommendation Request"
               className="inline-flex items-center justify-center gap-3 bg-espresso text-cream-100 text-[10px] font-medium tracking-widest uppercase px-9 py-4 hover:bg-espresso-600 transition-colors"
             >
               <Mail size={13} /> Email Us to Order

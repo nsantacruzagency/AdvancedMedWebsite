@@ -69,9 +69,9 @@ export default function BookNow() {
               <h2 className="font-serif text-2xl font-bold text-espresso mb-6">Get in Touch</h2>
               <div className="space-y-5">
                 {[
-                  { icon: <MapPin size={20} className="text-spa" />, label: 'Location', content: '123 Luxury Blvd, Suite 200\nMiami, FL 33101' },
+                  { icon: <MapPin size={20} className="text-spa" />, label: 'Location', content: '44 Northeast 2nd Avenue\nDeerfield Beach, FL 33441' },
                   { icon: <Phone size={20} className="text-spa" />, label: 'Phone', content: '(305) 555-0100', href: 'tel:+13055550100' },
-                  { icon: <Mail size={20} className="text-spa" />, label: 'Email', content: 'hello@advancedmed.com', href: 'mailto:hello@advancedmed.com' },
+                  { icon: <Mail size={20} className="text-spa" />, label: 'Email', content: 'hello@advancedmedspaofficial.com', href: 'mailto:hello@advancedmedspaofficial.com' },
                 ].map((item) => (
                   <div key={item.label} className="flex items-start gap-4">
                     <div className="p-3 bg-cream-100 flex-shrink-0">{item.icon}</div>
@@ -90,8 +90,8 @@ export default function BookNow() {
             <div className="bg-cream-100 p-6 border border-cream-300">
               <h4 className="font-semibold text-espresso text-sm mb-3">Hours</h4>
               <div className="text-espresso-500 text-sm space-y-1.5">
-                <div className="flex justify-between"><span>Mon – Fri</span><span className="font-medium">9:00 AM – 7:00 PM</span></div>
-                <div className="flex justify-between"><span>Saturday</span><span className="font-medium">9:00 AM – 5:00 PM</span></div>
+                <div className="flex justify-between"><span>Tue – Fri</span><span className="font-medium">10:00 AM – 8:00 PM</span></div>
+                <div className="flex justify-between"><span>Saturday</span><span className="font-medium">8:00 AM – 4:00 PM</span></div>
                 <div className="flex justify-between"><span>Sunday</span><span className="font-medium">By Appointment</span></div>
               </div>
             </div>
