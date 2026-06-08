@@ -212,7 +212,7 @@ export default function Aging() {
         <div className="max-w-2xl mx-auto">
           <h2 className="font-serif text-4xl font-bold text-espresso mb-4">Begin Your Anti-Aging Journey</h2>
           <p className="text-espresso-500 text-lg mb-8 leading-relaxed">
-            Schedule a consultation with our aesthetic experts and discover which combination of treatments will give you your most confident look yet.
+            Schedule a evaluation with our aesthetic experts and discover which combination of treatments will give you your most confident look yet.
           </p>
           <Link
             to="/book"

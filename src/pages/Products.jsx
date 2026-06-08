@@ -188,7 +188,7 @@ export default function Products() {
             Questions About a Product?
           </h2>
           <p className="text-espresso-500 text-[14px] font-light leading-relaxed mb-8 max-w-xl mx-auto">
-            Our licensed estheticians are happy to recommend the right products for your skin type and goals. Email us or book a consultation and we'll build your personalized home care regimen.
+            Our licensed estheticians are happy to recommend the right products for your skin type and goals. Email us or book a evaluation and we'll build your personalized home care regimen.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -201,7 +201,7 @@ export default function Products() {
               to="/book"
               className="inline-flex items-center justify-center gap-3 border border-espresso-300 text-espresso text-[10px] font-medium tracking-widest uppercase px-9 py-4 hover:border-espresso hover:bg-cream-300 transition-colors"
             >
-              Book a Skin Consultation <ArrowRight size={13} />
+              Book a Skin Evaluation <ArrowRight size={13} />
             </Link>
           </div>
         </div>

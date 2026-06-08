@@ -22,7 +22,7 @@ const faqItems = [
   },
   {
     q: 'Who is a candidate for semaglutide?',
-    a: 'Semaglutide is generally appropriate for adults with a BMI of 30 or higher, or a BMI of 27 or higher with at least one weight-related health condition such as type 2 diabetes, hypertension, high cholesterol, or sleep apnea. A full medical consultation and lab work are required before prescribing. Individuals with a personal or family history of medullary thyroid carcinoma, MEN2, or pancreatitis are not candidates. Pregnant or breastfeeding women should also avoid GLP-1 medications.',
+    a: 'Semaglutide is generally appropriate for adults with a BMI of 30 or higher, or a BMI of 27 or higher with at least one weight-related health condition such as type 2 diabetes, hypertension, high cholesterol, or sleep apnea. A full medical evaluation and lab work are required before prescribing. Individuals with a personal or family history of medullary thyroid carcinoma, MEN2, or pancreatitis are not candidates. Pregnant or breastfeeding women should also avoid GLP-1 medications.',
   },
   {
     q: 'Are there side effects from GLP-1 medications or peptides?',
@@ -138,7 +138,7 @@ export default function PeptidesGLPs() {
               ))}
               <div className="bg-cream-200 p-6 border border-cream-300">
                 <h4 className="font-semibold text-espresso mb-2">Who Is a Candidate?</h4>
-                <p className="text-espresso-500 text-sm leading-relaxed">Adults with a BMI of 30 or higher, or BMI of 27 or higher with at least one weight-related health condition (type 2 diabetes, hypertension, high cholesterol, sleep apnea). A full medical consultation and labs are required before prescribing.</p>
+                <p className="text-espresso-500 text-sm leading-relaxed">Adults with a BMI of 30 or higher, or BMI of 27 or higher with at least one weight-related health condition (type 2 diabetes, hypertension, high cholesterol, sleep apnea). A full medical evaluation and labs are required before prescribing.</p>
               </div>
             </div>
           </div>
@@ -182,7 +182,7 @@ export default function PeptidesGLPs() {
         <div className="max-w-2xl mx-auto">
           <h2 className="font-serif text-4xl font-bold mb-4">Start Your Medical Weight Loss Journey</h2>
           <p className="text-cream-300 text-lg mb-10 leading-relaxed">
-            Schedule a medical consultation today. Our providers will review your history, labs, and goals to determine if peptide therapy or GLP-1 medications are right for you.
+            Schedule a medical evaluation today. Our providers will review your history, labs, and goals to determine if peptide therapy or GLP-1 medications are right for you.
           </p>
           <Link
             to="/book"

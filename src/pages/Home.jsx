@@ -166,7 +166,7 @@ export default function Home() {
                 to="/book"
                 className="inline-flex items-center justify-center gap-3 bg-espresso text-cream-100 text-[10px] font-medium tracking-widest uppercase px-9 py-4 hover:bg-espresso-600 transition-colors"
               >
-                Book a Consultation
+                Book a Evaluation
                 <ArrowRight size={13} />
               </Link>
               <Link
@@ -261,7 +261,7 @@ export default function Home() {
               <span className="italic text-spa-300">Lasting Results.</span>
             </h2>
             <p className="text-[14px] text-cream-400 font-light leading-relaxed mb-10 max-w-lg">
-              At Advanced Med MedSpa Lounge, every treatment begins with a thorough consultation and ends with a personalized plan. We combine medical expertise with a genuine commitment to your wellbeing.
+              At Advanced Med MedSpa Lounge, every treatment begins with a thorough evaluation and ends with a personalized plan. We combine medical expertise with a genuine commitment to your wellbeing.
             </p>
             <div className="space-y-4">
               {[
@@ -387,13 +387,13 @@ export default function Home() {
             Your Transformation Starts Here
           </h2>
           <p className="text-[14px] text-spa-200 font-light leading-relaxed mb-10">
-            Book a complimentary consultation with our specialists and discover the personalized plan that will help you look and feel your absolute best.
+            Book a complimentary evaluation with our specialists and discover the personalized plan that will help you look and feel your absolute best.
           </p>
           <Link
             to="/book"
             className="inline-flex items-center justify-center gap-3 bg-white text-espresso text-[10px] font-medium tracking-widest uppercase px-10 py-4 hover:bg-cream-100 transition-colors"
           >
-            Schedule Your Consultation <ArrowRight size={13} />
+            Schedule Your Evaluation <ArrowRight size={13} />
           </Link>
         </div>
       </section>

@@ -24,7 +24,7 @@ const timeline = [
 const faqItems = [
   {
     q: 'Am I a candidate for PRP hair restoration?',
-    a: 'PRP works best when some viable hair follicles are still present — the treatment reactivates dormant or weakening follicles rather than creating new ones from scratch. Ideal candidates include men and women experiencing early to moderate hair thinning, androgenetic alopecia (pattern baldness), diffuse thinning, or hair loss related to stress, hormonal changes, or post-chemotherapy regrowth. A scalp consultation with trichoscopy will confirm whether PRP is appropriate for your specific pattern of loss.',
+    a: 'PRP works best when some viable hair follicles are still present — the treatment reactivates dormant or weakening follicles rather than creating new ones from scratch. Ideal candidates include men and women experiencing early to moderate hair thinning, androgenetic alopecia (pattern baldness), diffuse thinning, or hair loss related to stress, hormonal changes, or post-chemotherapy regrowth. A scalp evaluation with trichoscopy will confirm whether PRP is appropriate for your specific pattern of loss.',
   },
   {
     q: 'How many sessions are needed to see results?',
@@ -229,7 +229,7 @@ export default function HairRestoration() {
             <div>
               <SectionHeader eyebrow="Is This Right for You?" title="Who Is a Candidate?" center={false} />
               <p className="text-espresso-500 leading-relaxed mb-8">
-                Our hair restoration treatments are appropriate for a wide range of hair loss patterns and causes. The most important factor is that some viable follicles remain — these therapies revitalize existing follicles rather than create new ones. A comprehensive consultation will determine which protocol is best for your specific situation.
+                Our hair restoration treatments are appropriate for a wide range of hair loss patterns and causes. The most important factor is that some viable follicles remain — these therapies revitalize existing follicles rather than create new ones. A comprehensive evaluation will determine which protocol is best for your specific situation.
               </p>
               <ul className="space-y-3">
                 {candidates.map((c, i) => (
@@ -243,7 +243,7 @@ export default function HairRestoration() {
             <div className="bg-cream-200 border border-cream-300 p-8">
               <h3 className="font-serif text-xl font-bold text-espresso mb-4">Not Ideal Candidates</h3>
               <p className="text-espresso-500 leading-relaxed mb-4">
-                These treatments work best when follicles are still present but dormant. If hair loss has been complete in an area for many years and follicles are fully scarred, regenerative therapies may have limited effect. A consultation helps us set realistic expectations.
+                These treatments work best when follicles are still present but dormant. If hair loss has been complete in an area for many years and follicles are fully scarred, regenerative therapies may have limited effect. A evaluation helps us set realistic expectations.
               </p>
               <ul className="space-y-3">
                 {['Advanced alopecia totalis or universalis', 'Complete follicle destruction from scarring', 'Active scalp infections (until treated)', 'Certain autoimmune conditions (case by case)'].map((c, i) => (
@@ -288,7 +288,7 @@ export default function HairRestoration() {
         <div className="max-w-2xl mx-auto">
           <h2 className="font-serif text-4xl font-bold text-espresso mb-4">Reclaim Your Hair. Reclaim Your Confidence.</h2>
           <p className="text-espresso-500 text-lg mb-10 leading-relaxed">
-            Book a hair restoration consultation today. We'll assess your scalp, review your history, and design a personalized protocol to deliver the best possible results.
+            Book a hair restoration evaluation today. We'll assess your scalp, review your history, and design a personalized protocol to deliver the best possible results.
           </p>
           <Link
             to="/book"

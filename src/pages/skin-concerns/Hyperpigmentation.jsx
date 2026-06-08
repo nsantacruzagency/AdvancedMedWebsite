@@ -102,7 +102,7 @@ const faqItems = [
   },
   {
     q: 'Can hyperpigmentation be completely removed?',
-    a: 'Many forms of hyperpigmentation can be significantly faded or, in some cases, fully resolved with the right protocol. Sunspots and post-inflammatory hyperpigmentation tend to respond very well to treatment. Melasma is more complex and prone to recurrence, especially with sun exposure. We will set honest, personalized expectations at your consultation.',
+    a: 'Many forms of hyperpigmentation can be significantly faded or, in some cases, fully resolved with the right protocol. Sunspots and post-inflammatory hyperpigmentation tend to respond very well to treatment. Melasma is more complex and prone to recurrence, especially with sun exposure. We will set honest, personalized expectations at your evaluation.',
   },
   {
     q: 'What ingredients fade dark spots?',
@@ -228,7 +228,7 @@ export default function Hyperpigmentation() {
             No brightening treatment works in isolation. UV exposure is the single biggest trigger for melanin overproduction — and undoes even the most advanced professional treatments. We require all pigmentation clients to use a broad-spectrum SPF 50 daily, rain or shine, indoors or outdoors.
           </p>
           <p className="text-spa font-semibold text-sm">
-            We'll recommend the best medical-grade SPF for your skin type at your consultation.
+            We'll recommend the best medical-grade SPF for your skin type at your evaluation.
           </p>
         </div>
       </section>
@@ -241,7 +241,7 @@ export default function Hyperpigmentation() {
         <div className="max-w-2xl mx-auto">
           <h2 className="font-serif text-4xl font-bold mb-4">Reveal Your Most Even Skin</h2>
           <p className="text-cream-300 text-lg mb-8 leading-relaxed">
-            Book a pigmentation consultation and let our experts design a personalized brightening protocol tailored to your skin tone, lifestyle, and goals.
+            Book a pigmentation evaluation and let our experts design a personalized brightening protocol tailored to your skin tone, lifestyle, and goals.
           </p>
           <Link
             to="/book"

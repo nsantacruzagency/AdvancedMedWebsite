@@ -9,18 +9,18 @@ const services = [
   'Deep Tissue Massage',
   'Post-Op Massage',
   'Prenatal Massage',
-  'Peptides / GLP-1 Consultation',
+  'Peptides / GLP-1 Evaluation',
   'IV Drip Therapy',
   'Intramuscular Shot',
   'Hair Restoration',
-  'Blood Tests & Longevity Consultation',
+  'Blood Tests & Longevity Evaluation',
   'Acne Treatment / Facial',
   'Anti-Aging Facial',
   'Chemical Peel',
   'Hyperpigmentation Treatment',
   'Stretch Marks & Scars Treatment',
   'Membership Inquiry',
-  'General Consultation',
+  'General Evaluation',
 ]
 
 const timeSlots = [
