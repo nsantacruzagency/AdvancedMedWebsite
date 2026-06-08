@@ -4,7 +4,6 @@ import SectionHeader from '../../components/SectionHeader'
 import HeroPhoto from '../../components/HeroPhoto'
 import FAQ from '../../components/FAQ'
 import BeforeAfter from '../../components/BeforeAfter'
-import { BrandMark } from '../../components/Logo'
 
 const causes = [
   {
@@ -148,11 +147,6 @@ export default function Acne() {
         gradient="from-espresso-800 via-espresso-600 to-spa-800"
         height="min-h-[42vh]"
       />
-
-      {/* Watermark */}
-      <div className="fixed inset-0 pointer-events-none z-0 flex items-center justify-center" aria-hidden="true">
-        <BrandMark size={480} color="#453730" opacity={0.04} />
-      </div>
 
       {/* What Causes Acne */}
       <section className="py-20 px-6 bg-cream-100">
