@@ -132,6 +132,8 @@ export default function Hyperpigmentation() {
         gradient="from-spa-800 via-espresso-700 to-espresso-800"
       />
 
+      <BeforeAfter heading="Real Client Results" items={beforeAfterItems} />
+
       {/* Types of Hyperpigmentation */}
       <section className="py-20 px-6 bg-cream-100">
         <div className="max-w-6xl mx-auto">
@@ -231,10 +233,6 @@ export default function Hyperpigmentation() {
         </div>
       </section>
 
-      <BeforeAfter
-        heading="Client Results"
-        items={beforeAfterItems}
-      />
 
       <FAQ items={faqItems} />
 

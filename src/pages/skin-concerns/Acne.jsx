@@ -148,6 +148,8 @@ export default function Acne() {
         height="min-h-[42vh]"
       />
 
+      <BeforeAfter heading="Real Client Results" items={beforeAfterItems} />
+
       {/* What Causes Acne */}
       <section className="py-20 px-6 bg-cream-100">
         <div className="max-w-6xl mx-auto">
@@ -256,10 +258,6 @@ export default function Acne() {
         </div>
       </section>
 
-      <BeforeAfter
-        heading="Client Results"
-        items={beforeAfterItems}
-      />
 
       <FAQ items={faqItems} />
 

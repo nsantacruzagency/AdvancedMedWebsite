@@ -127,6 +127,8 @@ export default function Aging() {
         gradient="from-espresso-700 via-espresso-800 to-spa-700"
       />
 
+      <BeforeAfter heading="Real Client Results" items={beforeAfterItems} />
+
       {/* How Skin Ages */}
       <section className="py-20 px-6 bg-cream-100">
         <div className="max-w-6xl mx-auto">
@@ -202,10 +204,6 @@ export default function Aging() {
         </div>
       </section>
 
-      <BeforeAfter
-        heading="Client Results"
-        items={beforeAfterItems}
-      />
 
       <FAQ items={faqItems} />
 
