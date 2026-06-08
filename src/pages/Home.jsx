@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowRight, CheckCircle } from 'lucide-react'
 import SectionHeader from '../components/SectionHeader'
@@ -69,6 +70,74 @@ const testimonials = [
     treatment: 'Skin Tightening',
   },
 ]
+
+const beforeAfterSlides = [
+  { label: 'Body Contouring', before: 'from-espresso-600 to-spa-800', after: 'from-spa-700 to-espresso-500' },
+  { label: 'Acne Treatment',  before: 'from-espresso-700 to-espresso-500', after: 'from-spa-600 to-spa-800' },
+  { label: 'Hair Restoration', before: 'from-spa-800 to-espresso-600', after: 'from-espresso-500 to-spa-600' },
+]
+
+function BeforeAfterCarousel() {
+  const [current, setCurrent] = useState(0)
+  const total = beforeAfterSlides.length
+  const slide = beforeAfterSlides[current]
+
+  return (
+    <div className="flex flex-col gap-4">
+      {/* Photos */}
+      <div className="grid grid-cols-2 gap-4">
+        <div className="relative">
+          <div className={`aspect-[3/4] bg-gradient-to-br ${slide.before} relative overflow-hidden`}>
+            <div className="absolute inset-0 bg-espresso/20" />
+            {/* swap for <img src={slide.beforeSrc} alt="Before" className="w-full h-full object-cover" /> */}
+          </div>
+          <span className="absolute bottom-3 left-3 text-[9px] font-medium tracking-widest uppercase text-cream-300 bg-espresso/60 px-2 py-1">Before</span>
+        </div>
+        <div className="relative mt-8">
+          <div className={`aspect-[3/4] bg-gradient-to-br ${slide.after} relative overflow-hidden`}>
+            <div className="absolute inset-0 bg-espresso/20" />
+            {/* swap for <img src={slide.afterSrc} alt="After" className="w-full h-full object-cover" /> */}
+          </div>
+          <span className="absolute bottom-3 left-3 text-[9px] font-medium tracking-widest uppercase text-cream-300 bg-espresso/60 px-2 py-1">After</span>
+        </div>
+      </div>
+
+      {/* Label + controls */}
+      <div className="flex items-center justify-between px-1">
+        <span className="text-[11px] font-medium tracking-widest uppercase text-spa-300">{slide.label}</span>
+        <div className="flex items-center gap-4">
+          <button
+            onClick={() => setCurrent((c) => (c - 1 + total) % total)}
+            className="w-8 h-8 border border-espresso-500 flex items-center justify-center text-cream-400 hover:border-spa hover:text-spa transition-colors"
+            aria-label="Previous"
+          >
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M7.5 2L3.5 6L7.5 10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+          </button>
+          <span className="text-[10px] text-espresso-500 tabular-nums">{current + 1} / {total}</span>
+          <button
+            onClick={() => setCurrent((c) => (c + 1) % total)}
+            className="w-8 h-8 border border-espresso-500 flex items-center justify-center text-cream-400 hover:border-spa hover:text-spa transition-colors"
+            aria-label="Next"
+          >
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4.5 2L8.5 6L4.5 10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+
+      {/* Dot indicators */}
+      <div className="flex gap-2 px-1">
+        {beforeAfterSlides.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setCurrent(i)}
+            className={`h-px transition-all duration-300 ${i === current ? 'bg-spa w-8' : 'bg-espresso-500 w-4'}`}
+            aria-label={`Go to slide ${i + 1}`}
+          />
+        ))}
+      </div>
+    </div>
+  )
+}
 
 export default function Home() {
   return (
@@ -215,15 +284,8 @@ export default function Home() {
             </Link>
           </div>
 
-          {/* Image grid placeholder */}
-          <div className="grid grid-cols-2 gap-4">
-            <div className="aspect-[3/4] bg-espresso-600 relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-espresso-500 to-spa-700 opacity-50" />
-            </div>
-            <div className="aspect-[3/4] bg-espresso-600 relative overflow-hidden mt-8">
-              <div className="absolute inset-0 bg-gradient-to-br from-spa-700 to-espresso-600 opacity-50" />
-            </div>
-          </div>
+          {/* Before & After Carousel */}
+          <BeforeAfterCarousel />
         </div>
       </section>
 
