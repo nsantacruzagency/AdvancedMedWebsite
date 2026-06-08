@@ -3,6 +3,12 @@ import { Link, useLocation } from 'react-router-dom'
 import { Menu, X, ChevronDown } from 'lucide-react'
 import Logo from './Logo'
 
+const aboutLinks = [
+  { label: 'The Lounge',   path: '/about' },
+  { label: 'Testimonials', path: '/testimonials' },
+  { label: 'Memberships',  path: '/memberships' },
+]
+
 const weightHealthLinks = [
   { label: 'Non-Invasive Weight Loss',   path: '/weight-health/non-invasive-weight-loss' },
   { label: 'Body Contouring',             path: '/weight-health/body-contouring' },
@@ -109,23 +115,36 @@ export default function Navbar() {
               <Dropdown links={skinLinks} isOpen={openDropdown === 'skin'} />
             </div>
 
-            {[
-              { label: 'About Us',     path: '/about' },
-              { label: 'Testimonials', path: '/testimonials' },
-              { label: 'Memberships',  path: '/memberships' },
-            ].map((l) => (
-              <Link
-                key={l.path}
-                to={l.path}
-                className={`text-[11px] font-medium tracking-widest uppercase transition-colors ${
-                  location.pathname === l.path
+            {/* About Us dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={() => setOpenDropdown('about')}
+              onMouseLeave={() => setOpenDropdown(null)}
+            >
+              <button
+                className={`flex items-center gap-1 text-[11px] font-medium tracking-widest uppercase transition-colors ${
+                  ['/about', '/testimonials', '/memberships'].includes(location.pathname)
                     ? 'text-spa'
                     : 'text-espresso-600 hover:text-espresso'
                 }`}
               >
-                {l.label}
-              </Link>
-            ))}
+                About Us
+                <ChevronDown size={11} strokeWidth={1.5} />
+              </button>
+              <Dropdown links={aboutLinks} isOpen={openDropdown === 'about'} />
+            </div>
+
+            {/* Personalized Evaluation */}
+            <Link
+              to="/personalized-evaluation"
+              className={`text-[11px] font-medium tracking-widest uppercase transition-colors ${
+                location.pathname === '/personalized-evaluation'
+                  ? 'text-spa'
+                  : 'text-espresso-600 hover:text-espresso'
+              }`}
+            >
+              Personalized Evaluation
+            </Link>
 
             <Link
               to="/book"
@@ -173,17 +192,21 @@ export default function Navbar() {
             ))}
 
             <div className="border-t border-cream-300 pt-4 mt-3 space-y-1">
-              {[
-                { label: 'About Us',     path: '/about' },
-                { label: 'Testimonials', path: '/testimonials' },
-                { label: 'Memberships',  path: '/memberships' },
-              ].map((l) => (
+              <p className="text-[9px] font-medium tracking-widest uppercase text-spa pt-1 pb-1">About Us</p>
+              {aboutLinks.map((l) => (
                 <Link key={l.path} to={l.path}
-                  className="block py-2 text-xs tracking-widest uppercase font-medium text-espresso-600 hover:text-espresso"
+                  className="block py-2 text-xs tracking-wide text-espresso-600 hover:text-espresso"
                   onClick={() => setMobileOpen(false)}>
                   {l.label}
                 </Link>
               ))}
+              <Link
+                to="/personalized-evaluation"
+                className="block py-2 text-xs tracking-widest uppercase font-medium text-espresso-600 hover:text-espresso border-t border-cream-300 mt-2 pt-4"
+                onClick={() => setMobileOpen(false)}
+              >
+                Personalized Evaluation
+              </Link>
             </div>
 
             <Link

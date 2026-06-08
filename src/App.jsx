@@ -8,6 +8,7 @@ import BookNow from './pages/BookNow'
 import Testimonials from './pages/Testimonials'
 import Memberships from './pages/Memberships'
 import Products from './pages/Products'
+import PersonalizedEvaluation from './pages/PersonalizedEvaluation'
 
 // Weight & Metabolic Health
 import NonInvasiveWeightLoss from './pages/weight-health/NonInvasiveWeightLoss'
@@ -38,6 +39,7 @@ function App() {
             <Route path="/contact" element={<BookNow />} />
             <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/memberships" element={<Memberships />} />
+            <Route path="/personalized-evaluation" element={<PersonalizedEvaluation />} />
 
             {/* Weight & Metabolic Health */}
             <Route path="/weight-health/non-invasive-weight-loss" element={<NonInvasiveWeightLoss />} />
