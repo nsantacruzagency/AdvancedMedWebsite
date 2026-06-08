@@ -81,7 +81,7 @@ export default function PersonalizedEvaluation() {
     <div className="bg-white">
       <HeroPhoto
         eyebrow="Our Approach"
-        title={<>Personalized<br />Evaluation</>}
+        title={<>Free Personalized<br />Evaluation</>}
         subtitle="No packages. No guesswork. Every protocol we create is built from scratch — around your biology, your goals, your timeline, and your life."
         gradient="from-espresso-800 via-espresso-700 to-spa-700"
       />
@@ -214,13 +214,13 @@ export default function PersonalizedEvaluation() {
         <div className="max-w-2xl mx-auto">
           <h2 className="font-serif text-4xl font-bold text-cream-100 mb-4">Ready for a Plan Built for You?</h2>
           <p className="text-cream-300 text-lg mb-10 leading-relaxed">
-            Book your personalized evaluation today. No pressure, no packages — just an honest conversation about what your body needs and what we can do together.
+            Book your free personalized evaluation today. No pressure, no packages — just an honest conversation about what your body needs and what we can do together.
           </p>
           <Link
             to="/book"
             className="inline-flex items-center gap-2 bg-cream-100 hover:bg-white text-espresso text-[10px] tracking-widest uppercase font-medium px-10 py-4 transition-all duration-300"
           >
-            Book Your Evaluation <ArrowRight className="w-4 h-4" />
+            Book a Free Evaluation <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
       </section>

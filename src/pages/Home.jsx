@@ -390,10 +390,10 @@ export default function Home() {
             Book a complimentary evaluation with our specialists and discover the personalized plan that will help you look and feel your absolute best.
           </p>
           <Link
-            to="/book"
+            to="/personalized-evaluation"
             className="inline-flex items-center justify-center gap-3 bg-white text-espresso text-[10px] font-medium tracking-widest uppercase px-10 py-4 hover:bg-cream-100 transition-colors"
           >
-            Schedule Your Evaluation <ArrowRight size={13} />
+            Free Evaluations <ArrowRight size={13} />
           </Link>
         </div>
       </section>

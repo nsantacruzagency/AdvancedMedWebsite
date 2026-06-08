@@ -77,7 +77,7 @@ export default function Navbar() {
 
           {/* Desktop nav */}
           <div className="hidden lg:flex items-center gap-7">
-            {/* Personalized Evaluation */}
+            {/* Free Personalized Evaluation */}
             <Link
               to="/personalized-evaluation"
               className={`text-[11px] font-medium tracking-widest uppercase transition-colors ${
@@ -86,7 +86,7 @@ export default function Navbar() {
                   : 'text-espresso-600 hover:text-espresso'
               }`}
             >
-              Personalized Evaluation
+              Free Personalized Evaluation
             </Link>
 
             {/* Weight & Metabolic Health */}
@@ -174,7 +174,7 @@ export default function Navbar() {
               className="block py-2 text-xs tracking-widest uppercase font-medium text-espresso-600 hover:text-espresso pb-3 border-b border-cream-300 mb-2"
               onClick={() => setMobileOpen(false)}
             >
-              Personalized Evaluation
+              Free Personalized Evaluation
             </Link>
 
             <p className="text-[9px] font-medium tracking-widest uppercase text-spa pt-3 pb-1">
