@@ -102,7 +102,7 @@ export default function Massages() {
         logo="/images/protocol-logos/3in1logo.png"
         logoAlt="3-in-1 Body Contouring"
         items={[
-          { label: 'Lymphatic Drainage — 6 Sessions', result: 'Significant reduction in lower leg swelling and heaviness. Improved lymphatic circulation and reduced fluid retention visible within the first 3 sessions.', beforeAlt: 'Before lymphatic drainage treatment', afterAlt: 'After lymphatic drainage treatment' },
+          { label: 'Lymphatic Drainage — 6 Sessions', result: 'Significant reduction in lower leg swelling and heaviness. Improved lymphatic circulation and reduced fluid retention visible within the first 3 sessions.', beforeSrc: '/images/before-after/lymphatic-drainage-6-sessions/before.jpg', afterSrc: '/images/before-after/lymphatic-drainage-6-sessions/after.jpg', beforeAlt: 'Before lymphatic drainage treatment', afterAlt: 'After lymphatic drainage treatment' },
           { label: 'Post-Op Recovery — 8 Sessions', result: 'Accelerated healing following liposuction procedure. Reduced bruising, prevention of fibrosis, and noticeably smoother contour result achieved through targeted post-op massage.', beforeAlt: 'Before post-operative massage', afterAlt: 'After post-operative massage' },
           { label: 'Prenatal Massage — Third Trimester', result: 'Relief from sciatic nerve pain, significant reduction in ankle and foot swelling, and improved sleep quality reported throughout 6-week prenatal massage series.', beforeAlt: 'Before prenatal massage series', afterAlt: 'After prenatal massage series' },
         ]}
