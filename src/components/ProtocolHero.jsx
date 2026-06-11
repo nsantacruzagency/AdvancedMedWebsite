@@ -22,29 +22,26 @@ export default function ProtocolHero({
     <section className="bg-cream-200 border-b border-cream-300">
       <div className="max-w-5xl mx-auto px-5 sm:px-8 lg:px-12 py-4 md:py-6 text-center">
 
-        {/* Eyebrow */}
-        {eyebrow && (
-          <p className="text-spa text-[10px] font-medium uppercase mb-2 tracking-[0.28em]">
-            {eyebrow}
-          </p>
-        )}
-
         {/* Protocol logo — PNG if available, serif text fallback otherwise */}
         {showLogo ? (
           <img
             src={protocolLogo}
             alt={fallbackTitle || eyebrow || 'Protocol'}
             onError={() => setImgFailed(true)}
-            className="mx-auto max-h-56 md:max-h-72 w-auto object-contain my-1"
+            className="mx-auto max-h-56 md:max-h-72 w-auto object-contain mb-1"
           />
         ) : (
-          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-light text-espresso leading-[1.05] my-1">
+          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-light text-espresso leading-[1.05] mb-1">
             {fallbackTitle}
           </h1>
         )}
 
-        {/* Divider */}
-        <div className="w-12 h-px bg-spa mx-auto mb-2 mt-1" />
+        {/* Eyebrow */}
+        {eyebrow && (
+          <p className="text-spa text-[10px] font-medium uppercase mt-1 tracking-[0.28em]">
+            {eyebrow}
+          </p>
+        )}
 
         {/* Description */}
         {protocolDescription && (
