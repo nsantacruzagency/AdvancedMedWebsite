@@ -14,7 +14,7 @@ const tiers = [
     color: 'border-cream-300',
     badgeColor: 'bg-cream-200 text-espresso-600',
     accentColor: 'text-espresso-500',
-    buttonClass: 'bg-espresso hover:bg-espresso-600 text-cream-100 text-[10px] tracking-widest uppercase',
+    buttonClass: 'bg-spa hover:bg-spa-600 text-cream-100 text-[10px] tracking-widest uppercase',
     popular: false,
     perks: [
       '1 facial treatment per month (your choice)',
@@ -33,7 +33,7 @@ const tiers = [
     color: 'border-spa ring-2 ring-spa ring-offset-2',
     badgeColor: 'bg-espresso text-cream-100',
     accentColor: 'text-spa-500',
-    buttonClass: 'bg-espresso hover:bg-espresso-600 text-cream-100 text-[10px] tracking-widest uppercase',
+    buttonClass: 'bg-spa hover:bg-spa-600 text-cream-100 text-[10px] tracking-widest uppercase',
     popular: true,
     perks: [
       '2 treatments per month (choose from any menu)',
@@ -54,7 +54,7 @@ const tiers = [
     color: 'border-espresso-600',
     badgeColor: 'bg-espresso text-cream-100',
     accentColor: 'text-espresso-600',
-    buttonClass: 'bg-espresso hover:bg-espresso-600 text-cream-100 text-[10px] tracking-widest uppercase',
+    buttonClass: 'bg-spa hover:bg-spa-600 text-cream-100 text-[10px] tracking-widest uppercase',
     popular: false,
     perks: [
       '3 treatments per month (any service)',

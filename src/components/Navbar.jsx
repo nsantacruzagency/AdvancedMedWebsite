@@ -173,7 +173,7 @@ export default function Navbar() {
 
             <Link
               to="/book"
-              className="ml-2 inline-block bg-espresso text-cream-100 text-[10px] font-medium tracking-widest uppercase px-6 py-3 hover:bg-espresso-600 transition-colors"
+              className="ml-2 inline-block bg-spa text-cream-100 text-[10px] font-medium tracking-widest uppercase px-6 py-3 hover:bg-spa-600 transition-colors"
             >
               Book Now
             </Link>
@@ -249,7 +249,7 @@ export default function Navbar() {
 
             <Link
               to="/book"
-              className="block w-full text-center mt-5 bg-espresso text-cream-100 text-[10px] font-medium tracking-widest uppercase px-6 py-3.5 hover:bg-espresso-600 transition-colors"
+              className="block w-full text-center mt-5 bg-spa text-cream-100 text-[10px] font-medium tracking-widest uppercase px-6 py-3.5 hover:bg-spa-600 transition-colors"
               onClick={() => setMobileOpen(false)}
             >
               Book Now

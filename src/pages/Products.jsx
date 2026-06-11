@@ -193,7 +193,7 @@ export default function Products() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="mailto:hello@advancedmedspaofficial.com?subject=Product Recommendation Request"
-              className="inline-flex items-center justify-center gap-3 bg-espresso text-cream-100 text-[10px] font-medium tracking-widest uppercase px-9 py-4 hover:bg-espresso-600 transition-colors"
+              className="inline-flex items-center justify-center gap-3 bg-spa text-cream-100 text-[10px] font-medium tracking-widest uppercase px-9 py-4 hover:bg-spa-600 transition-colors"
             >
               <Mail size={13} /> Email Us to Order
             </a>

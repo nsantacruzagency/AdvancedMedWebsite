@@ -260,7 +260,7 @@ export default function About() {
           </p>
           <Link
             to="/book"
-            className="inline-flex items-center gap-3 bg-espresso hover:bg-espresso-600 text-cream-100 text-[10px] tracking-widest uppercase px-10 py-4 transition-colors"
+            className="inline-flex items-center gap-3 bg-spa hover:bg-spa-600 text-cream-100 text-[10px] tracking-widest uppercase px-10 py-4 transition-colors"
           >
             Book Your Visit <ArrowRight size={14} />
           </Link>

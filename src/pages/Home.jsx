@@ -189,7 +189,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/book"
-                className="inline-flex items-center justify-center gap-3 bg-espresso text-cream-100 text-[10px] font-medium tracking-widest uppercase px-9 py-4 hover:bg-espresso-600 transition-colors"
+                className="inline-flex items-center justify-center gap-3 bg-spa text-cream-100 text-[10px] font-medium tracking-widest uppercase px-9 py-4 hover:bg-spa-600 transition-colors"
               >
                 Book a Evaluation
                 <ArrowRight size={13} />
@@ -390,7 +390,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/memberships"
-              className="inline-flex items-center justify-center gap-3 bg-espresso text-cream-100 text-[10px] font-medium tracking-widest uppercase px-9 py-4 hover:bg-espresso-600 transition-colors"
+              className="inline-flex items-center justify-center gap-3 bg-spa text-cream-100 text-[10px] font-medium tracking-widest uppercase px-9 py-4 hover:bg-spa-600 transition-colors"
             >
               View Membership Plans <ArrowRight size={13} />
             </Link>

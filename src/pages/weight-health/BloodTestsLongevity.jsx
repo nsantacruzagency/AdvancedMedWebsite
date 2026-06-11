@@ -255,7 +255,7 @@ export default function BloodTestsLongevity() {
           </p>
           <Link
             to="/book"
-            className="inline-flex items-center gap-2 bg-espresso hover:bg-espresso-600 text-cream-100 text-[10px] tracking-widest uppercase font-medium px-12 py-5 transition-all duration-300"
+            className="inline-flex items-center gap-2 bg-spa hover:bg-spa-600 text-cream-100 text-[10px] tracking-widest uppercase font-medium px-12 py-5 transition-all duration-300"
           >
             Book Your Wellness Evaluation <ArrowRight className="w-4 h-4" />
           </Link>

@@ -251,12 +251,12 @@ export default function BookNow() {
                     ) : <div />}
                     {step < 3 ? (
                       <button onClick={next} disabled={!canProceed()}
-                        className="px-8 py-3 bg-espresso hover:bg-espresso-600 disabled:bg-cream-300 disabled:text-espresso-400 text-cream-100 text-[10px] tracking-widest uppercase font-medium transition-colors">
+                        className="px-8 py-3 bg-spa hover:bg-spa-600 disabled:bg-cream-300 disabled:text-espresso-400 text-cream-100 text-[10px] tracking-widest uppercase font-medium transition-colors">
                         Continue
                       </button>
                     ) : (
                       <button onClick={() => setSubmitted(true)}
-                        className="px-8 py-3 bg-espresso hover:bg-espresso-600 text-cream-100 text-[10px] tracking-widest uppercase font-medium transition-colors">
+                        className="px-8 py-3 bg-spa hover:bg-spa-600 text-cream-100 text-[10px] tracking-widest uppercase font-medium transition-colors">
                         Confirm Booking
                       </button>
                     )}
