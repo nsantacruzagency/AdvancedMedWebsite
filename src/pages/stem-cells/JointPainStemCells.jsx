@@ -5,122 +5,149 @@ import HeroPhoto from '../../components/HeroPhoto'
 import FAQ from '../../components/FAQ'
 
 const conditions = [
-  { name: 'Osteoarthritis', desc: 'Degenerative joint disease causing cartilage breakdown, bone-on-bone friction, pain, stiffness, and reduced range of motion in the knees, hips, shoulders, and hands.' },
-  { name: 'Knee Pain & Cartilage Damage', desc: 'Cartilage has no direct blood supply and cannot self-repair. Stem cell therapy introduces regenerative cells directly into the joint to promote new cartilage formation and reduce inflammation.' },
-  { name: 'Hip Joint Degeneration', desc: 'Progressive loss of hip cartilage leads to chronic pain, limited mobility, and difficulty with basic activities. Stem cells target the inflamed joint environment to slow degeneration and restore function.' },
-  { name: 'Shoulder Injuries', desc: 'Rotator cuff tears, labral damage, and glenohumeral arthritis respond well to regenerative injections — reducing pain and improving strength without surgery.' },
-  { name: 'Spine & Disc Pain', desc: 'Degenerative disc disease and facet arthropathy cause chronic back pain. Mesenchymal stem cells have demonstrated the ability to reduce disc inflammation and support structural repair.' },
-  { name: 'Ankle & Foot Joints', desc: 'Chronic ankle instability, talus cartilage defects, and subtalar arthritis are difficult to treat surgically. Regenerative injections offer a non-surgical path to pain reduction and improved stability.' },
-]
-
-const mechanism = [
   {
-    title: 'Anti-Inflammatory Signaling',
-    desc: 'Mesenchymal stem cells (MSCs) release cytokines and growth factors that actively suppress the chronic inflammatory environment inside an arthritic joint — breaking the cycle of pain and tissue damage.',
+    tag: 'Most Common',
+    name: 'Knee Pain & Osteoarthritis',
+    desc: 'Knee osteoarthritis is one of the most common causes of chronic pain — and one of the conditions most successfully treated with MSC exosome therapy. By injecting concentrated regenerative biologics directly into the knee joint under ultrasound guidance, we reduce inflammation, stimulate cartilage repair, and restore pain-free mobility.',
+    benefits: [
+      'Rebuilds degraded cartilage over 4–6 months',
+      'Reduces swelling and stiffness rapidly',
+      'Avoid or significantly delay knee replacement',
+      'Same-day return to activity',
+    ],
   },
   {
-    title: 'Cartilage Regeneration',
-    desc: 'MSCs can differentiate into chondrocytes — the cells responsible for producing and maintaining cartilage. When injected into a damaged joint, they migrate to areas of cartilage loss and begin rebuilding the extracellular matrix.',
+    tag: null,
+    name: 'Hip Pain & Arthritis',
+    desc: 'Hip degeneration, labral tears, and chronic arthritis can severely limit movement and quality of life. Our MSC exosome injections target the hip joint directly — reducing inflammation, supporting labral tissue repair, and improving range of motion without surgery or extended downtime.',
+    benefits: [
+      'Addresses osteoarthritis, bursitis, and labral damage',
+      'Non-surgical alternative to hip replacement',
+      'Precision-guided injection for accurate delivery',
+      'Results in 4–8 weeks with continued improvement',
+    ],
   },
   {
-    title: 'Paracrine Effect',
-    desc: 'Even beyond direct differentiation, stem cells communicate with surrounding native cells through secreted molecules (the "secretome"), stimulating the joint\'s own repair mechanisms and recruiting other regenerative cells to the site.',
+    tag: null,
+    name: 'Shoulder Pain & Rotator Cuff',
+    desc: 'Rotator cuff tears, labral damage, impingement, and chronic shoulder arthritis respond well to regenerative injection therapy. We deliver MSC exosomes directly into the shoulder joint and surrounding tissues, promoting collagen synthesis and reducing the chronic inflammation that keeps shoulders painful and stiff.',
+    benefits: [
+      'Treats rotator cuff tears and labral injuries',
+      'Reduces chronic inflammation and impingement',
+      'Restores overhead range of motion',
+      'Minimally invasive — no anesthesia required',
+    ],
   },
   {
-    title: 'Synovial Environment Restoration',
-    desc: 'The synovial membrane lining the joint produces lubricating fluid. Chronic arthritis damages this membrane. Stem cell therapy helps restore healthy synovial tissue and fluid production, reducing friction and pain.',
-  },
-]
-
-const cellSources = [
-  {
-    source: 'Bone Marrow Aspirate Concentrate (BMAC)',
-    desc: 'Harvested from the patient\'s own iliac crest (hip bone), BMAC contains a concentrated mixture of mesenchymal stem cells, growth factors, and platelets. Autologous (from your own body) — no rejection risk.',
-    pros: ['Autologous — zero rejection risk', 'Rich in growth factors and platelets', 'Well-established clinical record', 'Single-session harvest and injection'],
-  },
-  {
-    source: 'Wharton\'s Jelly (Umbilical Cord MSCs)',
-    desc: 'Mesenchymal stem cells derived from the Wharton\'s jelly of donated umbilical cords. Allogenic (donor-sourced), these are young, highly potent cells with superior proliferative capacity compared to adult autologous sources.',
-    pros: ['High cell potency and proliferation rate', 'Immune-privileged — no HLA matching required', 'No harvest procedure needed', 'Consistent, standardized cell quality'],
+    tag: null,
+    name: 'Tendonitis & Bursitis',
+    desc: 'Chronic inflammation in the tendons and bursae can severely restrict mobility and cause sharp, debilitating pain. Our targeted stem cell exosome therapies effectively calm local inflammation and repair micro-tears in soft tissue, allowing you to return to sports and daily activities without corticosteroid injections or surgery.',
+    benefits: [
+      'Targets Achilles, patellar, and elbow tendonitis',
+      'Resolves chronic bursitis inflammation',
+      'Repairs micro-tears in soft tissue',
+      'Safe alternative to repeated steroid shots',
+    ],
   },
   {
-    source: 'Adipose-Derived Stem Cells (SVF)',
-    desc: 'Extracted from the patient\'s own fat tissue via a minimally invasive aspiration. The stromal vascular fraction (SVF) contains a high density of mesenchymal stem cells, pericytes, and growth factors with strong anti-inflammatory properties.',
-    pros: ['Autologous — no rejection risk', 'High MSC yield from fat tissue', 'Minimally invasive harvest', 'Strong anti-inflammatory profile'],
+    tag: null,
+    name: 'Back & Spine Pain',
+    desc: 'Degenerative disc disease, facet joint arthritis, and spinal stenosis are among the most difficult pain conditions to treat conservatively. MSC exosome therapy delivers powerful anti-inflammatory and regenerative signals directly to the affected spinal structures — reducing nerve compression symptoms and supporting disc tissue health.',
+    benefits: [
+      'Addresses degenerative disc disease and facet arthritis',
+      'Reduces nerve compression and radiating pain',
+      'Fluoroscopy-guided for precise spinal delivery',
+      'Non-surgical alternative to fusion or discectomy',
+    ],
+  },
+  {
+    tag: null,
+    name: 'Sports Injuries',
+    desc: 'Ligament tears, tendinopathy, cartilage damage, and overuse injuries can sideline athletes for months. Regenerative injection therapy accelerates healing at the tissue level — delivering concentrated growth factors and anti-inflammatory exosomes directly to the injury site for faster, more complete recovery.',
+    benefits: [
+      'ACL, MCL, and tendon tears treated non-surgically',
+      'Accelerates natural healing by 40–60%',
+      'Reduces scar tissue formation',
+      'Return to sport faster than traditional rehab alone',
+    ],
+  },
+  {
+    tag: null,
+    name: 'Generalized Arthritis',
+    desc: 'Rheumatoid arthritis, psoriatic arthritis, and multi-joint osteoarthritis involve systemic inflammation that local injections alone can\'t fully address. Our IV MSC exosome infusion therapy delivers regenerative signals throughout the body — modulating immune response, reducing systemic inflammation, and improving joint function across multiple sites simultaneously.',
+    benefits: [
+      'IV infusion reaches multiple joints at once',
+      'Modulates overactive immune response',
+      'Reduces systemic inflammation markers',
+      'Complements local joint injections for full-body relief',
+    ],
   },
 ]
 
 const protocol = [
   {
     step: '01',
-    title: 'Comprehensive Evaluation',
-    desc: 'Your clinician reviews your imaging (X-ray, MRI), joint history, pain patterns, activity level, and overall health. We determine which joints are appropriate candidates for regenerative therapy and which cell source and protocol best match your case.',
+    title: 'Evaluation & Imaging Review',
+    desc: 'Clinical review of your X-rays or MRI, pain history, activity level, and candidacy assessment with our medical team. We determine which joints are appropriate candidates and which protocol best fits your case.',
   },
   {
     step: '02',
-    title: 'Cell Source Preparation',
-    desc: 'Depending on your protocol, cells are either harvested from your own body (BMAC or adipose) or sourced from a licensed, FDA-regulated tissue bank (Wharton\'s Jelly MSCs). All processing follows strict sterility and viability standards.',
+    title: 'Precision-Guided Injection',
+    desc: 'Ultrasound or fluoroscopy-guided injection of concentrated MSC exosomes directly into the target joint. The procedure takes approximately 30 minutes. Same-day return to normal activity.',
   },
   {
     step: '03',
-    title: 'Image-Guided Injection',
-    desc: 'The stem cell preparation is injected directly into the target joint under ultrasound or fluoroscopic guidance — ensuring precise placement at the site of cartilage damage or inflammation. This is an outpatient procedure.',
+    title: 'Anti-Inflammatory Response (Weeks 1–4)',
+    desc: 'Exosomes signal local cells to reduce inflammation and halt further cartilage degradation. Pain relief often begins during this window as the inflammatory environment in the joint normalizes.',
   },
   {
     step: '04',
-    title: 'Post-Injection Protocol',
-    desc: 'The days and weeks following injection are critical. We provide a structured post-injection protocol covering activity modification, anti-inflammatory nutrition, and any supporting therapies (PRP follow-up, physical therapy recommendations) to maximize the regenerative environment.',
-  },
-  {
-    step: '05',
-    title: 'Progressive Monitoring',
-    desc: 'Regenerative results develop over 3–6 months as cells engraft and the repair process unfolds. We schedule follow-up evaluations to track your progress and determine whether additional treatments would accelerate or maintain your results.',
+    title: 'Tissue Regeneration (Weeks 4–16)',
+    desc: 'Growth factors stimulate chondrocyte activity and collagen production. Progressive improvement in mobility and pain reduction continues over 4–6 months as cartilage and soft tissue rebuild.',
   },
 ]
 
-const science = [
-  {
-    title: 'MSCs and Osteoarthritis — Clinical Evidence',
-    body: 'Multiple published clinical trials have demonstrated that intra-articular injections of mesenchymal stem cells significantly reduce pain scores (VAS, WOMAC) and improve functional outcomes in knee osteoarthritis compared to hyaluronic acid and corticosteroid controls. Studies show MRI-confirmed cartilage volume preservation and in some cases measurable new cartilage formation at 12–24 months post-injection.',
-  },
-  {
-    title: 'The Secretome: How MSCs Communicate',
-    body: 'MSCs do not act alone. The majority of their therapeutic effect occurs through paracrine signaling — the release of bioactive molecules including TGF-β, IGF-1, HGF, VEGF, and IL-1 receptor antagonists. These molecules suppress pro-inflammatory cytokines (TNF-α, IL-1β, IL-6) that drive cartilage breakdown, while simultaneously promoting tissue repair and angiogenesis.',
-  },
-  {
-    title: 'Immune Privilege of Allogeneic MSCs',
-    body: 'Unlike organ transplants, mesenchymal stem cells express low levels of MHC class II antigens and lack the co-stimulatory molecules required to trigger a T-cell immune response. This "immune privilege" allows allogeneic (donor) MSCs — including Wharton\'s Jelly-derived cells — to be administered without HLA matching or immunosuppression, while still exerting their full regenerative effect.',
-  },
-  {
-    title: 'Platelet-Rich Plasma (PRP) as an Adjunct',
-    body: 'PRP is frequently used in conjunction with stem cell therapy to amplify results. The concentrated growth factors in PRP (PDGF, TGF-β, EGF, VEGF) create a bioactive scaffold that supports MSC survival, migration, and differentiation within the joint. Sequential PRP injections at 4–8 weeks post-stem cell treatment have been shown to extend and deepen the regenerative response.',
-  },
+const comparison = [
+  { feature: 'Addresses Root Cause', traditional: 'No — masks pain only', regenerative: 'Yes — regenerates tissue' },
+  { feature: 'Cartilage Rebuilding', traditional: 'None', regenerative: 'Active stimulation' },
+  { feature: 'Recovery Downtime', traditional: 'Weeks to months', regenerative: 'Same-day return' },
+  { feature: 'Long-Term Relief', traditional: 'Temporary / requires repeat', regenerative: 'Progressive and lasting' },
+  { feature: 'Biologics Compliance', traditional: 'N/A', regenerative: 'AATB / cGMP certified' },
+  { feature: 'Surgical Risk', traditional: 'Significant', regenerative: 'Non-surgical' },
 ]
 
 const faqItems = [
   {
-    q: 'How is stem cell therapy different from cortisone injections?',
-    a: 'Cortisone injections are anti-inflammatory — they temporarily suppress pain and swelling but do not address the underlying structural damage. With repeated use, corticosteroids have been shown to accelerate cartilage breakdown. Stem cell therapy is regenerative — it aims to repair damaged tissue, reduce inflammation through cellular mechanisms, and slow or reverse the degenerative process rather than simply masking symptoms.',
+    q: 'What are MSC exosomes?',
+    a: 'Mesenchymal stem cell (MSC) exosomes are nano-sized vesicles secreted by stem cells that carry growth factors, signaling proteins, and genetic material. Rather than using whole stem cells, exosome therapy delivers the concentrated "communication signals" that drive tissue repair — triggering the same regenerative responses with a more standardized, stable, and scalable biological product. They reduce inflammation, stimulate cell proliferation, and promote extracellular matrix repair in damaged joints.',
   },
   {
-    q: 'Am I a candidate for joint stem cell therapy?',
-    a: 'Ideal candidates have mild-to-moderate joint degeneration with intact joint space visible on imaging, chronic pain that has not fully resolved with conservative care (physical therapy, NSAIDs, injections), and no active joint infection or inflammatory arthritis requiring systemic treatment. Severely bone-on-bone joints may have limited regenerative capacity and may be better served by surgical consultation. We evaluate each case individually.',
+    q: 'Is this the same as a cortisone shot?',
+    a: 'No — they work in completely opposite ways. Cortisone is a corticosteroid that suppresses inflammation temporarily but does nothing to repair the underlying damage. With repeated use, cortisone has been shown to accelerate cartilage breakdown. MSC exosome therapy is regenerative — it signals the joint to repair damaged tissue, rebuild cartilage, and restore normal cellular function. The goal is lasting improvement, not temporary symptom masking.',
   },
   {
-    q: 'How long does it take to see results?',
-    a: 'Stem cell therapy is not an immediate pain blocker. Most patients notice initial improvements in inflammation and comfort within 4–8 weeks. The deeper regenerative effects — cartilage remodeling, structural repair — continue to develop over 3–6 months. Full results are typically assessed at 6 months post-injection, with many patients continuing to improve through 12 months.',
+    q: 'How long until I feel relief?',
+    a: 'Most patients begin to notice reduced inflammation and improved comfort within 2–4 weeks of treatment. The deeper regenerative effects — cartilage remodeling and structural repair — continue developing over 4–6 months. Full results are typically assessed at 6 months, with many patients continuing to improve through 12 months post-injection.',
   },
   {
-    q: 'How many treatments are needed?',
-    a: 'Many patients see significant improvement from a single treatment series. For moderate-to-advanced degeneration, a second injection — or a PRP follow-up at 6–8 weeks — may be recommended to deepen and extend results. Your protocol is designed individually at your evaluation based on joint severity, your cell source, and your response to the initial treatment.',
+    q: 'Do I need surgery after this?',
+    a: 'The goal of regenerative therapy is to reduce or eliminate the need for surgery. Many patients with moderate joint degeneration achieve sufficient improvement that surgery is no longer necessary or can be significantly delayed. For severely bone-on-bone joints, regenerative therapy may reduce pain and improve function even if it cannot fully reverse the structural damage. We provide an honest candidacy assessment at your evaluation.',
   },
   {
-    q: 'Is there any downtime after the procedure?',
-    a: 'Stem cell joint injections are outpatient procedures with minimal downtime. Most patients are advised to rest the treated joint for 24–48 hours and avoid high-impact activity for 2–4 weeks to allow the cells to engraft. Normal daily activities including light walking can typically resume within 1–2 days. A structured post-injection protocol guides your activity and supports optimal healing.',
+    q: 'Who is a good candidate?',
+    a: 'Ideal candidates have mild-to-moderate joint degeneration with some joint space remaining on imaging, chronic pain that hasn\'t fully resolved with conservative care (physical therapy, NSAIDs, steroid injections), and no active joint infection or uncontrolled inflammatory arthritis. Athletes with soft tissue injuries and patients looking to delay or avoid joint replacement are also excellent candidates. We evaluate each case individually.',
   },
   {
-    q: 'What is the difference between BMAC, adipose-derived cells, and Wharton\'s Jelly MSCs?',
-    a: 'BMAC and adipose SVF are autologous — harvested from your own body, eliminating rejection risk. They contain your own MSCs along with platelets and growth factors. Wharton\'s Jelly MSCs are allogeneic (donor-sourced) — they come from younger, more potent cells with higher proliferative capacity and do not require a harvest procedure. The best choice depends on your joint severity, age, and overall health. We discuss all options at your evaluation.',
+    q: 'Is the injection painful?',
+    a: 'Patients typically report minimal discomfort during the procedure. A local anesthetic is applied before injection, and the procedure is performed under ultrasound or fluoroscopic guidance to ensure precision. Some patients experience mild soreness in the treated joint for 24–72 hours after the procedure — a normal response as the biologics begin working. Most return to normal activity the same day.',
+  },
+  {
+    q: 'Is this treatment FDA-approved?',
+    a: 'MSC exosome therapy for joint conditions is regulated but not yet FDA-approved as a specific indication — similar to how many PRP and biologic therapies are administered under physician oversight. We use AATB-certified, cGMP-compliant biologics sourced from ethically screened donors, with a full Certificate of Analysis for every vial. All treatments are performed under physician supervision with full informed consent.',
+  },
+  {
+    q: 'How does this differ from PRP?',
+    a: 'PRP (platelet-rich plasma) concentrates growth factors from your own blood to stimulate healing. It is effective for many soft-tissue injuries but has limited cartilage-rebuilding capacity. MSC exosome therapy carries a broader spectrum of regenerative signals including anti-inflammatory cytokines, microRNAs, and chondrogenic growth factors — making it more potent for significant cartilage damage, osteoarthritis, and conditions where PRP alone is insufficient. The two therapies are often used together for synergistic effect.',
   },
 ]
 
@@ -129,84 +156,69 @@ export default function JointPainStemCells() {
     <div className="bg-white">
       <HeroPhoto
         eyebrow="Stem Cells & Wellness"
-        title={<>Joint Pain<br />Stem Cell Therapy</>}
-        subtitle="Regenerative medicine for chronic joint pain, cartilage damage, and osteoarthritis — using the body's own repair mechanisms to restore function without surgery."
+        title={<>Stem Cell<br />Joint Therapy</>}
+        subtitle="Our stem cell joint regeneration protocol delivers concentrated MSC exosomes directly into damaged tissue — reducing inflammation, rebuilding cartilage, and restoring mobility without surgery."
         gradient="from-espresso-800 via-espresso-700 to-spa-700"
       />
 
-      {/* Intro */}
-      <section className="py-20 px-6 bg-cream-100">
+      {/* Intro pillars */}
+      <section className="py-16 px-6 bg-cream-100 border-b border-cream-300">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            {[
+              { title: 'Non-Surgical', desc: 'No incisions. No general anesthesia. No hospital stay. Same-day return to activity.' },
+              { title: 'Targets the Root Cause', desc: 'We treat the cartilage, inflammation, and tissue damage — not just the symptom of pain.' },
+              { title: 'AATB / cGMP Certified Biologics', desc: 'Every vial comes with a full Certificate of Analysis. Ethically sourced, rigorously tested.' },
+            ].map((p) => (
+              <div key={p.title} className="flex flex-col items-center gap-3">
+                <CheckCircle className="w-6 h-6 text-spa" />
+                <h4 className="font-serif font-bold text-espresso text-lg">{p.title}</h4>
+                <p className="text-espresso-500 text-sm leading-relaxed">{p.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* What are MSC exosomes */}
+      <section className="py-20 px-6 bg-white">
         <div className="max-w-3xl mx-auto text-center">
-          <p className="text-[10px] font-medium tracking-widest uppercase text-spa mb-4">Regenerative Medicine</p>
+          <p className="text-[10px] font-medium tracking-widest uppercase text-spa mb-4">The Science</p>
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-espresso mb-6 leading-tight">
-            Joints wear down. The question is whether they can be rebuilt.
+            What Are MSC Exosomes?
           </h2>
           <p className="text-espresso-500 text-lg leading-relaxed mb-5">
-            Conventional joint care manages symptoms. Regenerative medicine targets the source — cartilage loss, chronic inflammation, and synovial damage — using mesenchymal stem cells to trigger the body's own repair processes.
+            Mesenchymal stem cell (MSC) exosomes are nano-sized signaling vesicles that carry growth factors, anti-inflammatory proteins, and regenerative microRNA directly to damaged tissue. Rather than injecting whole cells, exosome therapy delivers the concentrated biological signals that drive repair — stimulating your body's own chondrocytes, reducing destructive inflammation, and rebuilding the extracellular matrix in damaged cartilage.
           </p>
           <p className="text-espresso-500 text-lg leading-relaxed">
-            Stem cell therapy does not eliminate all joint damage. What it does is create a biological environment that promotes healing, reduces inflammatory destruction, and in many cases, preserves or rebuilds cartilage tissue that conventional treatments cannot touch.
+            Exosomes derived from Wharton's Jelly MSCs (umbilical cord tissue) are among the most potent available — sourced from young, immune-privileged cells with superior signaling capacity. They do not require HLA matching and carry no rejection risk.
           </p>
         </div>
       </section>
 
       {/* Conditions */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6 bg-cream-100">
         <div className="max-w-6xl mx-auto">
           <SectionHeader
-            eyebrow="What We Treat"
-            title="Conditions Addressed with Stem Cell Therapy"
-            subtitle="Regenerative joint injections are appropriate for a range of degenerative and inflammatory conditions affecting cartilage, synovial tissue, and joint structure."
-          />
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
-            {conditions.map((c) => (
-              <div key={c.name} className="bg-cream-100 p-6 border border-cream-300 hover:border-spa hover:shadow-md transition-all duration-300">
-                <h4 className="font-serif font-bold text-espresso text-lg mb-3">{c.name}</h4>
-                <p className="text-espresso-500 text-sm leading-relaxed">{c.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* How It Works */}
-      <section className="py-24 px-6 bg-espresso">
-        <div className="max-w-6xl mx-auto">
-          <SectionHeader
-            eyebrow="The Science"
-            title="How Stem Cells Repair Joints"
-            subtitle="Mesenchymal stem cells work through four distinct biological mechanisms — each targeting a different aspect of joint degeneration."
-            light={true}
+            eyebrow="Conditions We Treat"
+            title="Joint Pain Solutions That Deliver Results"
+            subtitle="From knee and hip pain to spinal conditions and soft tissue injuries, our regenerative protocols address the root cause — not just the symptoms."
           />
           <div className="grid md:grid-cols-2 gap-8 mt-4">
-            {mechanism.map((m) => (
-              <div key={m.title} className="bg-white/5 border border-white/10 p-8 hover:bg-white/10 transition-all duration-300">
-                <h4 className="font-serif font-bold text-cream-100 text-xl mb-4">{m.title}</h4>
-                <p className="text-cream-300 leading-relaxed text-sm">{m.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Cell Sources */}
-      <section className="py-24 px-6 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <SectionHeader
-            eyebrow="Cell Sources"
-            title="Types of Stem Cells Used"
-            subtitle="Not all stem cell preparations are the same. We use three clinically validated sources — each with distinct advantages depending on your case."
-          />
-          <div className="grid md:grid-cols-3 gap-8 mt-4">
-            {cellSources.map((cs) => (
-              <div key={cs.source} className="bg-cream-100 border border-cream-300 p-8 hover:border-spa hover:shadow-lg transition-all duration-300">
-                <h4 className="font-serif font-bold text-espresso text-lg mb-3">{cs.source}</h4>
-                <p className="text-espresso-500 text-sm leading-relaxed mb-5">{cs.desc}</p>
+            {conditions.map((c) => (
+              <div key={c.name} className="bg-white p-8 border border-cream-300 hover:border-spa hover:shadow-lg transition-all duration-300">
+                <div className="flex items-center gap-3 mb-3">
+                  <h4 className="font-serif font-bold text-espresso text-xl">{c.name}</h4>
+                  {c.tag && (
+                    <span className="text-[9px] font-bold tracking-widest uppercase bg-spa/10 text-spa px-2 py-1 flex-shrink-0">{c.tag}</span>
+                  )}
+                </div>
+                <p className="text-espresso-500 text-sm leading-relaxed mb-5">{c.desc}</p>
                 <ul className="space-y-2">
-                  {cs.pros.map((p, i) => (
+                  {c.benefits.map((b, i) => (
                     <li key={i} className="flex items-start gap-2 text-espresso-500 text-sm">
                       <CheckCircle className="w-4 h-4 text-spa flex-shrink-0 mt-0.5" />
-                      {p}
+                      {b}
                     </li>
                   ))}
                 </ul>
@@ -216,18 +228,54 @@ export default function JointPainStemCells() {
         </div>
       </section>
 
+      {/* Tendonitis & Bursitis Deep Dive */}
+      <section className="py-24 px-6 bg-espresso">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+              <p className="text-[10px] font-medium tracking-widest uppercase text-spa-300 mb-3">Soft-Tissue Inflammation</p>
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-cream-100 mb-6 leading-tight">
+                PRP & MSC Therapy for Tendonitis and Bursitis
+              </h2>
+              <p className="text-cream-300 leading-relaxed mb-5">
+                Tendonitis and bursitis are two of the most common — and most stubborn — soft-tissue conditions we see. When tendons become inflamed from overuse, sports, or repetitive strain, and when the small fluid sacs (bursae) cushioning your joints get irritated, the pain can linger for months and resist rest, ice, and anti-inflammatory medication.
+              </p>
+              <p className="text-cream-300 leading-relaxed">
+                Our regenerative protocols use platelet-rich plasma (PRP) and MSC exosomes to interrupt the chronic inflammation cycle and stimulate true soft-tissue repair. Treatment is performed in-office under ultrasound guidance, takes less than an hour, and requires no surgery, no steroid injections, and minimal downtime.
+              </p>
+            </div>
+            <div className="space-y-4">
+              {[
+                'PRP and MSC injections delivered under ultrasound guidance',
+                'Treats rotator cuff tendonitis, tennis & golfer\'s elbow, Achilles, patellar tendonitis',
+                'Treats hip and shoulder bursitis',
+                'Targets root inflammation instead of masking pain with steroids',
+                'In-office procedure — no surgery, no general anesthesia',
+                'Minimal downtime — most patients return to activity same day',
+                'Most patients feel meaningful relief within 4–8 weeks',
+              ].map((item, i) => (
+                <div key={i} className="flex items-start gap-3 text-cream-300 text-sm">
+                  <CheckCircle className="w-4 h-4 text-spa-300 flex-shrink-0 mt-0.5" />
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Protocol */}
-      <section className="py-24 px-6 bg-cream-100">
+      <section className="py-24 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <SectionHeader
-            eyebrow="Your Treatment Journey"
-            title="The Treatment Protocol"
-            subtitle="From evaluation to follow-up — what the stem cell joint therapy process looks like at Advanced Med."
+            eyebrow="Our Protocol"
+            title="A Non-Surgical Path to Joint Recovery"
+            subtitle="Most pain clinics offer cortisone injections or push surgery. We use next-generation MSC exosome therapy to initiate real tissue regeneration — from the inside out."
           />
-          <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6 mt-4">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-4">
             {protocol.map((p) => (
-              <div key={p.step} className="bg-white p-6 border border-cream-300 hover:border-spa hover:shadow-md transition-all duration-300">
-                <div className="font-serif text-4xl font-bold text-cream-400 mb-4">{p.step}</div>
+              <div key={p.step} className="bg-cream-100 p-8 border border-cream-300 hover:border-spa hover:shadow-md transition-all duration-300">
+                <div className="font-serif text-5xl font-bold text-cream-400 mb-4">{p.step}</div>
                 <h4 className="font-serif font-bold text-espresso mb-3">{p.title}</h4>
                 <p className="text-espresso-500 text-sm leading-relaxed">{p.desc}</p>
               </div>
@@ -236,46 +284,57 @@ export default function JointPainStemCells() {
         </div>
       </section>
 
-      {/* Deep Science */}
-      <section className="py-24 px-6 bg-white">
-        <div className="max-w-6xl mx-auto">
+      {/* Comparison Table */}
+      <section className="py-20 px-6 bg-cream-100">
+        <div className="max-w-4xl mx-auto">
           <SectionHeader
-            eyebrow="Clinical Research"
-            title="The Evidence Behind Regenerative Joint Care"
-            subtitle="Stem cell therapy for joints is an active, growing field with a substantial body of clinical literature."
+            eyebrow="Why We're Different"
+            title="Stem Cell Therapy vs. Traditional Pain Treatments"
+            subtitle="See how regenerative exosome therapy compares to the conventional approaches."
           />
-          <div className="grid md:grid-cols-2 gap-8 mt-4">
-            {science.map((s) => (
-              <div key={s.title} className="bg-cream-100 p-8 border border-cream-300 hover:border-spa transition-all duration-300">
-                <h4 className="font-serif font-bold text-espresso text-lg mb-4">{s.title}</h4>
-                <p className="text-espresso-500 leading-relaxed text-sm">{s.body}</p>
-              </div>
-            ))}
+          <div className="mt-8 overflow-x-auto">
+            <table className="w-full border-collapse">
+              <thead>
+                <tr className="bg-espresso text-cream-100">
+                  <th className="text-left px-6 py-4 text-[11px] font-medium tracking-widest uppercase">Feature</th>
+                  <th className="text-center px-6 py-4 text-[11px] font-medium tracking-widest uppercase">Cortisone / Surgery</th>
+                  <th className="text-center px-6 py-4 text-[11px] font-medium tracking-widest uppercase text-spa-300">Stem Cell Therapy</th>
+                </tr>
+              </thead>
+              <tbody>
+                {comparison.map((row, i) => (
+                  <tr key={row.feature} className={i % 2 === 0 ? 'bg-white' : 'bg-cream-200'}>
+                    <td className="px-6 py-4 text-sm font-semibold text-espresso">{row.feature}</td>
+                    <td className="px-6 py-4 text-sm text-espresso-400 text-center">{row.traditional}</td>
+                    <td className="px-6 py-4 text-sm text-spa font-medium text-center">{row.regenerative}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
 
-      {/* Post-Injection Info */}
-      <section className="py-16 px-6 bg-cream-200 border-y border-cream-300">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="font-serif text-2xl md:text-3xl font-bold text-espresso mb-6 text-center">Post-Injection Protocol</h2>
-          <div className="grid md:grid-cols-3 gap-6">
+      {/* Safety & Compliance */}
+      <section className="py-16 px-6 bg-white border-y border-cream-300">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-[10px] font-medium tracking-widest uppercase text-spa mb-4">Safety & Regulatory Compliance</p>
+          <h2 className="font-serif text-2xl md:text-3xl font-bold text-espresso mb-5">
+            Ethically Sourced. Rigorously Tested. Physician Supervised.
+          </h2>
+          <p className="text-espresso-500 leading-relaxed mb-5 max-w-2xl mx-auto">
+            We use AATB-certified, cGMP-compliant biologics sourced from ethically screened Wharton's Jelly donors. Every vial is accompanied by a full Certificate of Analysis confirming cell viability, sterility, and potency. All treatments are performed under physician oversight with full written informed consent.
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
             {[
-              { phase: 'Days 1–3', title: 'Rest & Protection', items: ['Avoid weight-bearing stress on the injected joint', 'Ice intermittently to manage any procedure-related swelling', 'No NSAIDs — anti-inflammatory drugs suppress the cellular response', 'Light walking permitted as tolerated'] },
-              { phase: 'Weeks 1–4', title: 'Gentle Reactivation', items: ['Begin range-of-motion exercises as recommended', 'Avoid high-impact activity (running, heavy lifting, pivoting)', 'Anti-inflammatory diet strongly encouraged', 'PRP follow-up injection may be scheduled at week 4–6'] },
-              { phase: 'Months 2–6', title: 'Progressive Loading', items: ['Gradual return to normal activity as pain allows', 'Physical therapy or guided exercise to rebuild joint support', 'Progress evaluation to assess cellular response', 'Most patients experience peak improvement at 4–6 months'] },
-            ].map((phase) => (
-              <div key={phase.phase} className="bg-white p-6 border border-cream-300">
-                <p className="text-spa text-[10px] font-bold tracking-widest uppercase mb-1">{phase.phase}</p>
-                <h4 className="font-serif font-bold text-espresso mb-4">{phase.title}</h4>
-                <ul className="space-y-2">
-                  {phase.items.map((item, i) => (
-                    <li key={i} className="flex items-start gap-2 text-espresso-500 text-sm">
-                      <CheckCircle className="w-4 h-4 text-spa flex-shrink-0 mt-0.5" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+              { label: 'AATB Certified', desc: 'American Association of Tissue Banks' },
+              { label: 'cGMP Biologics', desc: 'Current Good Manufacturing Practice' },
+              { label: 'Physician Supervised', desc: 'Medical oversight on every case' },
+              { label: 'Certificate of Analysis', desc: 'Provided for every vial administered' },
+            ].map((item) => (
+              <div key={item.label} className="bg-cream-100 p-5 border border-cream-300 text-center">
+                <p className="font-semibold text-espresso text-sm mb-1">{item.label}</p>
+                <p className="text-espresso-400 text-xs">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -287,9 +346,9 @@ export default function JointPainStemCells() {
       {/* CTA */}
       <section className="py-24 px-6 bg-espresso text-center">
         <div className="max-w-2xl mx-auto">
-          <h2 className="font-serif text-4xl font-bold text-cream-100 mb-4">Is Regenerative Joint Therapy Right for You?</h2>
+          <h2 className="font-serif text-4xl font-bold text-cream-100 mb-4">Ready to Move Without Pain?</h2>
           <p className="text-cream-300 text-lg mb-10 leading-relaxed">
-            Book a free evaluation with our clinical team. We'll review your imaging, joint history, and goals — and give you an honest assessment of whether stem cell therapy is the right path forward.
+            Book a free evaluation with our clinical team. We'll review your imaging, joint history, and goals — and give you an honest assessment of whether regenerative stem cell therapy is the right path forward for you.
           </p>
           <Link
             to="/book"
