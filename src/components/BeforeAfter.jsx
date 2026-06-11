@@ -57,8 +57,8 @@ export default function BeforeAfter({ items, heading = 'Client Results', logo = 
                         <div className="absolute inset-0 bg-gradient-to-br from-espresso-500 to-espresso-700" />
                         <div className="absolute inset-0 flex items-center justify-center">
                           <div className="text-center px-3">
-                            <p className="text-cream-400 text-[10px] uppercase tracking-widest font-light">1080 × 1350</p>
-                            <p className="text-cream-500 text-[9px] mt-1 font-light">Photo placeholder</p>
+                            <p className="text-cream-400 text-[10px] uppercase tracking-widest font-light mb-2">Before Photo</p>
+                            {item.beforeSrc && <p className="text-cream-300 text-[9px] font-mono leading-relaxed break-all">{item.beforeSrc}</p>}
                           </div>
                         </div>
                       </>
@@ -77,8 +77,8 @@ export default function BeforeAfter({ items, heading = 'Client Results', logo = 
                         <div className="absolute inset-0 bg-gradient-to-br from-spa-600 to-spa-800" />
                         <div className="absolute inset-0 flex items-center justify-center">
                           <div className="text-center px-3">
-                            <p className="text-spa-200 text-[10px] uppercase tracking-widest font-light">1080 × 1350</p>
-                            <p className="text-spa-300 text-[9px] mt-1 font-light">Photo placeholder</p>
+                            <p className="text-spa-200 text-[10px] uppercase tracking-widest font-light mb-2">After Photo</p>
+                            {item.afterSrc && <p className="text-spa-100 text-[9px] font-mono leading-relaxed break-all">{item.afterSrc}</p>}
                           </div>
                         </div>
                       </>
