@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { CheckCircle, ArrowRight, Snowflake, Activity, Heart, Zap } from 'lucide-react'
 import SectionHeader from '../../components/SectionHeader'
-import HeroPhoto from '../../components/HeroPhoto'
+import ProtocolHero from '../../components/ProtocolHero'
 import FAQ from '../../components/FAQ'
 import BeforeAfter from '../../components/BeforeAfter'
 
@@ -66,12 +66,11 @@ const faqItems = [
 export default function NonInvasiveWeightLoss() {
   return (
     <div className="bg-white">
-      <HeroPhoto
-        eyebrow="Weight & Metabolic Health"
-        title={<>Non-Invasive<br />Weight Loss</>}
-        subtitle="Science-backed, surgery-free solutions targeting the root causes of stubborn weight — detox, hormones, and precision fat reduction through Cryo Contour."
-        gradient="from-espresso-800 via-espresso-700 to-spa-700"
-        imageSrc="/images/hero-non-invasive-weight-loss.jpg"
+      <ProtocolHero
+        eyebrow="Our Non-Invasive Weight Loss Approach"
+        protocolLogo="/images/protocol-logos/slimlifelogo.png"
+        fallbackTitle="SlimLife Body Harmonization"
+        protocolDescription="Science-backed, surgery-free solutions targeting the root causes of stubborn weight — detox, hormones, and precision fat reduction through Cryo Contour."
       />
 
       {/* Neck Fat Reduction */}
