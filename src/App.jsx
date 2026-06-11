@@ -48,17 +48,17 @@ function App() {
             <Route path="/personalized-evaluation" element={<PersonalizedEvaluation />} />
 
             {/* Body Aesthetics */}
-            <Route path="/body-aesthetics/non-invasive-weight-loss" element={<NonInvasiveWeightLoss />} />
-            <Route path="/body-aesthetics/body-contouring" element={<BodyContouring />} />
-            <Route path="/body-aesthetics/massages" element={<Massages />} />
-            <Route path="/body-aesthetics/brazilian-butt" element={<BrazilianButt />} />
+            <Route path="/non-invasive-weight-loss" element={<NonInvasiveWeightLoss />} />
+            <Route path="/cellulite-skin-tightening" element={<BodyContouring />} />
+            <Route path="/body-contouring-massages" element={<Massages />} />
+            <Route path="/brazilian-butt" element={<BrazilianButt />} />
 
             {/* Stem Cells & Wellness */}
-            <Route path="/stem-cells-wellness/peptides-glps" element={<PeptidesGLPs />} />
-            <Route path="/stem-cells-wellness/ivs-shots" element={<IVsShots />} />
-            <Route path="/stem-cells-wellness/hair-restoration" element={<HairRestoration />} />
-            <Route path="/stem-cells-wellness/blood-tests-longevity" element={<BloodTestsLongevity />} />
-            <Route path="/stem-cells-wellness/joint-pain" element={<JointPainStemCells />} />
+            <Route path="/peptides-glps" element={<PeptidesGLPs />} />
+            <Route path="/ivs-intramuscular-shots" element={<IVsShots />} />
+            <Route path="/hair-restoration-stem-cells" element={<HairRestoration />} />
+            <Route path="/what-do-blood-tests-tell-us" element={<BloodTestsLongevity />} />
+            <Route path="/joint-pain-stem-cells" element={<JointPainStemCells />} />
 
             {/* Skin Concerns */}
             <Route path="/skin-concerns/acne" element={<Acne />} />
