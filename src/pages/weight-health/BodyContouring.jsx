@@ -164,8 +164,7 @@ export default function BodyContouring() {
       <BeforeAfter
         heading="Lipedema — Client Results"
         items={[
-          { label: 'Lipedema Stage II — 16 Weeks', result: 'Marked reduction in leg circumference and tenderness following a combined manual lymphatic drainage and RF series. Client reported significant pain relief and improved daily mobility.', beforeAlt: 'Before lipedema stage II treatment', afterAlt: 'After lipedema stage II treatment' },
-          { label: 'Lipedema Post-Protocol — 12 Weeks', result: 'Visible softening of fibrotic tissue and reduction of the characteristic "column leg" appearance. Compression support and anti-inflammatory protocols contributed to sustained improvement.', beforeAlt: 'Before lipedema post-protocol', afterAlt: 'After lipedema post-protocol' },
+          { label: 'Lipedema Stage II — 16 Weeks', result: 'Marked reduction in leg circumference and tenderness following a combined manual lymphatic drainage and RF series. Client reported significant pain relief and improved daily mobility.', beforeSrc: '/images/before-after/lipedema/before.jpg', afterSrc: '/images/before-after/lipedema/after.jpg', beforeAlt: 'Before lipedema stage II treatment', afterAlt: 'After lipedema stage II treatment' },
         ]}
       />
 
