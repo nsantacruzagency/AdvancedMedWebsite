@@ -52,8 +52,8 @@ export default function HairRestoration() {
   return (
     <div className="bg-white">
       <HeroPhoto
-        eyebrow="Weight & Metabolic Health"
-        title={<>Hair<br />Restoration</>}
+        eyebrow="Stem Cells & Wellness"
+        title={<>Hair Restoration<br />Stem Cells</>}
         subtitle="Clinically proven, non-surgical treatments to restore hair density, reawaken dormant follicles, and reclaim your confidence — using your body's own regenerative biology."
         gradient="from-espresso-800 via-spa-700 to-espresso-700"
       />

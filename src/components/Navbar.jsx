@@ -17,11 +17,11 @@ const bodyAestheticsLinks = [
 ]
 
 const stemCellsWellnessLinks = [
+  { label: 'Joint Pain Stem Cells',          path: '/stem-cells/joint-pain' },
+  { label: 'Hair Restoration Stem Cells',    path: '/weight-health/hair-restoration' },
   { label: 'Peptides + GLPs',                path: '/weight-health/peptides-glps' },
   { label: 'IVs + Intramuscular Shots',      path: '/weight-health/ivs-shots' },
-  { label: 'Hair Restoration',               path: '/weight-health/hair-restoration' },
   { label: 'What Do Blood Tests Tell Us?',   path: '/weight-health/blood-tests-longevity' },
-  { label: 'Joint Pain Stem Cells',          path: '/stem-cells/joint-pain' },
 ]
 
 const skinLinks = [
@@ -95,25 +95,6 @@ export default function Navbar() {
               Free Personalized Evaluation
             </Link>
 
-            {/* Body Aesthetics */}
-            <div
-              className="relative"
-              onMouseEnter={() => setOpenDropdown('body')}
-              onMouseLeave={() => setOpenDropdown(null)}
-            >
-              <button
-                className={`flex items-center gap-1 text-[11px] font-medium tracking-widest uppercase transition-colors ${
-                  isUnder('/weight-health/non-invasive') || isUnder('/weight-health/body-contouring') || isUnder('/weight-health/massages') || isUnder('/weight-health/brazilian')
-                    ? 'text-spa'
-                    : 'text-espresso-600 hover:text-espresso'
-                }`}
-              >
-                Body Aesthetics
-                <ChevronDown size={11} strokeWidth={1.5} />
-              </button>
-              <Dropdown links={bodyAestheticsLinks} isOpen={openDropdown === 'body'} />
-            </div>
-
             {/* Skin Concerns */}
             <div
               className="relative"
@@ -131,6 +112,25 @@ export default function Navbar() {
                 <ChevronDown size={11} strokeWidth={1.5} />
               </button>
               <Dropdown links={skinLinks} isOpen={openDropdown === 'skin'} />
+            </div>
+
+            {/* Body Aesthetics */}
+            <div
+              className="relative"
+              onMouseEnter={() => setOpenDropdown('body')}
+              onMouseLeave={() => setOpenDropdown(null)}
+            >
+              <button
+                className={`flex items-center gap-1 text-[11px] font-medium tracking-widest uppercase transition-colors ${
+                  isUnder('/weight-health/non-invasive') || isUnder('/weight-health/body-contouring') || isUnder('/weight-health/massages') || isUnder('/weight-health/brazilian')
+                    ? 'text-spa'
+                    : 'text-espresso-600 hover:text-espresso'
+                }`}
+              >
+                Body Aesthetics
+                <ChevronDown size={11} strokeWidth={1.5} />
+              </button>
+              <Dropdown links={bodyAestheticsLinks} isOpen={openDropdown === 'body'} />
             </div>
 
             {/* Stem Cells & Wellness */}
@@ -204,9 +204,9 @@ export default function Navbar() {
             </Link>
 
             <p className="text-[9px] font-medium tracking-widest uppercase text-spa pt-3 pb-1">
-              Body Aesthetics
+              Skin Concerns
             </p>
-            {bodyAestheticsLinks.map((l) => (
+            {skinLinks.map((l) => (
               <Link key={l.path} to={l.path}
                 className="block py-2 text-xs tracking-wide text-espresso-600 hover:text-espresso"
                 onClick={() => setMobileOpen(false)}>
@@ -215,9 +215,9 @@ export default function Navbar() {
             ))}
 
             <p className="text-[9px] font-medium tracking-widest uppercase text-spa pt-4 pb-1">
-              Skin Concerns
+              Body Aesthetics
             </p>
-            {skinLinks.map((l) => (
+            {bodyAestheticsLinks.map((l) => (
               <Link key={l.path} to={l.path}
                 className="block py-2 text-xs tracking-wide text-espresso-600 hover:text-espresso"
                 onClick={() => setMobileOpen(false)}>
