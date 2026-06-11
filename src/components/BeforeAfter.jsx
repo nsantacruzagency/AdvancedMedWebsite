@@ -6,7 +6,7 @@
  *   items — array of { label, result, beforeAlt, afterAlt }
  *   heading — optional section heading override
  */
-export default function BeforeAfter({ items, heading = 'Client Results' }) {
+export default function BeforeAfter({ items, heading = 'Client Results', logo = null, logoAlt = '' }) {
   return (
     <section className="py-20 px-5 sm:px-8 lg:px-12 bg-espresso">
       <div className="max-w-7xl mx-auto">
@@ -23,9 +23,13 @@ export default function BeforeAfter({ items, heading = 'Client Results' }) {
               {heading}
             </h2>
           </div>
-          <p className="text-cream-400 text-[12px] font-light max-w-xs leading-relaxed">
-            Individual results may vary. Photos are of actual clients who consented to share their results.
-          </p>
+          {logo ? (
+            <img src={logo} alt={logoAlt} className="max-h-24 md:max-h-32 w-auto object-contain" />
+          ) : (
+            <p className="text-cream-400 text-[12px] font-light max-w-xs leading-relaxed">
+              Individual results may vary. Photos are of actual clients who consented to share their results.
+            </p>
+          )}
         </div>
 
         {/* Grid */}

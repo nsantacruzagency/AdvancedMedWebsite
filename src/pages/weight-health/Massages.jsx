@@ -99,6 +99,8 @@ export default function Massages() {
 
       <BeforeAfter
         heading="Real Client Results"
+        logo="/images/protocol-logos/3in1logo.png"
+        logoAlt="3-in-1 Body Contouring"
         items={[
           { label: 'Lymphatic Drainage — 6 Sessions', result: 'Significant reduction in lower leg swelling and heaviness. Improved lymphatic circulation and reduced fluid retention visible within the first 3 sessions.', beforeAlt: 'Before lymphatic drainage treatment', afterAlt: 'After lymphatic drainage treatment' },
           { label: 'Post-Op Recovery — 8 Sessions', result: 'Accelerated healing following liposuction procedure. Reduced bruising, prevention of fibrosis, and noticeably smoother contour result achieved through targeted post-op massage.', beforeAlt: 'Before post-operative massage', afterAlt: 'After post-operative massage' },
