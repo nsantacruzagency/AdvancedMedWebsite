@@ -101,7 +101,6 @@ export default function BodyContouring() {
         heading="Real Client Results"
         items={[
           { label: 'Cellulite Reduction — 8 Sessions', result: 'Significant smoothing of thigh and hip cellulite. Visible improvement in skin texture and firmness after a combined RF and acoustic wave protocol.', beforeAlt: 'Before cellulite treatment', afterAlt: 'After cellulite treatment' },
-          { label: 'Lipedema Management — 12 Weeks', result: 'Reduced heaviness and pain in lower legs. Decreased circumference measurements and improved mobility following lymphatic drainage and RF series.', beforeAlt: 'Before lipedema treatment', afterAlt: 'After lipedema treatment' },
           { label: 'Muscle Definition — 4 EMS Sessions', result: 'Visible abdominal definition and glute lifting achieved with electromagnetic muscle stimulation. No downtime throughout the series.', beforeAlt: 'Before EMS muscle toning', afterAlt: 'After EMS muscle toning' },
         ]}
       />
