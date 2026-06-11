@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { CheckCircle, ArrowRight, Zap, Shield, Star, TrendingUp } from 'lucide-react'
 import SectionHeader from '../../components/SectionHeader'
-import HeroPhoto from '../../components/HeroPhoto'
+import ProtocolHero from '../../components/ProtocolHero'
 import FAQ from '../../components/FAQ'
 import BeforeAfter from '../../components/BeforeAfter'
 
@@ -49,11 +49,10 @@ const faqItems = [
 export default function BodyContouring() {
   return (
     <div className="bg-white">
-      <HeroPhoto
-        eyebrow="Body Aesthetics"
-        title={<>Cellulite &<br />Skin Tightening</>}
-        subtitle="Advanced, non-surgical treatments for cellulite and skin tightening — sculpting the silhouette you've worked toward with precision technology and compassionate care."
-        gradient="from-espresso-800 via-spa-800 to-espresso-700"
+      <ProtocolHero
+        eyebrow="Our Cellulite & Skin Tightening Protocol:"
+        protocolLogo="/images/protocol-logos/3in1logo.png"
+        fallbackTitle="3-in-1 Body Contouring"
       />
 
       {/* Cellulite Treatment */}
