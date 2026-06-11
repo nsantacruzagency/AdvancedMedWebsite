@@ -79,7 +79,7 @@ export default function BrazilianButt() {
       <BeforeAfter
         heading="Real Client Results"
         items={[
-          { label: 'EMS Glute Sculpting — 4 Sessions', result: 'Visible lift and rounding of the glutes with increased muscle definition. No downtime throughout the series.', beforeAlt: 'Before EMS glute sculpting', afterAlt: 'After EMS glute sculpting' },
+          { label: 'EMS Glute Sculpting — 4 Sessions', result: 'Visible lift and rounding of the glutes with increased muscle definition. No downtime throughout the series.', beforeSrc: '/images/before-after/ems-glute-sculpting/before.jpg', afterSrc: '/images/before-after/ems-glute-sculpting/after.jpg', beforeAlt: 'Before EMS glute sculpting', afterAlt: 'After EMS glute sculpting' },
           { label: 'RF + Massage — 8 Sessions', result: 'Significant improvement in skin texture, cellulite reduction, and overall contour following combined radiofrequency and lymphatic massage protocol.', beforeAlt: 'Before RF and massage treatment', afterAlt: 'After RF and massage treatment' },
           { label: 'Full Protocol — 12 Weeks', result: 'Combined EMS, RF, cavitation, and massage series. Lifted, rounder glutes with visibly smoother skin and reduced surrounding fat deposits.', beforeAlt: 'Before full non-surgical BBL protocol', afterAlt: 'After full non-surgical BBL protocol' },
         ]}
