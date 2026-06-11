@@ -193,7 +193,7 @@ export default function Home() {
           </div>
 
           {/* Right — hero image */}
-          <div className="relative hidden lg:block">
+          <div className="relative">
             <div className="aspect-[3/4] bg-espresso-100 relative overflow-hidden">
               <img
                 src="/images/homepage-hero.jpeg"
