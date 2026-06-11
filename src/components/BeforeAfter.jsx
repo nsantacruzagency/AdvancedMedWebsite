@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 /**
  * Before & After photo grid.
  * Images are 4:5 portrait (1080 × 1350 px) — replace placeholder divs with <img>.
@@ -50,18 +52,20 @@ export default function BeforeAfter({ items, heading = 'Client Results', logo = 
                 {/* Before */}
                 <div className="space-y-2">
                   <div className="w-full bg-espresso-600 overflow-hidden relative" style={{ aspectRatio: '1080 / 1350' }}>
-                    {item.beforeSrc ? (
-                      <img src={item.beforeSrc} alt={item.beforeAlt} className="w-full h-full object-cover" />
-                    ) : (
-                      <>
-                        <div className="absolute inset-0 bg-gradient-to-br from-espresso-500 to-espresso-700" />
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <div className="text-center px-3">
-                            <p className="text-cream-400 text-[10px] uppercase tracking-widest font-light mb-2">Before Photo</p>
-                            {item.beforeSrc && <p className="text-cream-300 text-[9px] font-mono leading-relaxed break-all">{item.beforeSrc}</p>}
-                          </div>
-                        </div>
-                      </>
+                    <div className="absolute inset-0 bg-gradient-to-br from-espresso-500 to-espresso-700" />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="text-center px-3">
+                        <p className="text-cream-400 text-[10px] uppercase tracking-widest font-light mb-2">Before Photo</p>
+                        {item.beforeSrc && <p className="text-cream-300 text-[9px] font-mono leading-relaxed break-all">{item.beforeSrc}</p>}
+                      </div>
+                    </div>
+                    {item.beforeSrc && (
+                      <img
+                        src={item.beforeSrc}
+                        alt={item.beforeAlt}
+                        className="absolute inset-0 w-full h-full object-cover"
+                        onError={e => { e.currentTarget.style.display = 'none' }}
+                      />
                     )}
                   </div>
                   <p className="text-cream-500 text-[10px] uppercase tracking-widest font-medium text-center">Before</p>
@@ -70,18 +74,20 @@ export default function BeforeAfter({ items, heading = 'Client Results', logo = 
                 {/* After */}
                 <div className="space-y-2">
                   <div className="w-full bg-spa-700 overflow-hidden relative" style={{ aspectRatio: '1080 / 1350' }}>
-                    {item.afterSrc ? (
-                      <img src={item.afterSrc} alt={item.afterAlt} className="w-full h-full object-cover" />
-                    ) : (
-                      <>
-                        <div className="absolute inset-0 bg-gradient-to-br from-spa-600 to-spa-800" />
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <div className="text-center px-3">
-                            <p className="text-spa-200 text-[10px] uppercase tracking-widest font-light mb-2">After Photo</p>
-                            {item.afterSrc && <p className="text-spa-100 text-[9px] font-mono leading-relaxed break-all">{item.afterSrc}</p>}
-                          </div>
-                        </div>
-                      </>
+                    <div className="absolute inset-0 bg-gradient-to-br from-spa-600 to-spa-800" />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="text-center px-3">
+                        <p className="text-spa-200 text-[10px] uppercase tracking-widest font-light mb-2">After Photo</p>
+                        {item.afterSrc && <p className="text-spa-100 text-[9px] font-mono leading-relaxed break-all">{item.afterSrc}</p>}
+                      </div>
+                    </div>
+                    {item.afterSrc && (
+                      <img
+                        src={item.afterSrc}
+                        alt={item.afterAlt}
+                        className="absolute inset-0 w-full h-full object-cover"
+                        onError={e => { e.currentTarget.style.display = 'none' }}
+                      />
                     )}
                   </div>
                   <p className="text-spa-300 text-[10px] uppercase tracking-widest font-medium text-center">After</p>
