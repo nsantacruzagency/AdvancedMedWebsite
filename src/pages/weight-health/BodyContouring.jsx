@@ -233,6 +233,13 @@ export default function BodyContouring() {
         ]}
       />
 
+      <BeforeAfter
+        heading="EMS Glute Sculpting — Client Results"
+        items={[
+          { label: 'EMS Glute Sculpting — 4 Sessions', result: 'Visible glute lifting and definition achieved with electromagnetic muscle stimulation. Results continue to develop in the weeks following the series.', beforeSrc: '/images/before-after/ems-glute-sculpting/before.jpg', afterSrc: '/images/before-after/ems-glute-sculpting/after.jpg', beforeAlt: 'Before EMS glute sculpting', afterAlt: 'After EMS glute sculpting' },
+        ]}
+      />
+
       <FAQ items={faqItems} />
     </div>
   )
