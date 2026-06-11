@@ -144,6 +144,16 @@ export default function Home() {
     <>
       {/* ── HERO ─────────────────────────────────────── */}
       <section className="relative bg-cream-200 min-h-[92vh] flex flex-col justify-center overflow-hidden">
+        {/* Mobile background image with heavy cream overlay */}
+        <div className="absolute inset-0 lg:hidden">
+          <img
+            src="/images/homepage-hero.jpeg"
+            alt=""
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-cream-200/85" />
+        </div>
+
         {/* Decorative side line */}
         <div className="absolute left-0 top-0 bottom-0 w-px bg-cream-400 opacity-60" />
         <div className="absolute right-0 top-0 bottom-0 w-px bg-cream-400 opacity-60" />
@@ -192,8 +202,8 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Right — hero image */}
-          <div className="relative">
+          {/* Right — hero image (desktop only) */}
+          <div className="relative hidden lg:block">
             <div className="aspect-[3/4] bg-espresso-100 relative overflow-hidden">
               <img
                 src="/images/homepage-hero.jpeg"
