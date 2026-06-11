@@ -160,11 +160,11 @@ export default function Home() {
 
         <div className="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 py-24 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left — Text */}
-          <div>
+          <div className="lg:bg-transparent lg:backdrop-blur-none lg:p-0 lg:rounded-none bg-cream-200/60 backdrop-blur-sm rounded-sm px-6 py-8 sm:px-8">
             <p className="text-[10px] font-medium tracking-widest uppercase text-spa mb-8" style={{ letterSpacing: '0.28em' }}>
               Advanced Med MedSpa Lounge
             </p>
-            <h1 className="font-serif text-6xl md:text-7xl lg:text-8xl font-light text-espresso leading-[1.0] mb-8 text-balance">
+            <h1 className="font-serif text-6xl md:text-7xl lg:text-8xl font-light text-espresso leading-[1.0] mb-8 text-balance [text-shadow:0_1px_12px_rgba(241,235,230,0.8)] lg:[text-shadow:none]">
               Where Science<br />
               <span className="italic text-spa">Meets</span> Beauty
             </h1>
