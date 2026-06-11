@@ -201,7 +201,7 @@ export default function JointPainStemCells() {
         <div className="max-w-6xl mx-auto">
           <SectionHeader
             eyebrow="Conditions We Treat"
-            title="Joint Pain Solutions That Deliver Results"
+            title="What Kind of Pain?"
             subtitle="From knee and hip pain to spinal conditions and soft tissue injuries, our regenerative protocols address the root cause — not just the symptoms."
           />
           <div className="grid md:grid-cols-2 gap-8 mt-4">
