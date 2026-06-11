@@ -20,7 +20,7 @@ export default function ProtocolHero({
 
   return (
     <section className="bg-cream-200 border-b border-cream-300">
-      <div className="max-w-5xl mx-auto px-5 sm:px-8 lg:px-12 py-8 md:py-12">
+      <div className="max-w-5xl mx-auto px-5 sm:px-8 lg:px-12 py-8 md:py-12 text-center">
 
         {/* Eyebrow */}
         {eyebrow && (
@@ -35,7 +35,7 @@ export default function ProtocolHero({
             src={protocolLogo}
             alt={fallbackTitle || eyebrow || 'Protocol'}
             onError={() => setImgFailed(true)}
-            className="max-h-56 md:max-h-72 w-auto object-contain my-1"
+            className="mx-auto max-h-56 md:max-h-72 w-auto object-contain my-1"
           />
         ) : (
           <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-light text-espresso leading-[1.05] my-1">
@@ -44,7 +44,7 @@ export default function ProtocolHero({
         )}
 
         {/* Divider */}
-        <div className="w-12 h-px bg-spa mb-2 mt-1" />
+        <div className="w-12 h-px bg-spa mx-auto mb-2 mt-1" />
 
         {/* Description */}
         {protocolDescription && (

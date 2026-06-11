@@ -67,10 +67,9 @@ export default function NonInvasiveWeightLoss() {
   return (
     <div className="bg-white">
       <ProtocolHero
-        eyebrow="Our Non-Invasive Weight Loss Approach"
+        eyebrow="Our Non-Invasive Weight Loss Protocol:"
         protocolLogo="/images/protocol-logos/slimlifelogo.png"
         fallbackTitle="SlimLife Body Harmonization"
-        protocolDescription="Science-backed, surgery-free solutions targeting the root causes of stubborn weight — detox, hormones, and precision fat reduction through Cryo Contour."
       />
 
       {/* Neck Fat Reduction */}
