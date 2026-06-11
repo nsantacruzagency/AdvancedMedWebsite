@@ -20,7 +20,7 @@ export default function ProtocolHero({
 
   return (
     <section className="bg-cream-200 border-b border-cream-300">
-      <div className="max-w-5xl mx-auto px-5 sm:px-8 lg:px-12 py-8 md:py-12 text-center">
+      <div className="max-w-5xl mx-auto px-5 sm:px-8 lg:px-12 py-4 md:py-6 text-center">
 
         {/* Eyebrow */}
         {eyebrow && (
