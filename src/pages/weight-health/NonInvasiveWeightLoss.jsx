@@ -123,7 +123,7 @@ export default function NonInvasiveWeightLoss() {
         heading="Double Chin Reduction — Client Results"
         items={[
           { label: 'Double Chin — 8 Weeks', result: 'Visible double chin reduction and improved jawline definition following 2 Cryo Contour sessions with RF tightening.', beforeAlt: 'Before double chin treatment', afterAlt: 'After double chin treatment' },
-          { label: 'Double Chin + Jawline — 10 Weeks', result: 'Combined cavitation and RF protocol. Double chin visibly reduced, neck silhouette cleaner, skin noticeably firmer with no downtime throughout the series.', beforeAlt: 'Before double chin and jawline contouring', afterAlt: 'After double chin and jawline contouring' },
+          { label: 'Double Chin + Jawline — 10 Weeks', result: 'Combined cavitation and RF protocol. Double chin visibly reduced, neck silhouette cleaner, skin noticeably firmer with no downtime throughout the series.', beforeSrc: '/images/before-after/double-chin-jawline-10-weeks/before.jpg', afterSrc: '/images/before-after/double-chin-jawline-10-weeks/after.jpg', beforeAlt: 'Before double chin and jawline contouring', afterAlt: 'After double chin and jawline contouring' },
         ]}
       />
 
