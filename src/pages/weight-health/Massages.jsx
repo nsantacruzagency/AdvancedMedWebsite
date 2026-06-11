@@ -69,36 +69,8 @@ export default function Massages() {
         gradient="from-spa-800 via-espresso-800 to-espresso-700"
       />
 
-      {/* Service Cards Grid */}
-      <section className="py-24 px-6 bg-cream-100">
-        <div className="max-w-6xl mx-auto">
-          <SectionHeader
-            eyebrow="Our Services"
-            title="Expert Massage Therapies"
-            subtitle="Each service is performed by our highly trained, certified massage therapists in a serene, luxurious environment designed for deep relaxation and results."
-          />
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {massageTypes.map((m) => (
-              <div key={m.name} className="bg-white p-8 shadow-sm border border-cream-300 hover:border-spa hover:shadow-xl transition-all duration-300 flex flex-col">
-                <h3 className="font-serif font-bold text-xl text-espresso mb-1">{m.name}</h3>
-                <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-4">{m.tagline}</p>
-                <p className="text-espresso-500 text-sm leading-relaxed mb-6 flex-1">{m.description}</p>
-                <ul className="space-y-2">
-                  {m.benefits.map((b, i) => (
-                    <li key={i} className="flex items-start gap-2 text-espresso-500 text-sm">
-                      <CheckCircle className="w-4 h-4 text-spa flex-shrink-0 mt-0.5" />
-                      {b}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <BeforeAfter
-        heading="Real Client Results"
+        heading="Brazilian 3in1 Lymphatic Drainage Massage — Client Results"
         logo="/images/protocol-logos/3in1logo.png"
         logoAlt="3-in-1 Body Contouring"
         items={[
