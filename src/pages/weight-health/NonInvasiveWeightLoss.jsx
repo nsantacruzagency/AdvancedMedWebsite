@@ -163,7 +163,7 @@ export default function NonInvasiveWeightLoss() {
       </section>
 
       <BeforeAfter
-        heading="Real Client Results"
+        heading="Slim Life Harmonization Real Client Results"
         items={[
           { label: 'Weight Loss — 12 Weeks', result: '18 lbs lost. Significant reduction in abdominal circumference and improved energy levels.', beforeAlt: 'Before weight loss treatment', afterAlt: 'After weight loss treatment' },
           { label: 'Fat Freezing — 8 Weeks', result: 'Visible reduction in flanks and lower abdomen following 2 Cryo Contour sessions.', beforeAlt: 'Before fat freezing', afterAlt: 'After fat freezing' },
