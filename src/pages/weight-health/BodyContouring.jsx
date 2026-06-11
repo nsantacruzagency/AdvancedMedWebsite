@@ -229,7 +229,7 @@ export default function BodyContouring() {
       <BeforeAfter
         heading="EMS Muscle Definition — Client Results"
         items={[
-          { label: 'EMS — 4 Sessions', result: 'Visible abdominal definition and glute lifting achieved with electromagnetic muscle stimulation. No downtime throughout the series.', beforeSrc: '/images/before-after/ems-muscle-definition/before.jpg', afterSrc: '/images/before-after/ems-muscle-definition/after.jpg', beforeAlt: 'Before EMS muscle definition', afterAlt: 'After EMS muscle definition' },
+          { label: 'EMS — 4 Sessions ', result: 'Visible abdominal definition and glute lifting achieved with electromagnetic muscle stimulation. No downtime throughout the series.', beforeSrc: '/images/before-after/ems-muscle-definition/before.jpg', afterSrc: '/images/before-after/ems-muscle-definition/after.jpg', beforeAlt: 'Before EMS muscle definition', afterAlt: 'After EMS muscle definition' },
         ]}
       />
 
