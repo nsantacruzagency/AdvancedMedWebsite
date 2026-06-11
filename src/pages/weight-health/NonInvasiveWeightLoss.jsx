@@ -247,6 +247,15 @@ export default function NonInvasiveWeightLoss() {
         </div>
       </section>
 
+      <BeforeAfter
+        heading="Fat Dissolving Enzymes Real Client Results"
+        items={[
+          { label: 'Fat Dissolving Enzymes — Session 1', result: '', beforeSrc: '/images/before-after/fat-dissolving-enzymes/session-1-before.jpg', afterSrc: '/images/before-after/fat-dissolving-enzymes/session-1-after.jpg', beforeAlt: 'Before fat dissolving enzymes session 1', afterAlt: 'After fat dissolving enzymes session 1' },
+          { label: 'Fat Dissolving Enzymes — Session 2', result: '', beforeSrc: '/images/before-after/fat-dissolving-enzymes/session-2-before.jpg', afterSrc: '/images/before-after/fat-dissolving-enzymes/session-2-after.jpg', beforeAlt: 'Before fat dissolving enzymes session 2', afterAlt: 'After fat dissolving enzymes session 2' },
+          { label: 'Fat Dissolving Enzymes — Session 3', result: '', beforeSrc: '/images/before-after/fat-dissolving-enzymes/session-3-before.jpg', afterSrc: '/images/before-after/fat-dissolving-enzymes/session-3-after.jpg', beforeAlt: 'Before fat dissolving enzymes session 3', afterAlt: 'After fat dissolving enzymes session 3' },
+        ]}
+      />
+
       {/* Benefits Grid */}
       <section className="py-20 px-6 bg-espresso">
         <div className="max-w-6xl mx-auto">
