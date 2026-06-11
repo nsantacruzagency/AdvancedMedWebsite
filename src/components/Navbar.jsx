@@ -3,14 +3,25 @@ import { Link, useLocation } from 'react-router-dom'
 import { Menu, X, ChevronDown } from 'lucide-react'
 import Logo from './Logo'
 
-const weightHealthLinks = [
-  { label: 'Non-Invasive Weight Loss',   path: '/weight-health/non-invasive-weight-loss' },
-  { label: 'Body Contouring',             path: '/weight-health/body-contouring' },
-  { label: 'Massages',                    path: '/weight-health/massages' },
-  { label: 'Peptides + GLPs',             path: '/weight-health/peptides-glps' },
-  { label: 'IVs + Intramuscular Shots',   path: '/weight-health/ivs-shots' },
-  { label: 'Hair Restoration',            path: '/weight-health/hair-restoration' },
-  { label: 'Blood Tests & Longevity',     path: '/weight-health/blood-tests-longevity' },
+const aboutLinks = [
+  { label: 'The Lounge + Team',  path: '/about' },
+  { label: 'Testimonials',       path: '/testimonials' },
+  { label: 'Memberships',        path: '/memberships' },
+]
+
+const bodyAestheticsLinks = [
+  { label: 'Non-Invasive Weight Loss',       path: '/weight-health/non-invasive-weight-loss' },
+  { label: 'Cellulite & Skin Tightening',    path: '/weight-health/body-contouring' },
+  { label: 'Body Contouring Massages',       path: '/weight-health/massages' },
+  { label: 'Brazilian Butt',                 path: '/weight-health/brazilian-butt' },
+]
+
+const stemCellsWellnessLinks = [
+  { label: 'Peptides + GLPs',                path: '/weight-health/peptides-glps' },
+  { label: 'IVs + Intramuscular Shots',      path: '/weight-health/ivs-shots' },
+  { label: 'Hair Restoration',               path: '/weight-health/hair-restoration' },
+  { label: 'What Do Blood Tests Tell Us?',   path: '/weight-health/blood-tests-longevity' },
+  { label: 'Joint Pain Stem Cells',          path: '/stem-cells/joint-pain' },
 ]
 
 const skinLinks = [
@@ -71,23 +82,36 @@ export default function Navbar() {
 
           {/* Desktop nav */}
           <div className="hidden lg:flex items-center gap-7">
-            {/* Weight & Metabolic Health */}
+
+            {/* Free Personalized Evaluation */}
+            <Link
+              to="/personalized-evaluation"
+              className={`text-[11px] font-medium tracking-widest uppercase transition-colors ${
+                location.pathname === '/personalized-evaluation'
+                  ? 'text-spa'
+                  : 'text-espresso-600 hover:text-espresso'
+              }`}
+            >
+              Free Personalized Evaluation
+            </Link>
+
+            {/* Body Aesthetics */}
             <div
               className="relative"
-              onMouseEnter={() => setOpenDropdown('weight')}
+              onMouseEnter={() => setOpenDropdown('body')}
               onMouseLeave={() => setOpenDropdown(null)}
             >
               <button
                 className={`flex items-center gap-1 text-[11px] font-medium tracking-widest uppercase transition-colors ${
-                  isUnder('/weight-health')
+                  isUnder('/weight-health/non-invasive') || isUnder('/weight-health/body-contouring') || isUnder('/weight-health/massages') || isUnder('/weight-health/brazilian')
                     ? 'text-spa'
                     : 'text-espresso-600 hover:text-espresso'
                 }`}
               >
-                Weight &amp; Metabolic Health
+                Body Aesthetics
                 <ChevronDown size={11} strokeWidth={1.5} />
               </button>
-              <Dropdown links={weightHealthLinks} isOpen={openDropdown === 'weight'} />
+              <Dropdown links={bodyAestheticsLinks} isOpen={openDropdown === 'body'} />
             </div>
 
             {/* Skin Concerns */}
@@ -109,23 +133,43 @@ export default function Navbar() {
               <Dropdown links={skinLinks} isOpen={openDropdown === 'skin'} />
             </div>
 
-            {[
-              { label: 'About Us',     path: '/about' },
-              { label: 'Testimonials', path: '/testimonials' },
-              { label: 'Memberships',  path: '/memberships' },
-            ].map((l) => (
-              <Link
-                key={l.path}
-                to={l.path}
-                className={`text-[11px] font-medium tracking-widest uppercase transition-colors ${
-                  location.pathname === l.path
+            {/* Stem Cells & Wellness */}
+            <div
+              className="relative"
+              onMouseEnter={() => setOpenDropdown('stem')}
+              onMouseLeave={() => setOpenDropdown(null)}
+            >
+              <button
+                className={`flex items-center gap-1 text-[11px] font-medium tracking-widest uppercase transition-colors ${
+                  isUnder('/weight-health/peptides') || isUnder('/weight-health/ivs') || isUnder('/weight-health/hair') || isUnder('/weight-health/blood') || isUnder('/stem-cells')
                     ? 'text-spa'
                     : 'text-espresso-600 hover:text-espresso'
                 }`}
               >
-                {l.label}
-              </Link>
-            ))}
+                Stem Cells &amp; Wellness
+                <ChevronDown size={11} strokeWidth={1.5} />
+              </button>
+              <Dropdown links={stemCellsWellnessLinks} isOpen={openDropdown === 'stem'} />
+            </div>
+
+            {/* About Us */}
+            <div
+              className="relative"
+              onMouseEnter={() => setOpenDropdown('about')}
+              onMouseLeave={() => setOpenDropdown(null)}
+            >
+              <button
+                className={`flex items-center gap-1 text-[11px] font-medium tracking-widest uppercase transition-colors ${
+                  ['/about', '/testimonials', '/memberships'].includes(location.pathname)
+                    ? 'text-spa'
+                    : 'text-espresso-600 hover:text-espresso'
+                }`}
+              >
+                About Us
+                <ChevronDown size={11} strokeWidth={1.5} />
+              </button>
+              <Dropdown links={aboutLinks} isOpen={openDropdown === 'about'} />
+            </div>
 
             <Link
               to="/book"
@@ -150,10 +194,19 @@ export default function Navbar() {
       {mobileOpen && (
         <div className="lg:hidden bg-white border-t border-cream-300 px-5 pb-8 pt-4 max-h-[80vh] overflow-y-auto">
           <div className="space-y-1">
+
+            <Link
+              to="/personalized-evaluation"
+              className="block py-2 text-xs tracking-widest uppercase font-medium text-espresso-600 hover:text-espresso pb-3 border-b border-cream-300 mb-2"
+              onClick={() => setMobileOpen(false)}
+            >
+              Free Personalized Evaluation
+            </Link>
+
             <p className="text-[9px] font-medium tracking-widest uppercase text-spa pt-3 pb-1">
-              Weight &amp; Metabolic Health
+              Body Aesthetics
             </p>
-            {weightHealthLinks.map((l) => (
+            {bodyAestheticsLinks.map((l) => (
               <Link key={l.path} to={l.path}
                 className="block py-2 text-xs tracking-wide text-espresso-600 hover:text-espresso"
                 onClick={() => setMobileOpen(false)}>
@@ -172,12 +225,20 @@ export default function Navbar() {
               </Link>
             ))}
 
+            <p className="text-[9px] font-medium tracking-widest uppercase text-spa pt-4 pb-1">
+              Stem Cells &amp; Wellness
+            </p>
+            {stemCellsWellnessLinks.map((l) => (
+              <Link key={l.path} to={l.path}
+                className="block py-2 text-xs tracking-wide text-espresso-600 hover:text-espresso"
+                onClick={() => setMobileOpen(false)}>
+                {l.label}
+              </Link>
+            ))}
+
             <div className="border-t border-cream-300 pt-4 mt-3 space-y-1">
-              {[
-                { label: 'About Us',     path: '/about' },
-                { label: 'Testimonials', path: '/testimonials' },
-                { label: 'Memberships',  path: '/memberships' },
-              ].map((l) => (
+              <p className="text-[9px] font-medium tracking-widest uppercase text-spa pb-1">About Us</p>
+              {aboutLinks.map((l) => (
                 <Link key={l.path} to={l.path}
                   className="block py-2 text-xs tracking-widest uppercase font-medium text-espresso-600 hover:text-espresso"
                   onClick={() => setMobileOpen(false)}>

@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import ScrollToTop from './components/ScrollToTop'
 
 import Home from './pages/Home'
 import About from './pages/About'
@@ -8,15 +9,20 @@ import BookNow from './pages/BookNow'
 import Testimonials from './pages/Testimonials'
 import Memberships from './pages/Memberships'
 import Products from './pages/Products'
+import PersonalizedEvaluation from './pages/PersonalizedEvaluation'
 
-// Weight & Metabolic Health
+// Body Aesthetics
 import NonInvasiveWeightLoss from './pages/weight-health/NonInvasiveWeightLoss'
 import BodyContouring from './pages/weight-health/BodyContouring'
 import Massages from './pages/weight-health/Massages'
+import BrazilianButt from './pages/weight-health/BrazilianButt'
+
+// Stem Cells & Wellness
 import PeptidesGLPs from './pages/weight-health/PeptidesGLPs'
 import IVsShots from './pages/weight-health/IVsShots'
 import HairRestoration from './pages/weight-health/HairRestoration'
 import BloodTestsLongevity from './pages/weight-health/BloodTestsLongevity'
+import JointPainStemCells from './pages/stem-cells/JointPainStemCells'
 
 // Skin Concerns
 import Acne from './pages/skin-concerns/Acne'
@@ -28,6 +34,7 @@ import MaintainResults from './pages/skin-concerns/MaintainResults'
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-1">
@@ -38,15 +45,20 @@ function App() {
             <Route path="/contact" element={<BookNow />} />
             <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/memberships" element={<Memberships />} />
+            <Route path="/personalized-evaluation" element={<PersonalizedEvaluation />} />
 
-            {/* Weight & Metabolic Health */}
+            {/* Body Aesthetics */}
             <Route path="/weight-health/non-invasive-weight-loss" element={<NonInvasiveWeightLoss />} />
             <Route path="/weight-health/body-contouring" element={<BodyContouring />} />
             <Route path="/weight-health/massages" element={<Massages />} />
+            <Route path="/weight-health/brazilian-butt" element={<BrazilianButt />} />
+
+            {/* Stem Cells & Wellness */}
             <Route path="/weight-health/peptides-glps" element={<PeptidesGLPs />} />
             <Route path="/weight-health/ivs-shots" element={<IVsShots />} />
             <Route path="/weight-health/hair-restoration" element={<HairRestoration />} />
             <Route path="/weight-health/blood-tests-longevity" element={<BloodTestsLongevity />} />
+            <Route path="/stem-cells/joint-pain" element={<JointPainStemCells />} />
 
             {/* Skin Concerns */}
             <Route path="/skin-concerns/acne" element={<Acne />} />

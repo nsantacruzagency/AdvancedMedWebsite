@@ -50,9 +50,9 @@ export default function BodyContouring() {
   return (
     <div className="bg-white">
       <HeroPhoto
-        eyebrow="Weight & Metabolic Health"
-        title={<>Body<br />Contouring</>}
-        subtitle="Advanced, non-surgical treatments for cellulite, lipedema, and muscle definition — sculpting the silhouette you've worked toward with precision technology and compassionate care."
+        eyebrow="Body Aesthetics"
+        title={<>Cellulite &<br />Skin Tightening</>}
+        subtitle="Advanced, non-surgical treatments for cellulite and skin tightening — sculpting the silhouette you've worked toward with precision technology and compassionate care."
         gradient="from-espresso-800 via-spa-800 to-espresso-700"
       />
 

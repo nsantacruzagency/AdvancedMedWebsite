@@ -194,6 +194,60 @@ export default function NonInvasiveWeightLoss() {
         </div>
       </section>
 
+      {/* Neck Fat Reduction */}
+      <section className="py-24 px-6 bg-cream-100">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+              <SectionHeader eyebrow="Targeted Reduction" title="Neck Fat Reduction" center={false} />
+              <p className="text-espresso-500 leading-relaxed mb-6">
+                Submental fat — commonly called a "double chin" — is one of the most frustrating areas to target through diet and exercise alone. Genetics, age, and weight fluctuations can all contribute to fat accumulation beneath the jawline, regardless of your overall body composition.
+              </p>
+              <p className="text-espresso-500 leading-relaxed mb-8">
+                At Advanced Med, we use a combination of <strong className="text-espresso">Cryo Contour fat freezing</strong>, <strong className="text-espresso">radiofrequency skin tightening</strong>, and <strong className="text-espresso">ultrasound cavitation</strong> to permanently reduce submental fat and tighten the surrounding skin — restoring a cleaner, more defined jawline without surgery, needles, or downtime.
+              </p>
+              <ul className="space-y-3">
+                {[
+                  'Reduces submental (double chin) fat permanently',
+                  'Tightens loose neck and jawline skin',
+                  'No surgery, needles, or anesthesia required',
+                  'Visible definition improvement within 4–8 weeks',
+                  'Protocols customized to neck anatomy and skin laxity',
+                ].map((b, i) => (
+                  <li key={i} className="flex items-start gap-3 text-espresso-500">
+                    <CheckCircle className="w-5 h-5 text-spa flex-shrink-0 mt-0.5" />
+                    {b}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="bg-espresso p-10 text-cream-200">
+              <h3 className="font-serif text-2xl font-bold text-spa-300 mb-6">Our Neck Contouring Approach</h3>
+              <div className="space-y-5">
+                {[
+                  { name: 'Cryo Contour (Neck)', desc: 'A specialized small-area applicator delivers precisely controlled cooling to freeze and permanently destroy submental fat cells. The body naturally flushes them over 6–12 weeks.' },
+                  { name: 'Radiofrequency Tightening', desc: 'RF energy heats the dermis to stimulate collagen and elastin production, firming loose neck and jawline skin that remains after fat reduction.' },
+                  { name: 'Ultrasound Cavitation', desc: 'Targeted low-frequency ultrasound disrupts fat cell membranes beneath the chin for additional volume reduction and contouring.' },
+                ].map((t) => (
+                  <div key={t.name} className="border-b border-white/10 pb-5 last:border-0 last:pb-0">
+                    <h4 className="font-serif font-bold text-cream-100 mb-2">{t.name}</h4>
+                    <p className="text-cream-300 text-sm leading-relaxed">{t.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <BeforeAfter
+        heading="Neck Fat Reduction — Client Results"
+        items={[
+          { label: 'Double Chin — 8 Weeks', result: 'Visible reduction of submental fat and improved jawline definition following 2 Cryo Contour sessions with RF tightening.', beforeAlt: 'Before neck fat reduction treatment', afterAlt: 'After neck fat reduction treatment' },
+          { label: 'Jawline Contouring — 10 Weeks', result: 'Combined cavitation and RF protocol. Cleaner neck silhouette and firmer skin with no downtime throughout the series.', beforeAlt: 'Before jawline contouring', afterAlt: 'After jawline contouring' },
+        ]}
+      />
+
       {/* Benefits Grid */}
       <section className="py-20 px-6 bg-espresso">
         <div className="max-w-6xl mx-auto">

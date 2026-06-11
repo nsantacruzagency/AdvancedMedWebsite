@@ -63,8 +63,8 @@ export default function BloodTestsLongevity() {
   return (
     <div className="bg-white">
       <HeroPhoto
-        eyebrow="Weight & Metabolic Health"
-        title={<>Blood Tests<br />& Longevity</>}
+        eyebrow="Stem Cells & Wellness"
+        title={<>What Do Blood<br />Tests Tell Us?</>}
         subtitle="You can't optimize what you don't measure. Our comprehensive blood panels reveal the full picture of your health — then we build a precision wellness protocol around exactly what your body needs."
         gradient="from-espresso-800 via-espresso-700 to-spa-800"
       />
