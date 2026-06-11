@@ -25,7 +25,7 @@ export default function BeforeAfter({ items, heading = 'Client Results', logo = 
           </div>
           {logo ? (
             <div className="bg-cream-200/60 backdrop-blur-sm px-3 py-2 rounded-lg">
-              <img src={logo} alt={logoAlt} className="max-h-14 md:max-h-20 w-auto object-contain" />
+              <img src={logo} alt={logoAlt} className="max-h-10 md:max-h-14 w-auto object-contain" />
             </div>
           ) : (
             <p className="text-cream-400 text-[12px] font-light max-w-xs leading-relaxed">
