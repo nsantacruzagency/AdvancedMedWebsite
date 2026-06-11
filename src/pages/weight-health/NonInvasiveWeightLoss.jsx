@@ -277,7 +277,7 @@ export default function NonInvasiveWeightLoss() {
           <img
             src="/images/protocol-logos/slimlifelogo.png"
             alt="SlimLife Body Harmonization"
-            className="mx-auto max-h-32 w-auto object-contain mb-6"
+            className="mx-auto max-h-56 md:max-h-72 w-auto object-contain mb-6"
           />
           <p className="text-espresso-500 text-lg mb-10 leading-relaxed">
             Schedule your personalized evaluation today. Our clinical team will evaluate your unique needs and design a non-invasive weight loss protocol just for you.
