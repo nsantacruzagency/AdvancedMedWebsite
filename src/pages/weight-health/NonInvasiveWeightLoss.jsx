@@ -250,7 +250,7 @@ export default function NonInvasiveWeightLoss() {
       <BeforeAfter
         heading="Fat Dissolving Enzymes Real Client Results"
         items={[
-          { label: 'Fat Dissolving Enzymes', result: '', beforeSrc: '/images/before-after/fat-dissolving-enzymes/Before.jpg', afterSrc: '/images/before-after/fat-dissolving-enzymes/After.jpg', beforeAlt: 'Before fat dissolving enzymes', afterAlt: 'After fat dissolving enzymes' },
+          { label: 'Fat Dissolving Enzymes', result: '', beforeSrc: '/images/before-after/fat-dissolving-enzymes/before.jpg', afterSrc: '/images/before-after/fat-dissolving-enzymes/after.jpg', beforeAlt: 'Before fat dissolving enzymes', afterAlt: 'After fat dissolving enzymes' },
         ]}
       />
 
