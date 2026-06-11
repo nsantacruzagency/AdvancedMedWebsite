@@ -234,8 +234,6 @@ export default function Hyperpigmentation() {
       </section>
 
 
-      <FAQ items={faqItems} />
-
       {/* CTA */}
       <section className="py-20 px-6 bg-espresso text-cream-200 text-center">
         <div className="max-w-2xl mx-auto">
@@ -251,6 +249,8 @@ export default function Hyperpigmentation() {
           </Link>
         </div>
       </section>
+
+      <FAQ items={faqItems} />
     </div>
   )
 }

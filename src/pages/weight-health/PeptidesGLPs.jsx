@@ -160,8 +160,6 @@ export default function PeptidesGLPs() {
         </div>
       </section>
 
-      <FAQ items={faqItems} />
-
       {/* Disclaimer */}
       <section className="py-12 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
@@ -192,6 +190,8 @@ export default function PeptidesGLPs() {
           </Link>
         </div>
       </section>
+
+      <FAQ items={faqItems} />
     </div>
   )
 }

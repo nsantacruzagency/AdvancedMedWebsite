@@ -242,8 +242,6 @@ export default function BloodTestsLongevity() {
         </div>
       </section>
 
-      <FAQ items={faqItems} />
-
       {/* CTA */}
       <section className="py-24 px-6 bg-cream-200 text-center">
         <div className="max-w-3xl mx-auto">
@@ -261,6 +259,8 @@ export default function BloodTestsLongevity() {
           </Link>
         </div>
       </section>
+
+      <FAQ items={faqItems} />
     </div>
   )
 }

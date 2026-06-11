@@ -341,8 +341,6 @@ export default function JointPainStemCells() {
         </div>
       </section>
 
-      <FAQ items={faqItems} />
-
       {/* CTA */}
       <section className="py-24 px-6 bg-espresso text-center">
         <div className="max-w-2xl mx-auto">
@@ -358,6 +356,8 @@ export default function JointPainStemCells() {
           </Link>
         </div>
       </section>
+
+      <FAQ items={faqItems} />
     </div>
   )
 }

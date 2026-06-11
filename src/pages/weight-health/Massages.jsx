@@ -234,8 +234,6 @@ export default function Massages() {
         </div>
       </section>
 
-      <FAQ items={faqItems} />
-
       {/* CTA */}
       <section className="py-24 px-6 bg-espresso text-cream-200 text-center">
         <div className="max-w-2xl mx-auto">
@@ -251,6 +249,8 @@ export default function Massages() {
           </Link>
         </div>
       </section>
+
+      <FAQ items={faqItems} />
     </div>
   )
 }

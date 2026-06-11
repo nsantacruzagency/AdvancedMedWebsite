@@ -121,8 +121,6 @@ export default function IVsShots() {
         </div>
       </section>
 
-      <FAQ items={faqItems} />
-
       <section className="py-20 px-4 bg-espresso text-cream-200 text-center">
         <div className="max-w-3xl mx-auto">
           <h2 className="font-serif text-4xl font-bold mb-4">Ready to Recharge?</h2>
@@ -132,6 +130,8 @@ export default function IVsShots() {
           </Link>
         </div>
       </section>
+
+      <FAQ items={faqItems} />
     </>
   )
 }

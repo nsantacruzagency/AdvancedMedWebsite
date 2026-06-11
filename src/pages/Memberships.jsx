@@ -213,8 +213,6 @@ export default function Memberships() {
         </div>
       </section>
 
-      <FAQ items={faqItems} />
-
       {/* Terms Note */}
       <section className="py-8 px-6 bg-cream-100 border-t border-cream-300">
         <div className="max-w-4xl mx-auto">
@@ -247,6 +245,8 @@ export default function Memberships() {
           </div>
         </div>
       </section>
+
+      <FAQ items={faqItems} />
     </div>
   )
 }

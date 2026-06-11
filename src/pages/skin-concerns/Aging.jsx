@@ -205,8 +205,6 @@ export default function Aging() {
       </section>
 
 
-      <FAQ items={faqItems} />
-
       {/* CTA */}
       <section className="py-20 px-6 bg-cream-200 text-center">
         <div className="max-w-2xl mx-auto">
@@ -222,6 +220,8 @@ export default function Aging() {
           </Link>
         </div>
       </section>
+
+      <FAQ items={faqItems} />
     </div>
   )
 }

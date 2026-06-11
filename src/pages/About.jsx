@@ -243,8 +243,6 @@ export default function About() {
         </div>
       </section>
 
-      <FAQ items={faqItems} />
-
       {/* CTA */}
       <section className="py-20 px-5 sm:px-8 lg:px-12 bg-cream-200 text-center">
         <div className="max-w-2xl mx-auto">
@@ -266,6 +264,8 @@ export default function About() {
           </Link>
         </div>
       </section>
+
+      <FAQ items={faqItems} />
     </>
   )
 }
