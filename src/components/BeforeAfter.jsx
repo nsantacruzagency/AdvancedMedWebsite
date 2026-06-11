@@ -49,48 +49,42 @@ export default function BeforeAfter({ items, heading = 'Client Results', logo = 
               <div className="grid grid-cols-2 gap-3">
                 {/* Before */}
                 <div className="space-y-2">
-                  <div
-                    className="w-full bg-espresso-600 overflow-hidden relative"
-                    style={{ aspectRatio: '1080 / 1350' }}
-                  >
-                    {/*
-                      Replace this div with:
-                      <img src="..." alt={item.beforeAlt} className="w-full h-full object-cover" />
-                    */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-espresso-500 to-espresso-700" />
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-center px-3">
-                        <p className="text-cream-400 text-[10px] uppercase tracking-widest font-light">1080 × 1350</p>
-                        <p className="text-cream-500 text-[9px] mt-1 font-light">Photo placeholder</p>
-                      </div>
-                    </div>
+                  <div className="w-full bg-espresso-600 overflow-hidden relative" style={{ aspectRatio: '1080 / 1350' }}>
+                    {item.beforeSrc ? (
+                      <img src={item.beforeSrc} alt={item.beforeAlt} className="w-full h-full object-cover" />
+                    ) : (
+                      <>
+                        <div className="absolute inset-0 bg-gradient-to-br from-espresso-500 to-espresso-700" />
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className="text-center px-3">
+                            <p className="text-cream-400 text-[10px] uppercase tracking-widest font-light">1080 × 1350</p>
+                            <p className="text-cream-500 text-[9px] mt-1 font-light">Photo placeholder</p>
+                          </div>
+                        </div>
+                      </>
+                    )}
                   </div>
-                  <p className="text-cream-500 text-[10px] uppercase tracking-widest font-medium text-center">
-                    Before
-                  </p>
+                  <p className="text-cream-500 text-[10px] uppercase tracking-widest font-medium text-center">Before</p>
                 </div>
 
                 {/* After */}
                 <div className="space-y-2">
-                  <div
-                    className="w-full bg-spa-700 overflow-hidden relative"
-                    style={{ aspectRatio: '1080 / 1350' }}
-                  >
-                    {/*
-                      Replace this div with:
-                      <img src="..." alt={item.afterAlt} className="w-full h-full object-cover" />
-                    */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-spa-600 to-spa-800" />
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-center px-3">
-                        <p className="text-spa-200 text-[10px] uppercase tracking-widest font-light">1080 × 1350</p>
-                        <p className="text-spa-300 text-[9px] mt-1 font-light">Photo placeholder</p>
-                      </div>
-                    </div>
+                  <div className="w-full bg-spa-700 overflow-hidden relative" style={{ aspectRatio: '1080 / 1350' }}>
+                    {item.afterSrc ? (
+                      <img src={item.afterSrc} alt={item.afterAlt} className="w-full h-full object-cover" />
+                    ) : (
+                      <>
+                        <div className="absolute inset-0 bg-gradient-to-br from-spa-600 to-spa-800" />
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className="text-center px-3">
+                            <p className="text-spa-200 text-[10px] uppercase tracking-widest font-light">1080 × 1350</p>
+                            <p className="text-spa-300 text-[9px] mt-1 font-light">Photo placeholder</p>
+                          </div>
+                        </div>
+                      </>
+                    )}
                   </div>
-                  <p className="text-spa-300 text-[10px] uppercase tracking-widest font-medium text-center">
-                    After
-                  </p>
+                  <p className="text-spa-300 text-[10px] uppercase tracking-widest font-medium text-center">After</p>
                 </div>
               </div>
 
