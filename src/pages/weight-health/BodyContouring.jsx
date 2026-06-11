@@ -102,6 +102,7 @@ export default function BodyContouring() {
         items={[
           { label: 'Cellulite Reduction — 8 Sessions', result: 'Significant smoothing of thigh and hip cellulite. Visible improvement in skin texture and firmness after a combined RF and acoustic wave protocol.', beforeSrc: '/images/before-after/cellulite-reduction/before.jpg', afterSrc: '/images/before-after/cellulite-reduction/after.jpg', beforeAlt: 'Before cellulite treatment', afterAlt: 'After cellulite treatment' },
           { label: 'Muscle Definition — 4 EMS Sessions', result: 'Visible abdominal definition and glute lifting achieved with electromagnetic muscle stimulation. No downtime throughout the series.', beforeSrc: '/images/before-after/ems-muscle-definition/before.jpg', afterSrc: '/images/before-after/ems-muscle-definition/after.jpg', beforeAlt: 'Before EMS muscle toning', afterAlt: 'After EMS muscle toning' },
+          { label: 'Sagging Skin Tightening', result: 'Visible firming and lift of loose, sagging skin following a combined radiofrequency and HIFU protocol. Improved skin texture and elasticity throughout the treated area.', beforeSrc: '/images/before-after/sagging-skin-tightening/before.jpg', afterSrc: '/images/before-after/sagging-skin-tightening/after.jpg', beforeAlt: 'Before skin tightening treatment', afterAlt: 'After skin tightening treatment' },
         ]}
       />
 
