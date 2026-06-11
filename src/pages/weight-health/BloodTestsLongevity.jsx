@@ -55,7 +55,7 @@ const faqItems = [
   },
   {
     q: 'Is comprehensive blood testing covered by insurance?',
-    a: 'Some components of our blood panel may be covered by insurance, particularly if ordered in response to a documented medical condition or symptom. However, our comprehensive wellness panel — which includes many markers not typically ordered in standard care — is often not fully covered. We provide detailed receipts and lab documentation to support any applicable insurance claims. Our team can discuss out-of-pocket costs and any available payment options during your consultation.',
+    a: 'Some components of our blood panel may be covered by insurance, particularly if ordered in response to a documented medical condition or symptom. However, our comprehensive wellness panel — which includes many markers not typically ordered in standard care — is often not fully covered. We provide detailed receipts and lab documentation to support any applicable insurance claims. Our team can discuss out-of-pocket costs and any available payment options during your evaluation.',
   },
 ]
 
@@ -198,7 +198,7 @@ export default function BloodTestsLongevity() {
               <div className="space-y-6">
                 {[
                   { n: '1', t: 'Lab Draw & Analysis', d: 'Comprehensive 50+ biomarker panel collected and analyzed at a CLIA-certified laboratory.' },
-                  { n: '2', t: 'Provider Review Session', d: '45-minute consultation to review every result, explain findings, and answer all your questions.' },
+                  { n: '2', t: 'Provider Review Session', d: '45-minute evaluation to review every result, explain findings, and answer all your questions.' },
                   { n: '3', t: 'Protocol Creation', d: 'Your personalized wellness plan is written and delivered — specific, prioritized, and actionable.' },
                   { n: '4', t: 'Implementation & Monitoring', d: 'We guide your implementation and schedule follow-up labs at 60–90 days to measure progress.' },
                 ].map((step) => (
@@ -248,16 +248,16 @@ export default function BloodTestsLongevity() {
       <section className="py-24 px-6 bg-cream-200 text-center">
         <div className="max-w-3xl mx-auto">
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-espresso mb-6 leading-tight">
-            Book a Consultation for Your Personalized Wellness Protocol
+            Book a Evaluation for Your Personalized Wellness Protocol
           </h2>
           <p className="text-espresso-500 text-lg mb-10 leading-relaxed">
-            Stop guessing. Start knowing. Comprehensive blood testing and expert analysis give you the data to transform your health with precision. Your protocol begins with a single consultation.
+            Stop guessing. Start knowing. Comprehensive blood testing and expert analysis give you the data to transform your health with precision. Your protocol begins with a single evaluation.
           </p>
           <Link
             to="/book"
             className="inline-flex items-center gap-2 bg-espresso hover:bg-espresso-600 text-cream-100 text-[10px] tracking-widest uppercase font-medium px-12 py-5 transition-all duration-300"
           >
-            Book Your Wellness Consultation <ArrowRight className="w-4 h-4" />
+            Book Your Wellness Evaluation <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
       </section>

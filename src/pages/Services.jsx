@@ -202,14 +202,14 @@ export default function Services() {
             Not Sure Where to Start?
           </h2>
           <p className="text-gold-100 text-base mb-8 leading-relaxed">
-            Book a complimentary consultation and our specialists will design a
+            Book a complimentary evaluation and our specialists will design a
             personalized treatment plan just for you.
           </p>
           <Link
             to="/book"
             className="inline-flex items-center gap-2 bg-white text-gold-600 hover:bg-gold-50 font-semibold px-10 py-4 rounded-full transition-colors shadow-lg text-base"
           >
-            Get Your Free Consultation <ArrowRight size={18} />
+            Get Your Free Evaluation <ArrowRight size={18} />
           </Link>
         </div>
       </section>

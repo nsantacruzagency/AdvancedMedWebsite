@@ -21,7 +21,7 @@ const tiers = [
       '10% off all additional services',
       'Priority booking access',
       'Monthly member newsletter & exclusive offers',
-      'Complimentary skin consultation at sign-up',
+      'Complimentary skin evaluation at sign-up',
     ],
   },
   {
@@ -58,7 +58,7 @@ const tiers = [
     popular: false,
     perks: [
       '3 treatments per month (any service)',
-      'Unlimited provider consultations',
+      'Unlimited provider evaluations',
       '30% off all additional services',
       'Free monthly Myers Cocktail IV drip (full)',
       'Complimentary comprehensive blood panel annually',
@@ -81,7 +81,7 @@ const faqItems = [
   },
   {
     q: 'What counts as a treatment each month?',
-    a: 'Any service from our treatment menu qualifies — facials, chemical peels, massages, body treatments, IV drips, LED therapy, skin tightening, and more. Injectables (Botox, fillers) and medical procedures require a separate consultation and are not included in the monthly treatment credit, but do receive the membership discount.',
+    a: 'Any service from our treatment menu qualifies — facials, chemical peels, massages, body treatments, IV drips, LED therapy, skin tightening, and more. Injectables (Botox, fillers) and medical procedures require a separate evaluation and are not included in the monthly treatment credit, but do receive the membership discount.',
   },
   {
     q: 'How do I cancel my membership?',
@@ -101,7 +101,7 @@ const steps = [
   {
     number: '01',
     title: 'Choose Your Plan',
-    desc: 'Select the membership tier that fits your lifestyle and wellness goals. Not sure? Book a free consultation and we\'ll recommend the best fit.',
+    desc: 'Select the membership tier that fits your lifestyle and wellness goals. Not sure? Book a free evaluation and we\'ll recommend the best fit.',
     icon: <Star className="w-8 h-8 text-spa-300" />,
   },
   {

@@ -47,7 +47,7 @@ const faqItems = [
   },
   {
     q: 'How many sessions will I need?',
-    a: 'The number of sessions depends on your starting point, goals, and which treatments are included in your protocol. Many clients see meaningful results from a single Cryo Contour session per area, though 2–3 sessions are common for optimal outcomes. Metabolic and hormonal support treatments are typically scheduled as a series. Your clinician will create a personalized timeline at your consultation.',
+    a: 'The number of sessions depends on your starting point, goals, and which treatments are included in your protocol. Many clients see meaningful results from a single Cryo Contour session per area, though 2–3 sessions are common for optimal outcomes. Metabolic and hormonal support treatments are typically scheduled as a series. Your clinician will create a personalized timeline at your evaluation.',
   },
   {
     q: 'Is there any downtime after non-invasive weight loss treatments?',
@@ -279,7 +279,7 @@ export default function NonInvasiveWeightLoss() {
         <div className="max-w-2xl mx-auto">
           <h2 className="font-serif text-4xl font-bold text-espresso mb-4">Ready to Transform Your Body?</h2>
           <p className="text-espresso-500 text-lg mb-10 leading-relaxed">
-            Schedule your personalized consultation today. Our clinical team will evaluate your unique needs and design a non-invasive weight loss protocol just for you.
+            Schedule your personalized evaluation today. Our clinical team will evaluate your unique needs and design a non-invasive weight loss protocol just for you.
           </p>
           <Link
             to="/book"

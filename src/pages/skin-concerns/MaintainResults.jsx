@@ -131,7 +131,7 @@ export default function MaintainResults() {
               </ul>
             </div>
             <p className="text-espresso-400 text-[11px] font-light italic px-2">
-              The right routine for your skin type will be prescribed at your consultation.
+              The right routine for your skin type will be prescribed at your evaluation.
             </p>
           </div>
         </div>

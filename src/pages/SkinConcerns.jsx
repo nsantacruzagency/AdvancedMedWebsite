@@ -171,7 +171,7 @@ export default function SkinConcerns() {
             Not Sure Which Concern Fits?
           </h2>
           <p className="text-gray-300 text-base mb-8 leading-relaxed">
-            Book a skin analysis consultation and our experts will evaluate your skin,
+            Book a skin analysis evaluation and our experts will evaluate your skin,
             diagnose your concerns, and design a targeted treatment plan.
           </p>
           <Link

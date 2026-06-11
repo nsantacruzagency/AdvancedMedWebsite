@@ -134,7 +134,7 @@ export default function Massages() {
               <h3 className="font-serif text-xl font-bold text-espresso mb-6">What to Expect</h3>
               <div className="space-y-6">
                 {[
-                  { step: '1', title: 'Consultation', desc: 'We review your health history, current goals, and any post-surgical considerations to customize your session.' },
+                  { step: '1', title: 'Evaluation', desc: 'We review your health history, current goals, and any post-surgical considerations to customize your session.' },
                   { step: '2', title: 'Treatment', desc: 'Using specialized strokes, your therapist works from extremities inward, following lymphatic pathways to decongest and sculpt.' },
                   { step: '3', title: 'Compression & Results', desc: 'Sessions conclude with light compression garment guidance. You may notice visible slimming after just one treatment.' },
                 ].map((s) => (

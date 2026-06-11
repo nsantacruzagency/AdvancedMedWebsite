@@ -56,7 +56,7 @@ const faqItems = [
   },
   {
     q: 'Do I need a referral to book an appointment?',
-    a: 'No referral is needed. You are welcome to book directly through our website, by phone, or by walking in. For certain medical services such as peptide therapy, GLP-1 consultations, or comprehensive blood panels, an initial consultation with one of our providers is required before treatment begins.',
+    a: 'No referral is needed. You are welcome to book directly through our website, by phone, or by walking in. For certain medical services such as peptide therapy, GLP-1 evaluations, or comprehensive blood panels, an initial evaluation with one of our providers is required before treatment begins.',
   },
   {
     q: 'Are your providers licensed and certified?',
@@ -64,11 +64,11 @@ const faqItems = [
   },
   {
     q: 'Do you offer payment plans or financing?',
-    a: 'Yes — we offer flexible financing options through third-party partners, allowing you to spread the cost of treatments over time. We also offer our membership plans as an affordable way to receive consistent care at a reduced monthly rate. Ask our team about current financing availability at your consultation.',
+    a: 'Yes — we offer flexible financing options through third-party partners, allowing you to spread the cost of treatments over time. We also offer our membership plans as an affordable way to receive consistent care at a reduced monthly rate. Ask our team about current financing availability at your evaluation.',
   },
   {
     q: 'What should I expect at my first visit?',
-    a: 'Your first visit begins with a detailed consultation — we take time to understand your goals, review your health history, and assess your skin or body concern before recommending any treatment. There is never pressure to book on the spot. We want you to feel informed, comfortable, and genuinely excited about your plan before moving forward.',
+    a: 'Your first visit begins with a detailed evaluation — we take time to understand your goals, review your health history, and assess your skin or body concern before recommending any treatment. There is never pressure to book on the spot. We want you to feel informed, comfortable, and genuinely excited about your plan before moving forward.',
   },
 ]
 

@@ -21,7 +21,7 @@ const categories = ['All', 'Weight Loss', 'Skin Care', 'Massages']
 const featured = {
   name: 'Jessica R.',
   treatment: 'Medical Weight Loss + Body Contouring',
-  text: 'I came to Advanced Med at my lowest point — 50 pounds overweight, exhausted, and convinced nothing would work. Dr. Okonkwo sat with me for a full hour during my consultation and made me feel truly seen, not judged. We started with a blood panel that revealed my cortisol was through the roof and my thyroid was struggling. With their medical weight loss program, peptide support, and a series of body contouring sessions, I have lost 38 pounds in 7 months. But more than the number on the scale — I have my energy back, my confidence back, and I feel like myself for the first time in years. This team changed my life.',
+  text: 'I came to Advanced Med at my lowest point — 50 pounds overweight, exhausted, and convinced nothing would work. Dr. Okonkwo sat with me for a full hour during my evaluation and made me feel truly seen, not judged. We started with a blood panel that revealed my cortisol was through the roof and my thyroid was struggling. With their medical weight loss program, peptide support, and a series of body contouring sessions, I have lost 38 pounds in 7 months. But more than the number on the scale — I have my energy back, my confidence back, and I feel like myself for the first time in years. This team changed my life.',
   rating: 5,
   date: 'April 2025',
 }

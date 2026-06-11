@@ -166,7 +166,7 @@ export default function Home() {
                 to="/book"
                 className="inline-flex items-center justify-center gap-3 bg-espresso text-cream-100 text-[10px] font-medium tracking-widest uppercase px-9 py-4 hover:bg-espresso-600 transition-colors"
               >
-                Book a Consultation
+                Book a Evaluation
                 <ArrowRight size={13} />
               </Link>
               <Link
@@ -192,18 +192,14 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Right — image placeholder with layered design */}
+          {/* Right — hero image */}
           <div className="relative hidden lg:block">
             <div className="aspect-[3/4] bg-espresso-100 relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-cream-300 via-cream-400 to-spa-100 opacity-60" />
-              {/* Decorative frame */}
-              <div className="absolute inset-6 border border-cream-400 opacity-60" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <p className="font-serif text-2xl font-light text-espresso-400 italic">Your Photo Here</p>
-                  <p className="text-[10px] tracking-widest uppercase text-espresso-400 mt-2">Hero Image</p>
-                </div>
-              </div>
+              <img
+                src="/images/homepage-hero.jpeg"
+                alt="Advanced Med MedSpa Lounge"
+                className="w-full h-full object-cover object-center"
+              />
             </div>
             {/* Floating accent card */}
             <div className="absolute -bottom-6 -left-8 bg-white px-7 py-5 border border-cream-300 shadow-sm">
@@ -261,7 +257,7 @@ export default function Home() {
               <span className="italic text-spa-300">Lasting Results.</span>
             </h2>
             <p className="text-[14px] text-cream-400 font-light leading-relaxed mb-10 max-w-lg">
-              At Advanced Med MedSpa Lounge, every treatment begins with a thorough consultation and ends with a personalized plan. We combine medical expertise with a genuine commitment to your wellbeing.
+              At Advanced Med MedSpa Lounge, every treatment begins with a thorough evaluation and ends with a personalized plan. We combine medical expertise with a genuine commitment to your wellbeing.
             </p>
             <div className="space-y-4">
               {[
@@ -387,13 +383,13 @@ export default function Home() {
             Your Transformation Starts Here
           </h2>
           <p className="text-[14px] text-spa-200 font-light leading-relaxed mb-10">
-            Book a complimentary consultation with our specialists and discover the personalized plan that will help you look and feel your absolute best.
+            Book a complimentary evaluation with our specialists and discover the personalized plan that will help you look and feel your absolute best.
           </p>
           <Link
-            to="/book"
+            to="/personalized-evaluation"
             className="inline-flex items-center justify-center gap-3 bg-white text-espresso text-[10px] font-medium tracking-widest uppercase px-10 py-4 hover:bg-cream-100 transition-colors"
           >
-            Schedule Your Consultation <ArrowRight size={13} />
+            Free Evaluations <ArrowRight size={13} />
           </Link>
         </div>
       </section>

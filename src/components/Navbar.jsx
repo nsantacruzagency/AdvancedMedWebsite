@@ -240,7 +240,7 @@ export default function Navbar() {
               <p className="text-[9px] font-medium tracking-widest uppercase text-spa pb-1">About Us</p>
               {aboutLinks.map((l) => (
                 <Link key={l.path} to={l.path}
-                  className="block py-2 text-xs tracking-widest uppercase font-medium text-espresso-600 hover:text-espresso"
+                  className="block py-2 text-xs tracking-wide text-espresso-600 hover:text-espresso"
                   onClick={() => setMobileOpen(false)}>
                   {l.label}
                 </Link>

@@ -26,8 +26,8 @@ const types = [
   },
   {
     name: 'Keloids',
-    desc: 'Overgrown scar tissue that extends beyond the original wound boundary. Keloids require a careful consultation before treatment — not all modalities are appropriate. We assess each case individually.',
-    responsive: 'Consultation required — not all keloids are candidates',
+    desc: 'Overgrown scar tissue that extends beyond the original wound boundary. Keloids require a careful evaluation before treatment — not all modalities are appropriate. We assess each case individually.',
+    responsive: 'Evaluation required — not all keloids are candidates',
     icon: <AlertCircle className="w-6 h-6 text-espresso-400" />,
     isWarning: true,
   },
@@ -256,7 +256,7 @@ export default function StretchMarksScars() {
           <div className="mt-8 bg-cream-200 border border-cream-300 p-5 flex gap-4 items-start">
             <AlertCircle className="w-5 h-5 text-espresso-500 flex-shrink-0 mt-0.5" />
             <p className="text-espresso-500 text-sm leading-relaxed">
-              <strong className="text-espresso">Important:</strong> Results vary based on scar type, age, depth, skin tone, and individual healing response. We will provide an honest, personalized assessment at your consultation — including what improvements are realistic for your specific situation.
+              <strong className="text-espresso">Important:</strong> Results vary based on scar type, age, depth, skin tone, and individual healing response. We will provide an honest, personalized assessment at your evaluation — including what improvements are realistic for your specific situation.
             </p>
           </div>
         </div>

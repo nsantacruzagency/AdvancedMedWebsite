@@ -125,7 +125,7 @@ const faqItems = [
   },
   {
     q: 'How many sessions will it take to see results?',
-    a: 'Most clients notice improvement within 2–4 sessions, with significant clearing typically achieved after a series of 4–6 treatments. Results depend on your acne type, severity, and consistency with your home-care regimen. We will set realistic expectations at your consultation.',
+    a: 'Most clients notice improvement within 2–4 sessions, with significant clearing typically achieved after a series of 4–6 treatments. Results depend on your acne type, severity, and consistency with your home-care regimen. We will set realistic expectations at your evaluation.',
   },
   {
     q: 'What should I avoid doing at home?',
@@ -266,7 +266,7 @@ export default function Acne() {
         <div className="max-w-2xl mx-auto">
           <h2 className="font-serif text-4xl font-bold mb-4">Ready for Clear Skin?</h2>
           <p className="text-cream-300 text-lg mb-8 leading-relaxed">
-            Book a personalized skin consultation and let our experts design an acne protocol that works for your unique skin.
+            Book a personalized skin evaluation and let our experts design an acne protocol that works for your unique skin.
           </p>
           <Link
             to="/book"

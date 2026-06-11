@@ -99,7 +99,7 @@ export default function BeforeAfter({ items, heading = 'Client Results' }) {
         </div>
 
         <p className="text-espresso-400 text-[10px] font-light mt-10 text-center leading-relaxed max-w-2xl mx-auto">
-          Results shown are for illustrative purposes. Advanced Med MedSpa Lounge does not guarantee identical outcomes. A personalized consultation will determine realistic expectations for your unique goals.
+          Results shown are for illustrative purposes. Advanced Med MedSpa Lounge does not guarantee identical outcomes. A personalized evaluation will determine realistic expectations for your unique goals.
         </p>
       </div>
     </section>
