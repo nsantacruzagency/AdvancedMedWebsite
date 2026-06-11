@@ -151,7 +151,7 @@ export default function Home() {
             alt=""
             className="w-full h-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-cream-200/85" />
+          <div className="absolute inset-0 bg-cream-200/60" />
         </div>
 
         {/* Decorative side line */}
@@ -171,6 +171,21 @@ export default function Home() {
             <p className="text-[14px] text-espresso-500 leading-relaxed font-light max-w-md mb-10">
               Medical aesthetic treatments and wellness therapies delivered with precision, compassion, and the luxury you deserve.
             </p>
+
+            {/* Trust indicators — first on mobile, last on desktop */}
+            <div className="flex items-center gap-8 mb-10 pb-10 border-b border-cream-400 lg:hidden">
+              {[
+                { value: '5,000+', label: 'Clients Served' },
+                { value: '10+',    label: 'Years of Excellence' },
+                { value: '100%',   label: 'Board Certified' },
+              ].map((s) => (
+                <div key={s.label}>
+                  <div className="font-serif text-3xl font-light text-espresso">{s.value}</div>
+                  <div className="text-[10px] tracking-widest uppercase text-espresso-400 mt-0.5">{s.label}</div>
+                </div>
+              ))}
+            </div>
+
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/book"
@@ -187,8 +202,8 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Trust indicators */}
-            <div className="flex items-center gap-8 mt-12 pt-10 border-t border-cream-400">
+            {/* Trust indicators — desktop only (after CTAs) */}
+            <div className="hidden lg:flex items-center gap-8 mt-12 pt-10 border-t border-cream-400">
               {[
                 { value: '5,000+', label: 'Clients Served' },
                 { value: '10+',    label: 'Years of Excellence' },
