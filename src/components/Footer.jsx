@@ -4,7 +4,7 @@ import Logo from './Logo'
 
 export default function Footer() {
   return (
-    <footer className="bg-spa text-cream-300">
+    <footer className="bg-espresso text-cream-300">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 pt-16 pb-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
 
@@ -99,7 +99,7 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-            <div className="mt-6 text-[11px] text-spa-200 space-y-1">
+            <div className="mt-6 text-[11px] text-espresso-400 space-y-1">
               <p>Mon &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; By Appointment</p>
               <p>Tue – Fri &nbsp;&nbsp; 10:00 AM – 8:00 PM</p>
               <p>Saturday &nbsp; 8:00 AM – 4:00 PM</p>
@@ -108,11 +108,11 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-spa-600 mt-14 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3">
-          <p className="text-[11px] text-cream-400">
+        <div className="border-t border-espresso-600 mt-14 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3">
+          <p className="text-[11px] text-espresso-400">
             &copy; {new Date().getFullYear()} Advanced Med MedSpa Lounge. All rights reserved.
           </p>
-          <p className="text-[11px] text-cream-400">
+          <p className="text-[11px] text-espresso-400">
             Miami, Florida
           </p>
         </div>

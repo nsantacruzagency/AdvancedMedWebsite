@@ -12,12 +12,12 @@ import { Plus, Minus } from 'lucide-react'
 export default function FAQ({ items, eyebrow = 'FAQ', heading = 'Frequently Asked Questions', dark = false }) {
   const [open, setOpen] = useState(null)
 
-  const bg    = dark ? 'bg-espresso'     : 'bg-spa'
-  const text  = dark ? 'text-cream-200'  : 'text-cream-100'
-  const sub   = dark ? 'text-spa-300'    : 'text-cream-200'
-  const line  = dark ? 'border-espresso-500' : 'border-spa-600'
-  const body  = dark ? 'text-cream-400'  : 'text-cream-200'
-  const icon  = dark ? 'text-spa-300'    : 'text-cream-200'
+  const bg    = dark ? 'bg-espresso'     : 'bg-cream-100'
+  const text  = dark ? 'text-cream-200'  : 'text-espresso'
+  const sub   = dark ? 'text-spa-300'    : 'text-spa'
+  const line  = dark ? 'border-espresso-500' : 'border-cream-300'
+  const body  = dark ? 'text-cream-400'  : 'text-espresso-500'
+  const icon  = dark ? 'text-spa-300'    : 'text-spa'
 
   return (
     <section className={`${bg} py-20 px-5 sm:px-8 lg:px-12`}>
