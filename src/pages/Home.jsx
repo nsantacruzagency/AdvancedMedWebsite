@@ -7,27 +7,27 @@ const treatments = [
   {
     title: 'Non-Invasive Weight Loss',
     subtitle: 'Detox · Hormones · Fat Freezing',
-    path: '/weight-health/non-invasive-weight-loss',
+    path: '/body-aesthetics/non-invasive-weight-loss',
   },
   {
     title: 'Body Contouring',
     subtitle: 'Cellulite · Lipedema · Toning',
-    path: '/weight-health/body-contouring',
+    path: '/body-aesthetics/body-contouring',
   },
   {
     title: 'Massages',
     subtitle: 'Lymphatic · Deep Tissue · Prenatal',
-    path: '/weight-health/massages',
+    path: '/body-aesthetics/massages',
   },
   {
     title: 'Peptides + GLPs',
     subtitle: 'Medical Weight Management',
-    path: '/weight-health/peptides-glps',
+    path: '/stem-cells-wellness/peptides-glps',
   },
   {
     title: 'IVs + IM Shots',
     subtitle: 'Energy · Immunity · Beauty',
-    path: '/weight-health/ivs-shots',
+    path: '/stem-cells-wellness/ivs-shots',
   },
   {
     title: 'Skin Concerns',
@@ -37,12 +37,12 @@ const treatments = [
   {
     title: 'Hair Restoration',
     subtitle: 'PRP · Exosomes · Scalp Health',
-    path: '/weight-health/hair-restoration',
+    path: '/stem-cells-wellness/hair-restoration',
   },
   {
     title: 'Blood Tests & Longevity',
     subtitle: 'Biomarkers · Wellness Protocols',
-    path: '/weight-health/blood-tests-longevity',
+    path: '/stem-cells-wellness/blood-tests-longevity',
   },
 ]
 
@@ -195,7 +195,7 @@ export default function Home() {
                 <ArrowRight size={13} />
               </Link>
               <Link
-                to="/weight-health/non-invasive-weight-loss"
+                to="/body-aesthetics/non-invasive-weight-loss"
                 className="inline-flex items-center justify-center gap-3 border border-espresso-300 text-espresso text-[10px] font-medium tracking-widest uppercase px-9 py-4 hover:border-espresso hover:bg-cream-300 transition-colors"
               >
                 Explore Treatments

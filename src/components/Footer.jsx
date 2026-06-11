@@ -23,13 +23,13 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5">
               {[
-                ['Non-Invasive Weight Loss', '/weight-health/non-invasive-weight-loss'],
-                ['Body Contouring',          '/weight-health/body-contouring'],
-                ['Massages',                 '/weight-health/massages'],
-                ['Peptides + GLPs',          '/weight-health/peptides-glps'],
-                ['IVs + IM Shots',           '/weight-health/ivs-shots'],
-                ['Hair Restoration',         '/weight-health/hair-restoration'],
-                ['Blood Tests & Longevity',  '/weight-health/blood-tests-longevity'],
+                ['Non-Invasive Weight Loss', '/body-aesthetics/non-invasive-weight-loss'],
+                ['Body Contouring',          '/body-aesthetics/body-contouring'],
+                ['Massages',                 '/body-aesthetics/massages'],
+                ['Peptides + GLPs',          '/stem-cells-wellness/peptides-glps'],
+                ['IVs + IM Shots',           '/stem-cells-wellness/ivs-shots'],
+                ['Hair Restoration',         '/stem-cells-wellness/hair-restoration'],
+                ['Blood Tests & Longevity',  '/stem-cells-wellness/blood-tests-longevity'],
               ].map(([label, path]) => (
                 <li key={path}>
                   <Link to={path} className="text-[12px] text-cream-400 hover:text-spa transition-colors font-light">

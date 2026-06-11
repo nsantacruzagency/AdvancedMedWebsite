@@ -10,18 +10,18 @@ const aboutLinks = [
 ]
 
 const bodyAestheticsLinks = [
-  { label: 'Non-Invasive Weight Loss',       path: '/weight-health/non-invasive-weight-loss' },
-  { label: 'Cellulite & Skin Tightening',    path: '/weight-health/body-contouring' },
-  { label: 'Body Contouring Massages',       path: '/weight-health/massages' },
-  { label: 'Brazilian Butt',                 path: '/weight-health/brazilian-butt' },
+  { label: 'Non-Invasive Weight Loss',       path: '/body-aesthetics/non-invasive-weight-loss' },
+  { label: 'Cellulite & Skin Tightening',    path: '/body-aesthetics/body-contouring' },
+  { label: 'Body Contouring Massages',       path: '/body-aesthetics/massages' },
+  { label: 'Brazilian Butt',                 path: '/body-aesthetics/brazilian-butt' },
 ]
 
 const stemCellsWellnessLinks = [
-  { label: 'Joint Pain Stem Cells',          path: '/stem-cells/joint-pain' },
-  { label: 'Hair Restoration Stem Cells',    path: '/weight-health/hair-restoration' },
-  { label: 'Peptides + GLPs',                path: '/weight-health/peptides-glps' },
-  { label: 'IVs + Intramuscular Shots',      path: '/weight-health/ivs-shots' },
-  { label: 'What Do Blood Tests Tell Us?',   path: '/weight-health/blood-tests-longevity' },
+  { label: 'Joint Pain Stem Cells',          path: '/stem-cells-wellness/joint-pain' },
+  { label: 'Hair Restoration Stem Cells',    path: '/stem-cells-wellness/hair-restoration' },
+  { label: 'Peptides + GLPs',                path: '/stem-cells-wellness/peptides-glps' },
+  { label: 'IVs + Intramuscular Shots',      path: '/stem-cells-wellness/ivs-shots' },
+  { label: 'What Do Blood Tests Tell Us?',   path: '/stem-cells-wellness/blood-tests-longevity' },
 ]
 
 const skinLinks = [
@@ -122,7 +122,7 @@ export default function Navbar() {
             >
               <button
                 className={`flex items-center gap-1 text-[11px] font-medium tracking-widest uppercase transition-colors ${
-                  isUnder('/weight-health/non-invasive') || isUnder('/weight-health/body-contouring') || isUnder('/weight-health/massages') || isUnder('/weight-health/brazilian')
+                  isUnder('/body-aesthetics')
                     ? 'text-spa'
                     : 'text-espresso-600 hover:text-espresso'
                 }`}
@@ -141,7 +141,7 @@ export default function Navbar() {
             >
               <button
                 className={`flex items-center gap-1 text-[11px] font-medium tracking-widest uppercase transition-colors ${
-                  isUnder('/weight-health/peptides') || isUnder('/weight-health/ivs') || isUnder('/weight-health/hair') || isUnder('/weight-health/blood') || isUnder('/stem-cells')
+                  isUnder('/stem-cells-wellness')
                     ? 'text-spa'
                     : 'text-espresso-600 hover:text-espresso'
                 }`}
