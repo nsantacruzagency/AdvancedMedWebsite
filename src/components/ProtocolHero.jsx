@@ -37,7 +37,7 @@ export default function ProtocolHero({
             src={protocolLogo}
             alt={fallbackTitle || eyebrow || 'Protocol'}
             onError={() => setImgFailed(true)}
-            className="mx-auto max-h-28 md:max-h-36 w-auto object-contain mb-8"
+            className="mx-auto max-h-56 md:max-h-72 w-auto object-contain mb-8"
           />
         ) : (
           <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-light text-espresso leading-[1.05] mb-8">
