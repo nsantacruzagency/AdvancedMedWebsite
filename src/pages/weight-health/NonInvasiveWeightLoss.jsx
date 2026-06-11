@@ -167,7 +167,7 @@ export default function NonInvasiveWeightLoss() {
         items={[
           { label: 'Weight Loss — 12 Weeks', result: '18 lbs lost. Significant reduction in abdominal circumference and improved energy levels.', beforeSrc: '/images/before-after/weight-loss-12-weeks/before.jpg', afterSrc: '/images/before-after/weight-loss-12-weeks/after.jpg', beforeAlt: 'Before weight loss treatment', afterAlt: 'After weight loss treatment' },
           { label: 'Fat Freezing — 8 Weeks', result: 'Visible reduction in flanks and lower abdomen following 2 Cryo Contour sessions.', beforeSrc: '/images/before-after/fat-freezing-8-weeks/before.jpg', afterSrc: '/images/before-after/fat-freezing-8-weeks/after.jpg', beforeAlt: 'Before fat freezing', afterAlt: 'After fat freezing' },
-          { label: 'Metabolic Detox — 10 Weeks', result: 'Combination infrared therapy and lymphatic drainage — reduced bloating, improved digestion, and 11 lbs lost.', beforeAlt: 'Before metabolic detox program', afterAlt: 'After metabolic detox program' },
+          { label: 'Metabolic Detox — 10 Weeks', result: 'Combination infrared therapy and lymphatic drainage — reduced bloating, improved digestion, and 11 lbs lost.', beforeSrc: '/images/before-after/metabolic-detox/before.jpg', afterSrc: '/images/before-after/metabolic-detox/after.jpg', beforeAlt: 'Before metabolic detox program', afterAlt: 'After metabolic detox program' },
         ]}
       />
 
