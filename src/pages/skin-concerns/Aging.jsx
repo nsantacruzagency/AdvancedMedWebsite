@@ -129,26 +129,6 @@ export default function Aging() {
         radialPos="center"
       />
 
-      {/* How Skin Ages */}
-      <section className="py-20 px-6 bg-cream-100">
-        <div className="max-w-6xl mx-auto">
-          <SectionHeader
-            eyebrow="Understanding Aging"
-            title="How Your Skin Changes Over Time"
-            subtitle="Aging is a natural process — but understanding its mechanisms allows us to slow, reverse, and prevent many of its visible signs."
-          />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
-            {agingFactors.map((f) => (
-              <div key={f.title} className="bg-white p-8 shadow-sm border border-cream-300 hover:shadow-md transition hover:border-spa">
-                <div className="mb-4">{f.icon}</div>
-                <h3 className="font-serif text-xl font-bold text-espresso mb-3">{f.title}</h3>
-                <p className="text-espresso-500 text-sm leading-relaxed">{f.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Treatment Menu */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
@@ -185,6 +165,26 @@ export default function Aging() {
       </section>
 
       <BeforeAfter heading="Real Client Results" items={beforeAfterItems} />
+
+      {/* How Skin Ages */}
+      <section className="py-20 px-6 bg-cream-100">
+        <div className="max-w-6xl mx-auto">
+          <SectionHeader
+            eyebrow="Understanding Aging"
+            title="How Your Skin Changes Over Time"
+            subtitle="Aging is a natural process — but understanding its mechanisms allows us to slow, reverse, and prevent many of its visible signs."
+          />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
+            {agingFactors.map((f) => (
+              <div key={f.title} className="bg-white p-8 shadow-sm border border-cream-300 hover:shadow-md transition hover:border-spa">
+                <div className="mb-4">{f.icon}</div>
+                <h3 className="font-serif text-xl font-bold text-espresso mb-3">{f.title}</h3>
+                <p className="text-espresso-500 text-sm leading-relaxed">{f.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Philosophy */}
       <section className="py-20 px-6 bg-espresso text-cream-200">
