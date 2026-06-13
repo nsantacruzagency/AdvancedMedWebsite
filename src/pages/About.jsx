@@ -93,15 +93,6 @@ export default function About() {
             <p className="text-spa text-[10px] font-medium uppercase mb-5" style={{ letterSpacing: '0.28em' }}>
               The Lounge Experience
             </p>
-            <h2 className="font-serif text-5xl md:text-6xl font-light text-espresso leading-tight mb-6">
-              Welcome to<br />
-              <span className="italic text-spa">the Lounge.</span>
-            </h2>
-            <p className="text-espresso-500 text-[14px] font-light leading-relaxed">
-              Your time here does not begin and end with your treatment. At Advanced Med, the
-              experience starts the moment you walk through our doors — and we have designed
-              every detail of our lounge to make sure that moment feels like an exhale.
-            </p>
           </div>
 
           {/* Two-column: photo + description */}
@@ -126,20 +117,11 @@ export default function About() {
 
             {/* Lounge copy */}
             <div className="pt-4">
-              <div className="space-y-5 text-espresso-500 text-[13px] font-light leading-relaxed mb-10">
-                <p>
-                  Think warm candlelight, the soft rustle of living plants, a plush couch that
-                  invites you to stay longer than you planned. Our lounge is an oasis — a space
-                  curated with the same intentionality we bring to every treatment we perform.
-                </p>
-                <p>
-                  Natural textures and greenery soften the air. Ambient light glows gently at
-                  every hour. The scent of calming candles drifts through the space. Whether you
-                  arrive early to settle in or linger after your session to let the results land —
-                  the lounge is yours.
-                </p>
-                <p>
-                  This is not a waiting room. This is part of the experience.
+              <div className="mb-10">
+                <p className="text-espresso-500 text-[14px] font-light leading-relaxed">
+                  Your time here does not begin and end with your treatment. At Advanced Med, the
+                  experience starts the moment you walk through our doors — and we have designed
+                  every detail of our lounge to make sure that moment feels like an exhale.
                 </p>
               </div>
 
