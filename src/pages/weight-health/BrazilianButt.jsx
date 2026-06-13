@@ -78,15 +78,6 @@ export default function BrazilianButt() {
         radialPos="center"
       />
 
-      <BeforeAfter
-        heading="Real Client Results"
-        items={[
-          { label: 'EMS Glute Sculpting — 4 Sessions', result: 'Visible lift and rounding of the glutes with increased muscle definition. No downtime throughout the series.', beforeSrc: '/images/before-after/ems-glute-sculpting/before.jpg', afterSrc: '/images/before-after/ems-glute-sculpting/after.jpg', beforeAlt: 'Before EMS glute sculpting', afterAlt: 'After EMS glute sculpting' },
-          { label: 'RF + Massage — 8 Sessions', result: 'Significant improvement in skin texture, cellulite reduction, and overall contour following combined radiofrequency and lymphatic massage protocol.', beforeSrc: '/images/before-after/rf-massage-8-sessions/before.jpg', afterSrc: '/images/before-after/rf-massage-8-sessions/after.jpg', beforeAlt: 'Before RF and massage treatment', afterAlt: 'After RF and massage treatment' },
-          { label: 'Full Protocol — 12 Weeks', result: 'Combined EMS, RF, cavitation, and massage series. Lifted, rounder glutes with visibly smoother skin and reduced surrounding fat deposits.', beforeSrc: '/images/before-after/full-protocol-12-weeks/before.jpg', afterSrc: '/images/before-after/full-protocol-12-weeks/after.jpg', beforeAlt: 'Before full non-surgical BBL protocol', afterAlt: 'After full non-surgical BBL protocol' },
-        ]}
-      />
-
       {/* Treatments */}
       <section className="py-24 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
@@ -114,6 +105,15 @@ export default function BrazilianButt() {
           </div>
         </div>
       </section>
+
+      <BeforeAfter
+        heading="Real Client Results"
+        items={[
+          { label: 'BBB — 1', result: '', beforeSrc: '/images/before-after/BBB1/before.jpg', afterSrc: '/images/before-after/BBB1/after.jpg', beforeAlt: 'Before Brazilian butt enhancement', afterAlt: 'After Brazilian butt enhancement' },
+          { label: 'BBB — 2', result: '', beforeSrc: '/images/before-after/BBB2/before.jpg', afterSrc: '/images/before-after/BBB2/after.jpg', beforeAlt: 'Before Brazilian butt enhancement', afterAlt: 'After Brazilian butt enhancement' },
+          { label: 'BBB — 3', result: '', beforeSrc: '/images/before-after/BBB3/before.jpg', afterSrc: '/images/before-after/BBB3/after.jpg', beforeAlt: 'Before Brazilian butt enhancement', afterAlt: 'After Brazilian butt enhancement' },
+        ]}
+      />
 
       {/* Benefits Grid */}
       <section className="py-20 px-6 bg-espresso">
