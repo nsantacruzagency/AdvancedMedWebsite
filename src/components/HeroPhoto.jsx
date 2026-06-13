@@ -14,9 +14,9 @@ export default function HeroPhoto({
   eyebrow,
   title,
   subtitle,
-  height = 'min-h-[72vh]',
+  height = 'min-h-[54vh]',
   align = 'left',
-  gradient = 'from-espresso-800 via-espresso-700 to-spa-700',
+  gradient = 'from-espresso-800 via-spa-800 to-espresso-700',
   imageSrc = null,
 }) {
   const isCenter = align === 'center'
