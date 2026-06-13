@@ -168,7 +168,7 @@ export default function MaintainResults() {
             style={{ aspectRatio: '4/3' }}
           >
             <img
-              src="/images/breeze-machine.jpg"
+              src="/images/breeze-machine.jpeg"
               alt="Breeze Machine — Serum Without Needles"
               className="absolute inset-0 w-full h-full object-cover"
               onError={e => { e.currentTarget.style.display = 'none' }}
