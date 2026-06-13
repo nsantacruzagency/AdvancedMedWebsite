@@ -101,7 +101,7 @@ export default function NonInvasiveWeightLoss() {
       </section>
 
       <BeforeAfter
-        heading="Double Chin Reduction — Client Results"
+        heading="Double Chin Reduction — Real Client Results"
         items={[
           { label: 'Double Chin — 8 Weeks', result: 'Visible double chin reduction and improved jawline definition following eight sessions of our double chin protocol. Fine lines throughout the face, also diminished and tightened.', beforeSrc: '/images/before-after/double-chin-8-weeks/before.jpg', afterSrc: '/images/before-after/double-chin-8-weeks/after.jpg', beforeAlt: 'Before double chin treatment', afterAlt: 'After double chin treatment' },
           { label: 'Double Chin — 6 Weeks', result: 'Full-face rejuvenation with visible improvement in skin laxity, tightening of the jawline and double chin area, and a significant reduction in the appearance of fine lines and wrinkles for a more youthful, refreshed appearance. 6 week protocol result.', beforeSrc: '/images/before-after/double-chin-6-weeks/before.jpg', afterSrc: '/images/before-after/double-chin-6-weeks/after.jpg', beforeAlt: 'Before double chin 6 weeks', afterAlt: 'After double chin 6 weeks' },
