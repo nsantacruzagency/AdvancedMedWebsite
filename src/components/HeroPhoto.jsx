@@ -1,15 +1,3 @@
-/**
- * Full-bleed hero section styled as a photo placeholder.
- * Replace the inner div with <img> when real photography is available.
- *
- * Props:
- *   eyebrow   — small all-caps label above title
- *   title     — main heading (JSX or string)
- *   subtitle  — body copy below title
- *   height    — Tailwind h-* class (default "min-h-[72vh]")
- *   align     — "left" | "center" (default "left")
- *   gradient  — override gradient classes
- */
 export default function HeroPhoto({
   eyebrow,
   title,
@@ -17,20 +5,30 @@ export default function HeroPhoto({
   height = 'min-h-[54vh]',
   align = 'left',
   gradient = 'from-espresso-800 via-spa-800 to-espresso-700',
+  gradientDir = 'to-br',
+  radialPos = 'top_right',
   imageSrc = null,
 }) {
   const isCenter = align === 'center'
+  const radialMap = {
+    top_right:   'bg-[radial-gradient(ellipse_at_top_right,rgba(115,137,133,0.3),transparent_60%)]',
+    top_left:    'bg-[radial-gradient(ellipse_at_top_left,rgba(115,137,133,0.3),transparent_60%)]',
+    bottom_right:'bg-[radial-gradient(ellipse_at_bottom_right,rgba(115,137,133,0.3),transparent_60%)]',
+    bottom_left: 'bg-[radial-gradient(ellipse_at_bottom_left,rgba(115,137,133,0.3),transparent_60%)]',
+    center:      'bg-[radial-gradient(ellipse_at_center,rgba(115,137,133,0.25),transparent_65%)]',
+    top:         'bg-[radial-gradient(ellipse_at_top,rgba(115,137,133,0.3),transparent_60%)]',
+  }
+  const radialClass = radialMap[radialPos] || radialMap.top_right
 
   return (
     <section className={`relative ${height} flex items-end overflow-hidden`}>
-      {/* ── Background: real photo if provided, gradient placeholder otherwise ── */}
       <div className="absolute inset-0">
         {imageSrc ? (
           <img src={imageSrc} alt="" className="w-full h-full object-cover object-center" />
         ) : (
           <>
-            <div className={`w-full h-full bg-gradient-to-br ${gradient}`} />
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(115,137,133,0.25),transparent_60%)]" />
+            <div className={`w-full h-full bg-gradient-${gradientDir} ${gradient}`} />
+            <div className={`absolute inset-0 ${radialClass}`} />
           </>
         )}
       </div>

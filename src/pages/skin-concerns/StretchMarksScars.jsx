@@ -152,6 +152,8 @@ export default function StretchMarksScars() {
         title={"Stretch Marks\n& Scars"}
         subtitle="Visible reminders of your story — treated with clinical precision and compassionate care."
         gradient="from-espresso-800 via-spa-800 to-espresso-700"
+        gradientDir="to-tr"
+        radialPos="bottom_left"
       />
 
       <BeforeAfter heading="Real Client Results" items={beforeAfterItems} />

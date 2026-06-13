@@ -56,6 +56,8 @@ export default function HairRestoration() {
         title={<>Hair Restoration<br />Stem Cells</>}
         subtitle="Clinically proven, non-surgical treatments to restore hair density, reawaken dormant follicles, and reclaim your confidence — using your body's own regenerative biology."
         gradient="from-espresso-800 via-spa-700 to-espresso-700"
+        gradientDir="to-bl"
+        radialPos="bottom_left"
       />
 
       <BeforeAfter

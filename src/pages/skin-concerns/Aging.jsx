@@ -125,6 +125,8 @@ export default function Aging() {
         title={"Aging &\nWrinkles"}
         subtitle="Natural aging is inevitable. Visible aging is increasingly optional."
         gradient="from-espresso-700 via-espresso-800 to-spa-700"
+        gradientDir="to-br"
+        radialPos="center"
       />
 
       <BeforeAfter heading="Real Client Results" items={beforeAfterItems} />

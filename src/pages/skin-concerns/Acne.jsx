@@ -146,6 +146,8 @@ export default function Acne() {
         subtitle="Clear, healthy skin is not a dream. It is a clinical outcome — and we know how to get you there."
         gradient="from-espresso-800 via-espresso-600 to-spa-800"
         height="min-h-[42vh]"
+        gradientDir="to-r"
+        radialPos="bottom_right"
       />
 
       <BeforeAfter heading="Real Client Results" items={beforeAfterItems} />

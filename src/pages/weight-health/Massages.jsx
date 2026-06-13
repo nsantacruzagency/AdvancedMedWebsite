@@ -67,7 +67,33 @@ export default function Massages() {
         title={<>Signature Contouring &<br />Post-Operation Massages</>}
         subtitle="From detoxifying lymphatic drainage to healing post-operative care — our expert massage therapists deliver therapeutic touch that transforms how you look and feel."
         gradient="from-spa-800 via-espresso-800 to-espresso-700"
+        gradientDir="to-tr"
+        radialPos="bottom_left"
       />
+
+      {/* Brazilian 3-in-1 Deep Dive */}
+      <section className="py-24 px-6 bg-white">
+        <div className="max-w-3xl mx-auto text-center">
+          <SectionHeader eyebrow="A combination protocol" title="Our Signature Special" center={true} />
+          <p className="text-espresso-500 leading-relaxed mb-4">
+            Born in Brazil and refined by decades of clinical application, the 3-in-1 lymphatic drainage massage is a revolutionary technique that simultaneously addresses lymphatic congestion, deep muscle tension, and surface-level body contouring — all in a single session.
+          </p>
+          <p className="text-espresso-500 leading-relaxed mb-4">
+            Using a combination of rhythmic pumping strokes, deep petrissage, and specialized sculpting movements, our therapists guide excess fluid out of tissues, stimulate fat metabolism at the cellular level, and leave your skin visibly smoother and more toned.
+          </p>
+          <p className="text-espresso-500 leading-relaxed mb-8">
+            This treatment is especially popular pre- and post-cosmetic procedure, for brides preparing for their wedding, and for clients seeking accelerated results alongside their body contouring treatments.
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-xl mx-auto">
+            {['Reduces fluid retention', 'Smooths cellulite', 'Slims and sculpts', 'Boosts immunity', 'Pre/post-surgery safe', 'Deeply relaxing'].map((tag) => (
+              <div key={tag} className="flex items-center gap-2 text-espresso-500 text-sm justify-center">
+                <CheckCircle className="w-4 h-4 text-spa flex-shrink-0" />
+                {tag}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <BeforeAfter
         heading="3in1 Brazilian Contouring Lymphatic Drainage Massage — Real Client Results"
@@ -79,52 +105,6 @@ export default function Massages() {
           { label: 'Lymphatic Drainage — 3', result: '', beforeSrc: '/images/before-after/lymphatic-drainage-3/before.jpg', afterSrc: '/images/before-after/lymphatic-drainage-3/after.jpg', beforeAlt: 'Before lymphatic drainage', afterAlt: 'After lymphatic drainage' },
         ]}
       />
-
-      {/* Brazilian 3-in-1 Deep Dive */}
-      <section className="py-24 px-6 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-              <SectionHeader eyebrow="Signature Service" title="Brazilian 3-in-1 Lymphatic Drainage" center={false} />
-              <p className="text-espresso-500 leading-relaxed mb-4">
-                Born in Brazil and refined by decades of clinical application, the 3-in-1 lymphatic drainage massage is a revolutionary technique that simultaneously addresses lymphatic congestion, deep muscle tension, and surface-level body contouring — all in a single session.
-              </p>
-              <p className="text-espresso-500 leading-relaxed mb-4">
-                Using a combination of rhythmic pumping strokes, deep petrissage, and specialized sculpting movements, our therapists guide excess fluid out of tissues, stimulate fat metabolism at the cellular level, and leave your skin visibly smoother and more toned.
-              </p>
-              <p className="text-espresso-500 leading-relaxed mb-8">
-                This treatment is especially popular pre- and post-cosmetic procedure, for brides preparing for their wedding, and for clients seeking accelerated results alongside their body contouring treatments.
-              </p>
-              <div className="grid grid-cols-2 gap-4">
-                {['Reduces fluid retention', 'Smooths cellulite', 'Slims and sculpts', 'Boosts immunity', 'Pre/post-surgery safe', 'Deeply relaxing'].map((tag) => (
-                  <div key={tag} className="flex items-center gap-2 text-espresso-500 text-sm">
-                    <CheckCircle className="w-4 h-4 text-spa" />
-                    {tag}
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="bg-cream-100 p-10 border border-cream-300">
-              <h3 className="font-serif text-xl font-bold text-espresso mb-6">What to Expect</h3>
-              <div className="space-y-6">
-                {[
-                  { step: '1', title: 'Evaluation', desc: 'We review your health history, current goals, and any post-surgical considerations to customize your session.' },
-                  { step: '2', title: 'Treatment', desc: 'Using specialized strokes, your therapist works from extremities inward, following lymphatic pathways to decongest and sculpt.' },
-                  { step: '3', title: 'Compression & Results', desc: 'Sessions conclude with light compression garment guidance. You may notice visible slimming after just one treatment.' },
-                ].map((s) => (
-                  <div key={s.step} className="flex gap-4">
-                    <div className="w-8 h-8 bg-espresso text-cream-100 flex items-center justify-center font-bold text-sm flex-shrink-0">{s.step}</div>
-                    <div>
-                      <h4 className="font-semibold text-espresso mb-1">{s.title}</h4>
-                      <p className="text-espresso-500 text-sm leading-relaxed">{s.desc}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Post-Op & Prenatal */}
       <section className="py-24 px-6 bg-white">

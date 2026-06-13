@@ -126,6 +126,8 @@ export default function Memberships() {
         title={"Membership\nPlans"}
         subtitle="Priority care, monthly treatments, and meaningful savings — delivered with the consistency your skin deserves."
         gradient="from-espresso-800 via-espresso-700 to-spa-700"
+        gradientDir="to-bl"
+        radialPos="top_left"
       />
 
       {/* Membership Tiers */}

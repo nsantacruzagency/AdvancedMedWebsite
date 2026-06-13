@@ -92,6 +92,8 @@ export default function MaintainResults() {
         title={<>How to Maintain<br />Your Results</>}
         subtitle="Glass skin is not an event. It is a practice — built on the right protocols, the right products, and the right professional support."
         gradient="from-spa-800 via-espresso-700 to-espresso-800"
+        gradientDir="to-b"
+        radialPos="top_right"
       />
 
       {/* ── KOREAN GLASS SKIN INTRO ── */}

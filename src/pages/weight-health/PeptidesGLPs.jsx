@@ -46,6 +46,8 @@ export default function PeptidesGLPs() {
         title={<>Peptides<br />+ GLPs</>}
         subtitle="Next-generation pharmaceutical-grade therapies that work with your biology to dramatically reduce appetite, accelerate fat loss, and optimize metabolic health — under full medical supervision."
         gradient="from-espresso-800 via-espresso-600 to-spa-800"
+        gradientDir="to-br"
+        radialPos="bottom_right"
       />
 
       {/* Peptides Section */}

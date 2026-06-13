@@ -59,6 +59,8 @@ export default function IVsShots() {
         title={<>IVs + Intramuscular<br />Shots</>}
         subtitle="Deliver essential nutrients directly into your bloodstream for 100% absorption — maximum results, minimum wait. Our IV drips and IM shots support weight loss, energy, immunity, beauty, and recovery."
         gradient="from-spa-800 via-espresso-700 to-espresso-800"
+        gradientDir="to-tr"
+        radialPos="top_right"
       />
 
       {/* Why IV */}

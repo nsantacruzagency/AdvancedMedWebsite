@@ -47,6 +47,8 @@ export default function Testimonials() {
         title={"What Our\nClients Say"}
         subtitle="Real results from real people who trusted us with their transformation."
         gradient="from-spa-800 via-espresso-800 to-espresso-700"
+        gradientDir="to-br"
+        radialPos="bottom_right"
       />
 
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">

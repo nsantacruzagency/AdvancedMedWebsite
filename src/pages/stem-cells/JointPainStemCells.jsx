@@ -159,6 +159,8 @@ export default function JointPainStemCells() {
         title={<>Stem Cell<br />Joint Therapy</>}
         subtitle="Our stem cell joint regeneration protocol delivers concentrated MSC exosomes directly into damaged tissue — reducing inflammation, rebuilding cartilage, and restoring mobility without surgery."
         gradient="from-espresso-800 via-espresso-700 to-spa-700"
+        gradientDir="to-b"
+        radialPos="top_left"
       />
 
       {/* Intro pillars */}

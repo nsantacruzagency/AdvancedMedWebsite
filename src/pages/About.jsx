@@ -80,6 +80,8 @@ export default function About() {
         title={<>Welcome<br />to the Lounge.</>}
         subtitle="Where medical precision meets genuine, heartfelt care for every client who walks through our doors."
         gradient="from-espresso-800 via-espresso-700 to-spa-800"
+        gradientDir="to-r"
+        radialPos="center"
       />
 
       {/* ── WELCOME TO THE LOUNGE ── */}

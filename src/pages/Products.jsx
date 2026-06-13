@@ -69,6 +69,8 @@ export default function Products() {
         title={<>Professional Skincare<br />for Home Use</>}
         subtitle="Medical-grade formulations and curated K-beauty essentials selected by our clinical team — available to order directly."
         gradient="from-spa-800 via-espresso-800 to-espresso-900"
+        gradientDir="to-r"
+        radialPos="top_right"
       />
 
       {/* ── INTRO ── */}

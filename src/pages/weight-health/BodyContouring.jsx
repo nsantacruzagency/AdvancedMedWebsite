@@ -54,6 +54,8 @@ export default function BodyContouring() {
         title={<>Skin Tightening<br />& Cellulite</>}
         subtitle="Advanced, non-surgical treatments for skin tightening and cellulite — sculpting the silhouette you've worked toward with precision technology and compassionate care."
         gradient="from-espresso-800 via-spa-800 to-espresso-700"
+        gradientDir="to-bl"
+        radialPos="top_left"
       />
 
       {/* Skin Laxity & Tightening */}

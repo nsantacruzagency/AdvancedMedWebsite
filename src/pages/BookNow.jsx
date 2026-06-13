@@ -58,6 +58,8 @@ export default function BookNow() {
         title={"Book Your\nAppointment"}
         subtitle="Secure your appointment in minutes. We look forward to welcoming you."
         gradient="from-espresso-800 via-spa-800 to-espresso-700"
+        gradientDir="to-tr"
+        radialPos="top"
       />
 
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">

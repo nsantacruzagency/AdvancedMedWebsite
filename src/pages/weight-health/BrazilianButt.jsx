@@ -74,6 +74,8 @@ export default function BrazilianButt() {
         title={<>Brazilian Butt<br />Enhancement</>}
         subtitle="Non-surgical lift, sculpt, and contouring for a rounder, firmer silhouette — no implants, no surgery, no downtime."
         gradient="from-espresso-800 via-spa-800 to-espresso-700"
+        gradientDir="to-b"
+        radialPos="center"
       />
 
       <BeforeAfter

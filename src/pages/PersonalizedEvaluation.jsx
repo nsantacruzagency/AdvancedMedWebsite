@@ -84,6 +84,8 @@ export default function PersonalizedEvaluation() {
         title={<>How Our Personalized<br />Protocols Work</>}
         subtitle="No packages. No guesswork. Every protocol we create is built from scratch — around your biology, your goals, your timeline, and your life."
         gradient="from-espresso-800 via-espresso-700 to-spa-700"
+        gradientDir="to-b"
+        radialPos="bottom_left"
       />
 
       {/* Philosophy Statement */}
