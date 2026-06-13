@@ -129,8 +129,6 @@ export default function Aging() {
         radialPos="center"
       />
 
-      <BeforeAfter heading="Real Client Results" items={beforeAfterItems} />
-
       {/* How Skin Ages */}
       <section className="py-20 px-6 bg-cream-100">
         <div className="max-w-6xl mx-auto">
@@ -185,6 +183,8 @@ export default function Aging() {
           </div>
         </div>
       </section>
+
+      <BeforeAfter heading="Real Client Results" items={beforeAfterItems} />
 
       {/* Philosophy */}
       <section className="py-20 px-6 bg-espresso text-cream-200">
