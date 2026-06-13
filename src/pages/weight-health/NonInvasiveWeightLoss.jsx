@@ -233,7 +233,7 @@ export default function NonInvasiveWeightLoss() {
           <img
             src="/images/protocol-logos/slimlifelogo.png"
             alt="SlimLife Body Harmonization"
-            className="mx-auto max-h-56 md:max-h-72 w-auto object-contain mb-6"
+            className="mx-auto max-h-28 md:max-h-36 w-auto object-contain mb-6"
           />
           <h2 className="font-serif text-4xl font-bold text-espresso mb-4">Ready to Transform Your Body?</h2>
           <p className="text-espresso-500 text-lg mb-10 leading-relaxed">
