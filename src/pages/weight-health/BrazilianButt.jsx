@@ -17,25 +17,25 @@ const treatments = [
     name: 'EMS Glute Sculpting',
     subtitle: 'Electromagnetic Muscle Stimulation',
     desc: 'Induces thousands of supramaximal muscle contractions per session — far beyond what any workout can achieve. Builds and lifts the glute muscles for a rounder, firmer shape. Clinical studies show an average 16% increase in muscle mass after a series of 4 sessions.',
-    results: ['Visible lift and rounding', 'Increases muscle volume', 'Reduces local fat simultaneously', 'No downtime — return to daily life immediately'],
+    results: ['Visible lift and rounding', 'Increases muscle volume', 'Reduces local fat simultaneously'],
   },
   {
     name: 'Radiofrequency (RF) Skin Tightening',
     subtitle: 'Collagen Remodeling & Firming',
     desc: 'Delivers controlled heat energy deep into the dermis to stimulate new collagen and elastin production. Tightens loose or dimpled skin on the buttocks and upper thighs, improving texture and firmness over time.',
-    results: ['Firms and tightens skin', 'Reduces cellulite appearance', 'Smooths texture and surface', 'Cumulative results with each session'],
+    results: ['Firms and tightens skin', 'Reduces cellulite appearance', 'Smooths texture and surface'],
   },
   {
     name: 'Amino Acids',
     subtitle: 'Cellular Repair & Tissue Nourishment',
     desc: 'Essential amino acids are the building blocks your body uses to repair tissue, synthesize collagen, and maintain healthy muscle. Applied as part of your protocol, targeted amino acid therapy supports glute muscle recovery after EMS, accelerates tissue regeneration, and helps the body produce the proteins needed for a firmer, more sculpted result.',
-    results: ['Supports muscle repair and growth after EMS', 'Accelerates tissue regeneration', 'Promotes natural collagen synthesis', 'Enhances and prolongs treatment results'],
+    results: ['Supports muscle repair and growth after EMS', 'Accelerates tissue regeneration', 'Promotes natural collagen synthesis'],
   },
   {
     name: 'Collagen Bio-Stimulators',
     subtitle: 'Natural Volume & Long-Lasting Lift',
     desc: 'Unlike traditional fillers, collagen bio-stimulators work by triggering your body\'s own collagen production from within — creating gradual, natural-looking volume that develops over weeks and lasts significantly longer. For the glutes, this means a rounder, fuller shape that feels completely natural because it\'s built from your own biology, not injected material.',
-    results: ['Stimulates your own collagen — not synthetic filler', 'Builds natural volume over 4–8 weeks', 'Results last 18–24 months with maintenance', 'Fuller, rounder shape with no foreign material'],
+    results: ['Stimulates your own collagen — not synthetic filler', 'Builds natural volume over 4–8 weeks', 'Fuller, rounder shape with no foreign material'],
   },
 ]
 
@@ -83,7 +83,7 @@ export default function BrazilianButt() {
         <div className="max-w-6xl mx-auto">
           <SectionHeader
             eyebrow="Our Techniques"
-            title="How We Lift & Sculpt"
+            title="BBB by Round Gluteo Protocol"
             subtitle="We combine four proven modalities to build muscle, tighten skin, reduce surrounding fat, and smooth cellulite — all without surgery."
           />
           <div className="grid md:grid-cols-2 gap-8 mt-4">
