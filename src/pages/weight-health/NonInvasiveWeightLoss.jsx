@@ -254,12 +254,12 @@ export default function NonInvasiveWeightLoss() {
       {/* CTA */}
       <section className="py-24 px-6 bg-cream-200 text-center">
         <div className="max-w-2xl mx-auto">
-          <h2 className="font-serif text-4xl font-bold text-espresso mb-6">Ready to transform your body with our non-invasive weight loss protocol?</h2>
           <img
             src="/images/protocol-logos/slimlifelogo.png"
             alt="SlimLife Body Harmonization"
             className="mx-auto max-h-56 md:max-h-72 w-auto object-contain mb-6"
           />
+          <h2 className="font-serif text-4xl font-bold text-espresso mb-4">Ready to Transform Your Body?</h2>
           <p className="text-espresso-500 text-lg mb-10 leading-relaxed">
             Schedule your personalized evaluation today. Our clinical team will evaluate your unique needs and design a non-invasive weight loss protocol just for you.
           </p>
