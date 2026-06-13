@@ -77,7 +77,7 @@ export default function BodyContouring() {
             <div className="bg-cream-200 p-8 border border-cream-300">
               <h3 className="font-serif text-xl font-bold text-espresso mb-4">Our Treatment Approach</h3>
               <ul className="space-y-3">
-                {['Grade 1–4 cellulite treated effectively', 'Improves skin elasticity and firmness', 'Boosts local circulation and lymphatic flow', 'Stimulates new collagen synthesis', 'Recommended 6–10 sessions for optimal results'].map((item, i) => (
+                {['Grade 1–4 cellulite treated effectively', 'Improves skin elasticity and firmness', 'Boosts local circulation and lymphatic flow', 'Stimulates new collagen synthesis', 'Personalized approach to reduce skin texture'].map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-espresso-500">
                     <CheckCircle className="w-5 h-5 text-spa flex-shrink-0 mt-0.5" />
                     {item}
