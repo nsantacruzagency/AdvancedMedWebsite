@@ -150,6 +150,29 @@ export default function Acne() {
         radialPos="bottom_right"
       />
 
+      {/* Treatment Cards */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <SectionHeader
+            eyebrow="Our Protocols"
+            title="Acne Treatments We Offer"
+            subtitle="Every treatment is performed by licensed professionals using medical-grade technology and formulations."
+          />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+            {treatments.map((t) => (
+              <div key={t.name} className="bg-cream-100 border border-cream-300 p-6 hover:border-spa transition">
+                <h3 className="font-serif text-xl font-bold text-espresso mb-1">{t.name}</h3>
+                <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-3">{t.subtitle}</p>
+                <p className="text-espresso-500 text-sm leading-relaxed mb-4">{t.desc}</p>
+                <span className="inline-block bg-cream-200 text-espresso-600 text-[10px] font-medium px-3 py-1 tracking-widest uppercase border border-cream-300">
+                  {t.results}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <BeforeAfter heading="Real Client Results" items={beforeAfterItems} />
 
       {/* What Causes Acne */}
@@ -188,54 +211,6 @@ export default function Acne() {
                   <h3 className="font-serif text-lg font-bold text-espresso mb-1">{t.name}</h3>
                   <p className="text-espresso-500 text-sm leading-relaxed">{t.desc}</p>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Treatment Cards */}
-      <section className="py-20 px-6 bg-espresso">
-        <div className="max-w-6xl mx-auto">
-          <SectionHeader
-            eyebrow="Our Protocols"
-            title="Acne Treatments We Offer"
-            subtitle="Every treatment is performed by licensed professionals using medical-grade technology and formulations."
-            light={true}
-          />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
-            {treatments.map((t) => (
-              <div key={t.name} className="bg-white/5 border border-white/10 p-6 hover:bg-white/10 transition">
-                <h3 className="font-serif text-xl font-bold text-cream-100 mb-1">{t.name}</h3>
-                <p className="text-spa-300 text-[10px] font-medium tracking-widest uppercase mb-3">{t.subtitle}</p>
-                <p className="text-cream-300 text-sm leading-relaxed mb-4">{t.desc}</p>
-                <span className="inline-block bg-spa/20 text-spa-300 text-[10px] font-medium px-3 py-1 tracking-widest uppercase">
-                  {t.results}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Before/After Expectations */}
-      <section className="py-20 px-6 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <SectionHeader
-            eyebrow="Realistic Expectations"
-            title="What to Expect on Your Journey"
-            subtitle="Acne treatment is a process, not an overnight fix. Here's a general timeline based on our clinical experience."
-          />
-          <div className="mt-8 space-y-4">
-            {[
-              { week: 'Week 1–2', note: 'Initial purging may occur as treatments bring congestion to the surface — this is normal and temporary.' },
-              { week: 'Week 3–4', note: 'Active breakouts begin to subside. Skin texture starts to improve and pores appear smaller.' },
-              { week: 'Week 6–8', note: 'Significant reduction in breakout frequency and severity. Post-inflammatory marks begin fading.' },
-              { week: 'Month 3+', note: 'Maintained results with ongoing home care. Many clients achieve near-clear to clear skin with consistent treatment.' },
-            ].map((row) => (
-              <div key={row.week} className="flex gap-4 items-start bg-cream-100 border border-cream-300 p-5">
-                <span className="text-espresso font-bold text-sm w-24 flex-shrink-0">{row.week}</span>
-                <p className="text-espresso-500 text-sm leading-relaxed">{row.note}</p>
               </div>
             ))}
           </div>
