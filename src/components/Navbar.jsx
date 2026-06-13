@@ -127,7 +127,7 @@ export default function Navbar() {
                     : 'text-espresso-600 hover:text-espresso'
                 }`}
               >
-                Body Aesthetics
+                The Perfect Body
                 <ChevronDown size={11} strokeWidth={1.5} />
               </button>
               <Dropdown links={bodyAestheticsLinks} isOpen={openDropdown === 'body'} />
@@ -215,7 +215,7 @@ export default function Navbar() {
             ))}
 
             <p className="text-[9px] font-medium tracking-widest uppercase text-spa pt-4 pb-1">
-              Body Aesthetics
+              The Perfect Body
             </p>
             {bodyAestheticsLinks.map((l) => (
               <Link key={l.path} to={l.path}
