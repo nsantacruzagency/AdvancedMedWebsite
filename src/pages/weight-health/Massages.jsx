@@ -64,7 +64,7 @@ export default function Massages() {
     <div className="bg-white">
       <HeroPhoto
         eyebrow="Weight & Metabolic Health"
-        title={<>Therapeutic<br />Massages</>}
+        title={<>Signature Contouring &<br />Post-Operation Massages</>}
         subtitle="From detoxifying lymphatic drainage to healing post-operative care — our expert massage therapists deliver therapeutic touch that transforms how you look and feel."
         gradient="from-spa-800 via-espresso-800 to-espresso-700"
       />
@@ -126,41 +126,6 @@ export default function Massages() {
         </div>
       </section>
 
-      {/* Deep Tissue */}
-      <section className="py-24 px-6 bg-cream-100">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div className="bg-espresso p-10 text-cream-200 order-2 md:order-1">
-              <h3 className="font-serif text-2xl font-bold text-spa-300 mb-6">When Deep Work Is Needed</h3>
-              <p className="text-cream-300 leading-relaxed mb-6">
-                Chronic pain, poor posture, athletic training, or physical stress at work can create deep layers of muscular tension that surface-level massage cannot reach. Deep tissue work accesses the sub-layer of musculature and connective tissue to deliver lasting relief.
-              </p>
-              <div className="space-y-3">
-                {['Neck and shoulder tension', 'Lower back pain', 'Repetitive strain injuries', 'Athletic recovery', 'Postural imbalances', 'Fibromyalgia support'].map((item) => (
-                  <div key={item} className="flex items-center gap-3">
-                    <CheckCircle className="w-4 h-4 text-spa-300 flex-shrink-0" />
-                    <span className="text-cream-300 text-sm">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="order-1 md:order-2">
-              <SectionHeader eyebrow="Therapeutic Relief" title="Deep Tissue Massage" center={false} />
-              <p className="text-espresso-500 leading-relaxed mb-6">
-                Our certified deep tissue therapists use slow, deliberate strokes and firm pressure to break up scar tissue, release muscle adhesions, and restore proper movement patterns. This is not a comfort massage — it's a clinical treatment with measurable results.
-              </p>
-              <p className="text-espresso-500 leading-relaxed mb-8">
-                You may experience some soreness 24–48 hours after your session as your body processes released toxins and adjusts to restored muscle alignment — this is completely normal and typically followed by significant pain relief and increased mobility.
-              </p>
-              <div className="bg-cream-200 p-6 border border-cream-300">
-                <p className="text-sm font-semibold text-espresso mb-2">Recommended For:</p>
-                <p className="text-espresso-500 text-sm">Chronic pain conditions, athletes, office workers, anyone with recurring muscle tension or postural problems.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Post-Op & Prenatal */}
       <section className="py-24 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
@@ -203,6 +168,41 @@ export default function Massages() {
                   </li>
                 ))}
               </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Deep Tissue */}
+      <section className="py-24 px-6 bg-cream-100">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="bg-espresso p-10 text-cream-200 order-2 md:order-1">
+              <h3 className="font-serif text-2xl font-bold text-spa-300 mb-6">When Deep Work Is Needed</h3>
+              <p className="text-cream-300 leading-relaxed mb-6">
+                Chronic pain, poor posture, athletic training, or physical stress at work can create deep layers of muscular tension that surface-level massage cannot reach. Deep tissue work accesses the sub-layer of musculature and connective tissue to deliver lasting relief.
+              </p>
+              <div className="space-y-3">
+                {['Neck and shoulder tension', 'Lower back pain', 'Repetitive strain injuries', 'Athletic recovery', 'Postural imbalances', 'Fibromyalgia support'].map((item) => (
+                  <div key={item} className="flex items-center gap-3">
+                    <CheckCircle className="w-4 h-4 text-spa-300 flex-shrink-0" />
+                    <span className="text-cream-300 text-sm">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="order-1 md:order-2">
+              <SectionHeader eyebrow="Therapeutic Relief" title="Deep Tissue Massage" center={false} />
+              <p className="text-espresso-500 leading-relaxed mb-6">
+                Our certified deep tissue therapists use slow, deliberate strokes and firm pressure to break up scar tissue, release muscle adhesions, and restore proper movement patterns. This is not a comfort massage — it's a clinical treatment with measurable results.
+              </p>
+              <p className="text-espresso-500 leading-relaxed mb-8">
+                You may experience some soreness 24–48 hours after your session as your body processes released toxins and adjusts to restored muscle alignment — this is completely normal and typically followed by significant pain relief and increased mobility.
+              </p>
+              <div className="bg-cream-200 p-6 border border-cream-300">
+                <p className="text-sm font-semibold text-espresso mb-2">Recommended For:</p>
+                <p className="text-espresso-500 text-sm">Chronic pain conditions, athletes, office workers, anyone with recurring muscle tension or postural problems.</p>
+              </div>
             </div>
           </div>
         </div>
