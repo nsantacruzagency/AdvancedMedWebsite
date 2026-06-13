@@ -221,16 +221,9 @@ export default function BodyContouring() {
       </section>
 
       <BeforeAfter
-        heading="EMS Muscle Definition — Client Results"
+        heading="Skin Tightening and Laxity — Real Client Results"
         items={[
           { label: 'EMS — 4 Sessions', result: 'Visible abdominal definition and glute lifting achieved with electromagnetic muscle stimulation. No downtime throughout the series.', beforeSrc: '/images/before-after/ems-muscle-definition/before.jpg', afterSrc: '/images/before-after/ems-muscle-definition/after.jpg', beforeAlt: 'Before EMS muscle definition', afterAlt: 'After EMS muscle definition' },
-        ]}
-      />
-
-      <BeforeAfter
-        heading="EMS Glute Sculpting — Client Results"
-        items={[
-          { label: 'EMS Glute Sculpting — 4 Sessions', result: 'Visible glute lifting and definition achieved with electromagnetic muscle stimulation. Results continue to develop in the weeks following the series.', beforeSrc: '/images/before-after/ems-glute-sculpting/before.jpg', afterSrc: '/images/before-after/ems-glute-sculpting/after.jpg', beforeAlt: 'Before EMS glute sculpting', afterAlt: 'After EMS glute sculpting' },
         ]}
       />
 
