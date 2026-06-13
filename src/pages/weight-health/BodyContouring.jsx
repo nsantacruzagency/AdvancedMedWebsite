@@ -132,7 +132,7 @@ export default function BodyContouring() {
       </section>
 
       <BeforeAfter
-        heading="Body in Shape Protocol — Real Client Results"
+        heading="Body in Shape Cellulite Protocol — Real Client Results"
         items={[
           { label: 'Cellulite Reduction — 8 Sessions', result: 'Significant smoothing of thigh and hip cellulite. Visible improvement in skin texture and firmness after a combined RF and acoustic wave protocol.', beforeSrc: '/images/before-after/body-in-shape-1/before.jpg', afterSrc: '/images/before-after/body-in-shape-1/after.jpg', beforeAlt: 'Before cellulite treatment', afterAlt: 'After cellulite treatment' },
           { label: 'Sagging Skin Tightening', result: 'Visible firming and lift of loose, sagging skin following a combined radiofrequency and HIFU protocol. Improved skin texture and elasticity throughout the treated area.', beforeSrc: '/images/before-after/body-in-shape-3/before.jpg', afterSrc: '/images/before-after/body-in-shape-3/after.jpg', beforeAlt: 'Before skin tightening treatment', afterAlt: 'After skin tightening treatment' },
