@@ -70,7 +70,7 @@ export default function NonInvasiveWeightLoss() {
         eyebrow="Body Aesthetics"
         title={<>Non-Invasive<br />Weight Loss</>}
         subtitle="Science-backed, surgery-free solutions targeting the root causes of stubborn weight — detox, hormones, and precision fat reduction through Cryo Contour."
-        gradient="from-espresso-800 via-espresso-700 to-spa-700"
+        gradient="from-espresso-800 via-spa-800 to-espresso-700"
         height="min-h-[54vh]"
       />
 
