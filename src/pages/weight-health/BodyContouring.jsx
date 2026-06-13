@@ -86,14 +86,6 @@ export default function BodyContouring() {
               </ul>
             </div>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {celluliteTreatments.map((t) => (
-              <div key={t.name} className="bg-white border border-cream-300 p-6 hover:border-spa hover:shadow-lg transition-all duration-300">
-                <h4 className="font-serif font-bold text-espresso mb-3 text-lg">{t.name}</h4>
-                <p className="text-espresso-500 text-sm leading-relaxed">{t.desc}</p>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
