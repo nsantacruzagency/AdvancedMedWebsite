@@ -100,13 +100,6 @@ export default function About() {
       <section className="py-20 px-5 sm:px-8 lg:px-12 bg-white">
         <div className="max-w-7xl mx-auto">
 
-          {/* Heading */}
-          <div className="mb-16 max-w-2xl">
-            <h2 className="font-serif text-5xl md:text-6xl font-light text-espresso leading-tight">
-              The Lounge Experience
-            </h2>
-          </div>
-
           {/* Two-column: photo + description */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-16">
 
@@ -130,6 +123,9 @@ export default function About() {
             {/* Lounge copy */}
             <div className="pt-4">
               <div className="mb-10">
+                <p className="text-spa text-[10px] font-medium uppercase mb-4" style={{ letterSpacing: '0.28em' }}>
+                  The Lounge Experience
+                </p>
                 <p className="text-espresso-500 text-[14px] font-light leading-relaxed">
                   Your time here does not begin and end with your treatment. At Advanced Med, the
                   experience starts the moment you walk through our doors — and we have designed
