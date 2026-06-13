@@ -197,9 +197,9 @@ export default function BodyContouring() {
       <BeforeAfter
         heading="Skin Tightening and Laxity — Real Client Results"
         items={[
-          { label: 'Skin Tightening — Session 1', result: 'Visible abdominal definition and glute lifting achieved with electromagnetic muscle stimulation. No downtime throughout the series.', beforeSrc: '/images/before-after/ems-muscle-definition/before.jpg', afterSrc: '/images/before-after/ems-muscle-definition/after.jpg', beforeAlt: 'Before skin tightening', afterAlt: 'After skin tightening' },
-          { label: 'Skin Tightening — Session 2', result: '', beforeSrc: '/images/before-after/skin-tightening-laxity-2/before.jpg', afterSrc: '/images/before-after/skin-tightening-laxity-2/after.jpg', beforeAlt: 'Before skin tightening', afterAlt: 'After skin tightening' },
-          { label: 'Skin Tightening — Session 3', result: '', beforeSrc: '/images/before-after/skin-tightening-laxity-3/before.jpg', afterSrc: '/images/before-after/skin-tightening-laxity-3/after.jpg', beforeAlt: 'Before skin tightening', afterAlt: 'After skin tightening' },
+          { label: 'Skin Tightening — Session 1', result: 'Visible abdominal definition and glute lifting achieved with electromagnetic muscle stimulation. No downtime throughout the series.', beforeSrc: '/images/before-after/ems-muscle-definition/before.png', afterSrc: '/images/before-after/ems-muscle-definition/after.png', beforeAlt: 'Before skin tightening', afterAlt: 'After skin tightening' },
+          { label: 'Skin Tightening — Session 2', result: '', beforeSrc: '/images/before-after/skin-tightening-laxity-2/before.png', afterSrc: '/images/before-after/skin-tightening-laxity-2/after.png', beforeAlt: 'Before skin tightening', afterAlt: 'After skin tightening' },
+          { label: 'Skin Tightening — Session 3', result: '', beforeSrc: '/images/before-after/skin-tightening-laxity-3/before.png', afterSrc: '/images/before-after/skin-tightening-laxity-3/after.png', beforeAlt: 'Before skin tightening', afterAlt: 'After skin tightening' },
         ]}
       />
 
