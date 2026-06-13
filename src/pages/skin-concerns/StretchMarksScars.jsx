@@ -156,8 +156,6 @@ export default function StretchMarksScars() {
         radialPos="bottom_left"
       />
 
-      <BeforeAfter heading="Real Client Results" items={beforeAfterItems} />
-
       {/* Types We Treat */}
       <section className="py-20 px-6 bg-cream-100">
         <div className="max-w-6xl mx-auto">
@@ -188,6 +186,8 @@ export default function StretchMarksScars() {
           </div>
         </div>
       </section>
+
+      <BeforeAfter heading="Real Client Results" items={beforeAfterItems} />
 
       {/* How Our Treatments Work */}
       <section className="py-20 px-6 bg-espresso text-cream-200">
