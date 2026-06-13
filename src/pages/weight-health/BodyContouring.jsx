@@ -166,7 +166,7 @@ export default function BodyContouring() {
         <div className="max-w-6xl mx-auto">
           <SectionHeader
             eyebrow="For GLP-1 Users & Beyond"
-            title="Skin Laxity & Tightening"
+            title="Post GLP-1 Skin Laxity & Tightening"
             subtitle="Rapid fat loss from GLP-1 medications like semaglutide can leave behind loose, sagging skin. We specialize in restoring firmness, elasticity, and body composition after significant weight loss."
           />
           <div className="bg-cream-100 p-8 border border-cream-300 mb-10">
@@ -177,37 +177,19 @@ export default function BodyContouring() {
               At Advanced Med, we work alongside your GLP-1 protocol to proactively tighten skin as you lose weight — and to restore firmness and definition after your goal weight is reached. Our combination approach stimulates collagen remodeling, rebuilds the dermis from within, and significantly improves body composition without surgery.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                name: 'Radiofrequency (RF) Skin Tightening',
-                desc: 'Delivers controlled heat energy deep into the dermis to stimulate new collagen and elastin production — the structural proteins responsible for firm, youthful skin. Ideal for the abdomen, arms, thighs, and neck after weight loss.',
-                benefits: ['Firms and lifts loose skin', 'Rebuilds collagen from within', 'Improves skin texture and elasticity', 'Cumulative results with each session'],
-              },
-              {
-                name: 'HIFU Body (High-Intensity Focused Ultrasound)',
-                desc: 'Targets the deeper fibromuscular layer beneath the skin using focused ultrasound energy — the same layer addressed in surgical lifts. Provides structural tightening and contour improvement in areas most affected by rapid fat loss.',
-                benefits: ['Deep structural tightening', 'Lifts and recontours loose areas', 'Stimulates long-term collagen remodeling', 'Non-surgical, no downtime'],
-              },
-              {
-                name: 'EMS + RF Body Composition Protocol',
-                desc: 'Combines electromagnetic muscle stimulation with radiofrequency tightening to simultaneously rebuild muscle tone and firm overlying skin. Especially effective for GLP-1 users experiencing muscle loss alongside fat loss.',
-                benefits: ['Rebuilds muscle lost during weight loss', 'Tightens skin simultaneously', 'Improves overall body composition', 'Visible results in 4–6 sessions'],
-              },
-            ].map((item) => (
-              <div key={item.name} className="bg-cream-100 p-8 border border-cream-300 hover:border-spa hover:shadow-lg transition-all duration-300">
-                <h4 className="font-serif font-bold text-xl text-espresso mb-3">{item.name}</h4>
-                <p className="text-espresso-500 text-sm leading-relaxed mb-6">{item.desc}</p>
-                <ul className="space-y-2">
-                  {item.benefits.map((b, i) => (
-                    <li key={i} className="flex items-start gap-2 text-espresso-500 text-sm">
-                      <CheckCircle className="w-4 h-4 text-spa flex-shrink-0 mt-0.5" />
-                      {b}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+          <div className="max-w-md mx-auto">
+            <div className="bg-cream-100 p-8 border border-cream-300 hover:border-spa hover:shadow-lg transition-all duration-300">
+              <h4 className="font-serif font-bold text-xl text-espresso mb-3">Radiofrequency (RF) Skin Tightening</h4>
+              <p className="text-espresso-500 text-sm leading-relaxed mb-6">Delivers controlled heat energy deep into the dermis to stimulate new collagen and elastin production — the structural proteins responsible for firm, youthful skin. Ideal for the abdomen, arms, thighs, and neck after weight loss.</p>
+              <ul className="space-y-2">
+                {['Firms and lifts loose skin', 'Rebuilds collagen from within', 'Improves skin texture and elasticity', 'Cumulative results with each session'].map((b, i) => (
+                  <li key={i} className="flex items-start gap-2 text-espresso-500 text-sm">
+                    <CheckCircle className="w-4 h-4 text-spa flex-shrink-0 mt-0.5" />
+                    {b}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -215,7 +197,9 @@ export default function BodyContouring() {
       <BeforeAfter
         heading="Skin Tightening and Laxity — Real Client Results"
         items={[
-          { label: 'EMS — 4 Sessions', result: 'Visible abdominal definition and glute lifting achieved with electromagnetic muscle stimulation. No downtime throughout the series.', beforeSrc: '/images/before-after/ems-muscle-definition/before.jpg', afterSrc: '/images/before-after/ems-muscle-definition/after.jpg', beforeAlt: 'Before EMS muscle definition', afterAlt: 'After EMS muscle definition' },
+          { label: 'Skin Tightening — Session 1', result: 'Visible abdominal definition and glute lifting achieved with electromagnetic muscle stimulation. No downtime throughout the series.', beforeSrc: '/images/before-after/ems-muscle-definition/before.jpg', afterSrc: '/images/before-after/ems-muscle-definition/after.jpg', beforeAlt: 'Before skin tightening', afterAlt: 'After skin tightening' },
+          { label: 'Skin Tightening — Session 2', result: '', beforeSrc: '/images/before-after/skin-tightening-laxity-2/before.jpg', afterSrc: '/images/before-after/skin-tightening-laxity-2/after.jpg', beforeAlt: 'Before skin tightening', afterAlt: 'After skin tightening' },
+          { label: 'Skin Tightening — Session 3', result: '', beforeSrc: '/images/before-after/skin-tightening-laxity-3/before.jpg', afterSrc: '/images/before-after/skin-tightening-laxity-3/after.jpg', beforeAlt: 'Before skin tightening', afterAlt: 'After skin tightening' },
         ]}
       />
 
