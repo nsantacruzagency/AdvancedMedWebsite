@@ -5,10 +5,22 @@ import FAQ from '../components/FAQ'
 
 const team = [
   {
-    name: 'Dr. Elena Rivera, MD',
+    name: 'Dr. Gavin Ajami, MD',
     role: 'Medical Director & Lead Aesthetician',
-    bio: 'Board-certified in Internal Medicine with over 12 years of aesthetic medicine experience. Dr. Rivera is renowned for her natural, patient-first approach to injectables and skin rejuvenation.',
+    bio: 'Board-certified in Internal Medicine with over 12 years of aesthetic medicine experience. Dr. Ajami is renowned for his natural, patient-first approach to injectables and skin rejuvenation.',
     credentials: ['MD, University of Miami', 'Board Certified — Internal Medicine', '12+ Years Aesthetic Medicine'],
+  },
+  {
+    name: 'Dr. James Okonkwo, MD',
+    role: 'Medical Weight Loss Specialist',
+    bio: 'Board-certified in Obesity Medicine, Dr. Okonkwo leads our medical weight loss and metabolic health programs. He combines evidence-based medicine with compassionate, personalized care.',
+    credentials: ['MD, FACP', 'Board Certified — Obesity Medicine', 'Diplomate, American Board of Internal Medicine'],
+  },
+  {
+    name: 'Sofia Reyes, LE',
+    role: 'Lead Nurse',
+    bio: 'A licensed esthetician with specialized training in K-beauty protocols, chemical peels, and skin analysis. Sofia brings a holistic, skin-health-first philosophy to every facial treatment.',
+    credentials: ['Licensed Esthetician', 'K-Beauty Certified Specialist', 'Chemical Peel Advanced Certification'],
   },
   {
     name: 'Marcus Chen, RN, CANS',
@@ -17,16 +29,16 @@ const team = [
     credentials: ['RN, BSN', 'CANS Certified', 'Allergan & Galderma Certified Trainer'],
   },
   {
-    name: 'Sofia Reyes, LE',
-    role: 'Lead Medical Esthetician',
-    bio: 'A licensed esthetician with specialized training in K-beauty protocols, chemical peels, and skin analysis. Sofia brings a holistic, skin-health-first philosophy to every facial treatment.',
-    credentials: ['Licensed Esthetician', 'K-Beauty Certified Specialist', 'Chemical Peel Advanced Certification'],
+    name: 'Alyne',
+    role: 'Medical Assistant',
+    bio: 'Alyne supports our clinical team with warmth and precision, ensuring every client feels comfortable and cared for throughout their visit.',
+    credentials: ['Medical Assistant Certified'],
   },
   {
-    name: 'Dr. James Okonkwo, MD',
-    role: 'Medical Weight Loss Specialist',
-    bio: 'Board-certified in Obesity Medicine, Dr. Okonkwo leads our medical weight loss and metabolic health programs. He combines evidence-based medicine with compassionate, personalized care.',
-    credentials: ['MD, FACP', 'Board Certified — Obesity Medicine', 'Diplomate, American Board of Internal Medicine'],
+    name: 'Stefania',
+    role: 'Massage Therapist',
+    bio: 'Stefania specializes in therapeutic and body contouring massage techniques, including lymphatic drainage and post-operative care protocols.',
+    credentials: ['Licensed Massage Therapist', 'Lymphatic Drainage Certified'],
   },
 ]
 
