@@ -26,16 +26,16 @@ const treatments = [
     results: ['Firms and tightens skin', 'Reduces cellulite appearance', 'Smooths texture and surface', 'Cumulative results with each session'],
   },
   {
-    name: 'Ultrasound Cavitation',
-    subtitle: 'Fat Reduction & Contouring',
-    desc: 'Low-frequency ultrasound creates micro-bubbles that rupture fat cell membranes in targeted areas — such as the lower back, flanks, and outer thighs — helping to define and contour the surrounding shape of the glutes.',
-    results: ['Reduces surrounding fat deposits', 'Enhances glute definition', 'Smooths the silhouette', 'Natural elimination of fat cells'],
+    name: 'Amino Acids',
+    subtitle: 'Cellular Repair & Tissue Nourishment',
+    desc: 'Essential amino acids are the building blocks your body uses to repair tissue, synthesize collagen, and maintain healthy muscle. Applied as part of your protocol, targeted amino acid therapy supports glute muscle recovery after EMS, accelerates tissue regeneration, and helps the body produce the proteins needed for a firmer, more sculpted result.',
+    results: ['Supports muscle repair and growth after EMS', 'Accelerates tissue regeneration', 'Promotes natural collagen synthesis', 'Enhances and prolongs treatment results'],
   },
   {
-    name: 'Brazilian 3-in-1 Lymphatic Massage',
-    subtitle: 'Sculpt, Drain & Tone',
-    desc: 'A signature technique combining lymphatic drainage, deep tissue work, and sculpting massage movements. Reduces fluid retention, smooths cellulite, and improves the overall contour of the buttocks and thighs.',
-    results: ['Reduces puffiness and fluid retention', 'Smooths dimpling and cellulite', 'Improves skin texture', 'Deeply relaxing and restorative'],
+    name: 'Collagen Bio-Stimulators',
+    subtitle: 'Natural Volume & Long-Lasting Lift',
+    desc: 'Unlike traditional fillers, collagen bio-stimulators work by triggering your body\'s own collagen production from within — creating gradual, natural-looking volume that develops over weeks and lasts significantly longer. For the glutes, this means a rounder, fuller shape that feels completely natural because it\'s built from your own biology, not injected material.',
+    results: ['Stimulates your own collagen — not synthetic filler', 'Builds natural volume over 4–8 weeks', 'Results last 18–24 months with maintenance', 'Fuller, rounder shape with no foreign material'],
   },
 ]
 
