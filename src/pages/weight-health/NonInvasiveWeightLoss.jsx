@@ -71,6 +71,7 @@ export default function NonInvasiveWeightLoss() {
         title={<>Non-Invasive<br />Weight Loss</>}
         subtitle="Science-backed, surgery-free solutions targeting the root causes of stubborn weight — detox, hormones, and precision fat reduction through Cryo Contour."
         gradient="from-espresso-800 via-espresso-700 to-spa-700"
+        height="min-h-[54vh]"
       />
 
       {/* Neck Fat Reduction */}
