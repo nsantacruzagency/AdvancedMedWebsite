@@ -69,11 +69,11 @@ export default function PartnerServices() {
             Contact us and we'll connect you with the right specialist for your needs.
           </p>
           <Link
-            to="/book"
+            href="https://advancedmedspaofficial.janeapp.com/" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-cream-100 hover:bg-white text-espresso text-[10px] tracking-widest uppercase font-medium px-10 py-4 transition-all duration-300"
           >
             Get in Touch <ArrowRight className="w-4 h-4" />
-          </Link>
+          </a>
         </div>
       </section>
     </div>

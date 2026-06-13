@@ -149,12 +149,12 @@ export default function SkinConcerns() {
                         </div>
                       ))}
                     </div>
-                    <Link
-                      to="/book"
+                    <a
+                      href="https://advancedmedspaofficial.janeapp.com/" target="_blank" rel="noopener noreferrer"
                       className="mt-8 inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-600 text-white font-semibold px-6 py-3 rounded-full transition-colors text-sm"
                     >
                       Treat {concern.title.split(' ')[0]} <ArrowRight size={15} />
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -174,12 +174,12 @@ export default function SkinConcerns() {
             Book a skin analysis evaluation and our experts will evaluate your skin,
             diagnose your concerns, and design a targeted treatment plan.
           </p>
-          <Link
-            to="/book"
+          <a
+            href="https://advancedmedspaofficial.janeapp.com/" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-600 text-white font-semibold px-10 py-4 rounded-full transition-colors shadow-lg text-base"
           >
             Book a Skin Analysis <ArrowRight size={18} />
-          </Link>
+          </a>
         </div>
       </section>
     </>

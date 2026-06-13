@@ -279,11 +279,11 @@ export default function StretchMarksScars() {
             Whether it's stretch marks from pregnancy or scars from your past, we'll create a treatment plan designed around your body, your skin, and your goals.
           </p>
           <Link
-            to="/book"
+            href="https://advancedmedspaofficial.janeapp.com/" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-cream-100 hover:bg-white text-espresso text-[10px] tracking-widest uppercase font-medium px-10 py-4 transition-all duration-300"
           >
             Book Now <ArrowRight className="w-4 h-4" />
-          </Link>
+          </a>
         </div>
       </section>
 

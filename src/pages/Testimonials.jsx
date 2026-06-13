@@ -98,9 +98,9 @@ export default function Testimonials() {
         <div className="max-w-3xl mx-auto">
           <h2 className="font-serif text-4xl font-bold mb-4">Ready to Write Your Own Story?</h2>
           <p className="text-cream-300 mb-8">Join thousands of clients who have transformed their health and confidence at Advanced Med MedSpa Lounge.</p>
-          <Link to="/book" className="inline-flex items-center gap-2 bg-cream-100 hover:bg-white text-espresso text-[10px] tracking-widest uppercase font-medium px-10 py-4 transition-colors">
+          <a href="https://advancedmedspaofficial.janeapp.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-cream-100 hover:bg-white text-espresso text-[10px] tracking-widest uppercase font-medium px-10 py-4 transition-colors">
             Book Your First Appointment <ArrowRight size={16} />
-          </Link>
+          </a>
         </div>
       </section>
     </>

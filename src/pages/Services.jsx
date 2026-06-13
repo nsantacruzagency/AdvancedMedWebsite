@@ -169,12 +169,12 @@ export default function Services() {
                     {svc.title}
                   </h2>
                   <p className="text-gray-600 leading-relaxed mb-8">{svc.description}</p>
-                  <Link
-                    to="/book"
+                  <a
+                    href="https://advancedmedspaofficial.janeapp.com/" target="_blank" rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-600 text-white font-semibold px-6 py-3 rounded-full transition-colors text-sm shadow-sm"
                   >
                     Book This Treatment <ArrowRight size={15} />
-                  </Link>
+                  </a>
                 </div>
                 <div className="p-10 lg:p-14 lg:border-l border-white/60">
                   <h4 className="font-semibold text-gray-800 mb-5 text-sm uppercase tracking-wider">
@@ -205,12 +205,12 @@ export default function Services() {
             Book a complimentary evaluation and our specialists will design a
             personalized treatment plan just for you.
           </p>
-          <Link
-            to="/book"
+          <a
+            href="https://advancedmedspaofficial.janeapp.com/" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-white text-gold-600 hover:bg-gold-50 font-semibold px-10 py-4 rounded-full transition-colors shadow-lg text-base"
           >
             Get Your Free Evaluation <ArrowRight size={18} />
-          </Link>
+          </a>
         </div>
       </section>
     </>

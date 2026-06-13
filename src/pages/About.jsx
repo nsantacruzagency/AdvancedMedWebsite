@@ -176,11 +176,11 @@ export default function About() {
             expertise meets genuine luxury care.
           </p>
           <Link
-            to="/book"
+            href="https://advancedmedspaofficial.janeapp.com/" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-spa hover:bg-spa-600 text-cream-100 text-[10px] tracking-widest uppercase px-10 py-4 transition-colors"
           >
             Book Your Visit <ArrowRight size={14} />
-          </Link>
+          </a>
         </div>
       </section>
 

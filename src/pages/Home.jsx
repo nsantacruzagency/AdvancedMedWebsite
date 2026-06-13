@@ -187,13 +187,13 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                to="/book"
+              <a
+                href="https://advancedmedspaofficial.janeapp.com/" target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 bg-spa text-cream-100 text-[10px] font-medium tracking-widest uppercase px-9 py-4 hover:bg-spa-600 transition-colors"
               >
                 Book a Evaluation
                 <ArrowRight size={13} />
-              </Link>
+              </a>
               <Link
                 to="/non-invasive-weight-loss"
                 className="inline-flex items-center justify-center gap-3 border border-espresso-300 text-espresso text-[10px] font-medium tracking-widest uppercase px-9 py-4 hover:border-espresso hover:bg-cream-300 transition-colors"

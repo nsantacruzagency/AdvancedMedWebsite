@@ -254,11 +254,11 @@ export default function BloodTestsLongevity() {
             Stop guessing. Start knowing. Comprehensive blood testing and expert analysis give you the data to transform your health with precision. Your protocol begins with a single evaluation.
           </p>
           <Link
-            to="/book"
+            href="https://advancedmedspaofficial.janeapp.com/" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-spa hover:bg-spa-600 text-cream-100 text-[10px] tracking-widest uppercase font-medium px-12 py-5 transition-all duration-300"
           >
             Book Your Wellness Evaluation <ArrowRight className="w-4 h-4" />
-          </Link>
+          </a>
         </div>
       </section>
 
