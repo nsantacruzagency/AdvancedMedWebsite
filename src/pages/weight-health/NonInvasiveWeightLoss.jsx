@@ -218,7 +218,7 @@ export default function NonInvasiveWeightLoss() {
       </section>
 
       <BeforeAfter
-        heading="Postpartum Fat Loss — Real Client Results"
+        heading="Postpartum Fat Loss Protocol — Real Client Results"
         items={[
           { label: 'Postpartum Fat Loss — Session 1', result: '', beforeSrc: '/images/before-after/postpartum-fat-loss-1/before.jpg', afterSrc: '/images/before-after/postpartum-fat-loss-1/after.jpg', beforeAlt: 'Before postpartum fat loss', afterAlt: 'After postpartum fat loss' },
           { label: 'Postpartum Fat Loss — Session 2', result: '', beforeSrc: '/images/before-after/postpartum-fat-loss-2/before.jpg', afterSrc: '/images/before-after/postpartum-fat-loss-2/after.jpg', beforeAlt: 'Before postpartum fat loss', afterAlt: 'After postpartum fat loss' },
