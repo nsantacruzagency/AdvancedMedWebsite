@@ -162,18 +162,17 @@ export default function MaintainResults() {
       {/* ── BREEZE MACHINE ── */}
       <section className="py-20 px-5 sm:px-8 lg:px-12 bg-espresso">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* Photo placeholder */}
+          {/* Breeze Machine photo */}
           <div
             className="w-full bg-espresso-600 relative overflow-hidden"
             style={{ aspectRatio: '4/3' }}
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-espresso-500 to-spa-800 opacity-80" />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center">
-                <p className="text-cream-400 text-[11px] uppercase tracking-widest font-light">Breeze Machine</p>
-                <p className="text-cream-500 text-[10px] mt-1 font-light">Photo Placeholder</p>
-              </div>
-            </div>
+            <img
+              src="/images/breeze-machine.jpg"
+              alt="Breeze Machine — Serum Without Needles"
+              className="absolute inset-0 w-full h-full object-cover"
+              onError={e => { e.currentTarget.style.display = 'none' }}
+            />
           </div>
 
           <div>
