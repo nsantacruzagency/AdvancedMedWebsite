@@ -6,27 +6,27 @@ import FAQ from '../components/FAQ'
 const team = [
   {
     name: 'Dr. Gavin Ajami, MD',
-    role: 'Medical Director & Lead Aesthetician',
+    role: 'Medical Director',
     bio: 'Board-certified in Internal Medicine with over 12 years of aesthetic medicine experience. Dr. Ajami is renowned for his natural, patient-first approach to injectables and skin rejuvenation.',
     credentials: ['MD, University of Miami', 'Board Certified — Internal Medicine', '12+ Years Aesthetic Medicine'],
   },
   {
-    name: 'Dr. James Okonkwo, MD',
-    role: 'Medical Weight Loss Specialist',
-    bio: 'Board-certified in Obesity Medicine, Dr. Okonkwo leads our medical weight loss and metabolic health programs. He combines evidence-based medicine with compassionate, personalized care.',
-    credentials: ['MD, FACP', 'Board Certified — Obesity Medicine', 'Diplomate, American Board of Internal Medicine'],
+    name: 'Nathalie Santa Cruz',
+    role: 'Holistic Health Practitioner',
+    bio: 'Nathalie leads our holistic health and metabolic wellness programs, combining evidence-based medicine with compassionate, personalized care for every client.',
+    credentials: ['Holistic Health Practitioner', 'Metabolic Wellness Specialist'],
   },
   {
-    name: 'Sofia Reyes, LE',
+    name: 'Daniela Schiffini',
     role: 'Lead Nurse',
-    bio: 'A licensed esthetician with specialized training in K-beauty protocols, chemical peels, and skin analysis. Sofia brings a holistic, skin-health-first philosophy to every facial treatment.',
-    credentials: ['Licensed Esthetician', 'K-Beauty Certified Specialist', 'Chemical Peel Advanced Certification'],
+    bio: 'A licensed nurse with specialized training in aesthetic protocols, skin analysis, and client care. Daniela brings a holistic, skin-health-first philosophy to every treatment.',
+    credentials: ['Licensed Nurse'],
   },
   {
-    name: 'Marcus Chen, RN, CANS',
-    role: 'Senior Nurse Injector',
-    bio: 'A certified aesthetic nurse specialist with a background in plastic surgery. Marcus specializes in neurotoxin placement, dermal fillers, and body contouring with a meticulous eye for symmetry.',
-    credentials: ['RN, BSN', 'CANS Certified', 'Allergan & Galderma Certified Trainer'],
+    name: 'Dani Henwood, PA',
+    role: 'Senior Injector',
+    bio: 'A certified aesthetic injector with a background in plastic surgery. Dani specializes in neurotoxin placement, dermal fillers, and body contouring with a meticulous eye for symmetry.',
+    credentials: ['PA Certified', 'CANS Certified', 'Allergan & Galderma Certified Trainer'],
   },
   {
     name: 'Alyne',
@@ -35,7 +35,7 @@ const team = [
     credentials: ['Medical Assistant Certified'],
   },
   {
-    name: 'Stefania',
+    name: 'Stefania Morillo',
     role: 'Massage Therapist',
     bio: 'Stefania specializes in therapeutic and body contouring massage techniques, including lymphatic drainage and post-operative care protocols.',
     credentials: ['Licensed Massage Therapist', 'Lymphatic Drainage Certified'],
