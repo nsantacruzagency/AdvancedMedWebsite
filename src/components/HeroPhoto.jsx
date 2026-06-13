@@ -20,6 +20,18 @@ export default function HeroPhoto({
   }
   const radialClass = radialMap[radialPos] || radialMap.top_right
 
+  const dirMap = {
+    'to-br': 'bg-gradient-to-br',
+    'to-bl': 'bg-gradient-to-bl',
+    'to-tr': 'bg-gradient-to-tr',
+    'to-tl': 'bg-gradient-to-tl',
+    'to-b':  'bg-gradient-to-b',
+    'to-t':  'bg-gradient-to-t',
+    'to-r':  'bg-gradient-to-r',
+    'to-l':  'bg-gradient-to-l',
+  }
+  const dirClass = dirMap[gradientDir] || 'bg-gradient-to-br'
+
   return (
     <section className={`relative ${height} flex items-end overflow-hidden`}>
       <div className="absolute inset-0">
@@ -27,7 +39,7 @@ export default function HeroPhoto({
           <img src={imageSrc} alt="" className="w-full h-full object-cover object-center" />
         ) : (
           <>
-            <div className={`w-full h-full bg-gradient-${gradientDir} ${gradient}`} />
+            <div className={`w-full h-full ${dirClass} ${gradient}`} />
             <div className={`absolute inset-0 ${radialClass}`} />
           </>
         )}
