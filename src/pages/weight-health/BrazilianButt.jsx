@@ -71,8 +71,8 @@ export default function BrazilianButt() {
     <div className="bg-white">
       <HeroPhoto
         eyebrow="Weight & Metabolic Health"
-        title={<>Brazilian Butt<br />Enhancement</>}
-        subtitle="Non-surgical lift, sculpt, and contouring for a rounder, firmer silhouette — no implants, no surgery, no downtime."
+        title={<>Brazilian Butt<br />Boost</>}
+        subtitle="A rounder, firmer silhouette using bio-stimulator — not filler — to naturally stimulate your body's own collagen and volume. No implants, no surgery, no downtime."
         gradient="from-espresso-800 via-spa-800 to-espresso-700"
         gradientDir="to-b"
         radialPos="center"
