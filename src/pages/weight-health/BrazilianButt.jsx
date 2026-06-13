@@ -126,8 +126,8 @@ export default function BrazilianButt() {
           <div className="grid md:grid-cols-3 gap-8 mt-4">
             {[
               { step: '01', title: 'Free Evaluation', desc: 'We assess your anatomy, skin quality, muscle tone, and goals. Your clinician designs a personalized combination protocol and walks you through your expected timeline and results.' },
-              { step: '02', title: 'Your Treatment Series', desc: 'Sessions are typically scheduled 1–2 weeks apart. EMS, RF, cavitation, and massage are combined in the sequence that best serves your protocol. Each session builds on the last.' },
-              { step: '03', title: 'Progressive Results', desc: 'Muscle development from EMS continues for 4–6 weeks after your last session. RF collagen remodeling improves for up to 3 months. Maintenance sessions preserve and enhance your results long term.' },
+              { step: '02', title: 'Prepare for Collagen Synthesis', desc: 'We use EMS and targeted amino acid therapy to prime the tissue — building glute muscle, stimulating cellular repair, and creating the optimal environment for volume and lift. This phase naturally begins reshaping the silhouette before bio-stimulators are introduced.' },
+              { step: '03', title: 'Bio-Stimulator Application', desc: 'Once the tissue is primed, collagen bio-stimulators are applied to amplify and lock in your results. Unlike filler, bio-stimulators trigger your body\'s own collagen production — building natural, lasting volume that develops gradually over the following weeks for a rounder, fuller shape.' },
             ].map((item) => (
               <div key={item.step} className="bg-white p-8 border border-cream-300 hover:border-spa hover:shadow-lg transition-all duration-300">
                 <div className="font-serif text-5xl font-bold text-cream-400 mb-4">{item.step}</div>
