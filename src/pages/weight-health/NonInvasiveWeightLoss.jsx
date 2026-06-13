@@ -104,7 +104,7 @@ export default function NonInvasiveWeightLoss() {
         heading="Double Chin Reduction — Client Results"
         items={[
           { label: 'Double Chin — 8 Weeks', result: 'Visible double chin reduction and improved jawline definition following eight sessions of our double chin protocol. Fine lines throughout the face, also diminished and tightened.', beforeSrc: '/images/before-after/double-chin-8-weeks/before.jpg', afterSrc: '/images/before-after/double-chin-8-weeks/after.jpg', beforeAlt: 'Before double chin treatment', afterAlt: 'After double chin treatment' },
-          { label: 'Double Chin + Jawline — 10 Weeks', result: 'Combined cavitation and RF protocol. Double chin visibly reduced, neck silhouette cleaner, skin noticeably firmer with no downtime throughout the series.', beforeSrc: '/images/before-after/double-chin-jawline-10-weeks/before.jpg', afterSrc: '/images/before-after/double-chin-jawline-10-weeks/after.jpg', beforeAlt: 'Before double chin and jawline contouring', afterAlt: 'After double chin and jawline contouring' },
+          { label: 'Double Chin — 6 Weeks', result: 'Combined cavitation and RF protocol. Double chin visibly reduced, neck silhouette cleaner, skin noticeably firmer with no downtime throughout the series.', beforeSrc: '/images/before-after/double-chin-6-weeks/before.jpg', afterSrc: '/images/before-after/double-chin-6-weeks/after.jpg', beforeAlt: 'Before double chin 6 weeks', afterAlt: 'After double chin 6 weeks' },
         ]}
       />
 
