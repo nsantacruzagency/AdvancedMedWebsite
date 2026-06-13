@@ -220,7 +220,7 @@ export default function NonInvasiveWeightLoss() {
       <BeforeAfter
         heading="Postpartum Fat Loss — Real Client Results"
         items={[
-          { label: 'Postpartum Fat Loss — Session 1', result: '', beforeSrc: '/images/before-after/fat-dissolving-enzymes/before.jpg', afterSrc: '/images/before-after/fat-dissolving-enzymes/after.jpg', beforeAlt: 'Before postpartum fat loss', afterAlt: 'After postpartum fat loss' },
+          { label: 'Postpartum Fat Loss — Session 1', result: '', beforeSrc: '/images/before-after/postpartum-fat-loss-1/before.jpg', afterSrc: '/images/before-after/postpartum-fat-loss-1/after.jpg', beforeAlt: 'Before postpartum fat loss', afterAlt: 'After postpartum fat loss' },
           { label: 'Postpartum Fat Loss — Session 2', result: '', beforeSrc: '/images/before-after/postpartum-fat-loss-2/before.jpg', afterSrc: '/images/before-after/postpartum-fat-loss-2/after.jpg', beforeAlt: 'Before postpartum fat loss', afterAlt: 'After postpartum fat loss' },
           { label: 'Postpartum Fat Loss — Session 3', result: '', beforeSrc: '/images/before-after/postpartum-fat-loss-3/before.jpg', afterSrc: '/images/before-after/postpartum-fat-loss-3/after.jpg', beforeAlt: 'Before postpartum fat loss', afterAlt: 'After postpartum fat loss' },
         ]}
