@@ -129,17 +129,6 @@ export default function NonInvasiveWeightLoss() {
               </div>
             ))}
           </div>
-          <div className="bg-cream-200 p-10 border border-cream-300">
-            <h3 className="font-serif text-2xl font-bold text-espresso mb-6 text-center">Why Clients Choose Cryo Contour</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {cryoBenefits.map((b, i) => (
-                <div key={i} className="flex items-start gap-3 bg-white p-4 shadow-sm border border-cream-300">
-                  <CheckCircle className="w-5 h-5 text-spa flex-shrink-0 mt-0.5" />
-                  <span className="text-espresso-500 text-sm">{b}</span>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
 
