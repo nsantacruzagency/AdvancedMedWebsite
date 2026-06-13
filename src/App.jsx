@@ -8,6 +8,7 @@ import About from './pages/About'
 import BookNow from './pages/BookNow'
 import Testimonials from './pages/Testimonials'
 import Memberships from './pages/Memberships'
+import PartnerServices from './pages/PartnerServices'
 import Products from './pages/Products'
 import PersonalizedEvaluation from './pages/PersonalizedEvaluation'
 
@@ -45,6 +46,7 @@ function App() {
             <Route path="/contact" element={<BookNow />} />
             <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/memberships" element={<Memberships />} />
+            <Route path="/partner-services" element={<PartnerServices />} />
             <Route path="/personalized-evaluation" element={<PersonalizedEvaluation />} />
 
             {/* Body Aesthetics */}

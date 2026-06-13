@@ -7,6 +7,7 @@ const aboutLinks = [
   { label: 'The Lounge + Team',  path: '/about' },
   { label: 'Testimonials',       path: '/testimonials' },
   { label: 'Memberships',        path: '/memberships' },
+  { label: 'Partner Services',   path: '/partner-services' },
 ]
 
 const bodyAestheticsLinks = [
