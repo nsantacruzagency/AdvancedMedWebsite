@@ -144,7 +144,7 @@ export default function NonInvasiveWeightLoss() {
       </section>
 
       <BeforeAfter
-        heading="Slim Life Harmonization — Client Results"
+        heading="Slim Life Harmonization — Real Client Results"
         items={[
           { label: 'Weight Loss — 12 Weeks', result: '18 lbs lost. Significant reduction in abdominal circumference and improved energy levels.', beforeSrc: '/images/before-after/weight-loss-12-weeks/before.jpg', afterSrc: '/images/before-after/weight-loss-12-weeks/after.jpg', beforeAlt: 'Before weight loss treatment', afterAlt: 'After weight loss treatment' },
           { label: 'Fat Freezing — 8 Weeks', result: 'Visible reduction in flanks and lower abdomen following 2 Cryo Contour sessions.', beforeSrc: '/images/before-after/fat-freezing-8-weeks/before.jpg', afterSrc: '/images/before-after/fat-freezing-8-weeks/after.jpg', beforeAlt: 'Before fat freezing', afterAlt: 'After fat freezing' },
@@ -229,7 +229,7 @@ export default function NonInvasiveWeightLoss() {
       </section>
 
       <BeforeAfter
-        heading="Fat Dissolving Enzymes Real Client Results"
+        heading="Postpartum Fat Loss — Real Client Results"
         items={[
           { label: 'Fat Dissolving Enzymes', result: '', beforeSrc: '/images/before-after/fat-dissolving-enzymes/before.jpg', afterSrc: '/images/before-after/fat-dissolving-enzymes/after.jpg', beforeAlt: 'Before fat dissolving enzymes', afterAlt: 'After fat dissolving enzymes' },
         ]}
