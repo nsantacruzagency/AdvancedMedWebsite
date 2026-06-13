@@ -75,47 +75,28 @@ export default function NonInvasiveWeightLoss() {
 
       {/* Neck Fat Reduction */}
       <section className="py-24 px-6 bg-cream-100">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-              <SectionHeader eyebrow="Targeted Reduction" title="Double Chin & Neck Fat Reduction" center={false} />
-              <p className="text-espresso-500 leading-relaxed mb-6">
-                A double chin — also called submental fat — is one of the most frustrating areas to target through diet and exercise alone. Genetics, age, and weight fluctuations can all cause a double chin to form beneath the jawline, regardless of your overall body composition.
-              </p>
-              <p className="text-espresso-500 leading-relaxed mb-8">
-                At Advanced Med, we use a combination of <strong className="text-espresso">Cryo Contour fat freezing</strong>, <strong className="text-espresso">radiofrequency skin tightening</strong>, and <strong className="text-espresso">ultrasound cavitation</strong> to permanently reduce double chin fat and tighten the surrounding skin — restoring a cleaner, more defined jawline without surgery, needles, or downtime.
-              </p>
-              <ul className="space-y-3">
-                {[
-                  'Permanently eliminates double chin fat',
-                  'Tightens loose neck and jawline skin after fat reduction',
-                  'No surgery, needles, or anesthesia required',
-                  'Visible double chin reduction within 4–8 weeks',
-                  'Protocols customized to your chin, neck, and skin laxity',
-                ].map((b, i) => (
-                  <li key={i} className="flex items-start gap-3 text-espresso-500">
-                    <CheckCircle className="w-5 h-5 text-spa flex-shrink-0 mt-0.5" />
-                    {b}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="bg-espresso p-10 text-cream-200">
-              <h3 className="font-serif text-2xl font-bold text-spa-300 mb-6">How We Treat the Double Chin</h3>
-              <div className="space-y-5">
-                {[
-                  { name: 'Cryo Contour (Double Chin)', desc: 'A specialized small-area applicator delivers precisely controlled cooling to freeze and permanently destroy double chin fat cells. The body naturally flushes them over 6–12 weeks — no surgery, no needles.' },
-                  { name: 'Radiofrequency Tightening', desc: 'RF energy heats the dermis to stimulate collagen and elastin production, firming the loose neck and jawline skin that often remains after double chin fat is reduced.' },
-                  { name: 'Ultrasound Cavitation', desc: 'Targeted low-frequency ultrasound disrupts fat cell membranes beneath the chin for additional double chin volume reduction and sharper jaw definition.' },
-                ].map((t) => (
-                  <div key={t.name} className="border-b border-white/10 pb-5 last:border-0 last:pb-0">
-                    <h4 className="font-serif font-bold text-cream-100 mb-2">{t.name}</h4>
-                    <p className="text-cream-300 text-sm leading-relaxed">{t.desc}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+        <div className="max-w-4xl mx-auto text-center">
+          <SectionHeader eyebrow="Targeted Reduction" title="Double Chin & Neck Fat Reduction" />
+          <p className="text-espresso-500 leading-relaxed mb-6">
+            A double chin — also called submental fat — is one of the most frustrating areas to target through diet and exercise alone. Genetics, age, and weight fluctuations can all cause a double chin to form beneath the jawline, regardless of your overall body composition.
+          </p>
+          <p className="text-espresso-500 leading-relaxed mb-8">
+            At Advanced Med, we use a combination of <strong className="text-espresso">Cryo Contour fat freezing</strong>, <strong className="text-espresso">radiofrequency skin tightening</strong>, and <strong className="text-espresso">ultrasound cavitation</strong> to permanently reduce double chin fat and tighten the surrounding skin — restoring a cleaner, more defined jawline without surgery, needles, or downtime.
+          </p>
+          <ul className="space-y-3 inline-flex flex-col items-start text-left mx-auto">
+            {[
+              'Permanently eliminates double chin fat',
+              'Tightens loose neck and jawline skin after fat reduction',
+              'No surgery, needles, or anesthesia required',
+              'Visible double chin reduction within 3–6 weeks',
+              'Protocols customized to your chin, neck, and skin laxity',
+            ].map((b, i) => (
+              <li key={i} className="flex items-start gap-3 text-espresso-500">
+                <CheckCircle className="w-5 h-5 text-spa flex-shrink-0 mt-0.5" />
+                {b}
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
