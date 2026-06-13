@@ -1,14 +1,8 @@
-import { useState } from 'react'
+export default function BeforeAfter({ items, heading = 'Client Results', logo = null, logoAlt = '', transparentPhotos = false }) {
+  const slotBg = transparentPhotos ? 'bg-transparent' : ''
+  const beforePlaceholder = transparentPhotos ? 'bg-espresso-800' : 'bg-espresso-600'
+  const afterPlaceholder = transparentPhotos ? 'bg-espresso-800' : 'bg-spa-700'
 
-/**
- * Before & After photo grid.
- * Images are 4:5 portrait (1080 × 1350 px) — replace placeholder divs with <img>.
- *
- * Props:
- *   items — array of { label, result, beforeAlt, afterAlt }
- *   heading — optional section heading override
- */
-export default function BeforeAfter({ items, heading = 'Client Results', logo = null, logoAlt = '' }) {
   return (
     <section className="py-20 px-5 sm:px-8 lg:px-12 bg-espresso">
       <div className="max-w-7xl mx-auto">
@@ -25,14 +19,10 @@ export default function BeforeAfter({ items, heading = 'Client Results', logo = 
               {heading}
             </h2>
           </div>
-          {logo ? (
+          {logo && (
             <div className="bg-cream-200/60 backdrop-blur-sm px-3 py-2 rounded-lg">
               <img src={logo} alt={logoAlt} className="max-h-10 md:max-h-14 w-auto object-contain" />
             </div>
-          ) : (
-            <p className="text-cream-400 text-[12px] font-light max-w-xs leading-relaxed">
-              Individual results may vary. Photos are of actual clients who consented to share their results.
-            </p>
           )}
         </div>
 
@@ -51,19 +41,23 @@ export default function BeforeAfter({ items, heading = 'Client Results', logo = 
               <div className="grid grid-cols-2 gap-3">
                 {/* Before */}
                 <div className="space-y-2">
-                  <div className="w-full bg-espresso-600 overflow-hidden relative" style={{ aspectRatio: '1080 / 1350' }}>
-                    <div className="absolute inset-0 bg-gradient-to-br from-espresso-500 to-espresso-700" />
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-center px-3">
-                        <p className="text-cream-400 text-[10px] uppercase tracking-widest font-light mb-2">Before Photo</p>
-                        {item.beforeSrc && <p className="text-cream-300 text-[9px] font-mono leading-relaxed break-all">{item.beforeSrc}</p>}
-                      </div>
-                    </div>
+                  <div className={`w-full overflow-hidden relative ${transparentPhotos ? 'bg-espresso-800' : 'bg-espresso-600'}`} style={{ aspectRatio: '1080 / 1350' }}>
+                    {!transparentPhotos && (
+                      <>
+                        <div className="absolute inset-0 bg-gradient-to-br from-espresso-500 to-espresso-700" />
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className="text-center px-3">
+                            <p className="text-cream-400 text-[10px] uppercase tracking-widest font-light mb-2">Before Photo</p>
+                            {item.beforeSrc && <p className="text-cream-300 text-[9px] font-mono leading-relaxed break-all">{item.beforeSrc}</p>}
+                          </div>
+                        </div>
+                      </>
+                    )}
                     {item.beforeSrc && (
                       <img
                         src={item.beforeSrc}
                         alt={item.beforeAlt}
-                        className="absolute inset-0 w-full h-full object-cover"
+                        className="absolute inset-0 w-full h-full object-contain"
                         onError={e => { e.currentTarget.style.display = 'none' }}
                       />
                     )}
@@ -73,19 +67,23 @@ export default function BeforeAfter({ items, heading = 'Client Results', logo = 
 
                 {/* After */}
                 <div className="space-y-2">
-                  <div className="w-full bg-spa-700 overflow-hidden relative" style={{ aspectRatio: '1080 / 1350' }}>
-                    <div className="absolute inset-0 bg-gradient-to-br from-spa-600 to-spa-800" />
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-center px-3">
-                        <p className="text-spa-200 text-[10px] uppercase tracking-widest font-light mb-2">After Photo</p>
-                        {item.afterSrc && <p className="text-spa-100 text-[9px] font-mono leading-relaxed break-all">{item.afterSrc}</p>}
-                      </div>
-                    </div>
+                  <div className={`w-full overflow-hidden relative ${transparentPhotos ? 'bg-espresso-800' : 'bg-spa-700'}`} style={{ aspectRatio: '1080 / 1350' }}>
+                    {!transparentPhotos && (
+                      <>
+                        <div className="absolute inset-0 bg-gradient-to-br from-spa-600 to-spa-800" />
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className="text-center px-3">
+                            <p className="text-spa-200 text-[10px] uppercase tracking-widest font-light mb-2">After Photo</p>
+                            {item.afterSrc && <p className="text-spa-100 text-[9px] font-mono leading-relaxed break-all">{item.afterSrc}</p>}
+                          </div>
+                        </div>
+                      </>
+                    )}
                     {item.afterSrc && (
                       <img
                         src={item.afterSrc}
                         alt={item.afterAlt}
-                        className="absolute inset-0 w-full h-full object-cover"
+                        className="absolute inset-0 w-full h-full object-contain"
                         onError={e => { e.currentTarget.style.display = 'none' }}
                       />
                     )}
@@ -103,10 +101,6 @@ export default function BeforeAfter({ items, heading = 'Client Results', logo = 
             </div>
           ))}
         </div>
-
-        <p className="text-espresso-400 text-[10px] font-light mt-10 text-center leading-relaxed max-w-2xl mx-auto">
-          Results shown are for illustrative purposes. Advanced Med MedSpa Lounge does not guarantee identical outcomes. A personalized evaluation will determine realistic expectations for your unique goals.
-        </p>
       </div>
     </section>
   )
