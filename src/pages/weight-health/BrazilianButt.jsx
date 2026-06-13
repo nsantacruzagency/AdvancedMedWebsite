@@ -142,7 +142,7 @@ export default function BrazilianButt() {
       {/* CTA */}
       <section className="py-24 px-6 bg-cream-200 text-center">
         <div className="max-w-2xl mx-auto">
-          <img src="/images/protocol-logos/BBB-logo.png" alt="BBB by Round Gluteo Protocol" className="h-16 w-auto mx-auto mb-6 object-contain" />
+          <img src="/images/protocol-logos/bbb-logo.png" alt="BBB by Round Gluteo Protocol" className="h-16 w-auto mx-auto mb-6 object-contain" />
           <h2 className="font-serif text-4xl font-bold text-espresso mb-4">Ready to Lift & Sculpt?</h2>
           <p className="text-espresso-500 text-lg mb-10 leading-relaxed">
             Book your free evaluation today. Our specialists will design a personalized non-surgical BBL protocol tailored to your anatomy, goals, and timeline.
