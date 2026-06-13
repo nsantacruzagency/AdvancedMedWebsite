@@ -51,9 +51,51 @@ export default function BodyContouring() {
     <div className="bg-white">
       <HeroPhoto
         eyebrow="Body Aesthetics"
-        title={<>Cellulite &<br />Skin Tightening</>}
-        subtitle="Advanced, non-surgical treatments for cellulite and skin tightening — sculpting the silhouette you've worked toward with precision technology and compassionate care."
+        title={<>Skin Tightening<br />& Cellulite</>}
+        subtitle="Advanced, non-surgical treatments for skin tightening and cellulite — sculpting the silhouette you've worked toward with precision technology and compassionate care."
         gradient="from-espresso-800 via-spa-800 to-espresso-700"
+      />
+
+      {/* Skin Laxity & Tightening */}
+      <section className="py-24 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <SectionHeader
+            eyebrow="For GLP-1 Users & Beyond"
+            title="Post GLP-1 Skin Laxity & Tightening"
+            subtitle="Rapid fat loss from GLP-1 medications like semaglutide can leave behind loose, sagging skin. We specialize in restoring firmness, elasticity, and body composition after significant weight loss."
+          />
+          <div className="bg-cream-100 p-8 border border-cream-300 mb-10">
+            <p className="text-espresso-500 leading-relaxed mb-4">
+              GLP-1 receptor agonists (semaglutide, tirzepatide) are remarkably effective at driving rapid weight loss — but the faster the fat disappears, the less time the skin has to adapt. The result is skin laxity: loose, crepey, or sagging tissue that doesn't reflect the transformation underneath.
+            </p>
+            <p className="text-espresso-500 leading-relaxed">
+              At Advanced Med, we work alongside your GLP-1 protocol to proactively tighten skin as you lose weight — and to restore firmness and definition after your goal weight is reached. Our combination approach stimulates collagen remodeling, rebuilds the dermis from within, and significantly improves body composition without surgery.
+            </p>
+          </div>
+          <div className="max-w-md mx-auto">
+            <div className="bg-cream-100 p-8 border border-cream-300 hover:border-spa hover:shadow-lg transition-all duration-300">
+              <h4 className="font-serif font-bold text-xl text-espresso mb-3">Radiofrequency (RF) Skin Tightening</h4>
+              <p className="text-espresso-500 text-sm leading-relaxed mb-6">Delivers controlled heat energy deep into the dermis to stimulate new collagen and elastin production — the structural proteins responsible for firm, youthful skin. Ideal for the abdomen, arms, thighs, and neck after weight loss.</p>
+              <ul className="space-y-2">
+                {['Firms and lifts loose skin', 'Rebuilds collagen from within', 'Improves skin texture and elasticity', 'Cumulative results with each session'].map((b, i) => (
+                  <li key={i} className="flex items-start gap-2 text-espresso-500 text-sm">
+                    <CheckCircle className="w-4 h-4 text-spa flex-shrink-0 mt-0.5" />
+                    {b}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <BeforeAfter
+        heading="Skin Tightening and Laxity — Real Client Results"
+        items={[
+          { label: 'Skin Tightening — Session 1', result: 'Visible abdominal definition and glute lifting achieved with electromagnetic muscle stimulation. No downtime throughout the series.', beforeSrc: '/images/before-after/skin-tightening-laxity-3/before.png', afterSrc: '/images/before-after/skin-tightening-laxity-3/after.png', beforeAlt: 'Before skin tightening', afterAlt: 'After skin tightening' },
+          { label: 'Skin Tightening — Session 2', result: '', beforeSrc: '/images/before-after/skin-tightening-laxity-2/before.png', afterSrc: '/images/before-after/skin-tightening-laxity-2/after.png', beforeAlt: 'Before skin tightening', afterAlt: 'After skin tightening' },
+          { label: 'Skin Tightening — Session 3', result: '', beforeSrc: '/images/before-after/skin-tightening-laxity-3/before.png', afterSrc: '/images/before-after/skin-tightening-laxity-3/after.png', beforeAlt: 'Before skin tightening', afterAlt: 'After skin tightening' },
+        ]}
       />
 
       {/* Cellulite Treatment */}
@@ -158,48 +200,6 @@ export default function BodyContouring() {
         items={[
           { label: 'Lipedema Stage II — 16 Weeks', result: 'Marked reduction in leg circumference and tenderness following a combined manual lymphatic drainage and RF series. Client reported significant pain relief and improved daily mobility.', beforeSrc: '/images/before-after/lipedema/before.jpg', afterSrc: '/images/before-after/lipedema/after.jpg', beforeAlt: 'Before lipedema stage II treatment', afterAlt: 'After lipedema stage II treatment' },
           { label: 'Lipedema — Session 2', result: '', beforeSrc: '/images/before-after/lipedema-2/before.jpg', afterSrc: '/images/before-after/lipedema-2/after.jpg', beforeAlt: 'Before lipedema treatment', afterAlt: 'After lipedema treatment' },
-        ]}
-      />
-
-      {/* Skin Laxity & Tightening */}
-      <section className="py-24 px-6 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <SectionHeader
-            eyebrow="For GLP-1 Users & Beyond"
-            title="Post GLP-1 Skin Laxity & Tightening"
-            subtitle="Rapid fat loss from GLP-1 medications like semaglutide can leave behind loose, sagging skin. We specialize in restoring firmness, elasticity, and body composition after significant weight loss."
-          />
-          <div className="bg-cream-100 p-8 border border-cream-300 mb-10">
-            <p className="text-espresso-500 leading-relaxed mb-4">
-              GLP-1 receptor agonists (semaglutide, tirzepatide) are remarkably effective at driving rapid weight loss — but the faster the fat disappears, the less time the skin has to adapt. The result is skin laxity: loose, crepey, or sagging tissue that doesn't reflect the transformation underneath.
-            </p>
-            <p className="text-espresso-500 leading-relaxed">
-              At Advanced Med, we work alongside your GLP-1 protocol to proactively tighten skin as you lose weight — and to restore firmness and definition after your goal weight is reached. Our combination approach stimulates collagen remodeling, rebuilds the dermis from within, and significantly improves body composition without surgery.
-            </p>
-          </div>
-          <div className="max-w-md mx-auto">
-            <div className="bg-cream-100 p-8 border border-cream-300 hover:border-spa hover:shadow-lg transition-all duration-300">
-              <h4 className="font-serif font-bold text-xl text-espresso mb-3">Radiofrequency (RF) Skin Tightening</h4>
-              <p className="text-espresso-500 text-sm leading-relaxed mb-6">Delivers controlled heat energy deep into the dermis to stimulate new collagen and elastin production — the structural proteins responsible for firm, youthful skin. Ideal for the abdomen, arms, thighs, and neck after weight loss.</p>
-              <ul className="space-y-2">
-                {['Firms and lifts loose skin', 'Rebuilds collagen from within', 'Improves skin texture and elasticity', 'Cumulative results with each session'].map((b, i) => (
-                  <li key={i} className="flex items-start gap-2 text-espresso-500 text-sm">
-                    <CheckCircle className="w-4 h-4 text-spa flex-shrink-0 mt-0.5" />
-                    {b}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <BeforeAfter
-        heading="Skin Tightening and Laxity — Real Client Results"
-        items={[
-          { label: 'Skin Tightening — Session 1', result: 'Visible abdominal definition and glute lifting achieved with electromagnetic muscle stimulation. No downtime throughout the series.', beforeSrc: '/images/before-after/skin-tightening-laxity-3/before.png', afterSrc: '/images/before-after/skin-tightening-laxity-3/after.png', beforeAlt: 'Before skin tightening', afterAlt: 'After skin tightening' },
-          { label: 'Skin Tightening — Session 2', result: '', beforeSrc: '/images/before-after/skin-tightening-laxity-2/before.png', afterSrc: '/images/before-after/skin-tightening-laxity-2/after.png', beforeAlt: 'Before skin tightening', afterAlt: 'After skin tightening' },
-          { label: 'Skin Tightening — Session 3', result: '', beforeSrc: '/images/before-after/skin-tightening-laxity-3/before.png', afterSrc: '/images/before-after/skin-tightening-laxity-3/after.png', beforeAlt: 'Before skin tightening', afterAlt: 'After skin tightening' },
         ]}
       />
 

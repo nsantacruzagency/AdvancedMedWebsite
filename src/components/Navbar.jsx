@@ -11,7 +11,7 @@ const aboutLinks = [
 
 const bodyAestheticsLinks = [
   { label: 'Non-Invasive Weight Loss',       path: '/non-invasive-weight-loss' },
-  { label: 'Cellulite & Skin Tightening',    path: '/cellulite-skin-tightening' },
+  { label: 'Skin Tightening & Cellulite',    path: '/cellulite-skin-tightening' },
   { label: 'Contour & Post-Op Massages',     path: '/body-contouring-massages' },
   { label: 'Brazilian Butt',                 path: '/brazilian-butt' },
 ]
