@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 import HeroPhoto from '../components/HeroPhoto'
 import SectionHeader from '../components/SectionHeader'
+import BeforeAfter from '../components/BeforeAfter'
 
 const partners = [
   {
@@ -15,6 +15,33 @@ const partners = [
       'Scalp Micropigmentation',
       'Professional Beauty Courses',
     ],
+  },
+]
+
+const greBeforeAfter = [
+  {
+    label: 'Gre — 1',
+    result: '',
+    beforeSrc: '/images/before-after/gre-1/before.jpg',
+    afterSrc: '/images/before-after/gre-1/after.jpg',
+    beforeAlt: 'Before Gre permanent makeup',
+    afterAlt: 'After Gre permanent makeup',
+  },
+  {
+    label: 'Gre — 2',
+    result: '',
+    beforeSrc: '/images/before-after/gre-2/before.jpg',
+    afterSrc: '/images/before-after/gre-2/after.jpg',
+    beforeAlt: 'Before Gre permanent makeup',
+    afterAlt: 'After Gre permanent makeup',
+  },
+  {
+    label: 'Gre — 3',
+    result: '',
+    beforeSrc: '/images/before-after/gre-3/before.jpg',
+    afterSrc: '/images/before-after/gre-3/after.jpg',
+    beforeAlt: 'Before Gre permanent makeup',
+    afterAlt: 'After Gre permanent makeup',
   },
 ]
 
@@ -61,6 +88,11 @@ export default function PartnerServices() {
         </div>
       </section>
 
+      <BeforeAfter
+        heading="Gre — Real Client Results"
+        items={greBeforeAfter}
+      />
+
       {/* CTA */}
       <section className="py-20 px-6 bg-espresso text-center">
         <div className="max-w-2xl mx-auto">
@@ -68,8 +100,10 @@ export default function PartnerServices() {
           <p className="text-cream-300 text-lg mb-10 leading-relaxed">
             Contact us and we'll connect you with the right specialist for your needs.
           </p>
-          <Link
-            href="https://advancedmedspaofficial.janeapp.com/" target="_blank" rel="noopener noreferrer"
+          <a
+            href="https://advancedmedspaofficial.janeapp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-cream-100 hover:bg-white text-espresso text-[10px] tracking-widest uppercase font-medium px-10 py-4 transition-all duration-300"
           >
             Get in Touch <ArrowRight className="w-4 h-4" />
