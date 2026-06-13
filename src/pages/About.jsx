@@ -90,7 +90,7 @@ export default function About() {
       <HeroPhoto
         eyebrow="Advanced Med MedSpa Lounge"
         title={<>Welcome<br />to the Lounge.</>}
-        subtitle="Where medical precision meets genuine, heartfelt care for every client who walks through our doors."
+        subtitle="The perfect waiting room of relaxation."
         gradient="from-espresso-800 via-espresso-700 to-spa-800"
         gradientDir="to-r"
         radialPos="center"
@@ -102,9 +102,9 @@ export default function About() {
 
           {/* Heading */}
           <div className="mb-16 max-w-2xl">
-            <p className="text-spa text-[10px] font-medium uppercase mb-5" style={{ letterSpacing: '0.28em' }}>
+            <h2 className="font-serif text-5xl md:text-6xl font-light text-espresso leading-tight">
               The Lounge Experience
-            </p>
+            </h2>
           </div>
 
           {/* Two-column: photo + description */}
