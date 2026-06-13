@@ -227,30 +227,6 @@ export default function NonInvasiveWeightLoss() {
         ]}
       />
 
-      {/* Benefits Grid */}
-      <section className="py-20 px-6 bg-espresso">
-        <div className="max-w-6xl mx-auto">
-          <SectionHeader
-            eyebrow="Why Choose Us"
-            title="The Advanced Med Difference"
-            subtitle="We combine cutting-edge technology with root-cause medicine to deliver results that last."
-            light={true}
-          />
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-4">
-            {benefits.map((b) => {
-              const Icon = b.icon
-              return (
-                <div key={b.title} className="bg-white/5 p-8 text-center border border-white/10 hover:border-spa/40 transition-all duration-300">
-                  <div className="flex justify-center mb-4"><Icon className="w-8 h-8 text-spa-300" /></div>
-                  <h4 className="font-serif font-bold text-cream-100 text-lg mb-3">{b.title}</h4>
-                  <p className="text-cream-300 text-sm leading-relaxed">{b.desc}</p>
-                </div>
-              )
-            })}
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="py-24 px-6 bg-cream-200 text-center">
         <div className="max-w-2xl mx-auto">
