@@ -161,30 +161,38 @@ export default function BodyContouring() {
         ]}
       />
 
-      {/* Muscle Definition & Toning */}
+      {/* Skin Laxity & Tightening */}
       <section className="py-24 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <SectionHeader
-            eyebrow="Body Sculpting"
-            title="Muscle Definition & Toning"
-            subtitle="Build visible muscle definition and tone without hours in the gym — our technologies stimulate supramaximal muscle contractions that exercise alone cannot replicate."
+            eyebrow="For GLP-1 Users & Beyond"
+            title="Skin Laxity & Tightening"
+            subtitle="Rapid fat loss from GLP-1 medications like semaglutide can leave behind loose, sagging skin. We specialize in restoring firmness, elasticity, and body composition after significant weight loss."
           />
+          <div className="bg-cream-100 p-8 border border-cream-300 mb-10">
+            <p className="text-espresso-500 leading-relaxed mb-4">
+              GLP-1 receptor agonists (semaglutide, tirzepatide) are remarkably effective at driving rapid weight loss — but the faster the fat disappears, the less time the skin has to adapt. The result is skin laxity: loose, crepey, or sagging tissue that doesn't reflect the transformation underneath.
+            </p>
+            <p className="text-espresso-500 leading-relaxed">
+              At Advanced Med, we work alongside your GLP-1 protocol to proactively tighten skin as you lose weight — and to restore firmness and definition after your goal weight is reached. Our combination approach stimulates collagen remodeling, rebuilds the dermis from within, and significantly improves body composition without surgery.
+            </p>
+          </div>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                name: 'EMS (Electromagnetic Muscle Stimulation)',
-                desc: 'Induces 20,000+ muscle contractions per session — equivalent to thousands of crunches or squats. Builds muscle while simultaneously burning fat in the treated area. Ideal for abs, glutes, thighs, and arms.',
-                benefits: ['Increases muscle mass by ~16%', 'Reduces fat by ~19%', 'No downtime required', 'Results in 4 sessions'],
+                name: 'Radiofrequency (RF) Skin Tightening',
+                desc: 'Delivers controlled heat energy deep into the dermis to stimulate new collagen and elastin production — the structural proteins responsible for firm, youthful skin. Ideal for the abdomen, arms, thighs, and neck after weight loss.',
+                benefits: ['Firms and lifts loose skin', 'Rebuilds collagen from within', 'Improves skin texture and elasticity', 'Cumulative results with each session'],
               },
               {
                 name: 'HIFU Body (High-Intensity Focused Ultrasound)',
-                desc: 'Targets deeper subcutaneous fat and tightens fibromuscular layers using focused ultrasound energy. Provides structural lift and contour improvement in areas resistant to other treatments.',
-                benefits: ['Tightens skin and fascia', 'Reduces stubborn fat deposits', 'Stimulates collagen remodeling', 'Long-lasting results'],
+                desc: 'Targets the deeper fibromuscular layer beneath the skin using focused ultrasound energy — the same layer addressed in surgical lifts. Provides structural tightening and contour improvement in areas most affected by rapid fat loss.',
+                benefits: ['Deep structural tightening', 'Lifts and recontours loose areas', 'Stimulates long-term collagen remodeling', 'Non-surgical, no downtime'],
               },
               {
-                name: 'Body Sculpting Wraps & RF Toning',
-                desc: 'Combines RF energy with targeted body wraps to firm loose skin, improve tissue quality, and enhance the definition created by other treatments. Perfect as a maintenance or finishing treatment.',
-                benefits: ['Firms and tightens skin', 'Improves skin texture', 'Reduces circumference measurements', 'Relaxing and comfortable'],
+                name: 'EMS + RF Body Composition Protocol',
+                desc: 'Combines electromagnetic muscle stimulation with radiofrequency tightening to simultaneously rebuild muscle tone and firm overlying skin. Especially effective for GLP-1 users experiencing muscle loss alongside fat loss.',
+                benefits: ['Rebuilds muscle lost during weight loss', 'Tightens skin simultaneously', 'Improves overall body composition', 'Visible results in 4–6 sessions'],
               },
             ].map((item) => (
               <div key={item.name} className="bg-cream-100 p-8 border border-cream-300 hover:border-spa hover:shadow-lg transition-all duration-300">
@@ -204,6 +212,13 @@ export default function BodyContouring() {
         </div>
       </section>
 
+      <BeforeAfter
+        heading="Skin Tightening and Laxity — Real Client Results"
+        items={[
+          { label: 'EMS — 4 Sessions', result: 'Visible abdominal definition and glute lifting achieved with electromagnetic muscle stimulation. No downtime throughout the series.', beforeSrc: '/images/before-after/ems-muscle-definition/before.jpg', afterSrc: '/images/before-after/ems-muscle-definition/after.jpg', beforeAlt: 'Before EMS muscle definition', afterAlt: 'After EMS muscle definition' },
+        ]}
+      />
+
       {/* CTA */}
       <section className="py-24 px-6 bg-cream-200 text-center">
         <div className="max-w-2xl mx-auto">
@@ -219,13 +234,6 @@ export default function BodyContouring() {
           </Link>
         </div>
       </section>
-
-      <BeforeAfter
-        heading="Skin Tightening and Laxity — Real Client Results"
-        items={[
-          { label: 'EMS — 4 Sessions', result: 'Visible abdominal definition and glute lifting achieved with electromagnetic muscle stimulation. No downtime throughout the series.', beforeSrc: '/images/before-after/ems-muscle-definition/before.jpg', afterSrc: '/images/before-after/ems-muscle-definition/after.jpg', beforeAlt: 'Before EMS muscle definition', afterAlt: 'After EMS muscle definition' },
-        ]}
-      />
 
       <FAQ items={faqItems} />
     </div>
