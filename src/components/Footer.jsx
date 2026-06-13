@@ -53,7 +53,6 @@ export default function Footer() {
                 ['Testimonials', '/testimonials'],
                 ['Memberships',  '/memberships'],
                 ['Shop Products', '/products'],
-                ['Book Now',     '/book'],
               ].map(([label, path]) => (
                 <li key={path}>
                   <Link to={path} className="text-[12px] text-cream-400 hover:text-spa transition-colors font-light">
@@ -61,6 +60,11 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <a href="https://advancedmedspaofficial.janeapp.com/" target="_blank" rel="noopener noreferrer" className="text-[12px] text-cream-400 hover:text-spa transition-colors font-light">
+                  Book Now
+                </a>
+              </li>
             </ul>
           </div>
 

@@ -170,7 +170,7 @@ export default function MaintainResults() {
             <img
               src="/images/breeze-machine.jpeg"
               alt="Breeze Machine — Serum Without Needles"
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-cover object-bottom"
               onError={e => { e.currentTarget.style.display = 'none' }}
             />
           </div>
