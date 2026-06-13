@@ -68,19 +68,33 @@ export default function PartnerServices() {
           <div className="mt-12 space-y-10">
             {partners.map((partner) => (
               <div key={partner.name} className="bg-cream-100 border border-cream-300 p-10">
-                <p className="text-spa text-[10px] font-medium uppercase mb-2" style={{ letterSpacing: '0.28em' }}>
-                  Partner Specialist
-                </p>
-                <h2 className="font-serif text-4xl font-light text-espresso mb-2">{partner.name}</h2>
-                <p className="text-espresso-400 text-sm font-medium uppercase tracking-widest mb-6">{partner.tagline}</p>
-                <p className="text-espresso-500 leading-relaxed mb-8 max-w-2xl">{partner.description}</p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  {partner.services.map((service) => (
-                    <div key={service} className="flex items-center gap-3 text-espresso-500 text-sm">
-                      <div className="w-1.5 h-1.5 bg-spa rounded-full flex-shrink-0" />
-                      {service}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+                  {/* Photo */}
+                  <div className="w-full overflow-hidden bg-cream-200" style={{ aspectRatio: '4/5' }}>
+                    <img
+                      src="/images/partners/gre.jpg"
+                      alt="Gre — Partner Specialist"
+                      className="w-full h-full object-cover"
+                      onError={e => { e.currentTarget.style.display = 'none' }}
+                    />
+                  </div>
+                  {/* Info */}
+                  <div>
+                    <p className="text-spa text-[10px] font-medium uppercase mb-2" style={{ letterSpacing: '0.28em' }}>
+                      Partner Specialist
+                    </p>
+                    <h2 className="font-serif text-4xl font-light text-espresso mb-2">{partner.name}</h2>
+                    <p className="text-espresso-400 text-sm font-medium uppercase tracking-widest mb-6">{partner.tagline}</p>
+                    <p className="text-espresso-500 leading-relaxed mb-8">{partner.description}</p>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      {partner.services.map((service) => (
+                        <div key={service} className="flex items-center gap-3 text-espresso-500 text-sm">
+                          <div className="w-1.5 h-1.5 bg-spa rounded-full flex-shrink-0" />
+                          {service}
+                        </div>
+                      ))}
                     </div>
-                  ))}
+                  </div>
                 </div>
               </div>
             ))}
