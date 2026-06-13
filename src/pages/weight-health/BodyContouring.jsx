@@ -64,16 +64,26 @@ export default function BodyContouring() {
             title="Post GLP-1 Skin Laxity & Tightening"
             subtitle="Rapid fat loss from GLP-1 medications like semaglutide can leave behind loose, sagging skin. We specialize in restoring firmness, elasticity, and body composition after significant weight loss."
           />
-          <div className="bg-cream-100 p-8 border border-cream-300 mb-10">
-            <p className="text-espresso-500 leading-relaxed mb-4">
-              GLP-1 receptor agonists (semaglutide, tirzepatide) are remarkably effective at driving rapid weight loss — but the faster the fat disappears, the less time the skin has to adapt. The result is skin laxity: loose, crepey, or sagging tissue that doesn't reflect the transformation underneath.
-            </p>
-            <p className="text-espresso-500 leading-relaxed">
-              At Advanced Med, we work alongside your GLP-1 protocol to proactively tighten skin as you lose weight — and to restore firmness and definition after your goal weight is reached. Our combination approach stimulates collagen remodeling, rebuilds the dermis from within, and significantly improves body composition without surgery.
-            </p>
-          </div>
-          <div className="max-w-md mx-auto">
-            <div className="bg-cream-100 p-8 border border-cream-300 hover:border-spa hover:shadow-lg transition-all duration-300">
+          <div className="grid md:grid-cols-2 gap-8 items-start">
+            <div className="bg-cream-100 p-8 border border-cream-300 h-full">
+              <h4 className="font-serif text-xl font-bold text-espresso mb-5">Why GLP-1 Users Need Skin Tightening</h4>
+              <ul className="space-y-4">
+                {[
+                  { title: 'Rapid fat loss', body: 'GLP-1 medications like semaglutide and tirzepatide drive fast, significant weight loss — but the skin doesn\'t always keep pace.' },
+                  { title: 'Skin laxity follows', body: 'The result is loose, crepey, or sagging tissue — especially on the abdomen, arms, thighs, and neck — that doesn\'t reflect the transformation underneath.' },
+                  { title: 'Our solution', body: 'We work alongside your GLP-1 protocol to proactively tighten skin as you lose weight, stimulating collagen remodeling and rebuilding the dermis from within.' },
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-spa flex-shrink-0 mt-0.5" />
+                    <div>
+                      <p className="font-semibold text-espresso text-sm mb-1">{item.title}</p>
+                      <p className="text-espresso-500 text-sm leading-relaxed">{item.body}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="bg-cream-100 p-8 border border-cream-300 hover:border-spa hover:shadow-lg transition-all duration-300 h-full">
               <h4 className="font-serif font-bold text-xl text-espresso mb-3">Radiofrequency (RF) Skin Tightening</h4>
               <p className="text-espresso-500 text-sm leading-relaxed mb-6">Delivers controlled heat energy deep into the dermis to stimulate new collagen and elastin production — the structural proteins responsible for firm, youthful skin. Ideal for the abdomen, arms, thighs, and neck after weight loss.</p>
               <ul className="space-y-2">
