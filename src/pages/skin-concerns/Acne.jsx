@@ -249,7 +249,7 @@ export default function Acne() {
           <p className="text-cream-300 text-lg mb-8 leading-relaxed">
             Book a personalized skin evaluation and let our experts design an acne protocol that works for your unique skin.
           </p>
-          <Link
+          <a
             href="https://advancedmedspaofficial.janeapp.com/" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-cream-100 hover:bg-white text-espresso text-[10px] tracking-widest uppercase font-medium px-10 py-4 transition-all duration-300"
           >

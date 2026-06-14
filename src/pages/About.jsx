@@ -175,7 +175,7 @@ export default function About() {
             Book your first appointment and discover what it feels like when medical
             expertise meets genuine luxury care.
           </p>
-          <Link
+          <a
             href="https://advancedmedspaofficial.janeapp.com/" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-spa hover:bg-spa-600 text-cream-100 text-[10px] tracking-widest uppercase px-10 py-4 transition-colors"
           >

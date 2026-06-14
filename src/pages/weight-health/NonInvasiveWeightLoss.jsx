@@ -239,7 +239,7 @@ export default function NonInvasiveWeightLoss() {
           <p className="text-espresso-500 text-lg mb-10 leading-relaxed">
             Schedule your personalized evaluation today. Our clinical team will evaluate your unique needs and design a non-invasive weight loss protocol just for you.
           </p>
-          <Link
+          <a
             href="https://advancedmedspaofficial.janeapp.com/" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-spa hover:bg-spa-600 text-cream-100 text-[10px] tracking-widest uppercase font-medium px-10 py-4 transition-all duration-300"
           >

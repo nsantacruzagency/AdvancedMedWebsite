@@ -202,7 +202,7 @@ export default function MaintainResults() {
                 </li>
               ))}
             </ul>
-            <Link
+            <a
               href="https://advancedmedspaofficial.janeapp.com/" target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-spa text-white text-[10px] font-medium tracking-widest uppercase px-8 py-4 hover:bg-spa-500 transition-colors"
             >
@@ -230,8 +230,8 @@ export default function MaintainResults() {
               className="inline-flex items-center justify-center gap-3 bg-spa text-cream-100 text-[10px] font-medium tracking-widest uppercase px-9 py-4 hover:bg-spa-600 transition-colors"
             >
               Shop Skincare Products <ArrowRight size={13} />
-            </a>
-            <Link
+            </Link>
+            <a
               href="https://advancedmedspaofficial.janeapp.com/" target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 border border-espresso-300 text-espresso text-[10px] font-medium tracking-widest uppercase px-9 py-4 hover:border-espresso hover:bg-cream-300 transition-colors"
             >

@@ -220,7 +220,7 @@ export default function Aging() {
           <p className="text-espresso-500 text-lg mb-8 leading-relaxed">
             Schedule an evaluation with our aesthetic experts and discover which combination of treatments will give you your most confident look yet.
           </p>
-          <Link
+          <a
             href="https://advancedmedspaofficial.janeapp.com/" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-spa hover:bg-spa-600 text-cream-100 text-[10px] tracking-widest uppercase font-medium px-10 py-4 transition-all duration-300"
           >

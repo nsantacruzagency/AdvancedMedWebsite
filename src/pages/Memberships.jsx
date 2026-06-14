@@ -168,7 +168,7 @@ export default function Memberships() {
                     </li>
                   ))}
                 </ul>
-                <Link
+                <a
                   href="https://advancedmedspaofficial.janeapp.com/" target="_blank" rel="noopener noreferrer"
                   className={`w-full text-center font-bold py-3.5 transition-all duration-200 ${tier.buttonClass}`}
                 >
@@ -205,7 +205,7 @@ export default function Memberships() {
             ))}
           </div>
           <div className="mt-12 text-center">
-            <Link
+            <a
               href="https://advancedmedspaofficial.janeapp.com/" target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-cream-100 hover:bg-white text-espresso text-[10px] tracking-widest uppercase font-medium px-10 py-4 transition-all duration-300"
             >
@@ -232,7 +232,7 @@ export default function Memberships() {
             The best version of you isn't a destination — it's a practice. Let us be your partner in that journey, month after month.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
+            <a
               href="https://advancedmedspaofficial.janeapp.com/" target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-cream-100 hover:bg-white text-espresso text-[10px] tracking-widest uppercase font-medium px-10 py-4 transition-all duration-300"
             >
@@ -243,7 +243,7 @@ export default function Memberships() {
               className="inline-flex items-center justify-center gap-2 border border-cream-300/40 text-cream-200 text-[10px] tracking-widest uppercase font-medium px-8 py-4 hover:border-cream-300 transition-all duration-300"
             >
               Ask Us a Question
-            </a>
+            </Link>
           </div>
         </div>
       </section>

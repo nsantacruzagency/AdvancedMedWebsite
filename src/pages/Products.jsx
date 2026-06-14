@@ -199,7 +199,7 @@ export default function Products() {
             >
               <Mail size={13} /> Email Us to Order
             </a>
-            <Link
+            <a
               href="https://advancedmedspaofficial.janeapp.com/" target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 border border-espresso-300 text-espresso text-[10px] font-medium tracking-widest uppercase px-9 py-4 hover:border-espresso hover:bg-cream-300 transition-colors"
             >

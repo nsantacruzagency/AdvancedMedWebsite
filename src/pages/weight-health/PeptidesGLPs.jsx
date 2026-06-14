@@ -184,7 +184,7 @@ export default function PeptidesGLPs() {
           <p className="text-cream-300 text-lg mb-10 leading-relaxed">
             Schedule a medical evaluation today. Our providers will review your history, labs, and goals to determine if peptide therapy or GLP-1 medications are right for you.
           </p>
-          <Link
+          <a
             href="https://advancedmedspaofficial.janeapp.com/" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-cream-100 hover:bg-white text-espresso text-[10px] tracking-widest uppercase font-medium px-10 py-4 transition-all duration-300"
           >

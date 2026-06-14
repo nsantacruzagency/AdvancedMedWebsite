@@ -195,7 +195,7 @@ export default function Massages() {
           <p className="text-cream-300 text-lg mb-10 leading-relaxed">
             Book your massage session today. Our therapists will customize every session to your needs, comfort level, and wellness goals.
           </p>
-          <Link
+          <a
             href="https://advancedmedspaofficial.janeapp.com/" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-cream-100 hover:bg-white text-espresso text-[10px] tracking-widest uppercase font-medium px-10 py-4 transition-all duration-300"
           >
