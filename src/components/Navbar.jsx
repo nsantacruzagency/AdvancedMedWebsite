@@ -147,7 +147,7 @@ export default function Navbar() {
                     : 'text-espresso-600 hover:text-espresso'
                 }`}
               >
-                Stem Cells &amp; Wellness
+                Anti-Aging &amp; Wellness
                 <ChevronDown size={11} strokeWidth={1.5} />
               </button>
               <Dropdown links={stemCellsWellnessLinks} isOpen={openDropdown === 'stem'} />
@@ -229,7 +229,7 @@ export default function Navbar() {
             ))}
 
             <p className="text-[9px] font-medium tracking-widest uppercase text-spa pt-4 pb-1">
-              Stem Cells &amp; Wellness
+              Anti-Aging &amp; Wellness
             </p>
             {stemCellsWellnessLinks.map((l) => (
               <Link key={l.path} to={l.path}
