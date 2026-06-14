@@ -165,8 +165,8 @@ export default function Home() {
               Advanced Med MedSpa Lounge
             </p>
             <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-light text-espresso leading-[1.0] mb-8 [text-shadow:0_1px_12px_rgba(241,235,230,0.8)] lg:[text-shadow:none]">
-              Where Beauty <span className="italic text-spa">Meets</span><br />
-              Wellness &amp; Longevity Science
+              Where Beauty<br />
+              <span className="italic text-spa">Meets</span> Wellness &amp; Longevity Science
             </h1>
             <p className="text-[14px] text-espresso-500 leading-relaxed font-light max-w-md mb-10">
               Medical aesthetic treatments and wellness therapies delivered with precision, compassion, and the luxury you deserve.
