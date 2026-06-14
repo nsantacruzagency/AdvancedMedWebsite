@@ -164,9 +164,9 @@ export default function Home() {
             <p className="text-[10px] font-medium tracking-widest uppercase text-spa mb-8" style={{ letterSpacing: '0.28em' }}>
               Advanced Med MedSpa Lounge
             </p>
-            <h1 className="font-serif text-6xl md:text-7xl lg:text-8xl font-light text-espresso leading-[1.0] mb-8 text-balance [text-shadow:0_1px_12px_rgba(241,235,230,0.8)] lg:[text-shadow:none]">
+            <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-light text-espresso leading-[1.0] mb-8 [text-shadow:0_1px_12px_rgba(241,235,230,0.8)] lg:[text-shadow:none]">
               Where Beauty <span className="italic text-spa">Meets</span><br />
-              Wellness and Longevity Science
+              Wellness &amp; Longevity Science
             </h1>
             <p className="text-[14px] text-espresso-500 leading-relaxed font-light max-w-md mb-10">
               Medical aesthetic treatments and wellness therapies delivered with precision, compassion, and the luxury you deserve.
