@@ -103,20 +103,18 @@ export default function About() {
           {/* Two-column: photo + description */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-16">
 
-            {/* Lounge photo placeholder — replace with real photography */}
+            {/* Lounge photo */}
             <div className="relative">
               <div
                 className="w-full bg-cream-200 relative overflow-hidden"
                 style={{ aspectRatio: '4/5' }}
               >
-                {/*
-                  Replace this block with:
-                  <img src="/images/lounge.jpg" alt="Advanced Med MedSpa Lounge" className="w-full h-full object-cover" />
-                */}
-                <div className="absolute inset-0 bg-cream-200" />
-                <div className="absolute inset-0 flex flex-col items-center justify-center gap-2">
-                  <p className="font-serif text-2xl font-light text-espresso-400 italic">Coming Soon</p>
-                </div>
+                <img
+                  src="/images/lounge-vertical.jpg"
+                  alt="Advanced Med MedSpa Lounge"
+                  className="absolute inset-0 w-full h-full object-cover"
+                  onError={e => { e.currentTarget.style.display = 'none' }}
+                />
               </div>
             </div>
 
@@ -150,12 +148,17 @@ export default function About() {
             </div>
           </div>
 
-          {/* Second lounge photo — wide panoramic placeholder */}
+          {/* Second lounge photo — wide panoramic */}
           <div
-            className="w-full bg-cream-200 relative overflow-hidden flex items-center justify-center"
+            className="w-full bg-cream-200 relative overflow-hidden"
             style={{ aspectRatio: '21/9' }}
           >
-            <p className="font-serif text-2xl font-light text-espresso-400 italic">Coming Soon</p>
+            <img
+              src="/images/lounge-wide.jpg"
+              alt="Advanced Med MedSpa Lounge"
+              className="absolute inset-0 w-full h-full object-cover"
+              onError={e => { e.currentTarget.style.display = 'none' }}
+            />
           </div>
 
         </div>
