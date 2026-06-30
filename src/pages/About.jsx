@@ -110,7 +110,7 @@ export default function About() {
                 style={{ aspectRatio: '4/5' }}
               >
                 <img
-                  src="/images/lounge-vertical.jpg"
+                  src="/images/lounge-vertical.jpeg"
                   alt="Advanced Med MedSpa Lounge"
                   className="absolute inset-0 w-full h-full object-cover"
                   onError={e => { e.currentTarget.style.display = 'none' }}
@@ -154,7 +154,7 @@ export default function About() {
             style={{ aspectRatio: '21/9' }}
           >
             <img
-              src="/images/lounge-wide.jpg"
+              src="/images/lounge-wide.jpeg"
               alt="Advanced Med MedSpa Lounge"
               className="absolute inset-0 w-full h-full object-cover"
               onError={e => { e.currentTarget.style.display = 'none' }}
