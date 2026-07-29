@@ -108,16 +108,18 @@ export default function Memberships() {
 
           {/* Header */}
           <div className="text-center mb-14">
-            <p className="text-spa text-[10px] font-medium uppercase mb-4" style={{ letterSpacing: '0.28em' }}>
+            <p className="text-spa text-[10px] font-medium uppercase mb-6" style={{ letterSpacing: '0.28em' }}>
               Membership That Pays You Back — In Results &amp; Savings
             </p>
-            <div className="inline-block bg-espresso px-10 py-6 mb-6">
-              <div className="flex items-end gap-2 justify-center">
-                <span className="font-serif text-6xl font-bold text-cream-100">$149</span>
-                <span className="text-cream-300 text-sm mb-2">per month</span>
+            <div className="flex items-center justify-center gap-6 mb-3">
+              <div className="h-px bg-cream-300 flex-1 max-w-[80px]" />
+              <div>
+                <span className="font-serif text-8xl font-light text-espresso leading-none">$149</span>
               </div>
-              <p className="text-spa-300 text-[10px] tracking-widest uppercase font-medium">6-Month Commitment</p>
+              <div className="h-px bg-cream-300 flex-1 max-w-[80px]" />
             </div>
+            <p className="text-espresso-400 text-sm font-light tracking-widest uppercase mb-1">per month</p>
+            <p className="text-spa text-[10px] font-medium tracking-widest uppercase" style={{ letterSpacing: '0.22em' }}>6-Month Commitment</p>
           </div>
 
           {/* Top perks */}
