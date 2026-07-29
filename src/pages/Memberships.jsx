@@ -1,99 +1,44 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, CheckCircle, Star, Sparkles, Crown, Shield } from 'lucide-react'
+import { ArrowRight, CheckCircle, Star, Sparkles, Shield } from 'lucide-react'
 import SectionHeader from '../components/SectionHeader'
 import HeroPhoto from '../components/HeroPhoto'
 import FAQ from '../components/FAQ'
 
-const tiers = [
+const services = [
   {
-    id: 'silver',
-    name: 'Silver Glow',
-    price: 99,
-    tagline: 'Begin your glow journey',
-    icon: <Star className="w-7 h-7" />,
-    color: 'border-cream-300',
-    badgeColor: 'bg-cream-200 text-espresso-600',
-    accentColor: 'text-espresso-500',
-    buttonClass: 'bg-spa hover:bg-spa-600 text-cream-100 text-[10px] tracking-widest uppercase',
-    popular: false,
-    perks: [
-      '1 facial treatment per month (your choice)',
-      '10% off all additional services',
-      'Priority booking access',
-      'Monthly member newsletter & exclusive offers',
-      'Complimentary skin evaluation at sign-up',
-    ],
+    name: '3-in-1 Massage',
+    desc: 'Relax, restore, and recharge with our signature 3-in-1 massage.',
+    tagline: 'Relax deeper. Feel better.',
   },
   {
-    id: 'gold',
-    name: 'Gold Radiance',
-    price: 199,
-    tagline: 'Our most popular plan',
-    icon: <Sparkles className="w-7 h-7" />,
-    color: 'border-spa ring-2 ring-spa ring-offset-2',
-    badgeColor: 'bg-espresso text-cream-100',
-    accentColor: 'text-spa-500',
-    buttonClass: 'bg-spa hover:bg-spa-600 text-cream-100 text-[10px] tracking-widest uppercase',
-    popular: true,
-    perks: [
-      '2 treatments per month (choose from any menu)',
-      '20% off all additional services',
-      'Free monthly B12 or immunity IV shot',
-      'Priority booking access',
-      'Birthday bonus treatment (complimentary)',
-      'Complimentary skin analysis every 3 months',
-      'Early access to new services & promotions',
-    ],
+    name: 'IV Therapy Bag',
+    desc: 'Stay hydrated, energized, and supported with IV therapy. (Premium bags excluded)',
+    tagline: 'Fuel your body. Elevate your health.',
   },
   {
-    id: 'platinum',
-    name: 'Platinum Elite',
-    price: 349,
-    tagline: 'The ultimate VIP experience',
-    icon: <Crown className="w-7 h-7" />,
-    color: 'border-espresso-600',
-    badgeColor: 'bg-espresso text-cream-100',
-    accentColor: 'text-espresso-600',
-    buttonClass: 'bg-spa hover:bg-spa-600 text-cream-100 text-[10px] tracking-widest uppercase',
-    popular: false,
-    perks: [
-      '3 treatments per month (any service)',
-      'Unlimited provider evaluations',
-      '30% off all additional services',
-      'Free monthly Myers Cocktail IV drip (full)',
-      'Complimentary comprehensive blood panel annually',
-      'Dedicated care coordinator assigned to you',
-      'VIP invite to exclusive member events & launches',
-      '24-hour advance booking window',
-      'Birthday month: 2 complimentary treatments',
-    ],
-  },
-]
-
-const faqItems = [
-  {
-    q: 'Can I pause my membership?',
-    a: 'Yes. Members may pause their membership once per calendar year for up to 60 days with 7 days\' advance notice. Paused months do not count toward treatment credits. Simply contact your care coordinator or call us to initiate a pause.',
+    name: 'Detox Session',
+    desc: 'Support your body\'s natural detoxification and feel lighter, leaner, more vibrant.',
+    tagline: 'Detox. Refresh. Reset.',
   },
   {
-    q: 'Can I share my membership with a family member?',
-    a: 'Memberships are individual and non-transferable. However, referred family members receive 20% off their first month when they sign up under your name. Ask us about our Refer a Friend perks.',
+    name: 'Body In Shape Session',
+    desc: 'Tone, tighten, and sculpt your body with advanced technology.',
+    tagline: 'Sculpt your body. Love your results.',
   },
   {
-    q: 'What counts as a treatment each month?',
-    a: 'Any service from our treatment menu qualifies — facials, chemical peels, massages, body treatments, IV drips, LED therapy, skin tightening, and more. Injectables (Botox, fillers) and medical procedures require a separate evaluation and are not included in the monthly treatment credit, but do receive the membership discount.',
+    name: 'WonderTouch SkinTIGHT Session',
+    desc: 'Non-invasive contouring to reduce inches and enhance your natural shape.',
+    tagline: 'Non-invasive. High-impact.',
   },
   {
-    q: 'How do I cancel my membership?',
-    a: 'You may cancel with 30 days\' written notice before your next billing date. There are no cancellation fees after the initial 3-month commitment period. We simply ask that you give us the chance to address any concerns before you go — your satisfaction truly matters to us.',
+    name: 'WonderTouch FaceLIFT Session',
+    desc: 'Lift, tone, and rejuvenate your skin for a youthful, radiant glow.',
+    tagline: 'Lift. Glow. Be radiant.',
   },
   {
-    q: 'Do unused treatments roll over to the next month?',
-    a: 'Monthly treatment credits do not roll over — they are a use-it-or-love-it benefit. We send a reminder notification 5 days before your billing cycle ends so you never miss a session. We encourage you to schedule in advance to always get your full value.',
-  },
-  {
-    q: 'Is there a contract?',
-    a: 'There is a 3-month minimum commitment when you first sign up — after that, your membership continues month-to-month with no long-term obligation. You may cancel at any time after the initial period with 30 days\' written notice and no cancellation fees.',
+    name: 'Breeze Korean Glow Facial',
+    desc: 'Deep cleansing, hydration, and glow for healthier, more radiant skin.',
+    tagline: 'Your glow, on repeat.',
   },
 ]
 
@@ -101,20 +46,47 @@ const steps = [
   {
     number: '01',
     title: 'Choose Your Plan',
-    desc: 'Select the membership tier that fits your lifestyle and wellness goals. Not sure? Book a free evaluation and we\'ll recommend the best fit.',
+    desc: 'Sign up for the Advance Membership and lock in your $149/month rate with a 6-month commitment. Not sure? Book a free evaluation first.',
     icon: <Star className="w-8 h-8 text-spa-300" />,
   },
   {
     number: '02',
     title: 'Book Anytime',
-    desc: 'Use your app, call us, or walk in. Members get priority scheduling and exclusive booking windows so you always get your preferred time.',
+    desc: 'Use your app, call us, or walk in. Members get priority scheduling so you always get your preferred time.',
     icon: <Shield className="w-8 h-8 text-spa-300" />,
   },
   {
     number: '03',
     title: 'Look & Feel Amazing',
-    desc: 'Show up, be pampered, and leave transformed. Our team tracks your progress and adjusts your treatments each visit for continuous improvement.',
+    desc: 'Show up, be pampered, and leave transformed. Consistent care delivers the long-term results you deserve.',
     icon: <Sparkles className="w-8 h-8 text-spa-300" />,
+  },
+]
+
+const faqItems = [
+  {
+    q: 'What is the commitment for the Advance Membership?',
+    a: 'The Advance Membership requires a 6-month minimum commitment. After the initial 6 months, your membership continues month-to-month with no long-term obligation. You may cancel at any time after the initial period with 30 days\' written notice.',
+  },
+  {
+    q: 'Which services count as my 1 free service per month?',
+    a: 'Your free monthly service can be any of the following: 3-in-1 Massage, IV Therapy Bag (premium bags excluded), Detox Session, Body In Shape Session, WonderTouch SkinTIGHT Session, WonderTouch FaceLIFT Session, or Breeze Korean Glow Facial.',
+  },
+  {
+    q: 'Can I pause my membership?',
+    a: 'Yes. Members may pause their membership with advance notice. Simply contact our team to initiate a pause. Paused months do not count toward treatment credits.',
+  },
+  {
+    q: 'Can I share my membership with a family member?',
+    a: 'Memberships are individual and non-transferable. However, referred family members receive a discount off their first month when they sign up under your name. Ask us about our Refer a Friend perks.',
+  },
+  {
+    q: 'Do unused treatments roll over to the next month?',
+    a: 'Monthly treatment credits do not roll over — they are a use-it-or-love-it benefit. We send a reminder notification before your billing cycle ends so you never miss a session.',
+  },
+  {
+    q: 'Does the 15% discount apply to all services?',
+    a: 'Yes — as a member you receive 15% off all additional services beyond your monthly free service, every visit. This discount applies to services only and cannot be combined with other promotional offers.',
   },
 ]
 
@@ -123,63 +95,81 @@ export default function Memberships() {
     <div className="bg-white">
       <HeroPhoto
         eyebrow="Exclusive Access"
-        title={"Membership\nPlans"}
-        subtitle="Priority care, monthly treatments, and meaningful savings — delivered with the consistency your skin deserves."
+        title={"The Advance\nMembership"}
+        subtitle="More than self-care. It's your plan for long-term results."
         gradient="from-espresso-800 via-espresso-700 to-spa-700"
         gradientDir="to-bl"
         radialPos="top_left"
       />
 
-      {/* Membership Tiers */}
+      {/* Main membership card */}
       <section className="py-20 px-6 bg-cream-100">
-        <div className="max-w-6xl mx-auto">
-          <SectionHeader
-            eyebrow="Our Plans"
-            title="Choose Your Level of Luxury"
-            subtitle="Every tier includes priority booking, member-only pricing, and the full Advanced Med MedSpa Lounge experience."
-          />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4 items-stretch">
-            {tiers.map((tier) => (
-              <div
-                key={tier.id}
-                className={`relative bg-white border-2 ${tier.color} p-8 flex flex-col transition-all duration-200 hover:shadow-xl`}
-              >
-                {tier.popular && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                    <span className="bg-spa text-white text-[10px] font-bold px-5 py-1.5 tracking-widest uppercase shadow-md whitespace-nowrap">
-                      Most Popular
-                    </span>
-                  </div>
-                )}
-                <div className={`inline-flex items-center gap-2 self-start mb-5 px-3 py-1.5 text-sm font-bold ${tier.badgeColor}`}>
-                  {tier.icon}
-                  {tier.name}
-                </div>
-                <div className="mb-2">
-                  <span className="text-4xl font-bold text-espresso">${tier.price}</span>
-                  <span className="text-espresso-400 text-sm">/month</span>
-                </div>
-                <p className={`text-sm font-semibold mb-6 ${tier.accentColor}`}>{tier.tagline}</p>
-                <ul className="space-y-3 mb-8 flex-1">
-                  {tier.perks.map((perk) => (
-                    <li key={perk} className="flex items-start gap-3 text-sm text-espresso-500">
-                      <CheckCircle className="w-4 h-4 text-spa flex-shrink-0 mt-0.5" />
-                      {perk}
-                    </li>
-                  ))}
-                </ul>
-                <a
-                  href="https://advancedmedspaofficial.janeapp.com/" target="_blank" rel="noopener noreferrer"
-                  className={`w-full text-center font-bold py-3.5 transition-all duration-200 ${tier.buttonClass}`}
-                >
-                  Get Started
-                </a>
+        <div className="max-w-4xl mx-auto">
+
+          {/* Header */}
+          <div className="text-center mb-14">
+            <p className="text-spa text-[10px] font-medium uppercase mb-4" style={{ letterSpacing: '0.28em' }}>
+              Membership That Pays You Back — In Results &amp; Savings
+            </p>
+            <div className="inline-block bg-espresso px-10 py-6 mb-6">
+              <div className="flex items-end gap-2 justify-center">
+                <span className="font-serif text-6xl font-bold text-cream-100">$149</span>
+                <span className="text-cream-300 text-sm mb-2">per month</span>
               </div>
-            ))}
+              <p className="text-spa-300 text-[10px] tracking-widest uppercase font-medium">6-Month Commitment</p>
+            </div>
           </div>
-          <p className="text-center text-espresso-400 text-xs mt-6">
-            All plans billed monthly. A 3-month minimum commitment applies at sign-up. Prices subject to change with 30 days notice to active members.
-          </p>
+
+          {/* Top perks */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
+            <div className="bg-white border border-cream-300 p-6 flex items-start gap-4">
+              <CheckCircle className="w-5 h-5 text-spa flex-shrink-0 mt-0.5" />
+              <div>
+                <h4 className="font-serif text-lg font-bold text-espresso mb-1">1 Free Service Every Month</h4>
+                <p className="text-espresso-500 text-sm">Your choice of premium services to help you look and feel your best.</p>
+                <p className="text-spa text-[10px] font-medium uppercase tracking-widest mt-2">Because you deserve it.</p>
+              </div>
+            </div>
+            <div className="bg-white border border-cream-300 p-6 flex items-start gap-4">
+              <CheckCircle className="w-5 h-5 text-spa flex-shrink-0 mt-0.5" />
+              <div>
+                <h4 className="font-serif text-lg font-bold text-espresso mb-1">15% Off All Additional Services</h4>
+                <p className="text-espresso-500 text-sm">Enjoy 15% savings on every service, every visit.</p>
+                <p className="text-spa text-[10px] font-medium uppercase tracking-widest mt-2">More results. More value.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Services list */}
+          <div className="bg-white border border-cream-300 p-8 md:p-10">
+            <h3 className="font-serif text-2xl font-light text-espresso text-center mb-2">✦ Your Membership Includes ✦</h3>
+            <p className="text-espresso-400 text-sm text-center mb-8">Choose one of these services as your free monthly session</p>
+            <div className="space-y-5">
+              {services.map((s) => (
+                <div key={s.name} className="flex items-start justify-between gap-6 border-b border-cream-200 pb-5 last:border-0 last:pb-0">
+                  <div className="flex items-start gap-4">
+                    <div className="w-1.5 h-1.5 bg-spa rounded-full flex-shrink-0 mt-2" />
+                    <div>
+                      <h4 className="font-serif font-bold text-espresso mb-0.5">{s.name}</h4>
+                      <p className="text-espresso-500 text-sm">{s.desc}</p>
+                    </div>
+                  </div>
+                  <p className="text-spa text-[11px] font-medium italic text-right flex-shrink-0 hidden sm:block">{s.tagline}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* CTA */}
+          <div className="mt-10 text-center">
+            <a
+              href="https://advancedmedspaofficial.janeapp.com/" target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-spa hover:bg-spa-600 text-cream-100 text-[10px] tracking-widest uppercase font-medium px-12 py-5 transition-all duration-300"
+            >
+              Join Today — $149/Month <ArrowRight className="w-4 h-4" />
+            </a>
+            <p className="text-espresso-400 text-xs mt-4">6-month commitment. This is more than a membership — it's your transformation partnership.</p>
+          </div>
         </div>
       </section>
 
@@ -215,19 +205,20 @@ export default function Memberships() {
         </div>
       </section>
 
-      {/* Terms Note */}
+      {/* Terms */}
       <section className="py-8 px-6 bg-cream-100 border-t border-cream-300">
         <div className="max-w-4xl mx-auto">
           <p className="text-espresso-400 text-xs leading-relaxed text-center">
-            <strong className="text-espresso-500">Membership Terms:</strong> All memberships auto-renew monthly after the initial 3-month commitment period. Members may cancel with 30 days' written notice. Monthly treatment credits are non-transferable and expire at the end of each billing cycle. Membership discounts apply to services only and cannot be combined with other promotional offers or gift certificates. Advanced Med MedSpa Lounge reserves the right to modify membership benefits with 30 days' notice to active members. Medical procedures and injectable treatments are not included in monthly credits but receive the applicable membership discount rate.
+            <strong className="text-espresso-500">Membership Terms:</strong> The Advance Membership requires a 6-month minimum commitment. Membership auto-renews monthly after the initial period. Members may cancel with 30 days' written notice after the commitment period. Monthly treatment credits are non-transferable and expire at the end of each billing cycle. The 15% discount applies to services only and cannot be combined with other promotional offers or gift certificates. Advanced Med reserves the right to modify membership benefits with 30 days' notice to active members.
           </p>
         </div>
       </section>
 
-      {/* CTA */}
+      {/* Bottom CTA */}
       <section className="py-20 px-6 bg-espresso text-cream-200 text-center">
         <div className="max-w-2xl mx-auto">
-          <h2 className="font-serif text-4xl font-bold mb-4">Invest in Yourself, Every Month</h2>
+          <p className="text-spa-300 text-[10px] font-medium uppercase mb-4" style={{ letterSpacing: '0.28em' }}>Consistent Care. Exclusive Savings.</p>
+          <h2 className="font-serif text-4xl font-bold mb-4">Unstoppable Results.</h2>
           <p className="text-cream-300 text-lg mb-8 leading-relaxed">
             The best version of you isn't a destination — it's a practice. Let us be your partner in that journey, month after month.
           </p>
@@ -239,10 +230,10 @@ export default function Memberships() {
               Join Today <ArrowRight className="w-4 h-4" />
             </a>
             <Link
-              to="/contact"
+              to="/personalized-evaluation"
               className="inline-flex items-center justify-center gap-2 border border-cream-300/40 text-cream-200 text-[10px] tracking-widest uppercase font-medium px-8 py-4 hover:border-cream-300 transition-all duration-300"
             >
-              Ask Us a Question
+              Book a Free Evaluation
             </Link>
           </div>
         </div>
