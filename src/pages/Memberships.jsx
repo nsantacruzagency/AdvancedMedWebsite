@@ -124,20 +124,20 @@ export default function Memberships() {
 
           {/* Top perks */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
-            <div className="bg-white border border-cream-300 p-6 flex items-start gap-4">
-              <CheckCircle className="w-5 h-5 text-spa flex-shrink-0 mt-0.5" />
+            <div className="bg-spa p-6 flex items-start gap-4">
+              <CheckCircle className="w-5 h-5 text-cream-100 flex-shrink-0 mt-0.5" />
               <div>
-                <h4 className="font-serif text-lg font-bold text-espresso mb-1">1 Free Service Every Month</h4>
-                <p className="text-espresso-500 text-sm">Your choice of premium services to help you look and feel your best.</p>
-                <p className="text-spa text-[10px] font-medium uppercase tracking-widest mt-2">Because you deserve it.</p>
+                <h4 className="font-serif text-lg font-bold text-cream-100 mb-1">1 Free Service Every Month</h4>
+                <p className="text-cream-200 text-sm">Your choice of premium services to help you look and feel your best.</p>
+                <p className="text-cream-300 text-[10px] font-medium uppercase tracking-widest mt-2">Because you deserve it.</p>
               </div>
             </div>
-            <div className="bg-white border border-cream-300 p-6 flex items-start gap-4">
-              <CheckCircle className="w-5 h-5 text-spa flex-shrink-0 mt-0.5" />
+            <div className="bg-spa p-6 flex items-start gap-4">
+              <CheckCircle className="w-5 h-5 text-cream-100 flex-shrink-0 mt-0.5" />
               <div>
-                <h4 className="font-serif text-lg font-bold text-espresso mb-1">15% Off All Additional Services</h4>
-                <p className="text-espresso-500 text-sm">Enjoy 15% savings on every service, every visit.</p>
-                <p className="text-spa text-[10px] font-medium uppercase tracking-widest mt-2">More results. More value.</p>
+                <h4 className="font-serif text-lg font-bold text-cream-100 mb-1">15% Off All Additional Services</h4>
+                <p className="text-cream-200 text-sm">Enjoy 15% savings on every service, every visit.</p>
+                <p className="text-cream-300 text-[10px] font-medium uppercase tracking-widest mt-2">More results. More value.</p>
               </div>
             </div>
           </div>
