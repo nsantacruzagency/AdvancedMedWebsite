@@ -11,10 +11,10 @@ const aboutLinks = [
 ]
 
 const bodyAestheticsLinks = [
+  { label: 'Brazilian Butt',                 path: '/brazilian-butt' },
   { label: 'Non-Invasive Weight Loss',       path: '/non-invasive-weight-loss' },
   { label: 'Skin Tightening & Cellulite',    path: '/cellulite-skin-tightening' },
   { label: 'Contour & Post-Op Massages',     path: '/body-contouring-massages' },
-  { label: 'Brazilian Butt',                 path: '/brazilian-butt' },
 ]
 
 const stemCellsWellnessLinks = [
