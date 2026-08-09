@@ -143,9 +143,8 @@ export default function Lipedema() {
       <BeforeAfter
         heading="Lipedema LymphON Protocol — Real Client Results"
         items={[
-          { label: 'Lipedema Stage II — 16 Weeks', result: 'Marked reduction in leg circumference and tenderness following a combined manual lymphatic drainage and RF series. Client reported significant pain relief and improved daily mobility.', beforeSrc: '/images/before-after/lipedema/before.jpg', afterSrc: '/images/before-after/lipedema/after.jpg', beforeAlt: 'Before lipedema treatment', afterAlt: 'After lipedema treatment' },
-          { label: 'Lipedema — Session 2', result: '', beforeSrc: '/images/before-after/lipedema-2/before.jpg', afterSrc: '/images/before-after/lipedema-2/after.jpg', beforeAlt: 'Before lipedema treatment', afterAlt: 'After lipedema treatment' },
-          { label: 'Lipedema — Session 3', result: '', beforeSrc: '/images/before-after/lipedema-3/before.jpg', afterSrc: '/images/before-after/lipedema-3/after.jpg', beforeAlt: 'Before lipedema treatment', afterAlt: 'After lipedema treatment' },
+          { label: 'Lipedema', result: 'Marked reduction in leg circumference and tenderness following a combined manual lymphatic drainage and RF series. Client reported significant pain relief and improved daily mobility.', beforeSrc: '/images/before-after/lipedema/before.jpg', afterSrc: '/images/before-after/lipedema/after.jpg', beforeAlt: 'Before lipedema treatment', afterAlt: 'After lipedema treatment' },
+          { label: 'Lipedema', result: '', beforeSrc: '/images/before-after/lipedema-2/before.jpg', afterSrc: '/images/before-after/lipedema-2/after.jpg', beforeAlt: 'Before lipedema treatment', afterAlt: 'After lipedema treatment' },
         ]}
       />
 
