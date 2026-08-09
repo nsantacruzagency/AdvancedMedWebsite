@@ -152,69 +152,6 @@ export default function BodyContouring() {
         ]}
       />
 
-      {/* Lipedema */}
-      <section className="py-24 px-6 bg-cream-100">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-              <SectionHeader eyebrow="Compassionate Care" title="Lipedema" center={false} />
-              <p className="text-espresso-500 leading-relaxed mb-4">
-                Lipedema is a chronic, often misunderstood condition affecting primarily women — characterized by disproportionate, painful fat accumulation in the legs, hips, buttocks, and sometimes arms. It is <em>not</em> caused by lifestyle choices, and it does not respond to diet or exercise alone.
-              </p>
-              <p className="text-espresso-500 leading-relaxed mb-4">
-                If you've been dismissed by healthcare providers, told to "just lose weight," or felt frustrated that your efforts aren't working — you may be living with lipedema. We see you, and we understand.
-              </p>
-              <p className="text-espresso-500 leading-relaxed mb-8">
-                Our approach combines manual lymphatic drainage, compression therapy, RF treatments, and anti-inflammatory nutritional support to reduce pain, improve mobility, and manage progression compassionately and effectively.
-              </p>
-              <ul className="space-y-3">
-                {[
-                  'Reduces swelling, heaviness, and pain',
-                  'Improves lymphatic circulation and drainage',
-                  'Softens fibrotic tissue over time',
-                  'Supports mental and emotional wellbeing',
-                  'Personalized, non-judgmental care protocols',
-                ].map((b, i) => (
-                  <li key={i} className="flex items-start gap-3 text-espresso-500">
-                    <CheckCircle className="w-5 h-5 text-spa flex-shrink-0 mt-0.5" />
-                    {b}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="bg-espresso p-10 text-cream-200">
-              <h3 className="font-serif text-2xl font-bold text-spa-300 mb-6">You Deserve Answers</h3>
-              <p className="text-cream-300 leading-relaxed mb-6">
-                Lipedema affects an estimated 11% of women worldwide — yet it remains chronically underdiagnosed. Many women spend years or decades without a proper diagnosis, blaming themselves for a medical condition that has a physiological basis.
-              </p>
-              <div className="space-y-4">
-                {[
-                  { label: 'Common Symptoms', items: ['Disproportionate leg/hip size', 'Pain or tenderness to touch', 'Easy bruising', 'Feeling of heaviness'] },
-                  { label: 'Our Treatments', items: ['Manual Lymphatic Drainage', 'Radiofrequency Therapy', 'Compression Support', 'Anti-Inflammatory Protocols'] },
-                ].map((group) => (
-                  <div key={group.label}>
-                    <p className="text-spa-300 text-[10px] font-bold tracking-widest uppercase mb-2">{group.label}</p>
-                    <div className="flex flex-wrap gap-2">
-                      {group.items.map((item) => (
-                        <span key={item} className="text-xs bg-white/10 text-cream-200 px-3 py-1">{item}</span>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <BeforeAfter
-        heading="Lipedema LymphON Protocol — Real Client Results"
-        items={[
-          { label: 'Lipedema Stage II — 16 Weeks', result: 'Marked reduction in leg circumference and tenderness following a combined manual lymphatic drainage and RF series. Client reported significant pain relief and improved daily mobility.', beforeSrc: '/images/before-after/lipedema/before.jpg', afterSrc: '/images/before-after/lipedema/after.jpg', beforeAlt: 'Before lipedema stage II treatment', afterAlt: 'After lipedema stage II treatment' },
-          { label: 'Lipedema — Session 2', result: '', beforeSrc: '/images/before-after/lipedema-2/before.jpg', afterSrc: '/images/before-after/lipedema-2/after.jpg', beforeAlt: 'Before lipedema treatment', afterAlt: 'After lipedema treatment' },
-        ]}
-      />
-
       {/* CTA */}
       <section className="py-24 px-6 bg-cream-200 text-center">
         <div className="max-w-2xl mx-auto">

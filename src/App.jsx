@@ -17,6 +17,7 @@ import NonInvasiveWeightLoss from './pages/weight-health/NonInvasiveWeightLoss'
 import BodyContouring from './pages/weight-health/BodyContouring'
 import Massages from './pages/weight-health/Massages'
 import BrazilianButt from './pages/weight-health/BrazilianButt'
+import Lipedema from './pages/weight-health/Lipedema'
 
 // Stem Cells & Wellness
 import PeptidesGLPs from './pages/weight-health/PeptidesGLPs'
@@ -54,6 +55,7 @@ function App() {
             <Route path="/cellulite-skin-tightening" element={<BodyContouring />} />
             <Route path="/body-contouring-massages" element={<Massages />} />
             <Route path="/brazilian-butt" element={<BrazilianButt />} />
+            <Route path="/lipedema" element={<Lipedema />} />
 
             {/* Stem Cells & Wellness */}
             <Route path="/peptides-glps" element={<PeptidesGLPs />} />

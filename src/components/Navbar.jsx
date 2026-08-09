@@ -15,6 +15,7 @@ const bodyAestheticsLinks = [
   { label: 'Non-Invasive Weight Loss',       path: '/non-invasive-weight-loss' },
   { label: 'Skin Tightening & Cellulite',    path: '/cellulite-skin-tightening' },
   { label: 'Contour & Post-Op Massages',     path: '/body-contouring-massages' },
+  { label: 'Lipedema LymphON Protocol',      path: '/lipedema' },
 ]
 
 const stemCellsWellnessLinks = [
