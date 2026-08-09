@@ -88,8 +88,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={13} className="text-spa flex-shrink-0" />
-                <a href="mailto:hello@advancedmedspaofficial.com" className="text-[12px] text-cream-400 hover:text-spa transition-colors font-light">
-                  hello@advancedmedspaofficial.com
+                <a href="mailto:info@advmedspa.com" className="text-[12px] text-cream-400 hover:text-spa transition-colors font-light">
+                  info@advmedspa.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
