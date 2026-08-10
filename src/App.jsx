@@ -18,6 +18,9 @@ import BodyContouring from './pages/weight-health/BodyContouring'
 import Massages from './pages/weight-health/Massages'
 import BrazilianButt from './pages/weight-health/BrazilianButt'
 import Lipedema from './pages/weight-health/Lipedema'
+import PostGLPSkinTightening from './pages/weight-health/PostGLPSkinTightening'
+import CelluliteTreatment from './pages/weight-health/CelluliteTreatment'
+import PostOpMassages from './pages/weight-health/PostOpMassages'
 
 // Stem Cells & Wellness
 import PeptidesGLPs from './pages/weight-health/PeptidesGLPs'
@@ -53,7 +56,10 @@ function App() {
             {/* Body Aesthetics */}
             <Route path="/non-invasive-weight-loss" element={<NonInvasiveWeightLoss />} />
             <Route path="/cellulite-skin-tightening" element={<BodyContouring />} />
+            <Route path="/post-glp1-skin-tightening" element={<PostGLPSkinTightening />} />
+            <Route path="/cellulite-treatment" element={<CelluliteTreatment />} />
             <Route path="/body-contouring-massages" element={<Massages />} />
+            <Route path="/post-op-massages" element={<PostOpMassages />} />
             <Route path="/brazilian-butt" element={<BrazilianButt />} />
             <Route path="/lipedema" element={<Lipedema />} />
 

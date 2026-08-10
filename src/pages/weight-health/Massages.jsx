@@ -1,36 +1,8 @@
-import { Link } from 'react-router-dom'
-import { CheckCircle, ArrowRight } from 'lucide-react'
+import { ArrowRight, CheckCircle } from 'lucide-react'
 import SectionHeader from '../../components/SectionHeader'
 import HeroPhoto from '../../components/HeroPhoto'
-import FAQ from '../../components/FAQ'
 import BeforeAfter from '../../components/BeforeAfter'
-
-const massageTypes = [
-  {
-    name: 'Brazilian 3-in-1 Lymphatic Drainage',
-    tagline: 'Detox, Sculpt & Slim',
-    description: 'A powerful combination of lymphatic drainage, deep tissue work, and body contouring massage originating from Brazil — widely used post-surgery and for body sculpting.',
-    benefits: ['Reduces post-surgical swelling', 'Eliminates toxins and fluid retention', 'Smooths skin texture and cellulite', 'Supports immune function'],
-  },
-  {
-    name: 'Deep Tissue Massage',
-    tagline: 'Release. Restore. Recover.',
-    description: 'Targets the deeper layers of muscle and connective tissue using firm, sustained pressure to release chronic tension, adhesions, and muscle knots.',
-    benefits: ['Relieves chronic muscle tension', 'Breaks up scar tissue and adhesions', 'Improves posture and range of motion', 'Reduces pain and inflammation'],
-  },
-  {
-    name: 'Post-Operative Massage',
-    tagline: 'Heal Faster. Feel Better.',
-    description: 'Specially designed for clients recovering from cosmetic or medical surgery. Gentle, targeted techniques accelerate healing, reduce bruising, and smooth results.',
-    benefits: ['Accelerates post-op healing', 'Prevents fibrosis and hardening', 'Reduces bruising and swelling', 'Optimizes surgical results'],
-  },
-  {
-    name: 'Prenatal Massage',
-    tagline: 'Nurturing Care for Two',
-    description: 'A safe, soothing massage specifically designed for pregnant women — addressing the unique physical challenges of pregnancy with gentle, evidence-based techniques.',
-    benefits: ['Relieves back, hip & sciatic pain', 'Reduces swelling in legs and feet', 'Eases anxiety and improves sleep', 'Safe throughout all trimesters'],
-  },
-]
+import FAQ from '../../components/FAQ'
 
 const faqItems = [
   {
@@ -42,20 +14,20 @@ const faqItems = [
     a: 'Lymphatic drainage stimulates the flow of lymph — a fluid that carries immune cells, metabolic waste, and excess proteins through a network of vessels throughout the body. When this system becomes sluggish due to inactivity, surgery, illness, or stress, fluid accumulates in tissues causing swelling, puffiness, and reduced immunity. Lymphatic drainage massage gently accelerates lymph flow, reducing fluid retention, removing toxins, and supporting immune function.',
   },
   {
-    q: 'Is post-operative massage safe, and when can I start?',
-    a: 'Yes — post-operative massage is not only safe but is often recommended by surgeons as an essential part of recovery. Most clients begin as early as 72 hours after surgery, depending on the procedure and their surgeon\'s guidance. Early intervention prevents fibrosis, reduces bruising and swelling, and significantly improves the smoothness and quality of final surgical results. We coordinate with your surgeon when appropriate.',
+    q: 'How is this different from a regular massage?',
+    a: 'A standard relaxation massage works primarily on muscle tissue to relieve tension and stress. The Brazilian 3-in-1 is a clinical technique with three specific therapeutic goals: lymphatic decongestion, deep tissue work, and active body contouring. The strokes, pressure, and sequencing are fundamentally different — designed to move fluid, reshape tissue, and produce visible changes in body composition and skin quality over a treatment series.',
   },
   {
-    q: 'When during pregnancy can I receive a prenatal massage?',
-    a: 'Prenatal massage is safe in all three trimesters when performed by a certified prenatal therapist. We use specially designed pregnancy positioning pillows to ensure your comfort and safety, avoid contraindicated pressure points, and use only pregnancy-safe techniques and oils. Many clients find the most benefit beginning in the second trimester when discomfort from back pain, hip tightness, and swelling often peaks.',
+    q: 'How many sessions do I need to see results?',
+    a: 'Most clients notice visible reduction in puffiness and improved skin tone after their first session. For meaningful body contouring and cellulite reduction, a series of 6–10 sessions spaced weekly is recommended. Results compound with each treatment as the lymphatic system becomes progressively less congested and tissue quality improves.',
   },
   {
-    q: 'How often do I need massage sessions to see lasting results?',
-    a: 'For general wellness and relaxation, monthly sessions are effective for most clients. For specific goals such as post-surgical recovery, lymphedema management, or cellulite reduction, we typically recommend weekly sessions during an initial series of 4–8 treatments, followed by bi-weekly or monthly maintenance. Your therapist will recommend a frequency tailored to your goals and response to treatment.',
+    q: 'Who is this treatment best for?',
+    a: 'The Brazilian 3-in-1 is ideal for clients preparing for or recovering from cosmetic procedures, brides wanting to look their absolute best, anyone experiencing fluid retention or puffiness, clients seeking non-surgical body contouring, and those wanting to enhance and accelerate the results of their other Advanced Med treatments.',
   },
   {
-    q: 'Does insurance cover therapeutic massage at Advanced Med?',
-    a: 'Coverage varies by insurance plan. Some plans cover massage therapy when prescribed by a physician for a documented medical condition such as chronic pain, post-surgical recovery, or lymphedema. We recommend contacting your insurance provider directly. We provide detailed receipts and documentation to support any applicable claims. Our team can also assist with letters of medical necessity when appropriate.',
+    q: 'Can I combine this with other treatments at Advanced Med?',
+    a: 'Absolutely — the Brazilian 3-in-1 pairs exceptionally well with body contouring technology like EMS and radiofrequency, with our non-invasive weight loss protocols, and as a maintenance treatment alongside GLP-1 therapy. Many clients schedule it as a weekly add-on to their primary treatment plan for dramatically enhanced results.',
   },
 ]
 
@@ -63,26 +35,26 @@ export default function Massages() {
   return (
     <div className="bg-white">
       <HeroPhoto
-        eyebrow="Weight & Metabolic Health"
-        title={<>Signature Contouring &<br />Post-Operation Massages</>}
-        subtitle="From detoxifying lymphatic drainage to healing post-operative care — our expert massage therapists deliver therapeutic touch that transforms how you look and feel."
+        eyebrow="Body Contouring"
+        title={<>Brazilian 3-in-1<br />Contouring Massage</>}
+        subtitle="Born in Brazil. Perfected through decades of clinical application. The most effective non-surgical body contouring massage in the world — and it's our signature."
         gradient="from-spa-800 via-espresso-800 to-espresso-700"
         gradientDir="to-tr"
         radialPos="bottom_left"
       />
 
-      {/* Brazilian 3-in-1 Deep Dive */}
+      {/* What Is It */}
       <section className="py-24 px-6 bg-white">
         <div className="max-w-3xl mx-auto text-center">
-          <SectionHeader eyebrow="A combination protocol" title="Our Signature Special" center={true} />
+          <SectionHeader eyebrow="A Combination Protocol" title="Our Signature Special" center={true} />
           <p className="text-espresso-500 leading-relaxed mb-4">
             Born in Brazil and refined by decades of clinical application, the 3-in-1 lymphatic drainage massage is a revolutionary technique that simultaneously addresses lymphatic congestion, deep muscle tension, and surface-level body contouring — all in a single session.
           </p>
           <p className="text-espresso-500 leading-relaxed mb-4">
-            Using a combination of rhythmic pumping strokes, deep petrissage, and specialized sculpting movements, our therapists guide excess fluid out of tissues, stimulate fat metabolism at the cellular level, and leave your skin visibly smoother and more toned.
+            The lymphatic system is the body's drainage network — responsible for removing waste, toxins, and excess fluid from every tissue. When it becomes sluggish from sedentary habits, poor diet, stress, or inflammation, fluid accumulates in tissues, creating the puffiness, heaviness, and bloating that no amount of diet or exercise seems to fix. This massage corrects that at its source.
           </p>
           <p className="text-espresso-500 leading-relaxed mb-8">
-            This treatment is especially popular pre- and post-cosmetic procedure, for brides preparing for their wedding, and for clients seeking accelerated results alongside their body contouring treatments.
+            Using a combination of rhythmic pumping strokes, deep petrissage, and specialized sculpting movements, our therapists guide excess fluid out of tissues, stimulate fat metabolism at the cellular level, and leave your skin visibly smoother and more toned. This treatment is especially popular pre- and post-cosmetic procedure, for brides preparing for their wedding, and for clients seeking accelerated results alongside their body contouring treatments.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-xl mx-auto">
             {['Reduces fluid retention', 'Smooths cellulite', 'Slims and sculpts', 'Boosts immunity', 'Pre/post-surgery safe', 'Deeply relaxing'].map((tag) => (
@@ -95,8 +67,44 @@ export default function Massages() {
         </div>
       </section>
 
+      {/* The Three Components */}
+      <section className="py-24 px-6 bg-cream-100">
+        <div className="max-w-6xl mx-auto">
+          <SectionHeader
+            eyebrow="Three Disciplines. One Session."
+            title="How the 3-in-1 Works"
+            subtitle="Each component targets a different layer of tissue — together they produce results no single massage technique can achieve."
+          />
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                number: '01',
+                name: 'Manual Lymphatic Drainage',
+                desc: 'Precise, rhythmic pumping strokes map the lymphatic vessels beneath the skin, activating sluggish nodes and directing accumulated fluid toward active drainage pathways. The result is an immediate reduction in puffiness, improved immune response, and a visible slimming effect as excess fluid is eliminated.',
+              },
+              {
+                number: '02',
+                name: 'Deep Petrissage',
+                desc: 'Firm kneading and compression techniques target the deeper layers of subcutaneous fat and connective tissue. This breaks up fibrotic bands that cause cellulite, improves tissue oxygenation, and restores elasticity to skin that has become dense and stiff from fluid accumulation or inflammation.',
+              },
+              {
+                number: '03',
+                name: 'Body Sculpting Strokes',
+                desc: 'The contouring component of the protocol uses directional pressure and specialized movements to physically reshape soft tissue — defining the waist, smoothing the hips and thighs, and lifting the buttocks. Over a series of sessions, these sculpting techniques produce measurable changes in circumference and body shape.',
+              },
+            ].map((step) => (
+              <div key={step.number} className="bg-white p-8 border border-cream-300 hover:border-spa hover:shadow-lg transition-all duration-300">
+                <div className="text-spa text-[10px] font-bold tracking-widest uppercase mb-4">{step.number}</div>
+                <h4 className="font-serif font-bold text-espresso text-xl mb-3">{step.name}</h4>
+                <p className="text-espresso-500 text-sm leading-relaxed">{step.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <BeforeAfter
-        heading="3in1 Brazilian Contouring Lymphatic Drainage Massage — Real Client Results"
+        heading="3-in-1 Brazilian Contouring Lymphatic Drainage — Real Client Results"
         logo="/images/protocol-logos/3in1logo.png"
         logoAlt="3-in-1 Body Contouring"
         items={[
@@ -106,94 +114,12 @@ export default function Massages() {
         ]}
       />
 
-      {/* Post-Op & Prenatal */}
-      <section className="py-24 px-6 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12">
-            {/* Post-Op */}
-            <div className="bg-cream-100 p-10 border border-cream-300">
-              <h2 className="font-serif text-3xl font-bold text-espresso mb-2">Post-Operative Massage</h2>
-              <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-6">Heal Faster. Feel Better.</p>
-              <p className="text-espresso-500 leading-relaxed mb-6">
-                Following cosmetic procedures such as liposuction, tummy tucks, BBL, implants, or any surgical intervention, the body generates significant inflammation and fibrotic tissue as it heals. Without intervention, this can lead to hard lumps, uneven results, and prolonged recovery.
-              </p>
-              <p className="text-espresso-500 leading-relaxed mb-8">
-                Our post-operative massage protocol, recommended by surgeons across South Florida, uses gentle but precise techniques to prevent fibrosis, guide fluid away from surgical sites, smooth contours, and significantly reduce recovery time.
-              </p>
-              <ul className="space-y-3">
-                {['Begin as early as 72 hours post-surgery', 'Surgeon coordination available', 'Reduces scar tissue formation', 'Maximizes your surgical investment', 'Comfortable, clinical environment'].map((b, i) => (
-                  <li key={i} className="flex items-start gap-3 text-espresso-500 text-sm">
-                    <CheckCircle className="w-4 h-4 text-spa flex-shrink-0 mt-0.5" />
-                    {b}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Prenatal */}
-            <div className="bg-cream-200 p-10 border border-cream-300">
-              <h2 className="font-serif text-3xl font-bold text-espresso mb-2">Prenatal Massage</h2>
-              <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-6">Nurturing Care for Two</p>
-              <p className="text-espresso-500 leading-relaxed mb-6">
-                Pregnancy brings beautiful changes — and significant physical challenges. Lower back pain, hip discomfort, sciatica, swollen ankles, and disrupted sleep are common complaints that prenatal massage can meaningfully address.
-              </p>
-              <p className="text-espresso-500 leading-relaxed mb-8">
-                Our certified prenatal therapists use specially designed positioning with pregnancy pillows to ensure your comfort and safety throughout every trimester. We avoid contraindicated pressure points and use only pregnancy-safe oils and techniques.
-              </p>
-              <ul className="space-y-3">
-                {['Safe in all trimesters', 'Reduces sciatic nerve pain', 'Improves circulation and reduces swelling', 'Lowers stress hormones (cortisol)', 'Improves labor outcomes and mood'].map((b, i) => (
-                  <li key={i} className="flex items-start gap-3 text-espresso-500 text-sm">
-                    <CheckCircle className="w-4 h-4 text-spa flex-shrink-0 mt-0.5" />
-                    {b}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Deep Tissue */}
-      <section className="py-24 px-6 bg-cream-100">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div className="bg-espresso p-10 text-cream-200 order-2 md:order-1">
-              <h3 className="font-serif text-2xl font-bold text-spa-300 mb-6">When Deep Work Is Needed</h3>
-              <p className="text-cream-300 leading-relaxed mb-6">
-                Chronic pain, poor posture, athletic training, or physical stress at work can create deep layers of muscular tension that surface-level massage cannot reach. Deep tissue work accesses the sub-layer of musculature and connective tissue to deliver lasting relief.
-              </p>
-              <div className="space-y-3">
-                {['Neck and shoulder tension', 'Lower back pain', 'Repetitive strain injuries', 'Athletic recovery', 'Postural imbalances', 'Fibromyalgia support'].map((item) => (
-                  <div key={item} className="flex items-center gap-3">
-                    <CheckCircle className="w-4 h-4 text-spa-300 flex-shrink-0" />
-                    <span className="text-cream-300 text-sm">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="order-1 md:order-2">
-              <SectionHeader eyebrow="Therapeutic Relief" title="Deep Tissue Massage" center={false} />
-              <p className="text-espresso-500 leading-relaxed mb-6">
-                Our certified deep tissue therapists use slow, deliberate strokes and firm pressure to break up scar tissue, release muscle adhesions, and restore proper movement patterns. This is not a comfort massage — it's a clinical treatment with measurable results.
-              </p>
-              <p className="text-espresso-500 leading-relaxed mb-8">
-                You may experience some soreness 24–48 hours after your session as your body processes released toxins and adjusts to restored muscle alignment — this is completely normal and typically followed by significant pain relief and increased mobility.
-              </p>
-              <div className="bg-cream-200 p-6 border border-cream-300">
-                <p className="text-sm font-semibold text-espresso mb-2">Recommended For:</p>
-                <p className="text-espresso-500 text-sm">Chronic pain conditions, athletes, office workers, anyone with recurring muscle tension or postural problems.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="py-24 px-6 bg-espresso text-cream-200 text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="font-serif text-4xl font-bold mb-4">Give Your Body the Care It Deserves</h2>
           <p className="text-cream-300 text-lg mb-10 leading-relaxed">
-            Book your massage session today. Our therapists will customize every session to your needs, comfort level, and wellness goals.
+            Book your Brazilian 3-in-1 session today. Our therapists will customize every session to your body goals, comfort level, and treatment history.
           </p>
           <a
             href="https://advancedmedspaofficial.janeapp.com/" target="_blank" rel="noopener noreferrer"

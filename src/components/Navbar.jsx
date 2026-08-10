@@ -13,9 +13,11 @@ const aboutLinks = [
 const bodyAestheticsLinks = [
   { label: 'Brazilian Butt',                 path: '/brazilian-butt' },
   { label: 'Non-Invasive Weight Loss',       path: '/non-invasive-weight-loss' },
-  { label: 'Skin Tightening & Cellulite',    path: '/cellulite-skin-tightening' },
-  { label: 'Contour & Post-Op Massages',     path: '/body-contouring-massages' },
-  { label: 'Lipedema LymphON Protocol',      path: '/lipedema' },
+  { label: 'Lipedema Treatment',             path: '/lipedema' },
+  { label: 'Post-GLP-1 Skin Tightening',    path: '/post-glp1-skin-tightening' },
+  { label: 'Cellulite Treatment',            path: '/cellulite-treatment' },
+  { label: 'Brazilian Contouring Massage',   path: '/body-contouring-massages' },
+  { label: 'Post-Op Massages',               path: '/post-op-massages' },
 ]
 
 const stemCellsWellnessLinks = [
