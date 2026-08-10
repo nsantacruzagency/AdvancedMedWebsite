@@ -306,9 +306,9 @@ export default function Home() {
           </div>
 
           {/* Spa Photo */}
-          <div className="relative w-full aspect-[4/5] overflow-hidden">
+          <div className="relative w-full aspect-[5/6] overflow-hidden">
             <img
-              src="/images/lounge-wide.jpeg"
+              src="/images/spa-front.jpg"
               alt="Advanced Med MedSpa Lounge"
               className="absolute inset-0 w-full h-full object-cover"
             />
