@@ -1,4 +1,14 @@
-import { ArrowRight, Instagram } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
+
+function InstagramIcon({ className }) {
+  return (
+    <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+    </svg>
+  )
+}
 import HeroPhoto from '../components/HeroPhoto'
 import SectionHeader from '../components/SectionHeader'
 
@@ -107,7 +117,7 @@ export default function PartnerServices() {
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 mt-8 text-sm font-medium text-espresso-500 hover:text-espresso transition-colors group"
                       >
-                        <Instagram className="w-4 h-4 text-spa group-hover:text-espresso transition-colors" />
+                        <InstagramIcon className="w-4 h-4 text-spa group-hover:text-espresso transition-colors" />
                         See {partner.name}'s work on Instagram
                         <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                       </a>
