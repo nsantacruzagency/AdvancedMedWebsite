@@ -55,19 +55,19 @@ const skinConcerns = [
 
 const testimonials = [
   {
-    quote: 'The lymphatic drainage massages have completely transformed how my body feels. I notice less bloating and so much more energy after every session.',
-    name: 'Maria L.',
-    treatment: 'Brazilian Lymphatic Massage',
+    quote: 'This place is amazing, they do it all! They have helped me lose the weight after having my second baby and heal my core. Giovanna is very passionate about what she does and really does put her all into every one of her clients. 10/10 recommend.',
+    name: 'Daniela Arango',
+    treatment: 'Weight Loss',
   },
   {
-    quote: 'I lost 22 pounds on their medically supervised weight loss program. The team is genuinely invested in your success — it shows.',
-    name: 'Jessica R.',
-    treatment: 'Medical Weight Loss',
+    quote: "I'm in my third week of the protocol. The clinic is a pleasant, clean, and organized place with integrated treatments. Today I was cared for by Gill, who spent over an hour with me on a lipedema treatment combined with lymphatic drainage. The care I receive from the entire team is wonderful.",
+    name: 'Juliana Mendonca',
+    treatment: 'Lipedema Treatment',
   },
   {
-    quote: 'The skin tightening results exceeded my expectations. My skin looks firmer and I feel years younger. Truly professional care.',
-    name: 'Sofia M.',
-    treatment: 'Skin Tightening',
+    quote: "Giovanna and her team are truly the best! I came in for post-surgery fibrosis treatment, and I've been blown away by how knowledgeable and professional Giovanna is. Brenda has been fantastic with the massage sessions — super skilled and attentive. Highly recommend!",
+    name: 'Marlena Fialho',
+    treatment: 'Post-Op Massage',
   },
 ]
 
