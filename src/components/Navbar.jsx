@@ -9,6 +9,7 @@ const aboutLinks = [
   { label: 'Partner Services',             path: '/partner-services' },
   { label: 'Testimonials',                 path: '/testimonials' },
   { label: 'The Lounge + Team',            path: '/about' },
+  { label: 'The Treatment Editorial Blog', path: '/treatment-edit' },
 ]
 
 const bodyAestheticsLinks = [

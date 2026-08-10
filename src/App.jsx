@@ -12,6 +12,7 @@ import PartnerServices from './pages/PartnerServices'
 import Products from './pages/Products'
 import PersonalizedEvaluation from './pages/PersonalizedEvaluation'
 import Freebies from './pages/Freebies'
+import TreatmentEdit from './pages/TreatmentEdit'
 
 // Body Aesthetics
 import NonInvasiveWeightLoss from './pages/weight-health/NonInvasiveWeightLoss'
@@ -55,6 +56,7 @@ function App() {
             <Route path="/partner-services" element={<PartnerServices />} />
             <Route path="/personalized-evaluation" element={<PersonalizedEvaluation />} />
             <Route path="/freebies" element={<Freebies />} />
+            <Route path="/treatment-edit" element={<TreatmentEdit />} />
 
             {/* Body Aesthetics */}
             <Route path="/non-invasive-weight-loss" element={<NonInvasiveWeightLoss />} />
