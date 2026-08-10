@@ -22,7 +22,7 @@ const weeklySpecials = [
     expires: 'Aug 10 – 16',
     learnMore: {
       text: 'Curious about the Korean Glow Facial and what it actually does for your skin?',
-      linkText: 'Learn more here →',
+      linkText: 'Learn more →',
       href: '/treatment-edit/korean-glow-facial',
     },
   },
