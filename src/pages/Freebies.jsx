@@ -1,4 +1,5 @@
 import { ArrowRight, CheckCircle, Gift, Calendar } from 'lucide-react'
+import { Link } from 'react-router-dom'
 import SectionHeader from '../components/SectionHeader'
 import HeroPhoto from '../components/HeroPhoto'
 import FAQ from '../components/FAQ'
@@ -19,6 +20,11 @@ const weeklySpecials = [
     title: 'Free Korean Glow Facial + Free Skin Analysis',
     desc: 'Book our signature three-in-one contour and lymphatic drainage massage and receive a complimentary Korean Glow Facial and a personalized skin analysis — on us.',
     expires: 'Aug 10 – 16',
+    learnMore: {
+      text: 'Curious about the Korean Glow Facial and what it actually does for your skin?',
+      linkText: 'Read more on The Treatment Editorial Blog',
+      href: '/treatment-edit',
+    },
   },
   {
     title: '🔒 Locked — Revealed Sunday Morning',
@@ -79,10 +85,22 @@ export default function Freebies() {
           {weeklySpecials.length > 0 ? (
             <div className="space-y-5">
               {weeklySpecials.map((s, i) => (
-                <div key={i} className={`border p-8 flex flex-col sm:flex-row sm:items-center gap-4 ${s.locked ? 'bg-white border-cream-300 border-dashed opacity-70' : 'bg-cream-100 border-cream-300'}`}>
+                <div key={i} className={`border p-8 flex flex-col sm:flex-row sm:items-start gap-4 ${s.locked ? 'bg-white border-cream-300 border-dashed opacity-70' : 'bg-cream-100 border-cream-300'}`}>
                   <div className="flex-1">
                     <h3 className={`font-serif text-xl font-bold mb-1 ${s.locked ? 'text-espresso-400' : 'text-espresso'}`}>{s.title}</h3>
                     <p className="text-espresso-500 text-sm leading-relaxed">{s.desc}</p>
+                    {s.learnMore && (
+                      <p className="mt-4 text-sm text-espresso-500">
+                        {s.learnMore.text}{' '}
+                        <Link
+                          to={s.learnMore.href}
+                          className="font-medium underline underline-offset-2 transition-colors"
+                          style={{ color: '#d9542c' }}
+                        >
+                          {s.learnMore.linkText} →
+                        </Link>
+                      </p>
+                    )}
                   </div>
                   <div className="flex-shrink-0 text-center">
                     <span
