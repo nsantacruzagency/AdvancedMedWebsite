@@ -5,29 +5,29 @@ import SectionHeader from '../components/SectionHeader'
 
 const treatments = [
   {
-    title: 'Non-Invasive Weight Loss',
-    subtitle: 'Detox · Hormones · Fat Freezing',
-    path: '/non-invasive-weight-loss',
+    title: 'Non-Surgical Lipo',
+    subtitle: 'Fat Freezing · Detox · Metabolic Reset',
+    path: '/non-surgical-lipo',
   },
   {
-    title: 'Body Contouring',
-    subtitle: 'Cellulite · Lipedema · Toning',
-    path: '/cellulite-skin-tightening',
+    title: 'Cellulite Treatment',
+    subtitle: 'Body In Shape · RF · EMS',
+    path: '/cellulite-treatment',
   },
   {
-    title: 'Massages',
-    subtitle: 'Lymphatic · Deep Tissue · Prenatal',
+    title: 'Lymphatic Drainage Massage',
+    subtitle: 'Brazilian 3-in-1 · Sculpting · Drainage',
     path: '/body-contouring-massages',
   },
   {
-    title: 'Peptides + GLPs',
-    subtitle: 'Medical Weight Management',
-    path: '/peptides-glps',
+    title: 'Lipedema',
+    subtitle: 'LymphON Protocol · MLD · Compression',
+    path: '/lipedema',
   },
   {
-    title: 'IVs + IM Shots',
-    subtitle: 'Energy · Immunity · Beauty',
-    path: '/ivs-intramuscular-shots',
+    title: 'Brazilian Butt',
+    subtitle: 'Non-Surgical BBL · Lifting · Contouring',
+    path: '/brazilian-butt',
   },
   {
     title: 'Skin Concerns',
@@ -35,14 +35,14 @@ const treatments = [
     path: '/skin-concerns/acne',
   },
   {
-    title: 'Hair Restoration',
-    subtitle: 'PRP · Exosomes · Scalp Health',
-    path: '/hair-restoration-stem-cells',
+    title: 'Post-Op Massages',
+    subtitle: 'BBL · Tummy Tuck · Liposuction Recovery',
+    path: '/post-op-massages',
   },
   {
-    title: 'Blood Tests & Longevity',
-    subtitle: 'Biomarkers · Wellness Protocols',
-    path: '/what-do-blood-tests-tell-us',
+    title: 'Peptides + GLPs',
+    subtitle: 'Medical Weight Management',
+    path: '/peptides-glps',
   },
 ]
 
