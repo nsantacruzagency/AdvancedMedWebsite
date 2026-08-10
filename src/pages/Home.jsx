@@ -230,7 +230,7 @@ export default function Home() {
             <div className="absolute -bottom-6 -left-8 bg-white px-7 py-5 border border-cream-300 shadow-sm">
               <p className="font-serif text-3xl font-light text-espresso">4.9</p>
               <p className="text-[10px] tracking-widest uppercase text-spa mt-0.5">Avg Rating</p>
-              <p className="text-[10px] text-espresso-400 mt-0.5">500+ reviews</p>
+              <p className="text-[10px] text-espresso-400 mt-0.5">180+ reviews</p>
             </div>
           </div>
         </div>
