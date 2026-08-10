@@ -70,7 +70,7 @@ export default function Freebies() {
             Always rotating — bookmark this page
           </div>
           <p className="text-espresso-500 leading-relaxed">
-            We regularly surprise our community with free treatments, add-ons, and limited-time specials. This is the place to check. Specials rotate weekly and monthly — first come, first served.
+            We regularly surprise our community with free treatments, add-ons, and limited-time specials. This is the place to check. Specials rotate weekly and monthly — first come, first served. Check our FAQs below for steps on how to claim your freebie!
           </p>
         </div>
       </section>
