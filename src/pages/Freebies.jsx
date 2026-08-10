@@ -31,8 +31,12 @@ const weeklySpecials = [
 ]
 
 const monthlySpecials = [
-  // Add monthly specials here — e.g.:
-  // { title: 'Free Lymphatic Drainage Session', desc: 'One free session for new clients booking a 5-session package.', expires: 'This month only' },
+  {
+    title: 'Grand Reopening Party',
+    subtitle: 'New look, new services, same name.',
+    desc: `We're welcoming new and past clients to celebrate the growth of Advanced Med Spa — and we want YOU there.\n\nJoin us for a chance to win over $10,000 in free treatments, ranging from our Non-Surgical Lipo packages to our Non-Surgical Facelift package. Save $500–$2,000 on any purchase made at the event. Meet and speak directly with our providers to support your anti-aging, weight loss, and skincare journey. Plus — free gifts, samples, and raffle tickets for everyone who attends.\n\nDon't miss this. It's going to be big.`,
+    expires: 'August 27 — Thursday, 4–8 PM',
+  },
 ]
 
 export default function Freebies() {
@@ -104,13 +108,22 @@ export default function Freebies() {
           {monthlySpecials.length > 0 ? (
             <div className="space-y-5">
               {monthlySpecials.map((s, i) => (
-                <div key={i} className="bg-white border border-cream-300 p-8 flex flex-col sm:flex-row sm:items-center gap-4">
-                  <div className="flex-1">
-                    <h3 className="font-serif text-xl font-bold text-espresso mb-1">{s.title}</h3>
-                    <p className="text-espresso-500 text-sm leading-relaxed">{s.desc}</p>
-                  </div>
-                  <div className="flex-shrink-0 text-center">
-                    <span className="inline-block bg-espresso text-cream-100 text-[10px] font-semibold tracking-widest uppercase px-4 py-2">{s.expires}</span>
+                <div key={i} className="bg-white border border-cream-300 p-8 sm:p-10">
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-6">
+                    <div className="flex-1">
+                      <h3 className="font-serif text-2xl font-bold text-espresso mb-1">{s.title}</h3>
+                      {s.subtitle && (
+                        <p className="text-[10px] font-semibold tracking-widest uppercase mb-5" style={{ color: '#d9542c' }}>{s.subtitle}</p>
+                      )}
+                      <div className="space-y-3">
+                        {s.desc.split('\n\n').map((para, j) => (
+                          <p key={j} className="text-espresso-500 text-sm leading-relaxed">{para}</p>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="flex-shrink-0 text-center sm:text-right">
+                      <span className="inline-block bg-espresso text-cream-100 text-[10px] font-semibold tracking-widest uppercase px-5 py-3 whitespace-nowrap">{s.expires}</span>
+                    </div>
                   </div>
                 </div>
               ))}
