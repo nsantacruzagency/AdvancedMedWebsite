@@ -305,14 +305,26 @@ export default function Home() {
             </Link>
           </div>
 
-          {/* Spa Photo */}
-          <div className="relative w-full aspect-[5/6] overflow-hidden">
-            <img
-              src="/images/spa-front.jpg"
-              alt="Advanced Med MedSpa Lounge"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-espresso/10" />
+          {/* Spa Photos — overlapping */}
+          <div className="relative w-full h-80 lg:h-96">
+            {/* Back photo — offset top-left */}
+            <div className="absolute top-0 left-0 w-4/5 aspect-[4/3] overflow-hidden shadow-lg">
+              <img
+                src="/images/spa-front-1.jpg"
+                alt="Advanced Med MedSpa front desk"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            {/* Front photo — offset bottom-right, overlapping */}
+            <div className="absolute bottom-0 right-0 w-4/5 aspect-[4/3] overflow-hidden shadow-xl border-4 border-espresso">
+              <img
+                src="/images/spa-front-2.jpg"
+                alt="Advanced Med MedSpa reception"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
       </section>
