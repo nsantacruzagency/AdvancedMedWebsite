@@ -40,9 +40,13 @@ export default function KoreanGlowFacial() {
         <div className="max-w-2xl mx-auto">
 
           {/* Category tag */}
-          <div className="flex items-center gap-2 mb-10">
-            <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#453730' }} />
-            <span className="text-[9px] font-semibold tracking-widest uppercase text-espresso-500">Skin</span>
+          <div className="mb-10">
+            <span
+              className="inline-block text-[9px] font-semibold tracking-widest uppercase px-4 py-2 rounded-full text-cream-100"
+              style={{ backgroundColor: '#d9542c' }}
+            >
+              Skin
+            </span>
           </div>
 
           <P>If you've been hearing about the Korean Glow Facial and wondering what makes it different from a traditional facial, the answer is simple: it's all about the layers.</P>
