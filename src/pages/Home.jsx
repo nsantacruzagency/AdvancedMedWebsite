@@ -303,7 +303,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 mt-10 text-cream-200 text-[10px] font-medium tracking-widest uppercase border-b border-spa pb-0.5 hover:text-spa transition-colors"
             >
-              Explore Protocol Creation <ArrowRight size={12} />
+              Explore Our Free Evaluation <ArrowRight size={12} />
             </a>
           </div>
 
