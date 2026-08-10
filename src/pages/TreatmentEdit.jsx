@@ -30,7 +30,7 @@ const posts = [
 
 // Bottom bar color by category
 const barColors = {
-  'Fat Loss':  '#C4572A',
+  'Fat Loss':  '#d9542c',
   'Skin':      '#453730',
   'Wellness':  '#7A8C6E',
   'Body':      '#7A8C6E',
