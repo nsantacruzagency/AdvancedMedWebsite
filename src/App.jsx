@@ -22,7 +22,6 @@ import Lipedema from './pages/weight-health/Lipedema'
 import PostGLPSkinTightening from './pages/weight-health/PostGLPSkinTightening'
 import CelluliteTreatment from './pages/weight-health/CelluliteTreatment'
 import PostOpMassages from './pages/weight-health/PostOpMassages'
-import PostpartumWeightLoss from './pages/weight-health/PostpartumWeightLoss'
 
 // Stem Cells & Wellness
 import PeptidesGLPs from './pages/weight-health/PeptidesGLPs'
@@ -63,7 +62,6 @@ function App() {
             <Route path="/cellulite-treatment" element={<CelluliteTreatment />} />
             <Route path="/body-contouring-massages" element={<Massages />} />
             <Route path="/post-op-massages" element={<PostOpMassages />} />
-            <Route path="/postpartum-weight-loss" element={<PostpartumWeightLoss />} />
             <Route path="/brazilian-butt" element={<BrazilianButt />} />
             <Route path="/lipedema" element={<Lipedema />} />
 

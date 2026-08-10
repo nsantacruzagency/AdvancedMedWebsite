@@ -39,7 +39,7 @@ const faqItems = [
   },
   {
     q: 'What happens after I receive my results?',
-    a: 'After your results are ready, you will meet with your provider for a 45-minute review session. Your provider will walk through every significant finding, explain what each marker means in practical terms, and answer all of your questions. Following the review, you will receive a written wellness protocol — a specific, prioritized, actionable plan tailored to your biomarker profile. This may include targeted supplements, hormone therapy, IV nutritional therapy, dietary adjustments, and a follow-up testing schedule.',
+    a: 'After your results are ready, you will meet with your provider for a 45-minute review session. Your provider will walk through every significant finding, explain what each marker means in practical terms, and answer all of your questions. Following the review, you will receive a written wellness protocol — a specific, prioritized, actionable plan tailored to your biomarker profile. This may include targeted supplements, IV nutritional therapy, dietary adjustments, and a follow-up testing schedule.',
   },
   {
     q: 'How often should I get blood testing done?',
@@ -169,12 +169,11 @@ export default function BloodTestsLongevity() {
                 After your results are reviewed, our clinical team — including medical providers, nutritionists, and wellness coaches — collaborate to create your personalized wellness protocol. This is not a generic plan. It is built specifically for you, informed by your actual biomarker data.
               </p>
               <p className="text-espresso-500 leading-relaxed mb-8">
-                Your protocol may include targeted supplementation to correct specific deficiencies, hormone optimization if indicated, dietary and lifestyle modifications based on your metabolic profile, IV nutritional therapy to rapidly correct depleted nutrients, and follow-up testing timelines to track your progress.
+                Your protocol may include targeted supplementation to correct specific deficiencies, dietary and lifestyle modifications based on your metabolic profile, IV nutritional therapy to rapidly correct depleted nutrients, and follow-up testing timelines to track your progress.
               </p>
               <ul className="space-y-3">
                 {[
                   'Targeted nutraceutical and supplement recommendations',
-                  'Hormone therapy if clinically indicated',
                   'Dietary modifications based on metabolic data',
                   'IV therapy to rapidly address critical deficiencies',
                   'Exercise and recovery protocol recommendations',
@@ -230,7 +229,7 @@ export default function BloodTestsLongevity() {
           <div className="mt-12 bg-white/5 p-10 border border-spa/20">
             <h3 className="font-serif text-2xl font-bold text-spa-300 mb-4 text-center">The Longevity Mindset</h3>
             <p className="text-cream-300 text-center max-w-3xl mx-auto leading-relaxed">
-              Longevity medicine isn't about living forever — it's about extending your healthspan, the years of your life in which you feel vibrant, energized, sharp, and fully capable. Our protocols focus on the hallmarks of aging that science has identified as most modifiable: mitochondrial dysfunction, cellular senescence, hormone decline, inflammation, and nutrient depletion.
+              Longevity medicine isn't about living forever — it's about extending your healthspan, the years of your life in which you feel vibrant, energized, sharp, and fully capable. Our protocols focus on the hallmarks of aging that science has identified as most modifiable: mitochondrial dysfunction, cellular senescence, inflammation, and nutrient depletion.
             </p>
           </div>
         </div>

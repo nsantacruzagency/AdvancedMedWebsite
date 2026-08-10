@@ -43,7 +43,7 @@ const faqItems = [
   },
   {
     q: 'Can women receive hair restoration treatments?',
-    a: 'Yes. Female hair loss is extremely common — affecting an estimated 40% of women by age 50 — and our hair restoration treatments are equally effective for women. Female pattern hair loss, postpartum shedding, hormonal hair loss, and diffuse thinning all respond well to PRP and exosome therapy. We also evaluate underlying hormonal factors (thyroid, iron, hormones) that may be contributing, and address those alongside the scalp treatments for a comprehensive approach.',
+    a: 'Yes. Female hair loss is extremely common — affecting an estimated 40% of women by age 50 — and our hair restoration treatments are equally effective for women. Female pattern hair loss, postpartum shedding, hormonal hair loss, and diffuse thinning all respond well to PRP and exosome therapy.',
   },
 ]
 

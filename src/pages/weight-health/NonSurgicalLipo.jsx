@@ -1,4 +1,4 @@
-import { CheckCircle, ArrowRight, Snowflake, Activity, Heart, Zap } from 'lucide-react'
+import { CheckCircle, ArrowRight } from 'lucide-react'
 import SectionHeader from '../../components/SectionHeader'
 import HeroPhoto from '../../components/HeroPhoto'
 import FAQ from '../../components/FAQ'
@@ -12,18 +12,10 @@ const detoxBenefits = [
   'Balances gut microbiome for optimal absorption',
 ]
 
-const hormoneBenefits = [
-  'Reduces cortisol-driven belly fat accumulation',
-  'Restores thyroid function and metabolism',
-  'Balances estrogen and testosterone ratios',
-  'Improves insulin sensitivity and blood sugar',
-  'Enhances sleep quality for hormonal recovery',
-]
-
 const faqItems = [
   {
     q: 'What is non-surgical lipo?',
-    a: 'Non-surgical lipo refers to medical and aesthetic treatments that permanently destroy fat cells without surgery or downtime. At Advanced Med, this centers on Cryo Contour (fat freezing) — the same mechanism as surgical liposuction but achieved through controlled cooling rather than a cannula. We combine this with lymphatic drainage, metabolic support, and hormone optimization for comprehensive, lasting results.',
+    a: 'Non-surgical lipo refers to medical and aesthetic treatments that permanently destroy fat cells without surgery or downtime. At Advanced Med, this centers on Cryo Contour (fat freezing) — the same mechanism as surgical liposuction but achieved through controlled cooling rather than a cannula. We combine this with lymphatic drainage and metabolic support for comprehensive, lasting results.',
   },
   {
     q: 'How does fat freezing (Cryo Contour) work?',
@@ -43,7 +35,7 @@ const faqItems = [
   },
   {
     q: 'Can I combine multiple treatments for better results?',
-    a: 'Yes — combination protocols produce the most dramatic outcomes. Cryo Contour works exceptionally well with lymphatic drainage (which accelerates removal of destroyed fat cells), metabolic support, and hormone optimization. Our clinical team designs multi-modal protocols that are safe, synergistic, and tailored to your biology.',
+    a: 'Yes — combination protocols produce the most dramatic outcomes. Cryo Contour works exceptionally well with lymphatic drainage (which accelerates removal of destroyed fat cells) and metabolic support. Our clinical team designs multi-modal protocols that are safe, synergistic, and tailored to your biology.',
   },
 ]
 
@@ -174,45 +166,6 @@ export default function NonSurgicalLipo() {
                   <p className="text-espresso-500 text-sm">{item.desc}</p>
                 </div>
               ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Hormones & Cortisol */}
-      <section className="py-24 px-6 bg-cream-100">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div className="order-2 md:order-1 bg-espresso p-10 text-cream-200">
-              <h3 className="font-serif text-2xl font-bold mb-6 text-spa-300">The Cortisol–Fat Connection</h3>
-              <p className="text-cream-300 leading-relaxed mb-4">
-                When cortisol stays chronically elevated, it signals the body to store fat preferentially in the abdomen, triggers cravings for high-calorie foods, suppresses thyroid function, and promotes insulin resistance.
-              </p>
-              <p className="text-cream-300 leading-relaxed mb-6">
-                Our hormone balancing protocols use bioidentical hormone therapy, adrenal support nutrients, and lifestyle coaching to lower cortisol, restore thyroid output, and shift your body from fat-storage to fat-burning mode.
-              </p>
-              <div className="grid grid-cols-2 gap-3 mt-6">
-                {['Cortisol Reduction', 'Thyroid Support', 'Estrogen Balance', 'Insulin Sensitivity'].map((tag) => (
-                  <span key={tag} className="text-xs font-semibold bg-white/10 text-cream-300 px-3 py-2 text-center">{tag}</span>
-                ))}
-              </div>
-            </div>
-            <div className="order-1 md:order-2">
-              <SectionHeader eyebrow="Hormonal Balance" title="Hormones & Cortisol" center={false} />
-              <p className="text-espresso-500 leading-relaxed mb-6">
-                Hormones are the master regulators of your metabolism, and even subtle imbalances can make fat loss feel impossible despite perfect diet and exercise. Our clinical team evaluates a comprehensive hormone panel to pinpoint the specific imbalances holding you back.
-              </p>
-              <p className="text-espresso-500 leading-relaxed mb-8">
-                Whether it's elevated cortisol from chronic stress, a sluggish thyroid, estrogen dominance, or declining testosterone, we create a targeted balancing protocol that addresses your unique hormonal landscape.
-              </p>
-              <ul className="space-y-3">
-                {hormoneBenefits.map((b, i) => (
-                  <li key={i} className="flex items-start gap-3 text-espresso-500">
-                    <CheckCircle className="w-5 h-5 text-spa flex-shrink-0 mt-0.5" />
-                    {b}
-                  </li>
-                ))}
-              </ul>
             </div>
           </div>
         </div>

@@ -47,7 +47,7 @@ const faqItems = [
   },
   {
     q: 'Can I combine IV therapy with other treatments at Advanced Med?',
-    a: 'Yes — IV therapy pairs very well with many of our other services. Combining a weight loss IV drip with cryolipolysis or lymphatic drainage can accelerate results. NAD+ infusions complement peptide therapy and hormone optimization protocols. A Beauty Drip pairs beautifully with facial treatments. Our team will help you sequence treatments effectively during your evaluation.',
+    a: 'Yes — IV therapy pairs very well with many of our other services. Combining a weight loss IV drip with cryolipolysis or lymphatic drainage can accelerate results. NAD+ infusions complement peptide therapy protocols. A Beauty Drip pairs beautifully with facial treatments. Our team will help you sequence treatments effectively during your evaluation.',
   },
 ]
 

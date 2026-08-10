@@ -16,7 +16,6 @@ const bodyAestheticsLinks = [
   { label: 'Lipedema Treatment',             path: '/lipedema' },
   { label: 'Post-GLP-1 Skin Tightening',    path: '/post-glp1-skin-tightening' },
   { label: 'Cellulite Treatment',            path: '/cellulite-treatment' },
-  { label: 'Postpartum Weight Loss',              path: '/postpartum-weight-loss' },
   { label: 'Brazilian Lymphatic Drainage Massage', path: '/body-contouring-massages' },
   { label: 'Post-Op Massages',               path: '/post-op-massages' },
 ]
