@@ -82,6 +82,15 @@ export default function PostGLPSkinTightening() {
         </div>
       </section>
 
+      <BeforeAfter
+        heading="Post-GLP-1 Skin Tightening — Real Client Results"
+        items={[
+          { label: 'Skin Tightening — 1', result: 'Visible abdominal firming and improved skin texture after a combined RF and EMS protocol alongside active GLP-1 therapy.', beforeSrc: '/images/before-after/skin-tightening-laxity-1/before.jpg', afterSrc: '/images/before-after/skin-tightening-laxity-1/after.jpg', beforeAlt: 'Before skin tightening', afterAlt: 'After skin tightening' },
+          { label: 'Skin Tightening — 2', result: '', beforeSrc: '/images/before-after/skin-tightening-laxity-2/before.jpg', afterSrc: '/images/before-after/skin-tightening-laxity-2/after.jpg', beforeAlt: 'Before skin tightening', afterAlt: 'After skin tightening' },
+          { label: 'Skin Tightening — 3', result: '', beforeSrc: '/images/before-after/skin-tightening-laxity-3/before.jpg', afterSrc: '/images/before-after/skin-tightening-laxity-3/after.jpg', beforeAlt: 'Before skin tightening', afterAlt: 'After skin tightening' },
+        ]}
+      />
+
       {/* Treatment modalities */}
       <section className="py-24 px-6 bg-cream-100">
         <div className="max-w-6xl mx-auto">
@@ -105,15 +114,6 @@ export default function PostGLPSkinTightening() {
           </div>
         </div>
       </section>
-
-      <BeforeAfter
-        heading="Post-GLP-1 Skin Tightening — Real Client Results"
-        items={[
-          { label: 'Skin Tightening — 1', result: 'Visible abdominal firming and improved skin texture after a combined RF and EMS protocol alongside active GLP-1 therapy.', beforeSrc: '/images/before-after/skin-tightening-laxity-1/before.jpg', afterSrc: '/images/before-after/skin-tightening-laxity-1/after.jpg', beforeAlt: 'Before skin tightening', afterAlt: 'After skin tightening' },
-          { label: 'Skin Tightening — 2', result: '', beforeSrc: '/images/before-after/skin-tightening-laxity-2/before.jpg', afterSrc: '/images/before-after/skin-tightening-laxity-2/after.jpg', beforeAlt: 'Before skin tightening', afterAlt: 'After skin tightening' },
-          { label: 'Skin Tightening — 3', result: '', beforeSrc: '/images/before-after/skin-tightening-laxity-3/before.jpg', afterSrc: '/images/before-after/skin-tightening-laxity-3/after.jpg', beforeAlt: 'Before skin tightening', afterAlt: 'After skin tightening' },
-        ]}
-      />
 
       {/* CTA */}
       <section className="py-24 px-6 bg-espresso text-center">
