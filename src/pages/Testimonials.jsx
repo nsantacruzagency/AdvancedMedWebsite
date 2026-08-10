@@ -1,30 +1,28 @@
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
-import { Star, ArrowRight } from 'lucide-react'
+import { ArrowRight, Star } from 'lucide-react'
 import HeroPhoto from '../components/HeroPhoto'
 
-const all = [
-  { name: 'Maria L.', treatment: 'Korean Facial', category: 'Skin Care', rating: 5, date: 'March 2025', text: 'Absolutely love this place! My Korean facial left my skin glowing for weeks. The staff is so professional and caring — I felt like royalty from start to finish. I am already booked for my next session!' },
-  { name: 'Jessica R.', treatment: 'Medical Weight Loss', category: 'Weight Loss', rating: 5, date: 'January 2025', text: 'I lost 28 pounds with their medical weight loss program. Dr. Okonkwo was incredibly supportive and the team kept me motivated every step of the way. This is not just a spa — it is a life-changing experience.' },
-  { name: 'Carmen T.', treatment: 'Chemical Peel', category: 'Skin Care', rating: 5, date: 'April 2025', text: 'My skin has never looked better. After just one medium-depth peel, my dark spots faded dramatically and my texture is so smooth. Sofia explained everything and made me feel completely comfortable.' },
-  { name: 'Diana W.', treatment: 'Body Contouring', category: 'Weight Loss', rating: 5, date: 'December 2024', text: 'I had been struggling with stubborn fat on my flanks for years. After a series of body contouring treatments, those inches are gone! The team is knowledgeable and the results speak for themselves.' },
-  { name: 'Rachel H.', treatment: 'Brazilian Lymphatic Drainage', category: 'Massages', rating: 5, date: 'May 2025', text: 'This massage is incredible. I went in feeling bloated and sluggish, and walked out feeling lighter, energized, and completely relaxed. My therapist was so skilled. I go monthly now — it is non-negotiable self-care.' },
-  { name: 'Monica G.', treatment: 'PRP Hair Restoration', category: 'Weight Loss', rating: 4, date: 'February 2025', text: 'I was skeptical at first, but after 4 PRP sessions my hair is noticeably thicker and I have seen new growth along my hairline. The team was patient and answered all my questions. Wish I had started sooner!' },
-  { name: 'Tiffany L.', treatment: 'Blood Tests & Longevity', category: 'Weight Loss', rating: 5, date: 'January 2025', text: 'Getting a full blood panel here was eye-opening. I found out my vitamin D, iron, and thyroid were all off. With their personalized protocol I have more energy, better sleep, and I finally feel like myself again.' },
-  { name: 'Priya S.', treatment: 'Prenatal Massage', category: 'Massages', rating: 5, date: 'April 2025', text: 'As a pregnant mama in my third trimester, this prenatal massage was pure heaven. The therapist was so gentle and knew exactly how to position me for comfort. I cried happy tears — it was that good.' },
-  { name: 'Elena V.', treatment: 'RF Skin Tightening', category: 'Skin Care', rating: 5, date: 'November 2024', text: 'My jaw and neck area were really bothering me but I did not want surgery. After 6 skin tightening sessions the difference is remarkable — lifted, firm, and natural. My friends keep asking what I have done!' },
-  { name: 'Keisha M.', treatment: 'Acne Treatment Facial', category: 'Skin Care', rating: 5, date: 'May 2025', text: 'I have had cystic acne for 10 years and nothing worked. After a customized acne protocol here, my skin is clearer than it has ever been. The team is patient, knowledgeable, and genuinely invested in my results.' },
+const featured = [
+  {
+    name: 'Daniela Arango',
+    rating: 5,
+    text: 'This place is amazing, they do it all! They have helped me lose the weight after having my second baby and heal my core. Highly recommend Giselle and Alyne for massages, they are excellent! The entire team is very friendly and accommodating. Giovanna is very passionate about what she does and really does put her all into every one of her clients. 10/10 recommend.',
+  },
+  {
+    name: null,
+    rating: 5,
+    text: 'I absolutely love seeing Renata for my beauty shots, amino acid injections, and CryoSlim sessions! She\'s incredibly gentle, informative, and genuinely cares about her clients\' results. Renata takes her time to explain every step, which makes the experience feel comfortable and personalized. I\'ve noticed a real difference in my energy levels, skin tone, and overall body contour since starting with her. She\'s the best — highly recommend booking with Renata if you want visible results and an amazing bedside manner!',
+  },
+  {
+    name: 'Angela Serrano',
+    rating: 5,
+    text: 'Absolutely incredible experience. Stefania has a true gift — not just in technique, but in intuition. Every movement felt intentional and deeply restorative. Her understanding of the body\'s pressure points was exceptional. I walked in tense and left feeling lighter, balanced, and genuinely renewed. Highly recommended for anyone looking for more than just a massage — this is healing, skill, and artistry combined.',
+  },
+  {
+    name: 'Marlena Fialho',
+    rating: 5,
+    text: 'Giovanna and her team are truly the best! I came in for post-surgery fibrosis treatment, and I\'ve been blown away by how knowledgeable and professional Giovanna is — it\'s been such an educational experience! Brenda has been fantastic with the massage sessions — super skilled and attentive. I\'m already planning to come back for detox treatments and Pilates. Highly recommend this place to anyone looking for expert care in a welcoming, supportive environment!',
+  },
 ]
-
-const categories = ['All', 'Weight Loss', 'Skin Care', 'Massages']
-
-const featured = {
-  name: 'Jessica R.',
-  treatment: 'Medical Weight Loss + Body Contouring',
-  text: 'I came to Advanced Med at my lowest point — 50 pounds overweight, exhausted, and convinced nothing would work. Dr. Okonkwo sat with me for a full hour during my evaluation and made me feel truly seen, not judged. We started with a blood panel that revealed my cortisol was through the roof and my thyroid was struggling. With their medical weight loss program, peptide support, and a series of body contouring sessions, I have lost 38 pounds in 7 months. But more than the number on the scale — I have my energy back, my confidence back, and I feel like myself for the first time in years. This team changed my life.',
-  rating: 5,
-  date: 'April 2025',
-}
 
 function Stars({ count }) {
   return (
@@ -37,9 +35,6 @@ function Stars({ count }) {
 }
 
 export default function Testimonials() {
-  const [active, setActive] = useState('All')
-  const filtered = active === 'All' ? all : all.filter((t) => t.category === active)
-
   return (
     <>
       <HeroPhoto
@@ -51,53 +46,27 @@ export default function Testimonials() {
         radialPos="bottom_right"
       />
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto">
-          {/* Filters */}
-          <div className="flex flex-wrap gap-2 justify-center mb-12">
-            {categories.map((cat) => (
-              <button key={cat} onClick={() => setActive(cat)}
-                className={`px-5 py-2 text-sm font-medium transition-colors border ${active === cat ? 'bg-espresso text-cream-100 border-espresso' : 'border-cream-300 bg-white text-espresso-500 hover:border-spa hover:text-espresso'}`}>
-                {cat}
-              </button>
-            ))}
-          </div>
-
-          {/* Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-            {filtered.map((t) => (
-              <div key={t.name + t.treatment} className="bg-white p-7 border border-cream-300 shadow-sm hover:shadow-md transition-shadow flex flex-col hover:border-spa">
-                <Stars count={t.rating} />
-                <p className="text-espresso-500 text-sm leading-relaxed my-4 italic flex-1">"{t.text}"</p>
-                <div className="border-t border-cream-300 pt-4">
-                  <p className="font-semibold text-espresso text-sm">{t.name}</p>
-                  <p className="text-spa text-xs font-medium mt-0.5">{t.treatment}</p>
-                  <p className="text-espresso-400 text-xs mt-0.5">{t.date}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Featured Story */}
-          <div className="bg-cream-200 p-10 md:p-14 border border-cream-300">
-            <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-4">Featured Story</p>
-            <Stars count={featured.rating} />
-            <blockquote className="font-serif text-xl md:text-2xl text-espresso leading-relaxed mt-6 mb-8 italic">
-              "{featured.text}"
-            </blockquote>
-            <div>
-              <p className="font-bold text-espresso">{featured.name}</p>
-              <p className="text-spa text-sm font-medium">{featured.treatment}</p>
-              <p className="text-espresso-400 text-sm">{featured.date}</p>
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-cream-100">
+        <div className="max-w-4xl mx-auto space-y-8">
+          {featured.map((r, i) => (
+            <div key={i} className="bg-white border border-cream-300 p-10 md:p-14">
+              <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-4">Featured Review</p>
+              <Stars count={r.rating} />
+              <blockquote className="font-serif text-xl md:text-2xl text-espresso leading-relaxed mt-6 mb-8 italic">
+                "{r.text}"
+              </blockquote>
+              {r.name && (
+                <p className="font-bold text-espresso">{r.name}</p>
+              )}
             </div>
-          </div>
+          ))}
         </div>
       </section>
 
       <section className="py-20 px-4 bg-espresso text-cream-200 text-center">
         <div className="max-w-3xl mx-auto">
           <h2 className="font-serif text-4xl font-bold mb-4">Ready to Write Your Own Story?</h2>
-          <p className="text-cream-300 mb-8">Join thousands of clients who have transformed their health and confidence at Advanced Med MedSpa Lounge.</p>
+          <p className="text-cream-300 mb-8">Join hundreds of clients who have transformed their health and confidence at Advanced Med MedSpa Lounge.</p>
           <a href="https://advancedmedspaofficial.janeapp.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-cream-100 hover:bg-white text-espresso text-[10px] tracking-widest uppercase font-medium px-10 py-4 transition-colors">
             Book Your First Appointment <ArrowRight size={16} />
           </a>
