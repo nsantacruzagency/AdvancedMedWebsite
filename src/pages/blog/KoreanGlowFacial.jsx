@@ -28,8 +28,8 @@ export default function KoreanGlowFacial() {
     <div className="bg-white">
       <HeroPhoto
         eyebrow="The Treatment Editorial Blog"
-        title={<>The Korean Glow<br />Facial</>}
-        subtitle="What it is, how it works, and why your skin will thank you for it."
+        title={<>The Korean Glow Facial</>}
+        subtitle="And what it actually does for your skin."
         gradient="from-espresso-800 via-spa-800 to-espresso-700"
         gradientDir="to-br"
         radialPos="top_right"
