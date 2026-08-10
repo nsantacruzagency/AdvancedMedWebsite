@@ -308,7 +308,7 @@ export default function Home() {
           {/* Spa Photos — overlapping */}
           <div className="relative w-full h-[320px] lg:h-[360px] overflow-hidden">
             {/* Back photo — flush left */}
-            <div className="absolute top-0 left-0 w-[68%] h-full overflow-hidden shadow-lg border-4 border-espresso">
+            <div className="absolute top-0 left-0 w-[68%] h-full overflow-hidden shadow-lg">
               <img
                 src="/images/spa-front-2.jpg"
                 alt="Advanced Med MedSpa front desk"
@@ -317,7 +317,7 @@ export default function Home() {
               />
             </div>
             {/* Front photo — starts at 46% so only ~1/4 of back photo is covered */}
-            <div className="absolute top-6 left-[46%] w-[68%] h-full overflow-hidden shadow-xl border-4 border-espresso z-10">
+            <div className="absolute top-6 left-[46%] w-[68%] h-full overflow-hidden shadow-xl z-10">
               <img
                 src="/images/spa-front-1.jpg"
                 alt="Advanced Med MedSpa reception"
