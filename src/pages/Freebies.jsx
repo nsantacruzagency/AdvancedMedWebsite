@@ -18,7 +18,7 @@ const faqItems = [
 const weeklySpecials = [
   {
     title: 'Free Korean Glow Facial + Free Skin Analysis',
-    desc: 'Book our signature three-in-one contour and lymphatic drainage massage and receive a complimentary Korean Glow Facial and a personalized skin analysis — on us.',
+    desc: 'Book our signature <u>Three-in-One Contour and Lymphatic Drainage Massage</u> and receive a complimentary Korean Glow Facial and a personalized skin analysis — on us.',
     expires: 'Aug 10 – 16',
     learnMore: {
       text: 'Curious about the Korean Glow Facial and what it actually does for your skin?',
@@ -88,7 +88,7 @@ export default function Freebies() {
                 <div key={i} className={`border p-8 flex flex-col sm:flex-row sm:items-start gap-4 ${s.locked ? 'bg-white border-cream-300 border-dashed opacity-70' : 'bg-cream-100 border-cream-300'}`}>
                   <div className="flex-1">
                     <h3 className={`font-serif text-xl font-bold mb-1 ${s.locked ? 'text-espresso-400' : 'text-espresso'}`}>{s.title}</h3>
-                    <p className="text-espresso-500 text-sm leading-relaxed">{s.desc}</p>
+                    <p className="text-espresso-500 text-sm leading-relaxed" dangerouslySetInnerHTML={{ __html: s.desc }} />
                     {s.learnMore && (
                       <p className="mt-4 text-sm text-espresso-500">
                         {s.learnMore.text}{' '}
@@ -102,11 +102,24 @@ export default function Freebies() {
                       </p>
                     )}
                   </div>
-                  <div className="flex-shrink-0 text-center">
+                  <div className="flex-shrink-0 text-center space-y-3">
                     <span
                       className={`inline-block text-[10px] font-semibold tracking-widest uppercase px-4 py-2 ${s.locked ? 'bg-cream-300 text-espresso-400' : 'text-cream-100'}`}
                       style={!s.locked ? { backgroundColor: '#d9542c' } : {}}
                     >{s.expires}</span>
+                    {!s.locked && (
+                      <div>
+                        <a
+                          href="https://advancedmedspaofficial.janeapp.com/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 text-[10px] font-semibold tracking-widest uppercase px-4 py-2 text-cream-100 transition-opacity hover:opacity-90"
+                          style={{ backgroundColor: '#7A8C6E' }}
+                        >
+                          Book Now <ArrowRight className="w-3 h-3" />
+                        </a>
+                      </div>
+                    )}
                   </div>
                 </div>
               ))}
