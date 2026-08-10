@@ -1,5 +1,4 @@
 import { ArrowRight } from 'lucide-react'
-import SectionHeader from '../components/SectionHeader'
 import HeroPhoto from '../components/HeroPhoto'
 
 const posts = [
@@ -55,7 +54,7 @@ export default function TreatmentEdit() {
       <HeroPhoto
         eyebrow="The Blog"
         title={<>The Treatment<br />Editorial Blog</>}
-        subtitle="Expert insight on aesthetics, wellness, and the science behind looking and feeling your best."
+        subtitle="Expert insight on aesthetics, wellness, and the science behind looking and feeling your best — written to help you make informed decisions about your body and your health."
         gradient="from-espresso-800 via-spa-800 to-espresso-700"
         gradientDir="to-br"
         radialPos="top_right"
@@ -64,11 +63,6 @@ export default function TreatmentEdit() {
       {/* Blog Grid */}
       <section className="py-20 px-6 bg-cream-100">
         <div className="max-w-7xl mx-auto">
-          <SectionHeader
-            eyebrow="Articles & Guides"
-            title="The Treatment Editorial Blog"
-            subtitle="In-depth articles on the treatments, science, and lifestyle behind Advanced Med — written to help you make informed decisions about your body and health."
-          />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
             {posts.map((post, i) => (
               <div
