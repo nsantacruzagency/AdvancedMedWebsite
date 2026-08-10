@@ -30,9 +30,9 @@ const treatments = [
     path: '/brazilian-butt',
   },
   {
-    title: 'Skin Concerns',
-    subtitle: 'Acne · Aging · Hyperpigmentation',
-    path: '/skin-concerns/acne',
+    title: 'Post-GLP-1 Skin Tightening',
+    subtitle: 'RF · EMS · Collagen Restoration',
+    path: '/post-glp1-skin-tightening',
   },
   {
     title: 'Post-Op Massages',
