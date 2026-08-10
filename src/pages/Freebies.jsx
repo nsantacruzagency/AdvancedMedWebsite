@@ -11,8 +11,23 @@ const faqItems = [
 ]
 
 const weeklySpecials = [
-  // Add weekly specials here — e.g.:
-  // { title: 'Free Add-On B12 Shot', desc: 'With any IV drip booked this week.', expires: 'This week only' },
+  {
+    title: 'Free Korean Glow Facial + Free Skin Analysis',
+    desc: 'Book any service this week and receive a complimentary Korean Glow Facial and a personalized skin analysis — on us.',
+    expires: 'Aug 10 – 16',
+  },
+  {
+    title: '🔒 Locked — Revealed Sunday Morning',
+    desc: 'Check back Sunday morning to see what\'s coming for this week. First come, first served.',
+    expires: 'Aug 17 – 23',
+    locked: true,
+  },
+  {
+    title: '🔒 Locked — Revealed Sunday Morning',
+    desc: 'Check back Sunday morning to see what\'s coming for this week. First come, first served.',
+    expires: 'Aug 24 – 30',
+    locked: true,
+  },
 ]
 
 const monthlySpecials = [
@@ -55,13 +70,13 @@ export default function Freebies() {
           {weeklySpecials.length > 0 ? (
             <div className="space-y-5">
               {weeklySpecials.map((s, i) => (
-                <div key={i} className="bg-cream-100 border border-cream-300 p-8 flex flex-col sm:flex-row sm:items-center gap-4">
+                <div key={i} className={`border p-8 flex flex-col sm:flex-row sm:items-center gap-4 ${s.locked ? 'bg-white border-cream-300 border-dashed opacity-70' : 'bg-cream-100 border-cream-300'}`}>
                   <div className="flex-1">
-                    <h3 className="font-serif text-xl font-bold text-espresso mb-1">{s.title}</h3>
+                    <h3 className={`font-serif text-xl font-bold mb-1 ${s.locked ? 'text-espresso-400' : 'text-espresso'}`}>{s.title}</h3>
                     <p className="text-espresso-500 text-sm leading-relaxed">{s.desc}</p>
                   </div>
                   <div className="flex-shrink-0 text-center">
-                    <span className="inline-block bg-spa text-cream-100 text-[10px] font-semibold tracking-widest uppercase px-4 py-2">{s.expires}</span>
+                    <span className={`inline-block text-[10px] font-semibold tracking-widest uppercase px-4 py-2 ${s.locked ? 'bg-cream-300 text-espresso-400' : 'bg-spa text-cream-100'}`}>{s.expires}</span>
                   </div>
                 </div>
               ))}
