@@ -317,7 +317,7 @@ export default function Home() {
               />
             </div>
             {/* Front photo — starts at 46%, shorter so bottom doesn't reach section edge */}
-            <div className="absolute top-20 left-[46%] w-[68%] h-[80%] overflow-hidden shadow-xl z-10">
+            <div className="absolute top-20 left-[46%] w-[68%] h-[92%] overflow-hidden shadow-xl z-10">
               <img
                 src="/images/spa-front-1.jpg"
                 alt="Advanced Med MedSpa reception"
