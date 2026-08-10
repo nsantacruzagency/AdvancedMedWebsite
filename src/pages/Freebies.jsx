@@ -13,7 +13,7 @@ const faqItems = [
 const weeklySpecials = [
   {
     title: 'Free Korean Glow Facial + Free Skin Analysis',
-    desc: 'Book any service this week and receive a complimentary Korean Glow Facial and a personalized skin analysis — on us.',
+    desc: 'Book our signature three-in-one contour and lymphatic drainage massage and receive a complimentary Korean Glow Facial and a personalized skin analysis — on us.',
     expires: 'Aug 10 – 16',
   },
   {
@@ -50,7 +50,7 @@ export default function Freebies() {
       {/* Intro */}
       <section className="py-16 px-6 bg-cream-100">
         <div className="max-w-2xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-spa text-cream-100 text-[10px] font-medium tracking-widest uppercase px-5 py-2.5 mb-8">
+          <div className="inline-flex items-center gap-2 text-cream-100 text-[10px] font-medium tracking-widest uppercase px-5 py-2.5 mb-8" style={{ backgroundColor: '#d9542c' }}>
             <Gift className="w-4 h-4" />
             Always rotating — bookmark this page
           </div>
@@ -76,7 +76,10 @@ export default function Freebies() {
                     <p className="text-espresso-500 text-sm leading-relaxed">{s.desc}</p>
                   </div>
                   <div className="flex-shrink-0 text-center">
-                    <span className={`inline-block text-[10px] font-semibold tracking-widest uppercase px-4 py-2 ${s.locked ? 'bg-cream-300 text-espresso-400' : 'bg-spa text-cream-100'}`}>{s.expires}</span>
+                    <span
+                      className={`inline-block text-[10px] font-semibold tracking-widest uppercase px-4 py-2 ${s.locked ? 'bg-cream-300 text-espresso-400' : 'text-cream-100'}`}
+                      style={!s.locked ? { backgroundColor: '#d9542c' } : {}}
+                    >{s.expires}</span>
                   </div>
                 </div>
               ))}
