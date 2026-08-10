@@ -5,8 +5,12 @@ import FAQ from '../components/FAQ'
 
 const faqItems = [
   {
-    q: 'How do I obtain my freebie?',
+    q: 'How do I obtain my weekly freebie?',
     a: 'To claim your freebie, you must call the spa directly and lock in the specific time you will be coming in to receive the treatment. Freebies are not automatically reserved — you must call to secure your spot. Freebie spots are limited, and each offer can only be claimed within its active time frame: weekly freebies must be redeemed that week, and monthly freebies must be redeemed that month. Any requests made outside of the stated time frame will not be honored, no exceptions.',
+  },
+  {
+    q: 'How many weekly freebies can I have?',
+    a: 'You can only have one weekly freebie per month. But keep an eye out — there\'s always something new to try.',
   },
 ]
 
