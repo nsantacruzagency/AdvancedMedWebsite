@@ -271,7 +271,7 @@ export default function Home() {
       </section>
 
       {/* ── ABOUT STRIP ─────────────────────────────── */}
-      <section className="bg-espresso py-6 px-5 sm:px-8 lg:px-12">
+      <section className="bg-espresso py-16 px-5 sm:px-8 lg:px-12">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div>
             <p className="text-[10px] font-medium tracking-widest uppercase text-spa mb-6" style={{ letterSpacing: '0.28em' }}>
@@ -316,8 +316,8 @@ export default function Home() {
                 loading="lazy"
               />
             </div>
-            {/* Front photo — starts at 46%, taller so it extends below the back photo */}
-            <div className="absolute top-20 left-[46%] w-[68%] h-full overflow-hidden shadow-xl z-10">
+            {/* Front photo — starts at 46%, shorter so bottom doesn't reach section edge */}
+            <div className="absolute top-20 left-[46%] w-[68%] h-[80%] overflow-hidden shadow-xl z-10">
               <img
                 src="/images/spa-front-1.jpg"
                 alt="Advanced Med MedSpa reception"
