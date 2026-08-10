@@ -45,7 +45,7 @@ const monthlySpecials = [
     title: 'Grand Reopening Party',
     subtitle: 'New look, new services, same name.',
     desc: `We're welcoming new and past clients to celebrate the growth of Advanced Med Spa — and we want YOU there.\n\nJoin us for a chance to win over $10,000 in free treatments, ranging from our Non-Surgical Lipo packages to our Non-Surgical Facelift package. Save $500–$2,000 on any purchase made at the event. Meet and speak directly with our providers to support your anti-aging, weight loss, and skincare journey. Plus — free gifts, samples, and raffle tickets for everyone who attends.\n\nDon't miss this. It's going to be big.`,
-    expires: 'August 27 — Thursday, 4–8 PM',
+    expires: 'Date to Be Announced',
     highlights: ['Free food', 'Free drinks', '$10,000 in free treatments'],
   },
 ]
