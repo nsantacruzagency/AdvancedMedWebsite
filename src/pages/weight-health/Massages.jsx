@@ -36,7 +36,7 @@ export default function Massages() {
     <div className="bg-white">
       <HeroPhoto
         eyebrow="Body Contouring"
-        title={<>Brazilian 3-in-1<br />Contouring Massage</>}
+        title={<>Brazilian Lymphatic<br />Drainage Massage</>}
         subtitle="Born in Brazil. Perfected through decades of clinical application. The most effective non-surgical body contouring massage in the world — and it's our signature."
         gradient="from-spa-800 via-espresso-800 to-espresso-700"
         gradientDir="to-tr"
