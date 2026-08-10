@@ -1,6 +1,14 @@
 import { ArrowRight, CheckCircle, Gift, Calendar } from 'lucide-react'
 import SectionHeader from '../components/SectionHeader'
 import HeroPhoto from '../components/HeroPhoto'
+import FAQ from '../components/FAQ'
+
+const faqItems = [
+  {
+    q: 'How do I obtain my freebie?',
+    a: 'To claim your freebie, you must call the spa directly and lock in the specific time you will be coming in to receive the treatment. Freebies are not automatically reserved — you must call to secure your spot. Freebie spots are limited, and each offer can only be claimed within its active time frame: weekly freebies must be redeemed that week, and monthly freebies must be redeemed that month. Any requests made outside of the stated time frame will not be honored, no exceptions.',
+  },
+]
 
 const weeklySpecials = [
   // Add weekly specials here — e.g.:
@@ -114,6 +122,8 @@ export default function Freebies() {
           </a>
         </div>
       </section>
+
+      <FAQ items={faqItems} />
     </div>
   )
 }
