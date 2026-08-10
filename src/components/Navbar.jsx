@@ -4,9 +4,9 @@ import { Menu, X, ChevronDown } from 'lucide-react'
 import Logo from './Logo'
 
 const aboutLinks = [
+  { label: 'More Services',               path: '/partner-services' },
   { label: 'Free Personalized Evaluation', path: '/personalized-evaluation' },
   { label: 'Memberships',                  path: '/memberships' },
-  { label: 'Partner Services',             path: '/partner-services' },
   { label: 'Testimonials',                 path: '/testimonials' },
   { label: 'The Lounge + Team',            path: '/about' },
   { label: 'The Treatment Editorial Blog', path: '/treatment-edit' },
