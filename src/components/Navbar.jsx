@@ -4,10 +4,11 @@ import { Menu, X, ChevronDown } from 'lucide-react'
 import Logo from './Logo'
 
 const aboutLinks = [
-  { label: 'Memberships',        path: '/memberships' },
-  { label: 'Partner Services',   path: '/partner-services' },
-  { label: 'Testimonials',       path: '/testimonials' },
-  { label: 'The Lounge + Team',  path: '/about' },
+  { label: 'Free Personalized Evaluation', path: '/personalized-evaluation' },
+  { label: 'Memberships',                  path: '/memberships' },
+  { label: 'Partner Services',             path: '/partner-services' },
+  { label: 'Testimonials',                 path: '/testimonials' },
+  { label: 'The Lounge + Team',            path: '/about' },
 ]
 
 const bodyAestheticsLinks = [
@@ -87,16 +88,16 @@ export default function Navbar() {
           {/* Desktop nav */}
           <div className="hidden lg:flex items-center gap-7">
 
-            {/* Free Personalized Evaluation */}
+            {/* Free Monthly Treatments */}
             <Link
-              to="/personalized-evaluation"
+              to="/freebies"
               className={`text-[11px] font-medium tracking-widest uppercase transition-colors ${
-                location.pathname === '/personalized-evaluation'
+                location.pathname === '/freebies'
                   ? 'text-spa'
                   : 'text-espresso-600 hover:text-espresso'
               }`}
             >
-              Free Personalized Evaluation
+              Free Monthly Treatments
             </Link>
 
             {/* Skin Concerns */}
@@ -202,11 +203,11 @@ export default function Navbar() {
           <div className="space-y-1">
 
             <Link
-              to="/personalized-evaluation"
+              to="/freebies"
               className="block py-2 text-xs tracking-widest uppercase font-medium text-espresso-600 hover:text-espresso pb-3 border-b border-cream-300 mb-2"
               onClick={() => setMobileOpen(false)}
             >
-              Free Personalized Evaluation
+              Free Monthly Treatments
             </Link>
 
             <p className="text-[9px] font-medium tracking-widest uppercase text-spa pt-3 pb-1">
