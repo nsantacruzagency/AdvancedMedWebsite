@@ -4,14 +4,6 @@ import HeroPhoto from '../../components/HeroPhoto'
 import FAQ from '../../components/FAQ'
 import BeforeAfter from '../../components/BeforeAfter'
 
-const detoxBenefits = [
-  'Accelerates metabolic rate and calorie burning',
-  'Flushes toxins that disrupt fat metabolism',
-  'Reduces bloating and improves digestion',
-  'Enhances lymphatic circulation and drainage',
-  'Balances gut microbiome for optimal absorption',
-]
-
 const faqItems = [
   {
     q: 'What is non-surgical lipo?',
@@ -134,39 +126,87 @@ export default function NonSurgicalLipo() {
         ]}
       />
 
-      {/* Detox & Metabolic Reset */}
+      {/* Holistic Approach Add-On */}
       <section className="py-24 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-              <SectionHeader eyebrow="Foundational Wellness" title="Detox & Metabolic Reset" center={false} />
+          <SectionHeader
+            eyebrow="The Add-On That Makes the Difference"
+            title="Our Holistic Approach to Non-Surgical Lipo"
+            subtitle="We don't just use machines. We look at the full picture — because lasting fat loss requires more than freezing fat cells."
+          />
+          <p className="text-espresso-500 leading-relaxed max-w-3xl mx-auto text-center mb-16">
+            True, lasting body transformation happens when you address the environment your fat cells live in — not just the fat cells themselves. Chronic stress, toxin accumulation, sluggish lymphatics, and cortisol dysregulation all actively work against fat loss, even after successful fat cell destruction. Our holistic add-on protocols remove these obstacles so your results go further and last longer.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-12 mb-16">
+            {/* Detox & Metabolic Reset */}
+            <div className="bg-cream-100 p-10 border border-cream-300">
+              <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-3">Foundational Wellness</p>
+              <h3 className="font-serif text-2xl font-bold text-espresso mb-5">Detox & Metabolic Reset</h3>
               <p className="text-espresso-500 leading-relaxed mb-6">
-                True fat reduction begins beneath the surface. Environmental toxins, processed foods, and chronic stress accumulate in the body's tissues, disrupting the enzymes and hormones responsible for fat metabolism. Our Detox &amp; Metabolic Reset protocols use evidence-based modalities to clear this burden and reawaken your body's natural fat-burning capacity.
+                Environmental toxins, processed foods, and chronic stress accumulate in the body's tissues, disrupting the enzymes responsible for fat metabolism. Our Detox &amp; Metabolic Reset protocols use evidence-based modalities to clear this burden and reawaken your body's natural fat-burning capacity.
               </p>
-              <p className="text-espresso-500 leading-relaxed mb-8">
-                <strong className="text-espresso">Infrared therapy</strong> penetrates deep into tissues, raising core temperature to mobilize stored toxins and boost mitochondrial energy production. <strong className="text-espresso">Lymphatic drainage</strong> accelerates the removal of metabolic waste. Combined with targeted <strong className="text-espresso">gut health support</strong>, these therapies restore the foundation your body needs.
-              </p>
-              <ul className="space-y-3">
-                {detoxBenefits.map((b, i) => (
-                  <li key={i} className="flex items-start gap-3 text-espresso-500">
-                    <CheckCircle className="w-5 h-5 text-spa flex-shrink-0 mt-0.5" />
+              <div className="space-y-3 mb-6">
+                {[
+                  { name: 'Infrared Sauna Therapy', desc: 'Deep tissue heating that mobilizes toxins, supports cellular energy, and promotes natural detoxification.' },
+                  { name: 'Lymphatic Drainage', desc: 'Stimulates lymph flow, reduces water retention, and accelerates removal of metabolic waste.' },
+                  { name: 'Gut Health Optimization', desc: 'Probiotic and nutritional protocols to restore microbiome balance and enhance nutrient absorption.' },
+                ].map((item) => (
+                  <div key={item.name} className="bg-white p-4 border border-cream-300">
+                    <h4 className="font-serif font-bold text-espresso text-sm mb-1">{item.name}</h4>
+                    <p className="text-espresso-500 text-xs leading-relaxed">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+              <ul className="space-y-2">
+                {[
+                  'Accelerates metabolic rate and calorie burning',
+                  'Reduces bloating and improves digestion',
+                  'Enhances lymphatic circulation and drainage',
+                  'Balances gut microbiome for optimal absorption',
+                ].map((b, i) => (
+                  <li key={i} className="flex items-start gap-3 text-espresso-500 text-sm">
+                    <CheckCircle className="w-4 h-4 text-spa flex-shrink-0 mt-0.5" />
                     {b}
                   </li>
                 ))}
               </ul>
             </div>
-            <div className="bg-cream-100 p-10 flex flex-col gap-6 border border-cream-300">
-              {[
-                { name: 'Infrared Sauna Therapy', desc: 'Deep tissue heating that mobilizes toxins, supports cellular energy, and promotes natural detoxification.' },
-                { name: 'Lymphatic Drainage', desc: 'Manual and mechanical techniques to stimulate lymph flow, reduce water retention, and clear inflammatory waste.' },
-                { name: 'Gut Health Optimization', desc: 'Targeted probiotic and nutritional protocols to restore microbiome balance and enhance nutrient absorption.' },
-              ].map((item) => (
-                <div key={item.name} className="bg-white p-5 shadow-sm border border-cream-300">
-                  <h4 className="font-serif font-bold text-espresso mb-1">{item.name}</h4>
-                  <p className="text-espresso-500 text-sm">{item.desc}</p>
-                </div>
-              ))}
+
+            {/* Cortisol & Hormonal Balance */}
+            <div className="bg-espresso p-10 text-cream-200">
+              <p className="text-spa-300 text-[10px] font-medium tracking-widest uppercase mb-3">Understanding the Root Cause</p>
+              <h3 className="font-serif text-2xl font-bold text-cream-100 mb-5">The Cortisol–Fat Connection</h3>
+              <p className="text-cream-300 leading-relaxed mb-4">
+                Cortisol — your body's primary stress hormone — is one of the most overlooked drivers of stubborn fat. When cortisol stays chronically elevated, it signals the body to store fat preferentially in the abdomen, triggers cravings for high-calorie foods, suppresses metabolic function, and promotes insulin resistance.
+              </p>
+              <p className="text-cream-300 leading-relaxed mb-6">
+                The good news: our holistic treatments naturally support cortisol balance as a side effect of what they do. Infrared therapy lowers cortisol and promotes parasympathetic recovery. Lymphatic drainage reduces systemic inflammation. Gut health support stabilizes blood sugar and reduces stress on the endocrine system. We're not prescribing hormone supplements — we're creating the conditions your body needs to regulate itself.
+              </p>
+              <div className="grid grid-cols-2 gap-3">
+                {[
+                  'Reduces cortisol-driven belly fat',
+                  'Supports natural metabolic balance',
+                  'Improves insulin sensitivity',
+                  'Enhances sleep quality',
+                  'Lowers systemic inflammation',
+                  'Restores fat-burning mode',
+                ].map((tag) => (
+                  <div key={tag} className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-spa-300 flex-shrink-0 mt-0.5" />
+                    <span className="text-cream-300 text-xs">{tag}</span>
+                  </div>
+                ))}
+              </div>
             </div>
+          </div>
+
+          <div className="bg-cream-200 border border-cream-300 p-10 text-center">
+            <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-3">The Advanced Med Difference</p>
+            <h3 className="font-serif text-2xl font-bold text-espresso mb-4">Machines Are Just the Beginning</h3>
+            <p className="text-espresso-500 leading-relaxed max-w-2xl mx-auto">
+              Any clinic can freeze fat. What makes our results different is what happens around the treatment — the detox support, the lymphatic work, the metabolic reset that ensures your body is primed to eliminate what we destroy and prevent new accumulation. This holistic add-on layer is what separates short-term results from lasting transformation.
+            </p>
           </div>
         </div>
       </section>
