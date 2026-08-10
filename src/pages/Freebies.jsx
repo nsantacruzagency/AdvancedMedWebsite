@@ -22,7 +22,7 @@ const weeklySpecials = [
     expires: 'Aug 10 – 16',
     learnMore: {
       text: 'Curious about the Korean Glow Facial and what it actually does for your skin?',
-      linkText: 'Read more on The Treatment Editorial Blog',
+      linkText: 'Learn more here →',
       href: '/treatment-edit/korean-glow-facial',
     },
   },
@@ -97,7 +97,7 @@ export default function Freebies() {
                           className="font-medium underline underline-offset-2 transition-colors"
                           style={{ color: '#d9542c' }}
                         >
-                          {s.learnMore.linkText} →
+                          {s.learnMore.linkText}
                         </Link>
                       </p>
                     )}
