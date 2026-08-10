@@ -101,25 +101,6 @@ export default function Navbar() {
               Free Monthly Treatments
             </Link>
 
-            {/* Skin Concerns */}
-            <div
-              className="relative"
-              onMouseEnter={() => setOpenDropdown('skin')}
-              onMouseLeave={() => setOpenDropdown(null)}
-            >
-              <button
-                className={`flex items-center gap-1 text-[11px] font-medium tracking-widest uppercase transition-colors ${
-                  isUnder('/skin-concerns')
-                    ? 'text-spa'
-                    : 'text-espresso-600 hover:text-espresso'
-                }`}
-              >
-                Skin Concerns
-                <ChevronDown size={11} strokeWidth={1.5} />
-              </button>
-              <Dropdown links={skinLinks} isOpen={openDropdown === 'skin'} />
-            </div>
-
             {/* Body Aesthetics */}
             <div
               className="relative"
@@ -137,6 +118,25 @@ export default function Navbar() {
                 <ChevronDown size={11} strokeWidth={1.5} />
               </button>
               <Dropdown links={bodyAestheticsLinks} isOpen={openDropdown === 'body'} />
+            </div>
+
+            {/* Skin Concerns */}
+            <div
+              className="relative"
+              onMouseEnter={() => setOpenDropdown('skin')}
+              onMouseLeave={() => setOpenDropdown(null)}
+            >
+              <button
+                className={`flex items-center gap-1 text-[11px] font-medium tracking-widest uppercase transition-colors ${
+                  isUnder('/skin-concerns')
+                    ? 'text-spa'
+                    : 'text-espresso-600 hover:text-espresso'
+                }`}
+              >
+                Skin Concerns
+                <ChevronDown size={11} strokeWidth={1.5} />
+              </button>
+              <Dropdown links={skinLinks} isOpen={openDropdown === 'skin'} />
             </div>
 
             {/* Stem Cells & Wellness */}
@@ -205,16 +205,17 @@ export default function Navbar() {
 
             <Link
               to="/freebies"
-              className="block py-2 text-xs tracking-widest uppercase font-medium text-espresso-600 hover:text-espresso pb-3 border-b border-cream-300 mb-2"
+              className="flex items-center justify-between py-2 text-xs tracking-widest uppercase font-medium text-espresso-600 hover:text-espresso pb-3 border-b border-cream-300 mb-2"
               onClick={() => setMobileOpen(false)}
             >
               Free Monthly Treatments
+              <ArrowRight size={13} className="text-spa flex-shrink-0" />
             </Link>
 
             <p className="text-[9px] font-medium tracking-widest uppercase text-spa pt-3 pb-1">
-              Skin Concerns
+              The Perfect Body
             </p>
-            {skinLinks.map((l) => (
+            {bodyAestheticsLinks.map((l) => (
               <Link key={l.path} to={l.path}
                 className="block py-2 text-xs tracking-wide text-espresso-600 hover:text-espresso"
                 onClick={() => setMobileOpen(false)}>
@@ -223,9 +224,9 @@ export default function Navbar() {
             ))}
 
             <p className="text-[9px] font-medium tracking-widest uppercase text-spa pt-4 pb-1">
-              The Perfect Body
+              Skin Concerns
             </p>
-            {bodyAestheticsLinks.map((l) => (
+            {skinLinks.map((l) => (
               <Link key={l.path} to={l.path}
                 className="block py-2 text-xs tracking-wide text-espresso-600 hover:text-espresso"
                 onClick={() => setMobileOpen(false)}>
