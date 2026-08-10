@@ -271,8 +271,8 @@ export default function Home() {
       </section>
 
       {/* ── ABOUT STRIP ─────────────────────────────── */}
-      <section className="bg-espresso py-24 px-5 sm:px-8 lg:px-12">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+      <section className="bg-espresso py-12 px-5 sm:px-8 lg:px-12">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-[10px] font-medium tracking-widest uppercase text-spa mb-6" style={{ letterSpacing: '0.28em' }}>
               Our Philosophy
@@ -306,9 +306,9 @@ export default function Home() {
           </div>
 
           {/* Spa Photos — overlapping */}
-          <div className="relative w-full h-64 lg:h-72">
+          <div className="relative w-full h-80 lg:h-96">
             {/* Back photo — left side */}
-            <div className="absolute top-0 left-0 w-[56%] h-full overflow-hidden shadow-lg border-4 border-espresso">
+            <div className="absolute top-0 left-0 w-[62%] h-full overflow-hidden shadow-lg border-4 border-espresso">
               <img
                 src="/images/spa-front-2.jpg"
                 alt="Advanced Med MedSpa front desk"
@@ -317,7 +317,7 @@ export default function Home() {
               />
             </div>
             {/* Front photo — right side, slightly lower, in front */}
-            <div className="absolute top-6 right-0 w-[56%] h-full overflow-hidden shadow-xl border-4 border-espresso z-10">
+            <div className="absolute top-6 right-0 w-[62%] h-full overflow-hidden shadow-xl border-4 border-espresso z-10">
               <img
                 src="/images/spa-front-1.jpg"
                 alt="Advanced Med MedSpa reception"
