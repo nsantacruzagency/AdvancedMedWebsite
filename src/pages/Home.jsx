@@ -297,12 +297,14 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <Link
-              to="/about"
+            <a
+              href="https://www.advancedmedspaofficial.com/personalized-evaluation"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-3 mt-10 text-cream-200 text-[10px] font-medium tracking-widest uppercase border-b border-spa pb-0.5 hover:text-spa transition-colors"
             >
-              Learn Our Story <ArrowRight size={12} />
-            </Link>
+              Explore Protocol Creation <ArrowRight size={12} />
+            </a>
           </div>
 
           {/* Spa Photos — overlapping */}
