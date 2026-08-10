@@ -306,20 +306,20 @@ export default function Home() {
           </div>
 
           {/* Spa Photos — overlapping */}
-          <div className="relative w-full h-80 lg:h-96">
-            {/* Back photo — offset top-left */}
-            <div className="absolute top-0 left-0 w-4/5 aspect-[4/3] overflow-hidden shadow-lg">
+          <div className="relative w-full h-64 lg:h-72">
+            {/* Back photo — left side */}
+            <div className="absolute top-0 left-0 w-[56%] h-full overflow-hidden shadow-lg border-4 border-espresso">
               <img
-                src="/images/spa-front-1.jpg"
+                src="/images/spa-front-2.jpg"
                 alt="Advanced Med MedSpa front desk"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
             </div>
-            {/* Front photo — offset bottom-right, overlapping */}
-            <div className="absolute bottom-0 right-0 w-4/5 aspect-[4/3] overflow-hidden shadow-xl border-4 border-espresso">
+            {/* Front photo — right side, slightly lower, in front */}
+            <div className="absolute top-6 right-0 w-[56%] h-full overflow-hidden shadow-xl border-4 border-espresso z-10">
               <img
-                src="/images/spa-front-2.jpg"
+                src="/images/spa-front-1.jpg"
                 alt="Advanced Med MedSpa reception"
                 className="w-full h-full object-cover"
                 loading="lazy"
