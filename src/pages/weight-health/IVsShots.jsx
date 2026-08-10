@@ -20,7 +20,7 @@ const shots = [
   { name: 'Lipo-C (MIC) Shot', desc: 'Methionine, Inositol, Choline + B12 — a powerful fat-burning cocktail that accelerates metabolism and targets stored fat.' },
   { name: 'Glutathione', desc: "The body's master antioxidant — reduces oxidative stress, brightens skin, supports liver detox, and boosts immunity." },
   { name: 'Vitamin D3', desc: 'Critical for bone health, immune function, mood regulation, and hormonal balance — most adults are deficient.' },
-  { name: 'Toradol (Anti-Inflammatory)', desc: 'Fast-acting pain and inflammation relief — ideal for post-workout soreness, headaches, or post-procedure recovery.' },
+  { name: 'NAD+ Shot', desc: 'A concentrated intramuscular dose of nicotinamide adenine dinucleotide — supports cellular energy, mitochondrial function, brain clarity, and anti-aging at the cellular level.' },
   { name: 'Biotin', desc: 'Supports hair growth, nail strength, and skin health from within.' },
 ]
 

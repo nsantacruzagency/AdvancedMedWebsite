@@ -19,16 +19,8 @@ const longevityServices = [
     desc: 'NAD+ is a critical coenzyme that declines with age — fueling cellular energy (ATP), DNA repair, and sirtuin activation. IV NAD+ therapy dramatically raises cellular NAD+ levels, supporting mitochondrial function, mental clarity, metabolic health, and longevity pathways that oral supplements cannot match.',
   },
   {
-    name: 'Hormone Optimization',
-    desc: 'Declining hormones are among the most powerful drivers of aging — affecting energy, body composition, cognition, libido, mood, and disease risk. Our evidence-based hormone optimization protocols restore levels to youthful ranges using bioidentical hormones, guided entirely by your lab data.',
-  },
-  {
     name: 'Anti-Aging Peptide Protocols',
     desc: 'Targeted peptide therapies including sermorelin, ipamorelin, epithalon, and thymosin beta-4 support growth hormone release, cellular senescence control, immune modulation, and tissue regeneration — addressing aging at the molecular level.',
-  },
-  {
-    name: 'Telomere & Methylation Testing',
-    desc: 'Advanced biomarkers beyond standard blood work — including telomere length assessment and epigenetic methylation testing — provide a biological age estimate and identify the fastest-aging systems in your body so we can target interventions most precisely.',
   },
 ]
 
