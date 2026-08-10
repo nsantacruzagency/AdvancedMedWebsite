@@ -119,22 +119,24 @@ export default function KoreanGlowFacial() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-20 px-6 bg-espresso text-center">
+      {/* CTA Card */}
+      <section className="py-16 px-6 bg-white">
         <div className="max-w-2xl mx-auto">
-          <p className="text-spa-300 text-[10px] font-medium tracking-widest uppercase mb-4">Ready to Glow?</p>
-          <h2 className="font-serif text-4xl font-bold text-cream-100 mb-4">Book Your Korean Glow Facial</h2>
-          <p className="text-cream-300 text-lg mb-10 leading-relaxed">
-            Experience the difference of medical-grade Korean skincare — and leave with that luminous, glass-skin glow the same day.
-          </p>
-          <a
-            href="https://advancedmedspaofficial.janeapp.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-cream-100 hover:bg-white text-espresso text-[10px] tracking-widest uppercase font-medium px-10 py-4 transition-all duration-300"
-          >
-            Book Now <ArrowRight className="w-4 h-4" />
-          </a>
+          <div className="rounded-2xl px-10 py-12 text-center" style={{ backgroundColor: '#2D4A3E' }}>
+            <h2 className="font-serif text-2xl font-bold text-cream-100 mb-4">Ready to see for yourself?</h2>
+            <p className="text-cream-300 leading-relaxed mb-8">
+              Book a consultation and get a plan built around your goals — not a generic package.
+            </p>
+            <a
+              href="https://advancedmedspaofficial.janeapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-cream-100 text-[10px] tracking-widest uppercase font-semibold px-8 py-4 transition-all duration-300 hover:opacity-90"
+              style={{ backgroundColor: '#d9542c' }}
+            >
+              Book a Consultation <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
         </div>
       </section>
     </div>
