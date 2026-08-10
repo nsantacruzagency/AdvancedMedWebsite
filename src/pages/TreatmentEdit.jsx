@@ -1,5 +1,10 @@
 import { ArrowRight } from 'lucide-react'
+import { Link } from 'react-router-dom'
 import HeroPhoto from '../components/HeroPhoto'
+
+const articles = [
+  { title: 'Curious About the Korean Glow Facial and What It Actually Does for Your Skin?', path: '/treatment-edit/korean-glow-facial' },
+]
 
 const posts = [
   { category: 'Fat Loss', title: 'What Is Cryo Contour and How Does It Actually Work?', date: 'Coming Soon' },
@@ -116,6 +121,28 @@ export default function TreatmentEdit() {
           </div>
         </div>
       </section>
+
+      {/* More Articles */}
+      {articles.length > 0 && (
+        <section className="py-16 px-6 bg-white border-t border-cream-300">
+          <div className="max-w-7xl mx-auto">
+            <p className="text-[10px] font-semibold tracking-widest uppercase text-espresso-400 mb-6">More Articles</p>
+            <ul className="space-y-4">
+              {articles.map((a) => (
+                <li key={a.path}>
+                  <Link
+                    to={a.path}
+                    className="inline-flex items-center gap-2 font-serif text-lg text-espresso hover:text-spa transition-colors group"
+                  >
+                    {a.title}
+                    <ArrowRight size={15} className="group-hover:translate-x-1 transition-transform flex-shrink-0" />
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
 
       {/* CTA */}
       <section className="py-20 px-6 bg-espresso text-cream-200 text-center">

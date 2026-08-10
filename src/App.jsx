@@ -13,6 +13,7 @@ import Products from './pages/Products'
 import PersonalizedEvaluation from './pages/PersonalizedEvaluation'
 import Freebies from './pages/Freebies'
 import TreatmentEdit from './pages/TreatmentEdit'
+import KoreanGlowFacial from './pages/blog/KoreanGlowFacial'
 
 // Body Aesthetics
 import NonInvasiveWeightLoss from './pages/weight-health/NonInvasiveWeightLoss'
@@ -57,6 +58,7 @@ function App() {
             <Route path="/personalized-evaluation" element={<PersonalizedEvaluation />} />
             <Route path="/freebies" element={<Freebies />} />
             <Route path="/treatment-edit" element={<TreatmentEdit />} />
+            <Route path="/treatment-edit/korean-glow-facial" element={<KoreanGlowFacial />} />
 
             {/* Body Aesthetics */}
             <Route path="/non-invasive-weight-loss" element={<NonInvasiveWeightLoss />} />

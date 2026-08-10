@@ -23,7 +23,7 @@ const weeklySpecials = [
     learnMore: {
       text: 'Curious about the Korean Glow Facial and what it actually does for your skin?',
       linkText: 'Read more on The Treatment Editorial Blog',
-      href: '/treatment-edit',
+      href: '/treatment-edit/korean-glow-facial',
     },
   },
   {
