@@ -305,8 +305,15 @@ export default function Home() {
             </Link>
           </div>
 
-          {/* Before & After Carousel */}
-          <BeforeAfterCarousel />
+          {/* Spa Photo */}
+          <div className="relative w-full aspect-[4/5] overflow-hidden">
+            <img
+              src="/images/lounge-wide.jpeg"
+              alt="Advanced Med MedSpa Lounge"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-espresso/10" />
+          </div>
         </div>
       </section>
 

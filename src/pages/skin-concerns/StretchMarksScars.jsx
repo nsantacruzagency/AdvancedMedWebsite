@@ -1,48 +1,61 @@
-import { Link } from 'react-router-dom'
-import { ArrowRight, CheckCircle, AlertCircle, Layers, Zap, Sparkles, Shield } from 'lucide-react'
+import { ArrowRight, CheckCircle, AlertCircle, Layers, Zap } from 'lucide-react'
 import SectionHeader from '../../components/SectionHeader'
 import HeroPhoto from '../../components/HeroPhoto'
 import FAQ from '../../components/FAQ'
 import BeforeAfter from '../../components/BeforeAfter'
 
-const types = [
+const surgicalScarSections = [
   {
-    name: 'Stretch Marks (Striae)',
-    desc: 'Caused by rapid stretching of the skin during pregnancy, puberty, weight fluctuations, or muscle building. New (red/purple) stretch marks respond faster than mature (white/silver) ones.',
-    responsive: 'Highly treatable when addressed early',
-    icon: <Layers className="w-6 h-6 text-spa" />,
+    title: 'C-Section Scars',
+    eyebrow: 'Post-Cesarean',
+    desc: 'C-section scars sit low on the abdomen along the bikini line and are among the most common surgical scars we treat. They can become raised, thickened, hyperpigmented, or tethered to the underlying tissue — causing not just a cosmetic concern but sometimes discomfort or numbness around the scar.',
+    detail: 'Early intervention matters: beginning treatment once the incision is fully closed (typically 6–8 weeks post-delivery) significantly improves outcomes. Our protocols focus on breaking down fibrous scar tissue, reducing hyperpigmentation, flattening any raised edges, and restoring skin texture so the scar blends naturally with surrounding skin.',
+    benefits: [
+      'Softens and flattens raised or thickened scar tissue',
+      'Reduces hyperpigmentation and color difference',
+      'Breaks adhesions that cause tightness or pulling',
+      'Improves numbness and sensation in the scar area',
+      'Safe to begin 6–8 weeks post-delivery',
+    ],
   },
   {
-    name: 'Surgical Scars',
-    desc: 'Post-operative scars from C-sections, cosmetic surgery, or medical procedures. With the right timing and protocol, these can be significantly softened, flattened, and blended into surrounding skin.',
-    responsive: 'Best treated after full wound closure (6+ weeks post-surgery)',
-    icon: <Shield className="w-6 h-6 text-spa" />,
+    title: 'Tummy Tuck Scars',
+    eyebrow: 'Post-Abdominoplasty',
+    desc: 'Abdominoplasty creates a long horizontal scar that spans hip to hip. Despite surgeons\' best efforts, this scar can thicken, spread, hyperpigment, or develop an uneven texture — particularly in areas of higher skin tension.',
+    detail: 'We specialize in post-abdominoplasty scar care as a complement to the surgical result. Treatment focuses on smoothing the scar surface, reducing widening and discoloration, and improving the overall finish so the scar fades rather than remaining a visible reminder of the procedure. Lymphatic drainage is also highly recommended post-abdominoplasty to reduce swelling, improve healing, and minimize fibrous scar formation before it sets.',
+    benefits: [
+      'Flattens and refines the long horizontal scar line',
+      'Reduces widening or spreading of the scar over time',
+      'Corrects hyperpigmentation from UV exposure or healing',
+      'Pairs with post-op lymphatic drainage for best results',
+      'Best started at 6–8 weeks post-surgery',
+    ],
   },
   {
-    name: 'Acne Scars',
-    desc: 'Textural depressions (icepick, boxcar, rolling) and raised scars (hypertrophic) left after severe or picked breakouts. Multiple modalities are often combined for comprehensive resurfacing.',
-    responsive: 'Texture and depth improve significantly with a treatment series',
-    icon: <Sparkles className="w-6 h-6 text-spa" />,
+    title: 'Breast Reduction & Augmentation Scars',
+    eyebrow: 'Post-Breast Surgery',
+    desc: 'Breast surgeries leave incision scars in locations that vary by technique — around the areola, beneath the breast in the inframammary fold, or along the vertical line between the two. These areas are prone to thickening and discoloration because of skin tension during healing.',
+    detail: 'Our scar revision protocols treat the different incision patterns from breast surgery — anchor scars, lollipop scars, periareolar scars, and inframammary incisions. We tailor the treatment approach to the location, depth, and pigmentation behavior of each scar type, using a combination of microneedling, radiofrequency, and resurfacing to smooth and fade each line.',
+    benefits: [
+      'Treats all breast surgery incision patterns',
+      'Reduces darkening around the areola incision line',
+      'Softens raised or hypertrophic scar tissue',
+      'Improves texture along the inframammary fold',
+      'Non-invasive with no disruption to breast tissue',
+    ],
   },
   {
-    name: 'Keloids',
-    desc: 'Overgrown scar tissue that extends beyond the original wound boundary. Keloids require a careful evaluation before treatment — not all modalities are appropriate. We assess each case individually.',
-    responsive: 'Evaluation required — not all keloids are candidates',
-    icon: <AlertCircle className="w-6 h-6 text-espresso-400" />,
-    isWarning: true,
-  },
-]
-
-const howItWorks = [
-  {
-    title: 'Collagen Induction & Remodeling',
-    desc: 'Controlled micro-injuries (via microneedling or RF energy) trigger the skin\'s natural wound-healing cascade — releasing growth factors and stimulating new collagen and elastin synthesis. Over weeks and months, this fresh collagen fills in depressions, softens texture, and strengthens the skin matrix.',
-    icon: <Zap className="w-8 h-8 text-spa-300" />,
-  },
-  {
-    title: 'Skin Resurfacing',
-    desc: 'Chemical peels and exfoliation treatments remove damaged, discolored surface layers of skin, encouraging healthy new cells to emerge. This improves both the color and texture of scarred tissue and reduces the contrast between scars and surrounding skin.',
-    icon: <Layers className="w-8 h-8 text-spa-300" />,
+    title: 'Other Surgical Scars',
+    eyebrow: 'General Surgery & Body Procedures',
+    desc: 'Surgical scars appear across many areas of the body — from liposuction port sites and BBL incisions to laparoscopic scars, hip replacements, shoulder surgeries, knee procedures, and more. Each location presents its own healing characteristics and aesthetic challenges.',
+    detail: 'We treat surgical scars wherever they appear on the body. Scars over joints (knees, shoulders, elbows) can become thick and restricted from repeated movement during healing. Scars on high-tension areas like the chest or upper back are prone to spreading. Scars on the back, flanks, or thighs from liposuction or BBL can be subtle but bothersome. We assess each scar individually and design a protocol for its specific location, age, and tissue behavior.',
+    benefits: [
+      'Liposuction and BBL port site scars',
+      'Laparoscopic and abdominal surgery scars',
+      'Joint surgery scars — knees, shoulders, hips',
+      'Back and flank scars from body procedures',
+      'Any post-surgical scar on any body area',
+    ],
   },
 ]
 
@@ -50,103 +63,61 @@ const treatments = [
   {
     name: 'Microneedling (Collagen Induction Therapy)',
     subtitle: 'FDA-Cleared Skin Needling',
-    desc: 'Precise micro-channels created in the dermis stimulate collagen production and allow topical growth factors to penetrate deeply. Effective for both stretch marks and depressed scars. A series of 4–6 sessions spaced 4 weeks apart delivers progressive improvement.',
+    desc: 'Precise micro-channels created in the dermis stimulate collagen production and allow topical growth factors to penetrate deeply. Highly effective for both depressed and raised scars as well as stretch marks. A series of 4–6 sessions spaced 4 weeks apart delivers progressive improvement.',
     results: '4–6 sessions for optimal results',
     badge: 'Gold Standard',
   },
   {
+    name: 'RF Skin Tightening',
+    subtitle: 'Radiofrequency Collagen Stimulation',
+    desc: 'Radiofrequency energy heats the deep dermis to stimulate collagen remodeling without surface damage. Excellent for softening raised surgical scars, improving stretch marks on the abdomen, thighs, and arms, and tightening surrounding skin.',
+    results: 'Progressive improvement over 3–6 months',
+    badge: 'No Downtime',
+  },
+  {
     name: 'Chemical Peels',
     subtitle: 'TCA, Lactic & Glycolic Formulas',
-    desc: 'Medium-depth peels resurface the top layers of skin, blending the color difference between scars and healthy skin while promoting new cell turnover. Particularly effective for post-inflammatory marks and surface-level scarring.',
+    desc: 'Medium-depth peels resurface the top layers of skin, blending color differences between scars and healthy tissue while promoting new cell turnover. Particularly effective for post-inflammatory hyperpigmentation and surface-level scarring.',
     results: '3–5 days downtime for medium peels',
     badge: 'Resurfacing',
   },
   {
-    name: 'RF Skin Tightening',
-    subtitle: 'Radiofrequency Collagen Stimulation',
-    desc: 'Radiofrequency energy heats the deep dermis to stimulate collagen remodeling without surface damage. Excellent for stretch marks on the abdomen, thighs, arms, and buttocks — tightens surrounding skin while improving texture.',
-    results: 'Progressive tightening over 3–6 months',
-    badge: 'No Downtime',
-  },
-  {
     name: 'Medical Body Facials',
     subtitle: 'Body Treatment Protocol',
-    desc: 'Our specialized body facial combines enzymatic exfoliation, brightening serums, and targeted massage to hydrate, soften, and improve the appearance of stretch marks and scars on the body — a relaxing yet results-driven treatment.',
+    desc: 'Our specialized body facial combines enzymatic exfoliation, brightening serums, and targeted massage to hydrate, soften, and improve the appearance of stretch marks and scars across the body — relaxing yet results-driven.',
     results: 'Immediate softening; cumulative with series',
     badge: 'Relaxing & Effective',
   },
 ]
 
-const expectations = [
-  {
-    phase: 'Months 1–2',
-    note: 'Initial improvements in texture and color begin to emerge. Inflammation subsides; skin starts producing new collagen in response to treatment.',
-  },
-  {
-    phase: 'Months 3–4',
-    note: 'Visible reduction in scar depth and stretch mark width. Skin tone in the treated area becomes more uniform and blends better with surrounding skin.',
-  },
-  {
-    phase: 'Months 5–6',
-    note: 'Collagen remodeling matures. Most clients see 40–70% improvement in texture and appearance. Stretch marks become significantly less noticeable.',
-  },
-  {
-    phase: 'Ongoing',
-    note: 'Maintenance sessions every 3–6 months preserve results. Combined home-care with retinoids and peptides extends and deepens outcomes between visits.',
-  },
-]
-
-const beforeAfterItems = [
-  {
-    label: 'Pregnancy Stretch Marks — 12 Weeks',
-    result: 'Color normalization and texture improvement following collagen induction therapy series.',
-    beforeSrc: '/images/before-after/stretch-marks-1/before.jpg',
-    afterSrc: '/images/before-after/stretch-marks-1/after.jpg',
-    beforeAlt: 'Pregnancy stretch marks before treatment',
-    afterAlt: 'Pregnancy stretch marks after 12 weeks of collagen induction therapy',
-  },
-  {
-    label: 'Surgical Scar — 16 Weeks',
-    result: 'Flattened, lightened scar following RF resurfacing and medical-grade silicone protocol.',
-    beforeSrc: '/images/before-after/stretch-marks-2/before.jpg',
-    afterSrc: '/images/before-after/stretch-marks-2/after.jpg',
-    beforeAlt: 'Surgical scar before treatment',
-    afterAlt: 'Surgical scar after 16 weeks of RF resurfacing',
-  },
-  {
-    label: 'Acne Scars — 20 Weeks',
-    result: 'Rolling and boxcar acne scars significantly smoother after microneedling and chemical peel combination.',
-    beforeSrc: '/images/before-after/stretch-marks-3/before.jpg',
-    afterSrc: '/images/before-after/stretch-marks-3/after.jpg',
-    beforeAlt: 'Acne scars before treatment',
-    afterAlt: 'Acne scars after 20 weeks of microneedling and chemical peel',
-  },
-]
-
 const faqItems = [
   {
-    q: 'Can stretch marks be completely removed?',
-    a: 'Complete removal of stretch marks is not currently possible with any non-surgical treatment. However, significant improvement in color, texture, and overall appearance is achievable. Newer stretch marks (red or purple) respond much better than mature white or silver ones. Most clients see 40–70% improvement with a consistent treatment series.',
+    q: 'When is the right time to start treating a surgical scar?',
+    a: 'The incision must be fully closed and the wound in the remodeling phase before we begin treatment. For most surgical scars — including C-sections, tummy tucks, and breast surgeries — this means waiting 6–8 weeks post-surgery and receiving clearance from your surgeon. Starting treatment during the active remodeling window (before the scar fully matures at 12–18 months) produces significantly better outcomes than waiting.',
+  },
+  {
+    q: 'Can you treat a scar that is years or even decades old?',
+    a: 'Yes — mature scars can still be improved, though results are typically more gradual than with newer scars. Mature scar tissue has already completed its remodeling phase, so treatment essentially restarts the regenerative process. Microneedling and radiofrequency are particularly effective at reactivating collagen production even in older scars. Most clients see meaningful improvement even with scars that are several years old.',
   },
   {
     q: 'What types of scars respond best to treatment?',
-    a: 'Atrophic scars — including rolling, boxcar, and icepick acne scars — and post-surgical scars respond very well to our protocols. Hypertrophic scars also improve with treatment. Keloid scars require a careful individual assessment before any treatment is recommended, as not all modalities are appropriate.',
+    a: 'Atrophic scars (depressed, sunken), post-surgical scars, and hypertrophic scars (raised but contained within the wound boundary) all respond very well to our protocols. Acne scars — rolling, boxcar, and icepick types — also improve significantly. Keloid scars require individual assessment before treatment, as not all modalities are appropriate for keloids.',
   },
   {
-    q: 'Is microneedling painful?',
-    a: 'We apply a topical numbing cream before every microneedling session to ensure your comfort. Most clients describe the sensation as mild pressure or a slight buzzing feeling. Treated areas may appear red for 24–48 hours afterward, similar to a mild sunburn, which resolves quickly.',
+    q: 'Is microneedling painful on surgical scars?',
+    a: 'We apply topical numbing cream before every microneedling session. Most clients describe the sensation as mild pressure or a slight buzzing. Scar tissue can sometimes feel more sensitive than surrounding skin — we adjust intensity accordingly. Treated areas may appear red for 24–48 hours post-treatment, similar to a mild sunburn.',
   },
   {
-    q: 'How many sessions are needed for scars?',
-    a: 'The number of sessions varies by scar type, depth, age, and your individual healing response. Most scar treatment protocols consist of 4–6 sessions spaced 4 weeks apart for microneedling, and 3–4 sessions for chemical peels. We often combine modalities for the most comprehensive outcome.',
+    q: 'Can stretch marks be significantly improved?',
+    a: 'Yes — significant improvement in color, texture, and overall appearance is achievable, though complete elimination is not currently possible non-surgically. Newer stretch marks (red or purple) respond much better than mature white or silver ones. Most clients see 40–70% improvement with a consistent treatment series.',
   },
   {
-    q: 'Can keloid scars be treated?',
-    a: 'Keloids require careful assessment before any treatment, as certain modalities can stimulate further growth. We evaluate each keloid individually and only recommend treatments with a favorable risk profile for your specific case. Some keloids do respond well to carefully managed protocols — we will be fully transparent about what is realistic for your situation.',
+    q: 'How many sessions will I need?',
+    a: 'Most scar treatment protocols consist of 4–6 microneedling sessions spaced 4 weeks apart. Chemical peels are typically done in a series of 3–4. We often combine modalities for the best possible outcome. Stretch marks on the body generally require 6–8 sessions. Your clinician will give you a personalized estimate at your evaluation based on scar type, location, and age.',
   },
   {
     q: 'Are results permanent?',
-    a: 'The collagen remodeling triggered by treatment is long-lasting, but it does not stop the natural aging process. Results can last several years with proper home care including SPF, retinoids, and hydration. Maintenance sessions every 6–12 months help preserve and build upon initial improvements.',
+    a: 'The collagen remodeling triggered by treatment is long-lasting. Surgical scars and stretch marks that have been treated do not revert. However, the natural aging process continues, and maintenance sessions every 6–12 months help preserve and build on your initial improvements. Consistent home care — SPF, retinoids, and hydration — extends outcomes between visits.',
   },
 ]
 
@@ -155,37 +126,65 @@ export default function StretchMarksScars() {
     <div className="bg-white">
       <HeroPhoto
         eyebrow="Skin Concerns"
-        title={"Stretch Marks\n& Scars"}
-        subtitle="Visible reminders of your story — treated with clinical precision and compassionate care."
+        title={<>Surgical<br />Scars</>}
+        subtitle="Clinical scar revision for post-surgical scars, acne scars, and stretch marks — precision treatments that soften, flatten, and fade the marks surgery and life leave behind."
         gradient="from-espresso-800 via-spa-800 to-espresso-700"
         gradientDir="to-tr"
         radialPos="bottom_left"
       />
 
-      {/* Types We Treat */}
+      {/* Intro */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-3xl mx-auto text-center">
+          <SectionHeader
+            eyebrow="What We Treat"
+            title="Every Scar Has a Story. We Can Improve the Ending."
+            center={true}
+          />
+          <p className="text-espresso-500 leading-relaxed mb-4">
+            Surgical scars, acne scars, and stretch marks are among the most common cosmetic concerns — and among the most undertreated. Most people assume these are permanent. They're not. With the right clinical protocols applied at the right time, scar tissue can be significantly softened, flattened, and blended into the surrounding skin.
+          </p>
+          <p className="text-espresso-500 leading-relaxed mb-8">
+            At Advanced Med, we specialize in scar revision for post-surgical clients — C-sections, tummy tucks, breast surgeries, and body procedures — as well as acne scarring and stretch marks. Every case is assessed individually and treated with a protocol matched to your specific scar type, location, and stage of healing.
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-xl mx-auto">
+            {['Surgical scars', 'C-section & tummy tuck', 'Breast surgery scars', 'Acne scars', 'Stretch marks', 'Body procedure scars'].map((tag) => (
+              <div key={tag} className="flex items-center gap-2 text-espresso-500 text-sm justify-center">
+                <CheckCircle className="w-4 h-4 text-spa flex-shrink-0" />
+                {tag}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Surgical Scars — detailed sections */}
       <section className="py-20 px-6 bg-cream-100">
         <div className="max-w-6xl mx-auto">
           <SectionHeader
-            eyebrow="What We Treat"
-            title="Types of Scars & Stretch Marks"
-            subtitle="Each type of scarring has its own biology and requires a tailored approach. Our team assesses your specific concern before recommending any protocol."
+            eyebrow="Post-Surgical Scar Revision"
+            title="Surgical Scars — By Procedure"
+            subtitle="Different surgeries leave different scars in different locations — each with unique healing behavior. Here's how we approach the most common ones."
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
-            {types.map((t) => (
-              <div
-                key={t.name}
-                className={`bg-white p-6 shadow-sm border transition hover:shadow-md ${t.isWarning ? 'border-espresso-400/40' : 'border-cream-300 hover:border-spa'}`}
-              >
-                <div className="flex items-center gap-3 mb-3">
-                  {t.icon}
-                  <h3 className="font-serif text-lg font-bold text-espresso">{t.name}</h3>
+          <div className="space-y-8">
+            {surgicalScarSections.map((section, idx) => (
+              <div key={section.title} className={`grid md:grid-cols-2 gap-10 items-start p-10 border border-cream-300 ${idx % 2 === 0 ? 'bg-white' : 'bg-cream-200'}`}>
+                <div>
+                  <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-2">{section.eyebrow}</p>
+                  <h3 className="font-serif text-2xl font-bold text-espresso mb-4">{section.title}</h3>
+                  <p className="text-espresso-500 leading-relaxed mb-4">{section.desc}</p>
+                  <p className="text-espresso-500 leading-relaxed">{section.detail}</p>
                 </div>
-                <p className="text-espresso-500 text-sm leading-relaxed mb-3">{t.desc}</p>
-                <div className={`flex items-center gap-2 text-xs font-semibold ${t.isWarning ? 'text-espresso-500' : 'text-spa-500'}`}>
-                  {t.isWarning
-                    ? <AlertCircle className="w-4 h-4 flex-shrink-0" />
-                    : <CheckCircle className="w-4 h-4 flex-shrink-0" />}
-                  {t.responsive}
+                <div>
+                  <p className="text-espresso font-semibold text-sm mb-4">What we address:</p>
+                  <ul className="space-y-3">
+                    {section.benefits.map((b, i) => (
+                      <li key={i} className="flex items-start gap-3 text-espresso-500">
+                        <CheckCircle className="w-5 h-5 text-spa flex-shrink-0 mt-0.5" />
+                        {b}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             ))}
@@ -193,27 +192,107 @@ export default function StretchMarksScars() {
         </div>
       </section>
 
-      <BeforeAfter heading="Real Client Results" items={beforeAfterItems} />
+      <BeforeAfter
+        heading="Surgical Scars & Skin — Real Client Results"
+        items={[
+          { label: 'Surgical Scar — 16 Weeks', result: 'Flattened, lightened scar following RF resurfacing and microneedling protocol.', beforeSrc: '/images/before-after/stretch-marks-2/before.jpg', afterSrc: '/images/before-after/stretch-marks-2/after.jpg', beforeAlt: 'Surgical scar before treatment', afterAlt: 'Surgical scar after 16 weeks of treatment' },
+          { label: 'Acne Scars — 20 Weeks', result: 'Rolling and boxcar acne scars significantly smoother after microneedling and chemical peel combination.', beforeSrc: '/images/before-after/stretch-marks-3/before.jpg', afterSrc: '/images/before-after/stretch-marks-3/after.jpg', beforeAlt: 'Acne scars before treatment', afterAlt: 'Acne scars after 20 weeks of treatment' },
+          { label: 'Stretch Marks — 12 Weeks', result: 'Color normalization and texture improvement following collagen induction therapy series.', beforeSrc: '/images/before-after/stretch-marks-1/before.jpg', afterSrc: '/images/before-after/stretch-marks-1/after.jpg', beforeAlt: 'Stretch marks before treatment', afterAlt: 'Stretch marks after 12 weeks of collagen induction therapy' },
+        ]}
+      />
 
-      {/* How Our Treatments Work */}
-      <section className="py-20 px-6 bg-espresso text-cream-200">
-        <div className="max-w-5xl mx-auto">
-          <SectionHeader
-            eyebrow="The Science"
-            title="How Our Treatments Work"
-            subtitle="We use two primary mechanisms to improve the appearance of stretch marks and scars — each targeting a different layer and aspect of skin structure."
-            light={true}
-          />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
-            {howItWorks.map((item) => (
-              <div key={item.title} className="bg-white/5 border border-white/10 p-8">
-                <div className="bg-spa/10 w-14 h-14 flex items-center justify-center mb-5">
-                  {item.icon}
-                </div>
-                <h3 className="font-serif text-xl font-bold text-cream-100 mb-3">{item.title}</h3>
-                <p className="text-cream-300 text-sm leading-relaxed">{item.desc}</p>
+      {/* Acne Scars */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-16 items-start">
+            <div>
+              <SectionHeader eyebrow="Skin Texture & Scarring" title="Acne Scars" center={false} />
+              <p className="text-espresso-500 leading-relaxed mb-4">
+                Acne scars form when a breakout penetrates deep into the skin and damages the tissue beneath. As the acne clears, the body attempts to repair the damage — but the collagen produced doesn't always perfectly match the surrounding skin, leaving textural irregularities that persist long after the acne itself is gone.
+              </p>
+              <p className="text-espresso-500 leading-relaxed mb-6">
+                There are several types of acne scarring, each with different treatment approaches. Rolling scars have smooth, wave-like edges and respond well to microneedling. Boxcar scars have sharp vertical edges and benefit from collagen induction combined with resurfacing. Icepick scars are deep and narrow and typically require deeper treatment with TCA peels or RF microneedling. Hypertrophic scars are raised above the skin surface and respond to RF remodeling.
+              </p>
+              <ul className="space-y-3">
+                {[
+                  'Rolling scars — broad depressions with sloped edges',
+                  'Boxcar scars — sharp-edged oval or round depressions',
+                  'Icepick scars — deep, narrow puncture-like scars',
+                  'Hypertrophic scars — raised, firm post-acne tissue',
+                  'Post-inflammatory hyperpigmentation (PIH)',
+                ].map((b, i) => (
+                  <li key={i} className="flex items-start gap-3 text-espresso-500">
+                    <CheckCircle className="w-5 h-5 text-spa flex-shrink-0 mt-0.5" />
+                    {b}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="bg-cream-100 p-10 border border-cream-300">
+              <h3 className="font-serif text-xl font-bold text-espresso mb-6">Our Acne Scar Protocol</h3>
+              <div className="space-y-5">
+                {[
+                  { step: '1', title: 'Assessment', desc: 'We map your scar types and depths to determine the right combination of treatments for your specific pattern.' },
+                  { step: '2', title: 'Microneedling Series', desc: 'Collagen induction therapy targets the dermis, stimulating new collagen to fill in depressions and improve skin texture from within.' },
+                  { step: '3', title: 'Chemical Peels', desc: 'Strategic resurfacing removes discolored surface layers, reduces PIH, and smooths shallow textural irregularities.' },
+                  { step: '4', title: 'RF Microneedling', desc: 'For deeper scars, radiofrequency energy combined with microneedling delivers remodeling signals deeper into the dermis for more significant improvement.' },
+                ].map((item) => (
+                  <div key={item.step} className="flex gap-4">
+                    <div className="w-8 h-8 bg-espresso text-cream-100 flex items-center justify-center font-bold text-sm flex-shrink-0">{item.step}</div>
+                    <div>
+                      <h4 className="font-semibold text-espresso mb-1 text-sm">{item.title}</h4>
+                      <p className="text-espresso-500 text-sm leading-relaxed">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stretch Marks */}
+      <section className="py-20 px-6 bg-cream-100">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-16 items-start">
+            <div className="bg-espresso p-10 text-cream-200 order-2 md:order-1">
+              <h3 className="font-serif text-2xl font-bold text-spa-300 mb-6">New vs. Mature Stretch Marks</h3>
+              <p className="text-cream-300 leading-relaxed mb-4">
+                Red or purple stretch marks are newly formed — the blood vessels are still active in the tissue, making this the optimal window for treatment. These respond dramatically to microneedling and RF therapy, with color normalization and texture improvement often visible within 4–6 weeks.
+              </p>
+              <p className="text-cream-300 leading-relaxed mb-6">
+                White or silver stretch marks are mature — the vessels have faded and the tissue has fully scarred. These still improve significantly with treatment, but require more sessions and realistic expectations. Collagen induction can narrow and flatten the streaks, and resurfacing can reduce the color contrast, but they will not return to fully unmarked skin.
+              </p>
+              <div className="grid grid-cols-2 gap-3">
+                {['Pregnancy', 'Rapid weight gain', 'Puberty growth spurts', 'Muscle building', 'Weight loss skin', 'Post-surgery skin'].map((tag) => (
+                  <span key={tag} className="text-xs bg-white/10 text-cream-300 px-3 py-2 text-center">{tag}</span>
+                ))}
+              </div>
+            </div>
+            <div className="order-1 md:order-2">
+              <SectionHeader eyebrow="Skin & Body" title="Stretch Marks" center={false} />
+              <p className="text-espresso-500 leading-relaxed mb-4">
+                Stretch marks (striae) form when the skin is pulled beyond its elastic capacity too quickly — most commonly during pregnancy, puberty, rapid weight changes, or intense muscle growth. The dermis tears internally, leaving streaks of discolored, textured skin that resist improvement from creams and moisturizers alone.
+              </p>
+              <p className="text-espresso-500 leading-relaxed mb-6">
+                Clinical treatment works differently than topical products because it reaches the dermal layer where stretch marks actually form. Microneedling, RF energy, and chemical resurfacing all stimulate the body's own collagen repair response in the affected tissue — producing real structural improvement, not just surface hydration.
+              </p>
+              <ul className="space-y-3">
+                {[
+                  'Abdomen — pregnancy, weight changes',
+                  'Thighs, hips, and buttocks',
+                  'Breasts — pregnancy and augmentation',
+                  'Upper arms and shoulders',
+                  'Back and flanks',
+                  'Anywhere rapid skin stretching occurred',
+                ].map((b, i) => (
+                  <li key={i} className="flex items-start gap-3 text-espresso-500">
+                    <CheckCircle className="w-5 h-5 text-spa flex-shrink-0 mt-0.5" />
+                    {b}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -224,7 +303,7 @@ export default function StretchMarksScars() {
           <SectionHeader
             eyebrow="Our Protocols"
             title="Treatment Options"
-            subtitle="All treatments are performed by licensed professionals. We often combine modalities for the best possible outcome."
+            subtitle="All treatments are performed by licensed professionals. We frequently combine modalities for the most comprehensive outcome."
           />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
             {treatments.map((t) => (
@@ -245,16 +324,21 @@ export default function StretchMarksScars() {
         </div>
       </section>
 
-      {/* Realistic Expectations */}
+      {/* Timeline */}
       <section className="py-20 px-6 bg-cream-100">
         <div className="max-w-4xl mx-auto">
           <SectionHeader
             eyebrow="Honest Timeline"
             title="Realistic Expectations"
-            subtitle="We believe in transparency. Scars and stretch marks improve significantly with treatment — but results take time as your skin rebuilds from within."
+            subtitle="We believe in transparency. Scars and stretch marks improve significantly with treatment — results take time as your skin rebuilds from within."
           />
           <div className="mt-8 space-y-4">
-            {expectations.map((row) => (
+            {[
+              { phase: 'Months 1–2', note: 'Initial improvements in texture and color begin to emerge. Inflammation subsides; skin starts producing new collagen in response to treatment.' },
+              { phase: 'Months 3–4', note: 'Visible reduction in scar depth and stretch mark width. Skin tone in the treated area becomes more uniform and blends better with surrounding skin.' },
+              { phase: 'Months 5–6', note: 'Collagen remodeling matures. Most clients see 40–70% improvement in texture and appearance. Surgical scars and stretch marks become significantly less noticeable.' },
+              { phase: 'Ongoing', note: 'Maintenance sessions every 3–6 months preserve results. Combined home care with retinoids and peptides extends and deepens outcomes between visits.' },
+            ].map((row) => (
               <div key={row.phase} className="flex gap-4 items-start bg-white border border-cream-300 p-5 shadow-sm">
                 <span className="text-espresso font-bold text-sm w-28 flex-shrink-0">{row.phase}</span>
                 <p className="text-espresso-500 text-sm leading-relaxed">{row.note}</p>
@@ -270,13 +354,12 @@ export default function StretchMarksScars() {
         </div>
       </section>
 
-
       {/* CTA */}
       <section className="py-20 px-6 bg-espresso text-cream-200 text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="font-serif text-4xl font-bold mb-4">Reclaim Your Confidence</h2>
           <p className="text-cream-300 text-lg mb-8 leading-relaxed">
-            Whether it's stretch marks from pregnancy or scars from your past, we'll create a treatment plan designed around your body, your skin, and your goals.
+            Whether it's a C-section scar, a tummy tuck line, acne scarring, or stretch marks — we'll create a treatment plan designed around your body, your skin, and your goals.
           </p>
           <a
             href="https://advancedmedspaofficial.janeapp.com/" target="_blank" rel="noopener noreferrer"
