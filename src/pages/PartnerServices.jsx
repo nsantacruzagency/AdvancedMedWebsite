@@ -16,6 +16,18 @@ const partners = [
     instagram: 'https://www.instagram.com/advancedmedspaofficial/',
   },
   {
+    name: 'Nadine',
+    photo: '/images/partners/nadine.jpg',
+    tagline: 'Meditation & Sound Healing',
+    description: 'Nadine will be joining Advanced Med as our wellness partner for meditation and sound healing. Her work centers the mind and body — helping clients decompress, restore, and find balance alongside their aesthetic and health journeys.',
+    services: [
+      'Guided Meditation',
+      'Sound Healing',
+    ],
+    instagram: 'https://www.instagram.com/advancedmedspaofficial/',
+    comingSoon: true,
+  },
+  {
     name: 'Gre',
     photo: '/images/partners/gre.jpg',
     tagline: 'Permanent Makeup & Beauty Courses',
@@ -54,7 +66,7 @@ export default function PartnerServices() {
 
           <div className="mt-12 space-y-10">
             {partners.map((partner) => (
-              <div key={partner.name} className="bg-cream-100 border border-cream-300 p-10">
+              <div key={partner.name} className={`border p-10 ${partner.comingSoon ? 'bg-white border-cream-300 border-dashed opacity-80' : 'bg-cream-100 border-cream-300'}`}>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
                   {/* Photo */}
                   <div className="w-full overflow-hidden bg-cream-200" style={{ aspectRatio: '4/5' }}>
@@ -67,9 +79,16 @@ export default function PartnerServices() {
                   </div>
                   {/* Info */}
                   <div>
-                    <p className="text-spa text-[10px] font-medium uppercase mb-2" style={{ letterSpacing: '0.28em' }}>
-                      Partner Specialist
-                    </p>
+                    <div className="flex items-center gap-3 mb-2">
+                      <p className="text-spa text-[10px] font-medium uppercase" style={{ letterSpacing: '0.28em' }}>
+                        Partner Specialist
+                      </p>
+                      {partner.comingSoon && (
+                        <span className="text-[9px] font-semibold tracking-widest uppercase px-2.5 py-1 bg-espresso text-cream-100">
+                          Coming Soon
+                        </span>
+                      )}
+                    </div>
                     <h2 className="font-serif text-4xl font-light text-espresso mb-2">{partner.name}</h2>
                     <p className="text-espresso-400 text-sm font-medium uppercase tracking-widest mb-6">{partner.tagline}</p>
                     <p className="text-espresso-500 leading-relaxed mb-8">{partner.description}</p>
