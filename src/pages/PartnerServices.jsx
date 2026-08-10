@@ -1,11 +1,23 @@
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Instagram } from 'lucide-react'
 import HeroPhoto from '../components/HeroPhoto'
 import SectionHeader from '../components/SectionHeader'
-import BeforeAfter from '../components/BeforeAfter'
 
 const partners = [
   {
+    name: 'Melissa',
+    photo: '/images/partners/melissa.jpg',
+    tagline: 'Waxing & Lash Artist',
+    description: 'Melissa is our trusted partner for waxing and eyelash services. Whether you\'re looking for a clean, precise wax or gorgeous lash extensions, Melissa delivers flawless results with a gentle, professional touch.',
+    services: [
+      'Face Waxing',
+      'Body Waxing',
+      'Eyelash Extensions',
+    ],
+    instagram: 'https://www.instagram.com/advancedmedspaofficial/',
+  },
+  {
     name: 'Gre',
+    photo: '/images/partners/gre.jpg',
     tagline: 'Permanent Makeup & Beauty Courses',
     description: 'Gre is our trusted partner for permanent makeup artistry and professional beauty education. With a meticulous eye for natural-looking results, Gre specializes in enhancing your features with lasting precision.',
     services: [
@@ -15,35 +27,10 @@ const partners = [
       'Scalp Micropigmentation',
       'Professional Beauty Courses',
     ],
+    instagram: 'https://www.instagram.com/advancedmedspaofficial/',
   },
 ]
 
-const greBeforeAfter = [
-  {
-    label: 'Gre — 1',
-    result: '',
-    beforeSrc: '/images/before-after/gre-1/before.jpg',
-    afterSrc: '/images/before-after/gre-1/after.jpg',
-    beforeAlt: 'Before Gre permanent makeup',
-    afterAlt: 'After Gre permanent makeup',
-  },
-  {
-    label: 'Gre — 2',
-    result: '',
-    beforeSrc: '/images/before-after/gre-2/before.jpg',
-    afterSrc: '/images/before-after/gre-2/after.jpg',
-    beforeAlt: 'Before Gre permanent makeup',
-    afterAlt: 'After Gre permanent makeup',
-  },
-  {
-    label: 'Gre — 3',
-    result: '',
-    beforeSrc: '/images/before-after/gre-3/before.jpg',
-    afterSrc: '/images/before-after/gre-3/after.jpg',
-    beforeAlt: 'Before Gre permanent makeup',
-    afterAlt: 'After Gre permanent makeup',
-  },
-]
 
 export default function PartnerServices() {
   return (
@@ -72,8 +59,8 @@ export default function PartnerServices() {
                   {/* Photo */}
                   <div className="w-full overflow-hidden bg-cream-200" style={{ aspectRatio: '4/5' }}>
                     <img
-                      src="/images/partners/gre.jpg"
-                      alt="Gre — Partner Specialist"
+                      src={partner.photo}
+                      alt={`${partner.name} — Partner Specialist`}
                       className="w-full h-full object-cover"
                       onError={e => { e.currentTarget.style.display = 'none' }}
                     />
@@ -94,6 +81,18 @@ export default function PartnerServices() {
                         </div>
                       ))}
                     </div>
+                    {partner.instagram && (
+                      <a
+                        href={partner.instagram}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 mt-8 text-sm font-medium text-espresso-500 hover:text-espresso transition-colors group"
+                      >
+                        <Instagram className="w-4 h-4 text-spa group-hover:text-espresso transition-colors" />
+                        See {partner.name}'s work on Instagram
+                        <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
@@ -101,11 +100,6 @@ export default function PartnerServices() {
           </div>
         </div>
       </section>
-
-      <BeforeAfter
-        heading="Gre — Real Client Results"
-        items={greBeforeAfter}
-      />
 
       {/* CTA */}
       <section className="py-20 px-6 bg-espresso text-center">
