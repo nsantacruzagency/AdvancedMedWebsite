@@ -1,26 +1,59 @@
 import { ArrowRight, Star } from 'lucide-react'
 import HeroPhoto from '../components/HeroPhoto'
 
-const featured = [
+const categoryColors = {
+  'Weight Loss': '#d9542c',
+  'Lipedema':   '#7A8C6E',
+  'Post-Op':    '#7A8C6E',
+  'Massage':    '#7A8C6E',
+}
+
+const reviews = [
+  // — Lipedema —
   {
-    name: 'Daniela Arango',
+    category: 'Lipedema',
+    name: 'Juliana Mendonca',
     rating: 5,
-    text: 'This place is amazing, they do it all! They have helped me lose the weight after having my second baby and heal my core. Highly recommend Giselle and Alyne for massages, they are excellent! The entire team is very friendly and accommodating. Giovanna is very passionate about what she does and really does put her all into every one of her clients. 10/10 recommend.',
+    text: "I'm in my third week of the protocol. I'm looking forward to my appointment day; the clinic is a pleasant, clean, and organized place with integrated treatments. Today I was cared for by Gill, who spent over an hour with me on a lipedema treatment combined with lymphatic drainage. The care I receive from the entire team is wonderful. I recommend scheduling a consultation and learning about all the available protocols.",
   },
   {
-    name: null,
+    category: 'Lipedema',
+    name: 'Debora Petermann',
     rating: 5,
-    text: 'I absolutely love seeing Renata for my beauty shots, amino acid injections, and CryoSlim sessions! She\'s incredibly gentle, informative, and genuinely cares about her clients\' results. Renata takes her time to explain every step, which makes the experience feel comfortable and personalized. I\'ve noticed a real difference in my energy levels, skin tone, and overall body contour since starting with her. She\'s the best — highly recommend booking with Renata if you want visible results and an amazing bedside manner!',
+    text: "Excellent clinic with super polite and helpful professionals. Giovana is wonderful, I loved it and I'm going back for my lipedema treatment. She gave me great instructions to treat myself from the inside out.",
   },
+  // — Post-Op —
   {
-    name: 'Angela Serrano',
-    rating: 5,
-    text: 'Absolutely incredible experience. Stefania has a true gift — not just in technique, but in intuition. Every movement felt intentional and deeply restorative. Her understanding of the body\'s pressure points was exceptional. I walked in tense and left feeling lighter, balanced, and genuinely renewed. Highly recommended for anyone looking for more than just a massage — this is healing, skill, and artistry combined.',
-  },
-  {
+    category: 'Post-Op',
     name: 'Marlena Fialho',
     rating: 5,
-    text: 'Giovanna and her team are truly the best! I came in for post-surgery fibrosis treatment, and I\'ve been blown away by how knowledgeable and professional Giovanna is — it\'s been such an educational experience! Brenda has been fantastic with the massage sessions — super skilled and attentive. I\'m already planning to come back for detox treatments and Pilates. Highly recommend this place to anyone looking for expert care in a welcoming, supportive environment!',
+    text: "Giovanna and her team are truly the best! I came in for post-surgery fibrosis treatment, and I've been blown away by how knowledgeable and professional Giovanna is — it's been such an educational experience! Brenda has been fantastic with the massage sessions — super skilled and attentive. I'm already planning to come back for detox treatments and Pilates. Highly recommend this place to anyone looking for expert care in a welcoming, supportive environment!",
+  },
+  // — Weight Loss —
+  {
+    category: 'Weight Loss',
+    name: 'Daniela Arango',
+    rating: 5,
+    text: "This place is amazing, they do it all! They have helped me lose the weight after having my second baby and heal my core. Highly recommend Giselle and Alyne for massages, they are excellent! The entire team is very friendly and accommodating. Giovanna is very passionate about what she does and really does put her all into every one of her clients. 10/10 recommend.\n\nI absolutely love seeing Renata for my beauty shots, amino acid injections, and CryoSlim sessions! She's incredibly gentle, informative, and genuinely cares about her clients' results. Renata takes her time to explain every step, which makes the experience feel comfortable and personalized. I've noticed a real difference in my energy levels, skin tone, and overall body contour since starting with her. She's the best — highly recommend booking with Renata if you want visible results and an amazing bedside manner!",
+  },
+  {
+    category: 'Weight Loss',
+    name: 'Sarah Lopes Mondini',
+    rating: 5,
+    text: "Excellent place, for those who want to transform their body in a healthy way — all excellent professionals, with a lot of knowledge in integrative aesthetics. I want to highlight Suzane who is always concerned about explaining the procedures and is dedicated to always doing her best. She accompanied me for most of my visits to the clinic, but all the professionals are great! Hanna at reception and Giovana who delivers so much knowledge and even tips for self-care! I highly recommend the place and these professionals!",
+  },
+  {
+    category: 'Weight Loss',
+    name: 'Liliana Kerner',
+    rating: 5,
+    text: "I love how Ariane is changing my whole body — looking skinnier, flat tummy and all my clothing fits better. This is my happy place!",
+  },
+  // — Massage —
+  {
+    category: 'Massage',
+    name: 'Angela Serrano',
+    rating: 5,
+    text: "Absolutely incredible experience. Stefania has a true gift — not just in technique, but in intuition. Every movement felt intentional and deeply restorative. Her understanding of the body's pressure points was exceptional. I walked in tense and left feeling lighter, balanced, and genuinely renewed. Highly recommended for anyone looking for more than just a massage — this is healing, skill, and artistry combined.",
   },
 ]
 
@@ -48,13 +81,24 @@ export default function Testimonials() {
 
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-cream-100">
         <div className="max-w-4xl mx-auto space-y-8">
-          {featured.map((r, i) => (
+          {reviews.map((r, i) => (
             <div key={i} className="bg-white border border-cream-300 p-10 md:p-14">
+              {/* Category badge */}
+              <div className="flex items-center gap-2 mb-4">
+                <div className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: categoryColors[r.category] }} />
+                <span className="text-[9px] font-semibold tracking-widest uppercase" style={{ color: categoryColors[r.category] }}>
+                  {r.category}
+                </span>
+              </div>
               <p className="text-spa text-[10px] font-medium tracking-widest uppercase mb-4">Featured Review</p>
               <Stars count={r.rating} />
-              <blockquote className="font-serif text-xl md:text-2xl text-espresso leading-relaxed mt-6 mb-8 italic">
-                "{r.text}"
-              </blockquote>
+              <div className="mt-6 mb-8 space-y-4">
+                {r.text.split('\n\n').map((para, j) => (
+                  <p key={j} className="font-serif text-xl md:text-2xl text-espresso leading-relaxed italic">
+                    "{para}"
+                  </p>
+                ))}
+              </div>
               {r.name && (
                 <p className="font-bold text-espresso">{r.name}</p>
               )}
