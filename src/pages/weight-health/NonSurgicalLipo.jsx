@@ -37,7 +37,7 @@ export default function NonSurgicalLipo() {
       <HeroPhoto
         eyebrow="Body Aesthetics"
         title={<>Non-Surgical<br />Lipo</>}
-        subtitle="Permanent fat cell destruction — no surgery, no anesthesia, no downtime. The same results as traditional liposuction, achieved through precision technology and science."
+        subtitle="Permanent fat cell destruction — no surgery, no anesthesia, no downtime. The same results as traditional liposuction, achieved through precision technology and science in Deerfield Beach / Boca Raton"
         gradient="from-espresso-800 via-spa-800 to-espresso-700"
         gradientDir="to-br"
         radialPos="top_right"

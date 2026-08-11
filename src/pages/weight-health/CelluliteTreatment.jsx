@@ -33,7 +33,7 @@ export default function CelluliteTreatment() {
       <HeroPhoto
         eyebrow="Body Aesthetics"
         title={<>Cellulite<br />Treatment</>}
-        subtitle="Cellulite affects up to 90% of women — and it has nothing to do with fitness level or body weight. We target the structural causes, not just the surface, for results that last."
+        subtitle="Cellulite affects up to 90% of women — and it has nothing to do with fitness level or body weight. We target the structural causes, not just the surface, for results that last in Deerfield Beach / Boca Raton"
         gradient="from-espresso-700 via-spa-800 to-espresso-800"
         gradientDir="to-r"
         radialPos="top_left"

@@ -37,7 +37,7 @@ export default function Massages() {
       <HeroPhoto
         eyebrow="Body Contouring"
         title={<>Brazilian Lymphatic<br />Drainage Massage</>}
-        subtitle="Born in Brazil. Perfected through decades of clinical application. The most effective non-surgical body contouring massage in the world — and it's our signature."
+        subtitle="Born in Brazil. Perfected through decades of clinical application. The most effective non-surgical body contouring massage in the world — and it's our signature in Deerfield Beach / Boca Raton"
         gradient="from-spa-800 via-espresso-800 to-espresso-700"
         gradientDir="to-tr"
         radialPos="bottom_left"

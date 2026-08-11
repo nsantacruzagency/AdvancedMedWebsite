@@ -90,7 +90,7 @@ export default function MaintainResults() {
       <HeroPhoto
         eyebrow="Skin Concerns — Maintenance"
         title={<>How to Maintain<br />Your Results</>}
-        subtitle="Glass skin is not an event. It is a practice — built on the right protocols, the right products, and the right professional support."
+        subtitle="Glass skin is not an event. It is a practice — built on the right protocols, the right products, and the right professional support in Deerfield Beach / Boca Raton"
         gradient="from-spa-800 via-espresso-700 to-espresso-800"
         gradientDir="to-b"
         radialPos="top_right"

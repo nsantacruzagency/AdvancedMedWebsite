@@ -33,7 +33,7 @@ export default function PostGLPSkinTightening() {
       <HeroPhoto
         eyebrow="Body Aesthetics"
         title={<>Post-GLP-1<br />Skin Tightening</>}
-        subtitle="GLP-1 medications can deliver dramatic weight loss — but rapid fat reduction often leaves behind loose, sagging skin. We specialize in restoring firmness, elasticity, and confident body composition after significant weight loss."
+        subtitle="GLP-1 medications can deliver dramatic weight loss — but rapid fat reduction often leaves behind loose, sagging skin. We specialize in restoring firmness, elasticity, and confident body composition after significant weight loss in Deerfield Beach / Boca Raton"
         gradient="from-espresso-800 via-spa-700 to-espresso-700"
         gradientDir="to-bl"
         radialPos="top_right"

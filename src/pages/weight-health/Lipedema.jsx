@@ -37,7 +37,7 @@ export default function Lipedema() {
       <HeroPhoto
         eyebrow="Compassionate Care"
         title={<>Lipedema<br />LymphON Protocol</>}
-        subtitle="A chronic condition that diet and exercise cannot fix — but the right care can meaningfully manage. We see you, we understand, and we're here to help."
+        subtitle="A chronic condition that diet and exercise cannot fix — but the right care can meaningfully manage. We see you, we understand, and we're here to help in Deerfield Beach / Boca Raton"
         gradient="from-espresso-800 via-spa-800 to-espresso-700"
         gradientDir="to-tr"
         radialPos="bottom_left"

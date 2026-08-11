@@ -134,7 +134,7 @@ export default function Hyperpigmentation() {
       <HeroPhoto
         eyebrow="Skin Concerns"
         title={"Hyperpigmentation\n& Dark Spots"}
-        subtitle="Uneven skin tone is one of the most treatable concerns in modern aesthetics."
+        subtitle="Uneven skin tone is one of the most treatable concerns in modern aesthetics in Deerfield Beach / Boca Raton"
         gradient="from-spa-800 via-espresso-700 to-espresso-800"
         gradientDir="to-bl"
         radialPos="top"

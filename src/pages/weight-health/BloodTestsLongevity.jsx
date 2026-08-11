@@ -57,7 +57,7 @@ export default function BloodTestsLongevity() {
       <HeroPhoto
         eyebrow="Stem Cells & Wellness"
         title={<>What Do Blood<br />Tests Tell Us?</>}
-        subtitle="You can't optimize what you don't measure. Our comprehensive blood panels reveal the full picture of your health — then we build a precision wellness protocol around exactly what your body needs."
+        subtitle="You can't optimize what you don't measure. Our comprehensive blood panels reveal the full picture of your health — then we build a precision wellness protocol around exactly what your body needs in Deerfield Beach / Boca Raton"
         gradient="from-espresso-800 via-espresso-700 to-spa-800"
         gradientDir="to-r"
         radialPos="top"

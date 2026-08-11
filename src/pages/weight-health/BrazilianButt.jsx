@@ -72,7 +72,7 @@ export default function BrazilianButt() {
       <HeroPhoto
         eyebrow="Weight & Metabolic Health"
         title={<>Brazilian Butt<br />Boost</>}
-        subtitle="A rounder, firmer silhouette using bio-stimulator — not filler — to naturally stimulate your body's own collagen and volume. No implants, no surgery, no downtime."
+        subtitle="A rounder, firmer silhouette using bio-stimulator — not filler — to naturally stimulate your body's own collagen and volume. No implants, no surgery, no downtime in Deerfield Beach / Boca Raton"
         gradient="from-espresso-800 via-spa-800 to-espresso-700"
         gradientDir="to-b"
         radialPos="center"

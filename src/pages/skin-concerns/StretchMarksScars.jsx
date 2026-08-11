@@ -127,7 +127,7 @@ export default function StretchMarksScars() {
       <HeroPhoto
         eyebrow="Skin Concerns"
         title={<>Surgical<br />Scars</>}
-        subtitle="Clinical scar revision for post-surgical scars, acne scars, and stretch marks — precision treatments that soften, flatten, and fade the marks surgery and life leave behind."
+        subtitle="Clinical scar revision for post-surgical scars, acne scars, and stretch marks — precision treatments that soften, flatten, and fade the marks surgery and life leave behind in Deerfield Beach / Boca Raton"
         gradient="from-espresso-800 via-spa-800 to-espresso-700"
         gradientDir="to-tr"
         radialPos="bottom_left"
