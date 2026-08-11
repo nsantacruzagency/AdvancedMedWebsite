@@ -200,7 +200,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="lg:hidden bg-white border-t border-cream-300 px-5 pb-8 pt-4 max-h-[80vh] overflow-y-auto">
+        <div className="lg:hidden bg-white border-t border-cream-300 px-5 pb-8 pt-4 overflow-y-auto" style={{ maxHeight: '80vh' }}>
           <div className="space-y-1">
 
             <Link
