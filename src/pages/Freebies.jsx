@@ -27,10 +27,14 @@ const weeklySpecials = [
     },
   },
   {
-    title: '🔒 Locked — Revealed Sunday Morning',
-    desc: 'Check back Sunday morning to see what\'s coming for this week. First come, first served.',
+    title: 'Free Korean Glow Facial — Extended',
+    desc: 'Because of the massive overwhelming interest, we\'ve decided to keep this for one more week! Book our signature <u>Three-in-One Contour and Lymphatic Drainage Massage</u> and receive a complimentary Korean Glow Facial and a personalized skin analysis — on us.',
     expires: 'Aug 17 – 23',
-    locked: true,
+    learnMore: {
+      text: 'Curious about the Korean Glow Facial and what it actually does for your skin?',
+      linkText: 'Learn more →',
+      href: '/treatment-edit/korean-glow-facial',
+    },
   },
   {
     title: '🔒 Locked — Revealed Sunday Morning',
